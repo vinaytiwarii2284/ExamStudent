@@ -1,0 +1,177 @@
+﻿@model IEnumerable<ExamStudent.Models.Employee_Form_Temp>
+@{
+    ViewBag.Title = "IsPaidEmployee";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<h2 class="main-title-w3layouts mb-2 text-center">Is Paid Employee</h2>
+
+@section styles{
+    <!-- DataTables -->
+    <link href="~/Content/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="~/Content/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<div class="">
+    <div class=" table-responsive">
+
+        <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+            <thead>
+                <tr class="warning">
+                    <th>
+                        Name
+                    </th>
+                    <th>
+                        Email Address
+                    </th>
+                    <th>
+                        Emp State
+                    </th>
+                    <th>
+                        City Name
+                    </th>
+                    <th>Is Paid</th>
+                    <th>Amount</th>
+                    <th>
+                        Post Name
+                    </th>
+                    <th>
+                        Mobile Number
+                    </th>
+                    <th>
+                        Date
+                    </th>
+
+                    <th>
+                        Password
+                    </th>
+                    <th>
+                        Referl Code
+                    </th>
+                    <th>
+                        Referl Name
+                    </th>
+
+                    <th>
+                        Referal Name
+                    </th>
+                    <th>Action</th>
+                </tr>
+            </thead>
+
+            <tbody>
+                @foreach (var item in Model)
+                {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Employee_Name)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Emp_EmailAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmpState.Emp_State)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Emp_City.Emp_CityName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsPaid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PostForm.PostName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Emp_MobileNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Emp_Password)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.usercode)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReferlName)
+                    </td>
+
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ReferalForm.ReferalName)
+                    </td>
+                    <td>
+
+                        @Html.ActionLink("Edit", "Edit", "EmployeeAp", new { id = item.Employee_ID }, new { @class = "btn btn-primary" }) |
+                        @Html.ActionLink("Delete", "Delete", "EmployeeAp", new { id = item.Employee_ID }, new { @class = "btn btn-danger" })
+                    </td>
+                </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+</div>
+
+@section scripts{
+    <!-- Required datatable js -->
+    <script src="~/Content/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/Content/assets/libs/jszip/jszip.min.js"></script>
+    <script src="~/Content/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/Content/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="~/Content/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+    <!-- Datatable init js -->
+    @*<script src="~/Content/assets/js/pages/datatables.init.js"></script>
+
+        <script src="~/Content/assets/js/app.js"></script>*@
+}
+
+<script src="~/Content/assets/libs/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#datatable').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5',
+                'print'
+            ]
+        });
+
+    });
+</script>

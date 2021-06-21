@@ -1,0 +1,92 @@
+﻿
+@{
+    ViewBag.Title = "Control";
+
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<style>
+    .indigo {
+        background-color: #3f51b5 !important;
+    }
+
+    .md-tabs {
+        position: relative;
+        z-index: 1;
+        padding: .7rem;
+        margin-right: 1rem;
+        margin-bottom: -20px;
+        margin-left: 1rem;
+        background-color: #2bbbad;
+        border: 0;
+        border-radius: .25rem;
+        -webkit-box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+        box-shadow: 0 5px 11px 0 rgba(0,0,0,0.18), 0 4px 15px 0 rgba(0,0,0,0.15);
+    }
+
+    /*#profile-tab-just{
+        color:#fff;
+    }*/
+
+</style>
+
+
+<div class="container">
+
+    <section class="mx-2 pb-3">
+
+        <ul class="nav nav-tabs nav-justified md-tabs indigo" id="myTabJust" role="tablist">
+            <li class="nav-item waves-effect waves-light">
+                <a class="nav-link active" id="home-tab-just" data-toggle="tab" href="#home-just" role="tab" aria-controls="home-just" aria-selected="true">Create BoardType</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+                <a class="nav-link" id="profile-tab-just" data-toggle="tab" href="#profile-just" role="tab" aria-controls="profile-just" aria-selected="false">Create Medium</a>
+            </li>
+            <li class="nav-item waves-effect waves-light">
+                <a class="nav-link" id="contact-tab-just" data-toggle="tab" href="#contact-just" role="tab" aria-controls="contact-just" aria-selected="false">Create Standard</a>
+            </li>
+        </ul>
+        <div class="tab-content card pt-5" id="myTabContentJust">
+            <div class="tab-pane fade active show" id="home-just" role="tabpanel" aria-labelledby="home-tab-just">
+                <div>
+                   @{ 
+                       Html.RenderAction("Index");
+                   }
+                </div>
+            </div>
+            <div class="tab-pane fade" id="profile-just" role="tabpanel" aria-labelledby="profile-tab-just">
+                <div>
+                    @{
+                        Html.RenderAction("MediumList");
+                    }
+                </div>
+            </div>
+            <div class="tab-pane fade" id="contact-just" role="tabpanel" aria-labelledby="contact-tab-just">
+                <div>
+                    @{
+                        Html.RenderAction("StandardList");
+                    }
+                </div>
+            </div>
+        </div>
+
+    </section>
+</div>
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />

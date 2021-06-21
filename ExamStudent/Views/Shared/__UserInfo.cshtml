@@ -1,0 +1,33 @@
+﻿@using ExamStudent.ViewModels
+
+
+@{
+    UserVM userConnected = Session["UserConnected"] as UserVM;
+    SetExamCategoryViewModel quizSelected = Session["SelectedQuiz"] as SetExamCategoryViewModel;
+
+}
+
+@if (userConnected != null)
+{
+    <div class="row">
+        <div class="col-md-4">
+
+          
+            <img src="@string.Format("{0}{1}", Url.Content("~/images/mahdi.png"), userConnected.IsActive)" class="img-circle" style="width: 12%;" />
+            <span> <b>Welcome :</b> @userConnected.FirstName</span>
+        </div>
+        <div class="col-md-4" style="margin-top: 15px;">
+            @if (quizSelected != null && !string.IsNullOrEmpty(quizSelected.Category_Name))
+            {
+                <span> <b>Quiz Selected :</b> @quizSelected.Category_Name</span>
+            }
+            else
+            {
+                <span> <b>Please Select your Quiz </b></span>
+            }
+        </div>
+        <div class="col-md-4" style="margin-top: 15px;">
+            <span> <b>Date :</b> @DateTime.Now</span>
+        </div>
+    </div>
+}

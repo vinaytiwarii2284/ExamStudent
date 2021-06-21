@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ExamStudent.Models.Medium>
+
+@{
+    ViewBag.Title = "MediumList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class=" text-center text-danger">MediumList</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Medium" , null , new { @class = "btn btn-primary"})
+</p>
+
+<div class="container">
+
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.BoardTypeID)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.MediumName)
+            </th>
+            <th></th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BoardTypeID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MediumName)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.MediumID }, new { @class = "btn btn-danger" }) ||
+                    @Html.ActionLink("Details", "Details", new { id = item.MediumID }, new { @class = "btn btn-success" }) ||
+                    @Html.ActionLink("Delete", "DeleteMedium", new { id = item.MediumID }, new { @class = "btn btn-primary", onclick = "return confirmDelete()" })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>
+
+
+
+<script>
+
+    function confirmDelete() {
+
+        return confirm('Are You Sure You Wath To Delete This Record????.');
+
+    }
+</script>

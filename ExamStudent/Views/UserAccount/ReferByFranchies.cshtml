@@ -1,0 +1,126 @@
+﻿@model IEnumerable<ExamStudent.ViewModels.ReferelViewModel>
+@{
+    ViewBag.Title = "ReferByDC";
+    Layout = "~/Views/Shared/_LayoutEmployeeDashBoard.cshtml";
+}
+
+
+
+
+@section styles{
+    <!-- DataTables -->
+    <link href="~/Content/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="~/Content/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+}
+
+<div class="container">
+
+    <form method="post">
+
+        <label for="meeting-time">Choose a Date-Time for your Refferal:</label>
+
+        <input name="startdate" placeholder="Start Date" type="date" />
+        <input name="enddate" placeholder="End Date" type="date" />
+
+        <button class="btn btn-primary">Save</button>
+    </form>
+</div>
+
+<br />
+<br />
+<br />
+
+<div class="container table-responsive">
+
+
+    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+        <thead>
+            <tr class="warning">
+                <th>Refferal By Name</th>
+                <th>
+                    State
+                </th>
+                <th>City</th>
+                <th>Referral Code</th>
+                <th>Your Refer Date</th>
+                <th>Franchies Name</th>
+                <th>View Details</th>
+            </tr>
+        </thead>
+
+        <tbody>
+            @foreach (var item in Model)
+            {
+                var getName = item.FranchiesModel.Where(x => x.Code == item.FranchiesName).FirstOrDefault().FranchiesName;
+            <tr class="success">
+                <td>
+                    @item.ReferalName
+                </td>
+                <td>@item.State</td>
+                <td>@item.City</td>
+                <td>@item.usercode</td>
+                <td>
+                    @item.Date
+                </td>
+                <td>@getName</td>
+                <td><a href="../../UserAccount/ReferelViewDetails?usercode=@item.usercode">view Details</a></td>
+
+                @*<td>@item.f</td>*@
+
+
+
+                @*@Session["ReferlCount"]</td>
+        <td>@Session["comission"]*@
+            </tr>
+            }
+        </tbody>
+
+    </table>
+
+</div>
+
+@section scripts{
+    <!-- Required datatable js -->
+    <script src="~/Content/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/Content/assets/libs/jszip/jszip.min.js"></script>
+    <script src="~/Content/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/Content/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="~/Content/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+
+}
+
+<script src="~/Content/assets/libs/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#datatable').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5',
+                'print'
+            ]
+        });
+
+    });
+</script>
+
+
+
+

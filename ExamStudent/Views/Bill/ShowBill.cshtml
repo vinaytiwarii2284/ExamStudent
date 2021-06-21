@@ -1,0 +1,62 @@
+﻿@model ExamStudent.ViewModels.BillViewmodel
+@{
+    ViewBag.Title = "ShowBill";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="container table-responsive" id="registerdata">
+
+    <h2 class="text-dark text-center">@Model.UserName Payment Bill</h2><br />
+    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+        <thead>
+
+            <tr class="warning">
+                <th> User Name</th>
+                <th>Email</th>
+                <th>Mobile Number</th>
+                <th>Total Amount</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+
+                <td>@Model.CustomerName</td>
+                <td>@Model.email</td>
+                <td>@Model.Mobile</td>
+                <td><span>&#8377;</span>@Model.Amount</td>
+            </tr>
+
+                </tbody>
+            </table>
+            <div class="d-print-none">
+                <div class="float-right">
+                    <a href="javascript:window.print()"  class="btn btn-success">Print</a>
+                    <a href="../../UserAccount/Login" class="btn btn-primary ml-2">Go To Login</a>
+                </div>
+            </div>
+        </div>
+
+        <br />
+        <br />
+        <br />
+        <br />
+        <br />
+
+        <script>
+            $(document).ready(function () {
+                focusAction()
+            });
+
+            function focusAction() {
+                $('html , body').animate({
+                    scrollTop: $("#registerdata").offset().top - 200
+                },1000)
+            }
+
+        </script>
+

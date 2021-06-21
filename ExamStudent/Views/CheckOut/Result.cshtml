@@ -1,0 +1,20 @@
+﻿@{
+    ViewBag.Title = "Result";
+}
+
+<div class="tab_area col-sm-12 col-xs-12">
+    <div class="col-sm-1 col-xs-2 col-sm-offset-0 col-xs-offset-0 padd_lef6 mrg_top_8 bk_but">
+        <a href="@Html.Raw(ViewBag.PreviousAction)" class="btn btn-sm btn-danger title_links">Back</a>
+    </div>
+    <div class="col-md-12 col-sm-12">
+        <div class="col-md-12 col-sm-12">
+            <div class="billingForm-1">
+                <div class="row">
+                    @*ProductID:@ViewBag.ProductID <br />
+                    RequestedPage:@ViewBag.RequestedPage<br />*@
+                    Message:@ViewBag.Message
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

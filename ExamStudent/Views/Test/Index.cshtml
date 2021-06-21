@@ -1,0 +1,118 @@
+﻿@model IEnumerable<ExamStudent.Models.Employee_Form_Temp>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Employee_Name)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_DOB)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_MobileNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_Block)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_Password)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_ConfirmPassword)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_EmailAddress)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_AppID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.usercode)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReferlName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.u_status)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_City.Emp_CityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpState.Emp_State)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.PostForm.PostName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ReferalForm.ReferalName)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Employee_Name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_DOB)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_MobileNumber)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_Block)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_Password)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_ConfirmPassword)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_EmailAddress)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_AppID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.usercode)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReferlName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.u_status)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_City.Emp_CityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpState.Emp_State)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostForm.PostName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.ReferalForm.ReferalName)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Action", new { ID=item.Employee_ID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Employee_ID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Employee_ID })
+        </td>
+    </tr>
+}
+
+</table>

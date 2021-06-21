@@ -1,0 +1,2107 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountEditViewBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="AccountEditViewCancelButtonText" xml:space="preserve">
+    <value>Batal</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="AccountEditViewConfirmPassword" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi</value>
+    <comment>Confirm Password</comment>
+  </data>
+  <data name="AccountEditViewEditProfileText" xml:space="preserve">
+    <value>Edit Profil</value>
+    <comment>Edit Profile</comment>
+  </data>
+  <data name="AccountEditViewEmail" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="AccountEditViewFirstName" xml:space="preserve">
+    <value>Nama Depan</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="AccountEditViewLastName" xml:space="preserve">
+    <value>Nama Belakang</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="AccountEditViewMyAccountText" xml:space="preserve">
+    <value>Akun Saya</value>
+    <comment>My Account</comment>
+  </data>
+  <data name="AccountEditViewPassword" xml:space="preserve">
+    <value>Kata Sandi</value>
+    <comment>Password</comment>
+  </data>
+  <data name="AccountEditViewSubmitButtonText" xml:space="preserve">
+    <value>Kirim</value>
+    <comment>Submit</comment>
+  </data>
+  <data name="AccountForgotPasswordBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="AccountForgotPasswordContinueButtonText" xml:space="preserve">
+    <value>Lanjut</value>
+    <comment>Continue</comment>
+  </data>
+  <data name="AccountForgotPasswordInstruction" xml:space="preserve">
+    <value>Masukkan alamat email Anda yang terdaftar dan kami akan mengirimkan Anda kata sandi sementara</value>
+    <comment>Enter your registered email address and we will send you a temporary password</comment>
+  </data>
+  <data name="AccountForgotPasswordRegisterMessage" xml:space="preserve">
+    <value>Anda tidak terdaftar dengan kami!</value>
+    <comment>You are not registered with us!</comment>
+  </data>
+  <data name="AccountForgotPasswordTemporaryPasswordMessage" xml:space="preserve">
+    <value>Kata sandi sementara telah dikirim ke alamat email Anda</value>
+    <comment>Temporary password has been sent to your email address</comment>
+  </data>
+  <data name="AccountForgotPasswordViewHeadingText" xml:space="preserve">
+    <value>Lupa Kata Sandi</value>
+    <comment>Forgot Password</comment>
+  </data>
+  <data name="AccountIndexViewBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="AccountIndexViewCustomerInformation" xml:space="preserve">
+    <value>Informasi Pelanggan</value>
+    <comment>Customer Information</comment>
+  </data>
+  <data name="AccountIndexViewEditProfileLinkText" xml:space="preserve">
+    <value>Edit Profil</value>
+    <comment>Edit Profile</comment>
+  </data>
+  <data name="AccountIndexViewMyAccountText" xml:space="preserve">
+    <value>Profil Saya</value>
+    <comment>My Profile</comment>
+  </data>
+  <data name="AccountIndexViewMyOrdersLinkText" xml:space="preserve">
+    <value>Pesanan Saya</value>
+    <comment>My Orders</comment>
+  </data>
+  <data name="AccountIndexViewName" xml:space="preserve">
+    <value>Nama</value>
+    <comment>Name</comment>
+  </data>
+  <data name="AccountIndexViewWelcomeMessage" xml:space="preserve">
+    <value>Selamat datang di akun Anda</value>
+    <comment>Welcome to your account</comment>
+  </data>
+  <data name="AccountLoginEmail" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="AccountLoginEmailRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan alamat Email</value>
+    <comment>Please enter Email address</comment>
+  </data>
+  <data name="AccountLoginLogIn" xml:space="preserve">
+    <value />
+    <comment>Login</comment>
+  </data>
+  <data name="AccountLoginLoginErrorMessage" xml:space="preserve">
+    <value />
+    <comment>Please enter user name or password.</comment>
+  </data>
+  <data name="AccountLoginPasswordHash" xml:space="preserve">
+    <value>Kata Sandi</value>
+    <comment>Password</comment>
+  </data>
+  <data name="AccountLoginPasswordRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kata Sandi</value>
+    <comment>Please enter Password</comment>
+  </data>
+  <data name="AccountLoginRememberMe" xml:space="preserve">
+    <value>Ingat saya</value>
+    <comment>Remember me</comment>
+  </data>
+  <data name="AccountLoginUserName" xml:space="preserve">
+    <value />
+    <comment>User Name</comment>
+  </data>
+  <data name="AccountLoginValidationErrorMessage" xml:space="preserve">
+    <value>Email atau Kata Sandi tidak valid</value>
+    <comment>Invalid Email or Password</comment>
+  </data>
+  <data name="AccountUserViewModelConfirmPasswordRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kata Sandi Konfirmasi</value>
+    <comment>Please enter the Confirm Password</comment>
+  </data>
+  <data name="AccountUserViewModelConfirmPasswordText" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi</value>
+    <comment>Confirm Password</comment>
+  </data>
+  <data name="AccountUserViewModelConfirmPasswordValidationMessage" xml:space="preserve">
+    <value>Kata Sandi dan Kata Sandi Konfirmasi tidak cocok</value>
+    <comment>Password and Confirm Password do not match</comment>
+  </data>
+  <data name="AccountUserViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Email</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="AccountUserViewModelEmailValidationMessage" xml:space="preserve">
+    <value>Email tidak valid</value>
+    <comment>Email is not valid</comment>
+  </data>
+  <data name="AccountUserViewModelFirstNameRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nama Depan</value>
+    <comment>Please enter the First Name</comment>
+  </data>
+  <data name="AccountUserViewModelFirstNameText" xml:space="preserve">
+    <value>Nama Depan</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="AccountUserViewModelFirstNameValidationMessage" xml:space="preserve">
+    <value>Nama Depan hanya terdiri dari huruf</value>
+    <comment>First Name can only contain letters</comment>
+  </data>
+  <data name="AccountUserViewModelLastNameRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nama Belakang</value>
+    <comment>Please enter the Last Name</comment>
+  </data>
+  <data name="AccountUserViewModelLastNameText" xml:space="preserve">
+    <value>Nama Belakang</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="AccountUserViewModelLastNameValidationMessage" xml:space="preserve">
+    <value>Nama Belakang hanya terdiri dari huruf</value>
+    <comment>Last Name can only contain letters</comment>
+  </data>
+  <data name="AccountUserViewModelNameLengthValidationMessage" xml:space="preserve">
+    <value>Maksimal 50 karakter yang diizinkan.</value>
+    <comment>Maximum of 50 characters allowed.</comment>
+  </data>
+  <data name="AccountUserViewModelPasswordRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kata Sandi</value>
+    <comment>Please enter the Password</comment>
+  </data>
+  <data name="AccountUserViewModelPasswordText" xml:space="preserve">
+    <value>Kata Sandi</value>
+    <comment>Password</comment>
+  </data>
+  <data name="AccountUserViewModelPasswordValidationMessage" xml:space="preserve">
+    <value>Panjang kata sandi minimal 8 dan maksimal 50 karakter tanpa spasi.</value>
+    <comment>Password length minimum 8 and maximum 50 without spaces.</comment>
+  </data>
+  <data name="CaptchaModelRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan kode teks</value>
+    <comment>Please enter the text code</comment>
+  </data>
+  <data name="CaptchaModelValidationMessage" xml:space="preserve">
+    <value>Kode teks yang dimasukkan salah</value>
+    <comment>Incorrect text code entered</comment>
+  </data>
+  <data name="CaptchaPartialViewICaseSensitiveText" xml:space="preserve">
+    <value>Perhatikan penggunaan huruf besar dan kecil saat memasukkan Captcha</value>
+    <comment>Captcha image is case sensitive</comment>
+  </data>
+  <data name="CaptchaPartialViewText" xml:space="preserve">
+    <value>Masukkan kode teks di bawah ini</value>
+    <comment>Enter text code below</comment>
+  </data>
+  <data name="CartSummaryViewItemsText" xml:space="preserve">
+    <value>Barang  -</value>
+    <comment>Items -</comment>
+  </data>
+  <data name="CartViewCantFindPhotosText" xml:space="preserve">
+    <value>Tidak Dapat Menemukan Foto</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="CartViewCheckOutText" xml:space="preserve">
+    <value>Bayar</value>
+    <comment>Checkout</comment>
+  </data>
+  <data name="CartViewClearCartButtonText" xml:space="preserve">
+    <value>Kosongkan Keranjang</value>
+    <comment>Clear Cart</comment>
+  </data>
+  <data name="CartViewContinueShoppingText" xml:space="preserve">
+    <value>Lanjut Berbelanja</value>
+    <comment>Continue Shopping</comment>
+  </data>
+  <data name="CartViewEnglishLanguageText" xml:space="preserve">
+    <value>Bahasa Inggris-(AS)</value>
+    <comment>English-(US)</comment>
+  </data>
+  <data name="CartViewGrandTotalText" xml:space="preserve">
+    <value>Total keseluruhan :</value>
+    <comment>Grand Total :</comment>
+  </data>
+  <data name="CartViewItemText" xml:space="preserve">
+    <value>Barang</value>
+    <comment>Item</comment>
+  </data>
+  <data name="CartViewPriceText" xml:space="preserve">
+    <value>Harga Satuan</value>
+    <comment>Unit Price</comment>
+  </data>
+  <data name="CartViewProductNameText" xml:space="preserve">
+    <value>Nama Produk</value>
+    <comment>Product Name</comment>
+  </data>
+  <data name="CartViewQuantityText" xml:space="preserve">
+    <value>Jumlah</value>
+    <comment>Quantity</comment>
+  </data>
+  <data name="CartViewRemoveButtonText" xml:space="preserve">
+    <value>Hapus</value>
+    <comment>Remove</comment>
+  </data>
+  <data name="CartViewRemoveItemText" xml:space="preserve">
+    <value>Hapus Barang</value>
+    <comment>Remove Item</comment>
+  </data>
+  <data name="CartViewSelectLanguageText" xml:space="preserve">
+    <value>Pilih Bahasa</value>
+    <comment>Select Language</comment>
+  </data>
+  <data name="CartViewShoppingCartText" xml:space="preserve">
+    <value>Keranjang Belanja</value>
+    <comment>Shopping Cart</comment>
+  </data>
+  <data name="CartViewSubtotalText" xml:space="preserve">
+    <value>Sub total</value>
+    <comment>Sub Total</comment>
+  </data>
+  <data name="CheckoutIndexViewContinueButtonText" xml:space="preserve">
+    <value>Lanjut</value>
+    <comment>CONTINUE</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewEnterText" xml:space="preserve">
+    <value>Masukkan Kode</value>
+    <comment>Enter Code</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewGoButtonText" xml:space="preserve">
+    <value>LANJUT</value>
+    <comment>GO</comment>
+  </data>
+  <data name="ClaimViewBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="ClaimViewClaimButtonText" xml:space="preserve">
+    <value>Klaim</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="CommonBackText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="CommonFullSiteText" xml:space="preserve">
+    <value />
+    <comment>Full Site</comment>
+  </data>
+  <data name="CustomerSupportControllerAfterText" xml:space="preserve">
+    <value>Setelah</value>
+    <comment>After</comment>
+  </data>
+  <data name="CustomerSupportControllerBeforeText" xml:space="preserve">
+    <value>Sebelum</value>
+    <comment>Before</comment>
+  </data>
+  <data name="CustomerSupportControllerNoonText" xml:space="preserve">
+    <value>Siang</value>
+    <comment>Noon</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsCantClaimMessage" xml:space="preserve">
+    <value>Saya tidak bisa mengklaim ID Foto saya</value>
+    <comment>I can't claim my Photo ID</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsClaimMessage" xml:space="preserve">
+    <value>Saya mengklaim ID Foto saya tetapi tidak semua foto saya muncul</value>
+    <comment>I claimed my Photo ID and some, but not all of my photos appeared</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsLostPhotoMessage" xml:space="preserve">
+    <value>Saya kehilangan satu ID Foto atau lebih</value>
+    <comment>I lost one or more Photo ID(s)</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsSupportRequestAuthentication" xml:space="preserve">
+    <value>Silakan cek Nomor Permintaan Bantuan Anda</value>
+    <comment>Please check your Support Request Number</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoSubmitButtonText" xml:space="preserve">
+    <value>Kirim</value>
+    <comment>Submit</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoSupportTicketRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nomor Permintaan Bantuan</value>
+    <comment>Please enter Support Request Number</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewCommentText" xml:space="preserve">
+    <value>Komentar :</value>
+    <comment>Comment :</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewHeadingText" xml:space="preserve">
+    <value>Informasi Permintaan Bantuan Pelanggan</value>
+    <comment>Customer Support Request Info</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewIssueDescriptionText" xml:space="preserve">
+    <value>Keterangan Masalah :</value>
+    <comment>Issue Description :</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewLocation" xml:space="preserve">
+    <value>Lokasi</value>
+    <comment>Location</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewStatus" xml:space="preserve">
+    <value>Status</value>
+    <comment>Status</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewStatusUpdatedDate" xml:space="preserve">
+    <value>Tanggal Status Terbaru</value>
+    <comment>Status Updated Date</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewSupportRequestNumber" xml:space="preserve">
+    <value>Nomor Permintaan Bantuan</value>
+    <comment>Support Request Number</comment>
+  </data>
+  <data name="CustomerSupportViewAlertMessage" xml:space="preserve">
+    <value>Silakan centang jenis masalah</value>
+    <comment>Please check type of problem</comment>
+  </data>
+  <data name="CustomerSupportViewAllowedFileTypeText" xml:space="preserve">
+    <value>Hanya file JPEG/JPG yang diperbolehkan. (Ukuran file harus di bawah 10 MB)</value>
+    <comment>Only JPEG/JPG files allowed. (File must be under 10 MB in size)</comment>
+  </data>
+  <data name="CustomerSupportViewBrowseButtonText" xml:space="preserve">
+    <value>Jelajah</value>
+    <comment>Browse</comment>
+  </data>
+  <data name="CustomerSupportViewCancelButtonText" xml:space="preserve">
+    <value>Batal</value>
+    <comment>CANCEL</comment>
+  </data>
+  <data name="CustomerSupportViewCantClaimText" xml:space="preserve">
+    <value>Saya tidak bisa mengklaim ID Foto saya</value>
+    <comment>I can't claim my Photo ID</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureDateGreaterThanAlertMessage" xml:space="preserve">
+    <value>Tanggal Pengambilan setelah 01/01/1905.</value>
+    <comment>Capture Date is greater than 01/01/1905.</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureDateLessThanAlertMessage" xml:space="preserve">
+    <value>Tanggal Pengambilan harus sebelum tanggal hari ini</value>
+    <comment>Capture Date should be less than today date</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureDateRequiredAlertMessage" xml:space="preserve">
+    <value />
+    <comment>Capture Date is required</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureLocationRequiredAlertMessage" xml:space="preserve">
+    <value>Lokasi Pengambilan diperlukan</value>
+    <comment>Capture Location is required</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureTimeRequiredAlertMessage" xml:space="preserve">
+    <value>Waktu Pengambilan diperlukan</value>
+    <comment>Capture Time is required</comment>
+  </data>
+  <data name="CustomerSupportViewDayText" xml:space="preserve">
+    <value>Hari</value>
+    <comment>Day</comment>
+  </data>
+  <data name="CustomerSupportViewEmailIDNotValidAlertMessage" xml:space="preserve">
+    <value>Identitas email tidak valid</value>
+    <comment>Emailid is not valid</comment>
+  </data>
+  <data name="CustomerSupportViewEmailIDRequiredAlertMessage" xml:space="preserve">
+    <value>Identitas email diperlukan</value>
+    <comment>Email ID is required</comment>
+  </data>
+  <data name="CustomerSupportViewErrorAlertMessage" xml:space="preserve">
+    <value>Terdapat eror.</value>
+    <comment>There is some error.</comment>
+  </data>
+  <data name="CustomerSupportViewFileValidationAlertText" xml:space="preserve">
+    <value>Silakan pilih file dengan ekstensi yang valid.</value>
+    <comment>Please select a file with valid extension.</comment>
+  </data>
+  <data name="CustomerSupportViewHeadingText" xml:space="preserve">
+    <value>Tidak Dapat Menemukan Foto</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction" xml:space="preserve">
+    <value>Mencoba menemukan foto atau ID Foto yang hilang?</value>
+    <comment>Trying to find missing photos or a missing Photo ID?</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction1" xml:space="preserve">
+    <value>Silakan isikan informasi di bawah ini selengkap mungkin dan klik Kirim, dan kami akan  berupaya semaksimal mungkin untuk menemukan foto Anda</value>
+    <comment>Please fill in the information below as completely as you can and click Send, and we will do everything we can to find your photos.</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction2" xml:space="preserve">
+    <value>Jika diketahui, masukkan ID Foto dari foto-foto yang hilang, pisahkan dengan koma atau spasi. Jika tidak diketahui, masukkan "HILANG".</value>
+    <comment>If known, enter the Photo ID that are missing photos, separated by commas or spaces. If not known, enter "LOST".</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction3" xml:space="preserve">
+    <value>Memberikan sebuah foto dapat mempercepat proses. Silakan unggah sebuah foto dari satu orang atau lebih yang ada di foto-foto yang hilang.</value>
+    <comment>Providing a photo can expedite the process. Please upload a photo of one or more people in the missing photos.</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction4" xml:space="preserve">
+    <value>Berikan rincian sebanyak mungkin untuk membantu kami dalam pencarian kami; semakin banyak informasi yang disediakan, semakin baik kami dapat membantu. Sertakan usia, jenis kelamin, warna/jenis baju yang dikenakan, fitur yang membedakan atau informasi lain yang Anda pikir akan membantu kami menemukan foto Anda.</value>
+    <comment>Provide as many details as possible to aid us in our search; the more information provided, the better we can help. Include age, gender, color/type of clothes worn, distinguishing features or any other information you think will help us locate your photos.</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction5" xml:space="preserve">
+    <value>Jika Anda telah memasukkan gambar, mohon bersabar sementara kami mengirimkan file gambar. Tergantung pada koneksi internet Anda, proses ini dapat berlangsung hingga beberapa menit. Halaman konfirmasi akan ditampilkan saat proses ini selesai.</value>
+    <comment>If you have included an image, please be patient while we transmit the image file. Depending on your internet connection, this can take up to a few minutes. A confirmation page will be displayed when this has finished.</comment>
+  </data>
+  <data name="CustomerSupportViewMonthText" xml:space="preserve">
+    <value>Bulan</value>
+    <comment>Month</comment>
+  </data>
+  <data name="CustomerSupportViewNameRequiredAlertMessage" xml:space="preserve">
+    <value>Nama diperlukan</value>
+    <comment>Name is required</comment>
+  </data>
+  <data name="CustomerSupportViewNoteText" xml:space="preserve">
+    <value>Catatan: Bidang yang harus diisi ditandai dengan tanda bintang</value>
+    <comment>Note: Required fields are marked with an asterisk</comment>
+  </data>
+  <data name="CustomerSupportViewPhotoIDRequiredAlertMessage" xml:space="preserve">
+    <value>ID Foto diperlukan</value>
+    <comment>Photo ID is required</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseCheckAlertMessage" xml:space="preserve">
+    <value>Silakan centang</value>
+    <comment>Please Check</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseEnterAlertMessage" xml:space="preserve">
+    <value>Silakan masukkan</value>
+    <comment>Please enter</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectAlertMessage" xml:space="preserve">
+    <value>Silakan pilih</value>
+    <comment>Please select</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectFileAlertMessage" xml:space="preserve">
+    <value>Silakan pilih file gambar yang valid</value>
+    <comment>Please select a file with valid extension</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectFileSizeAlertMessage" xml:space="preserve">
+    <value>Ukuran file gambar harus kurang dari 10MB</value>
+    <comment>Image file size must be less than 10MB</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectPeopleMessage" xml:space="preserve">
+    <value>Memilih jumlah orang diperlukan</value>
+    <comment>Select # of people is required</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectVenueAlertMessage" xml:space="preserve">
+    <value>Silakan pilih tempat.</value>
+    <comment>Please select venue.</comment>
+  </data>
+  <data name="CustomerSupportViewProblemDescriptionText" xml:space="preserve">
+    <value>Silakan jelaskan masalah yang Anda alami:</value>
+    <comment>Please describe the problem you are experiencing:</comment>
+  </data>
+  <data name="CustomerSupportViewResetButtonText" xml:space="preserve">
+    <value>ATUR ULANG</value>
+    <comment>RESET</comment>
+  </data>
+  <data name="CustomerSupportViewSaveButtonText" xml:space="preserve">
+    <value>Simpan</value>
+    <comment>SAVE</comment>
+  </data>
+  <data name="CustomerSupportViewSelectCaptureDateText" xml:space="preserve">
+    <value>Silakan pilih Tanggal Pengambilan Foto</value>
+    <comment>Please select Capture Date.</comment>
+  </data>
+  <data name="CustomerSupportViewValidationText" xml:space="preserve">
+    <value>Hanya karakter alfanumerik dan spasi yang berlaku di bidang ini</value>
+    <comment>Only alphanumeric characters and spaces are valid in this field</comment>
+  </data>
+  <data name="CustomerSupportViewValidCaptureDateRequiredAlertMessage" xml:space="preserve">
+    <value>Silakan pilih tanggal yang valid untuk Tanggal Pengambilan Foto.</value>
+    <comment>Please select valid date for Capture Date.</comment>
+  </data>
+  <data name="CustomerSupportViewYearText" xml:space="preserve">
+    <value>Tahun</value>
+    <comment>Year</comment>
+  </data>
+  <data name="DateOfBirthText" xml:space="preserve">
+    <value>Tanggal Lahir</value>
+    <comment>Date Of Birth</comment>
+  </data>
+  <data name="EditPhoto1BorderTabNote" xml:space="preserve">
+    <value>Silakan gulir ke bawah untuk lebih banyak Bingkai</value>
+    <comment>Please scroll down for more Borders</comment>
+  </data>
+  <data name="EditPhoto1PhotoSuccessAlertMessage" xml:space="preserve">
+    <value>Email Anda berhasil terkirim</value>
+    <comment>Your email has been sent successfully.</comment>
+  </data>
+  <data name="EditPhoto1SelectPhotoAlertMessage" xml:space="preserve">
+    <value>Silakan pilih foto pada Kanvas</value>
+    <comment>Please select photo on Canvas</comment>
+  </data>
+  <data name="EditPhoto1StickerTabNote" xml:space="preserve">
+    <value>Silakan gulir ke bawah untuk lebih banyak Stiker</value>
+    <comment>Please scroll down for more Stickers</comment>
+  </data>
+  <data name="EditPhoto1ViewAddProductToCartAlertMessage" xml:space="preserve">
+    <value>Jumlah tidak boleh kosong atau 0</value>
+    <comment>Quantity can not be empty or 0</comment>
+  </data>
+  <data name="EditPhoto1ViewAddToCartButtonText" xml:space="preserve">
+    <value>Tambahkan ke Keranjang</value>
+    <comment>Add To Cart</comment>
+  </data>
+  <data name="EditPhoto1ViewAvailableUntilText" xml:space="preserve">
+    <value>Tersedia Sampai</value>
+    <comment>Available Until</comment>
+  </data>
+  <data name="EditPhoto1ViewBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="EditPhoto1ViewBackText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="EditPhoto1ViewBorder" xml:space="preserve">
+    <value>Bingkai</value>
+    <comment>Borders</comment>
+  </data>
+  <data name="EditPhoto1ViewClaimText" xml:space="preserve">
+    <value>Klaim</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="EditPhoto1ViewComments" xml:space="preserve">
+    <value>Komentar</value>
+    <comment>Comments</comment>
+  </data>
+  <data name="EditPhoto1ViewDelete" xml:space="preserve">
+    <value />
+    <comment>Delete</comment>
+  </data>
+  <data name="EditPhoto1ViewDownload" xml:space="preserve">
+    <value>Unduh Foto</value>
+    <comment>Download Photo</comment>
+  </data>
+  <data name="EditPhoto1ViewEmail" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailIDNotValidAlertMessage" xml:space="preserve">
+    <value>ID email tidak valid</value>
+    <comment>Email id is not valid</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailMessage" xml:space="preserve">
+    <value>Bagikan media Anda dengan keluarga dan teman-teman di Email.</value>
+    <comment>Share your media with family and friends on Email.</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailNotSentSuccessText" xml:space="preserve">
+    <value>Email belum terkirim</value>
+    <comment>Email has not been sent</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailRequiredAlertMessage" xml:space="preserve">
+    <value>Identitas email diperlukan</value>
+    <comment>Email ID is required</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailSentSuccessText" xml:space="preserve">
+    <value>Email berhasil terkirim</value>
+    <comment>Email has been sent successfully</comment>
+  </data>
+  <data name="EditPhoto1ViewEnterCommentsText" xml:space="preserve">
+    <value>Pesan</value>
+    <comment>Enter the Message</comment>
+  </data>
+  <data name="EditPhoto1ViewEnterEmailAddressesText" xml:space="preserve">
+    <value />
+    <comment>Enter Recepient Email Address</comment>
+  </data>
+  <data name="EditPhoto1ViewEnterSubjectText" xml:space="preserve">
+    <value />
+    <comment>Enter the Subject</comment>
+  </data>
+  <data name="EditPhoto1ViewErrorTextText" xml:space="preserve">
+    <value>Pesan eror</value>
+    <comment>Error message</comment>
+  </data>
+  <data name="EditPhoto1Viewfacebook" xml:space="preserve">
+    <value>Facebook</value>
+    <comment>Facebook</comment>
+  </data>
+  <data name="EditPhoto1ViewFacebookMessage" xml:space="preserve">
+    <value>Bagikan media Anda dengan keluarga dan teman-teman di Facebook.</value>
+    <comment>Share your media with family and friends on facebook.</comment>
+  </data>
+  <data name="EditPhoto1ViewGraphics" xml:space="preserve">
+    <value>Stiker</value>
+    <comment>Stickers</comment>
+  </data>
+  <data name="EditPhoto1ViewLinkedIn" xml:space="preserve">
+    <value />
+    <comment>LinkedIn</comment>
+  </data>
+  <data name="EditPhoto1ViewLinkedInMessage" xml:space="preserve">
+    <value />
+    <comment>Share your photo with family and friends on Linkedin.</comment>
+  </data>
+  <data name="EditPhoto1ViewMessage" xml:space="preserve">
+    <value>Pesan</value>
+    <comment>Message</comment>
+  </data>
+  <data name="EditPhoto1ViewMultipleAddressText" xml:space="preserve">
+    <value>Masukkan beberapa alamat, pisahkan dengan tanda koma (,).</value>
+    <comment>Enter multiple address separated by comma (,).</comment>
+  </data>
+  <data name="EditPhoto1ViewMyPhotosText" xml:space="preserve">
+    <value>Foto Saya</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="EditPhoto1ViewPhotoSavedAlertText" xml:space="preserve">
+    <value>Foto berhasil disimpan</value>
+    <comment>Photo saved successfully</comment>
+  </data>
+  <data name="EditPhoto1ViewPhotoSelectAlertMessage" xml:space="preserve">
+    <value>Silakan pilih foto pada Kanvas</value>
+    <comment>Please select photo on canvas</comment>
+  </data>
+  <data name="EditPhoto1ViewPostButtonText" xml:space="preserve">
+    <value>Terbitkan</value>
+    <comment>Post</comment>
+  </data>
+  <data name="EditPhoto1ViewProducts" xml:space="preserve">
+    <value>Produk</value>
+    <comment>Products</comment>
+  </data>
+  <data name="EditPhoto1ViewQuantity" xml:space="preserve">
+    <value>Jumlah</value>
+    <comment>Quantity</comment>
+  </data>
+  <data name="EditPhoto1ViewRemoveStickerText" xml:space="preserve">
+    <value>Hapus Stiker</value>
+    <comment>Remove Sticker</comment>
+  </data>
+  <data name="EditPhoto1ViewRestore" xml:space="preserve">
+    <value>KEMBALI KE FOTO ASLI</value>
+    <comment>RESTORE</comment>
+  </data>
+  <data name="EditPhoto1ViewRestoreOriginalAlertMessage" xml:space="preserve">
+    <value>Apakah Anda yakin ingin menampilkan kembali foto asli?</value>
+    <comment>Are you sure you want to restore the original photo?</comment>
+  </data>
+  <data name="EditPhoto1ViewRestorePhotoText" xml:space="preserve">
+    <value>Kembali ke foto asli?</value>
+    <comment>Restore photo?</comment>
+  </data>
+  <data name="EditPhoto1ViewSave" xml:space="preserve">
+    <value>Simpan</value>
+    <comment>SAVE</comment>
+  </data>
+  <data name="EditPhoto1ViewSaveChangesAlertText" xml:space="preserve">
+    <value>Simpan perubahan?</value>
+    <comment>Save Changes?</comment>
+  </data>
+  <data name="EditPhoto1ViewSendButtonText" xml:space="preserve">
+    <value>KIRIM</value>
+    <comment>SEND</comment>
+  </data>
+  <data name="EditPhoto1ViewShare" xml:space="preserve">
+    <value>BAGIKAN</value>
+    <comment>SHARE</comment>
+  </data>
+  <data name="EditPhoto1ViewSharePictureFailedText" xml:space="preserve">
+    <value>Media gagal dibagikan</value>
+    <comment>Share media failed</comment>
+  </data>
+  <data name="EditPhoto1ViewSharePictureSucceededText" xml:space="preserve">
+    <value>Media berhasil dibagikan</value>
+    <comment>Share media succeeded</comment>
+  </data>
+  <data name="EditPhoto1ViewSomethingBadMessageText" xml:space="preserve">
+    <value>Terjadi sesuatu pada sisi server, Silakan Coba Lagi.</value>
+    <comment>Something bad happened at server side, Please Retry.</comment>
+  </data>
+  <data name="EditPhoto1ViewSubject" xml:space="preserve">
+    <value>Subjek</value>
+    <comment>Subject</comment>
+  </data>
+  <data name="EditPhoto1ViewSuccessMessageText" xml:space="preserve">
+    <value>Pesan berhasil</value>
+    <comment>Success message</comment>
+  </data>
+  <data name="EditPhoto1ViewTakenText" xml:space="preserve">
+    <value>Sudah diambil</value>
+    <comment>Taken</comment>
+  </data>
+  <data name="EditPhoto1ViewTwitter" xml:space="preserve">
+    <value>Twitter</value>
+    <comment>Twitter</comment>
+  </data>
+  <data name="EditPhoto1ViewTwitterMessage" xml:space="preserve">
+    <value>Bagikan foto Anda dengan keluarga dan teman-teman di Twitter.</value>
+    <comment>Share your photo with family and friends on Twitter.</comment>
+  </data>
+  <data name="EditPhoto1ViewUndo" xml:space="preserve">
+    <value>BATAL</value>
+    <comment>UNDO</comment>
+  </data>
+  <data name="EditPhoto1ViewUnitPrice" xml:space="preserve">
+    <value>Harga Satuan</value>
+    <comment>Unit Price</comment>
+  </data>
+  <data name="EditPhoto1ViewVideoDownloadText" xml:space="preserve">
+    <value>Unduh</value>
+    <comment>Download</comment>
+  </data>
+  <data name="EditPhoto1ViewVideoShareText" xml:space="preserve">
+    <value>BAGIKAN</value>
+    <comment>Share</comment>
+  </data>
+  <data name="EditPhoto1ViewWouldYouLiketAlertMessage" xml:space="preserve">
+    <value>Apakah Anda ingin menyimpan perubahan?</value>
+    <comment>Would you like to save the changes?</comment>
+  </data>
+  <data name="EditPhotoViewAlertText" xml:space="preserve">
+    <value>Peringatan</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ErrorViewErrorMessageText" xml:space="preserve">
+    <value>Terjadi eror ketika memroses permintaan Anda.</value>
+    <comment>An error occurred while processing your request.</comment>
+  </data>
+  <data name="ErrorViewErrorText" xml:space="preserve">
+    <value>Eror</value>
+    <comment>Error</comment>
+  </data>
+  <data name="FBLoginViewInvalidAlertMessage" xml:space="preserve">
+    <value>Nama Pengguna atau Kata Sandi tidak valid</value>
+    <comment>Invalid Username or Password</comment>
+  </data>
+  <data name="FBLoginViewLoginButtonText" xml:space="preserve">
+    <value />
+    <comment>Login</comment>
+  </data>
+  <data name="FBLoginViewPassword" xml:space="preserve">
+    <value>Kata Sandi</value>
+    <comment>Password</comment>
+  </data>
+  <data name="FBLoginViewProcessingMessage" xml:space="preserve">
+    <value>Sedang Memroses, harap tunggu. . .</value>
+    <comment>Processing, please wait . . .</comment>
+  </data>
+  <data name="FBLoginViewSuccessAlertMessage" xml:space="preserve">
+    <value>Media berhasil diterbitkan di Facebook</value>
+    <comment>Media posted successfully on Facebook</comment>
+  </data>
+  <data name="FBLoginViewUsername" xml:space="preserve">
+    <value />
+    <comment>Username</comment>
+  </data>
+  <data name="ForgotPasswordViewEmailText" xml:space="preserve">
+    <value>Identitas email</value>
+    <comment>Email Id</comment>
+  </data>
+  <data name="ForgotPasswordViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Email</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="ForgotPasswordViewModelEmailValidationMessage" xml:space="preserve">
+    <value>Email tidak valid.</value>
+    <comment>Email is not valid.</comment>
+  </data>
+  <data name="HomeIndexViewClaim" xml:space="preserve">
+    <value>Klaim</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="HomeIndexViewInstruction" xml:space="preserve">
+    <value>Jika ini pertama kalinya Anda mengunjungi situs ini, silakan klik pada tab "Klaim" dan masukkan Kode Klaim Anda. Ikuti petunjuk untuk membuat akun Anda.</value>
+    <comment>If this is your first time on the site, please click on the "Claim" tab and enter your Guest ID. Follow the instructions to create your account.</comment>
+  </data>
+  <data name="HomeIndexViewInstruction1" xml:space="preserve">
+    <value>Jika Anda sudah pernah mengunjungi situs ini, silakan klik pada tab "Masuk" dan masukkan informasi yang digunakan ketika Anda</value>
+    <comment>If you are a returning guest, please click on the "Sign In" tab and enter the information used when you</comment>
+  </data>
+  <data name="HomeIndexViewInstruction2" xml:space="preserve">
+    <value>pertama kali membuat akun foto Anda.</value>
+    <comment>first created your photo account.</comment>
+  </data>
+  <data name="HomeIndexViewSignIn" xml:space="preserve">
+    <value>Masuk</value>
+    <comment>Sign In</comment>
+  </data>
+  <data name="HomeIndexViewWelcome" xml:space="preserve">
+    <value>Selamat datang</value>
+    <comment>Welcome</comment>
+  </data>
+  <data name="HomeIndexViewWelcomeMessage" xml:space="preserve">
+    <value>SELAMAT DATANG DI "mySnapps" PHOTOS ONLINE EXPERIENCE!</value>
+    <comment>WELCOME TO "mySnapps" PHOTOS ONLINE EXPERIENCE!</comment>
+  </data>
+  <data name="IndexViewAddress" xml:space="preserve">
+    <value>Alamat</value>
+    <comment>Address</comment>
+  </data>
+  <data name="IndexViewAddress2" xml:space="preserve">
+    <value>Alamat2</value>
+    <comment>Address2</comment>
+  </data>
+  <data name="IndexViewBackText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="IndexViewBillingAddress" xml:space="preserve">
+    <value>Alamat Penagihan</value>
+    <comment>Billing Address</comment>
+  </data>
+  <data name="IndexViewBillingFormText" xml:space="preserve">
+    <value>Formulir Penagihan</value>
+    <comment>Billing Form</comment>
+  </data>
+  <data name="IndexViewCity" xml:space="preserve">
+    <value>Kota</value>
+    <comment>City</comment>
+  </data>
+  <data name="IndexViewCountry" xml:space="preserve">
+    <value>Negara</value>
+    <comment>Country</comment>
+  </data>
+  <data name="IndexViewEmail" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="IndexViewFirstName" xml:space="preserve">
+    <value>Nama Depan</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="IndexViewLastName" xml:space="preserve">
+    <value>Nama Belakang</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="IndexViewPhone" xml:space="preserve">
+    <value>Telepon</value>
+    <comment>Phone</comment>
+  </data>
+  <data name="IndexViewShippingAddress" xml:space="preserve">
+    <value>Alamat Pengiriman</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="IndexViewState" xml:space="preserve">
+    <value>Negara</value>
+    <comment>State</comment>
+  </data>
+  <data name="IndexViewUseAsBillingAddress" xml:space="preserve">
+    <value>Alamat Penagihan sama dengan alamat pengiriman</value>
+    <comment>Billing Address same as Shipping Address</comment>
+  </data>
+  <data name="IndexViewZipCode" xml:space="preserve">
+    <value>Kode Pos</value>
+    <comment>Zip Code</comment>
+  </data>
+  <data name="LanguagePartialViewCantFindPhotosText" xml:space="preserve">
+    <value>Tidak Dapat Menemukan Foto</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="LanguagePartialViewSelectLanguageText" xml:space="preserve">
+    <value>Pilih Bahasa</value>
+    <comment>Select Language</comment>
+  </data>
+  <data name="LayoutPartialViewAboutUsLinkText" xml:space="preserve">
+    <value>Tentang kami</value>
+    <comment>About Us</comment>
+  </data>
+  <data name="LayoutPartialViewApplicationTittle" xml:space="preserve">
+    <value>Digiphoto - RockCity</value>
+    <comment>Digiphoto - RockCity</comment>
+  </data>
+  <data name="LayoutPartialViewCantFindPhotosLinkText" xml:space="preserve">
+    <value>Tidak Dapat Menemukan Foto</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="LayoutPartialViewCartViewButtonText" xml:space="preserve">
+    <value>Lihat Keranjang</value>
+    <comment>View Cart</comment>
+  </data>
+  <data name="LayoutPartialViewContactUsLinkText" xml:space="preserve">
+    <value>Hubungi kami</value>
+    <comment>Contact Us</comment>
+  </data>
+  <data name="LayoutPartialViewDEIText" xml:space="preserve">
+    <value>DEI</value>
+    <comment>DEI</comment>
+  </data>
+  <data name="LayoutPartialViewHelpLinkText" xml:space="preserve">
+    <value>Bantuan</value>
+    <comment>Help</comment>
+  </data>
+  <data name="LayoutPartialViewMyAccountButtonText" xml:space="preserve">
+    <value>Akun Saya</value>
+    <comment>My Account</comment>
+  </data>
+  <data name="LayoutPartialViewMyPhotosLinkText" xml:space="preserve">
+    <value>Foto Saya</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="LayoutPartialViewMySnappsLogo" xml:space="preserve">
+    <value />
+    <comment>mySnapps</comment>
+  </data>
+  <data name="LayoutPartialViewMySnappsText" xml:space="preserve">
+    <value />
+    <comment>mySnapps</comment>
+  </data>
+  <data name="LayoutPartialViewPageNameText" xml:space="preserve">
+    <value />
+    <comment>Page Name</comment>
+  </data>
+  <data name="LayoutPartialViewPoweredByText" xml:space="preserve">
+    <value>Dipersembahkan oleh:</value>
+    <comment>Powered By: </comment>
+  </data>
+  <data name="LayoutPartialViewPrivacyPolicyLinkText" xml:space="preserve">
+    <value>Kebijakan Privasi</value>
+    <comment>Privacy Policy</comment>
+  </data>
+  <data name="LayoutPartialViewRegisterButtonText" xml:space="preserve">
+    <value>Daftar</value>
+    <comment>Register</comment>
+  </data>
+  <data name="LayoutPartialViewSignInButtonText" xml:space="preserve">
+    <value>Masuk</value>
+    <comment>Sign In</comment>
+  </data>
+  <data name="LayoutPartialViewSignOutButtonText" xml:space="preserve">
+    <value>Keluar</value>
+    <comment>Sign Out</comment>
+  </data>
+  <data name="LayoutPartialViewTermsAndConditionsLinkText" xml:space="preserve">
+    <value>Syarat dan Ketentuan</value>
+    <comment>Terms and Conditions</comment>
+  </data>
+  <data name="LayoutSharedViewMobileSite" xml:space="preserve">
+    <value />
+    <comment>Mobile Site</comment>
+  </data>
+  <data name="LockOutViewLockedOutDetailText" xml:space="preserve">
+    <value />
+    <comment>This account has been locked out, please try again later.</comment>
+  </data>
+  <data name="LockOutViewLockedOutText" xml:space="preserve">
+    <value />
+    <comment>Locked out.</comment>
+  </data>
+  <data name="LoginPartialViewEnterEmailText" xml:space="preserve">
+    <value>Silakan Masukkan email Anda:</value>
+    <comment>Please Enter Your Email:</comment>
+  </data>
+  <data name="LoginPartialViewEnterPasswordText" xml:space="preserve">
+    <value>Silakan Masukkan Kata Sandi Anda:</value>
+    <comment>Please Enter Your Password:</comment>
+  </data>
+  <data name="LoginPartialViewForgotPasswordLinkText" xml:space="preserve">
+    <value>Lupa Kata Sandi ?</value>
+    <comment>Forgot Password ?</comment>
+  </data>
+  <data name="LoginPartialViewGoButtonText" xml:space="preserve">
+    <value>LANJUT</value>
+    <comment>GO</comment>
+  </data>
+  <data name="LoginViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Email</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="LoginViewModelEmailValidationMessage" xml:space="preserve">
+    <value>Email tidak valid.</value>
+    <comment>Email is not valid.</comment>
+  </data>
+  <data name="LoginViewModelPasswordRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kata Sandi</value>
+    <comment>Please enter the Password</comment>
+  </data>
+  <data name="LoginViewModelPasswordValidationMessage" xml:space="preserve">
+    <value>Panjang kata sandi minimal 8 dan maksimal 50 karakter tanpa spasi.</value>
+    <comment>Password length minimum 8 and maximum 50 without spaces.</comment>
+  </data>
+  <data name="PaumentViewGiftCertificatesDiscountsKits" xml:space="preserve">
+    <value />
+    <comment>Gift Certificates / Discounts / Kits</comment>
+  </data>
+  <data name="PaymentReceiptViewFax" xml:space="preserve">
+    <value />
+    <comment>Fax</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderDate" xml:space="preserve">
+    <value>Tanggal Pemesanan</value>
+    <comment>Order Date</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderFailMsg" xml:space="preserve">
+    <value>Pembayaran Gagal.</value>
+    <comment>Payment failed.</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderSuccessMsg" xml:space="preserve">
+    <value>Pemesanan berhasil</value>
+    <comment>Order is successful</comment>
+  </data>
+  <data name="PaymentReceiptViewOtherInformation" xml:space="preserve">
+    <value>Informasi Lain</value>
+    <comment>Other  Information</comment>
+  </data>
+  <data name="PaymentReceiptViewPayableAmount" xml:space="preserve">
+    <value>Jumlah yang harus dibayar:</value>
+    <comment>Payable Amount:</comment>
+  </data>
+  <data name="PaymentReceiptViewpaymentInformation" xml:space="preserve">
+    <value>Informasi Pembayaran</value>
+    <comment>Payment Information</comment>
+  </data>
+  <data name="PaymentReceiptViewPaymentReceipt" xml:space="preserve">
+    <value>Kuitansi Pembayaran</value>
+    <comment>Payment Receipt</comment>
+  </data>
+  <data name="PaymentReceiptViewPaymentType" xml:space="preserve">
+    <value>Tipe pembayaran</value>
+    <comment>Payment Type</comment>
+  </data>
+  <data name="PaymentReceiptViewProductName" xml:space="preserve">
+    <value>Nama Produk</value>
+    <comment>Product Name</comment>
+  </data>
+  <data name="PaymentReceiptViewQuantity" xml:space="preserve">
+    <value>Jumlah</value>
+    <comment>Quantity</comment>
+  </data>
+  <data name="PaymentReceiptViewShippingCost" xml:space="preserve">
+    <value>Biaya Pengiriman</value>
+    <comment>Shipping Cost</comment>
+  </data>
+  <data name="PaymentReceiptViewSubTotal" xml:space="preserve">
+    <value>Sub total：</value>
+    <comment>Sub Total :</comment>
+  </data>
+  <data name="PaymentReceiptViewTax" xml:space="preserve">
+    <value>Pajak</value>
+    <comment>Tax</comment>
+  </data>
+  <data name="PaymentReceiptViewTotal" xml:space="preserve">
+    <value>Total</value>
+    <comment>Total</comment>
+  </data>
+  <data name="PaymentReceiptViewTotalAmt" xml:space="preserve">
+    <value>Total :</value>
+    <comment>Total :</comment>
+  </data>
+  <data name="PaymentReceiptViewTrackingNumber" xml:space="preserve">
+    <value>No. Ref. Transaksi</value>
+    <comment>Transaction Ref No</comment>
+  </data>
+  <data name="PaymentReceiptViewUnitPrice" xml:space="preserve">
+    <value>Harga Satuan</value>
+    <comment>Unit Price</comment>
+  </data>
+  <data name="PaymentViewAddCoupon" xml:space="preserve">
+    <value />
+    <comment>Add Coupon</comment>
+  </data>
+  <data name="PaymentViewAmericanexpress" xml:space="preserve">
+    <value />
+    <comment>American express</comment>
+  </data>
+  <data name="PaymentViewAmountDue" xml:space="preserve">
+    <value>Jumlah yang harus dibayarkan</value>
+    <comment>Amount Due</comment>
+  </data>
+  <data name="PaymentViewBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>BACK</comment>
+  </data>
+  <data name="PaymentViewBillingAddress" xml:space="preserve">
+    <value>Alamat Penagihan</value>
+    <comment>Billing Address</comment>
+  </data>
+  <data name="PaymentViewCardNumber" xml:space="preserve">
+    <value />
+    <comment>Card Number</comment>
+  </data>
+  <data name="PaymentViewCardType" xml:space="preserve">
+    <value />
+    <comment>Card Type</comment>
+  </data>
+  <data name="PaymentViewCouponCode" xml:space="preserve">
+    <value />
+    <comment>Coupon Code</comment>
+  </data>
+  <data name="PaymentViewCreditCard" xml:space="preserve">
+    <value />
+    <comment>Credit Card</comment>
+  </data>
+  <data name="PaymentViewEditLinkText" xml:space="preserve">
+    <value>Edit</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="PaymentViewExpiryMonth" xml:space="preserve">
+    <value />
+    <comment>Expiry Month</comment>
+  </data>
+  <data name="PaymentViewExpiryYear" xml:space="preserve">
+    <value />
+    <comment>Expiry Year</comment>
+  </data>
+  <data name="PaymentViewMerchandise" xml:space="preserve">
+    <value>Barang</value>
+    <comment>Merchandise</comment>
+  </data>
+  <data name="PaymentViewOrderTotal" xml:space="preserve">
+    <value>Jumlah Pesanan</value>
+    <comment>Order Total</comment>
+  </data>
+  <data name="PaymentViewPayment" xml:space="preserve">
+    <value>Periksa Detail Pembayaran</value>
+    <comment>Review Payment Details</comment>
+  </data>
+  <data name="PaymentViewPlaceOrderButtonText" xml:space="preserve">
+    <value>BAYAR</value>
+    <comment>PAY</comment>
+  </data>
+  <data name="PaymentViewPleaseWaitText" xml:space="preserve">
+    <value>Harap Tunggu ... Kami mengarahkan Anda ke portal situs pembayaran yang aman.</value>
+    <comment>Please Wait... We are redirecting you to the secure payment gateway site.</comment>
+  </data>
+  <data name="PaymentViewREVIEWPAYMENTDETAILSText" xml:space="preserve">
+    <value>Periksa Detail Pembayaran</value>
+    <comment>REVIEW PAYMENT DETAILS</comment>
+  </data>
+  <data name="PaymentViewSameAsShipping" xml:space="preserve">
+    <value>(Sama dengan Alamat Pengiriman)</value>
+    <comment>(Same as Shipping Address)</comment>
+  </data>
+  <data name="PaymentViewSecurityCode" xml:space="preserve">
+    <value />
+    <comment>Security Code</comment>
+  </data>
+  <data name="PaymentViewShippingAddress" xml:space="preserve">
+    <value>Alamat Pengiriman</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="PostSubmitRequestViewHeadingText" xml:space="preserve">
+    <value>Tidak Dapat Menemukan Foto</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="PostSubmitRequestViewInstruction" xml:space="preserve">
+    <value>Kapan saja Anda dapat memeriksa status permintaan Anda dengan nomor tiket ini</value>
+    <comment>Anytime you can go check the status of your request with this ticket number</comment>
+  </data>
+  <data name="PostSubmitRequestViewSupportTicketNumberText" xml:space="preserve">
+    <value>Nomor tiket bantuan Anda adalah:</value>
+    <comment>Your support ticket number is :</comment>
+  </data>
+  <data name="PostSubmitRequestViewThankYouMessage" xml:space="preserve">
+    <value>Terima kasih telah mengirimkan permintaan.</value>
+    <comment>Thank you for submitting the request.</comment>
+  </data>
+  <data name="QRClaimRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kode Anda</value>
+    <comment>Please enter your Guest ID</comment>
+  </data>
+  <data name="QRClaimValidateQRCodeExpirationMessage" xml:space="preserve">
+    <value>Kode Anda telah berakhir.</value>
+    <comment>Your Code has expired.</comment>
+  </data>
+  <data name="QRClaimValidateQRCodeExpiryDaysMessage" xml:space="preserve">
+    <value>Tidak bisa mendapatkan Pengaturan QRCodeClaimExpiryDays untuk Mitra ini.</value>
+    <comment>Unable to get QRCodeClaimExpiryDays Setting for this Partner.</comment>
+  </data>
+  <data name="QRClaimValidateQRCodeInvalidCodeMessage" xml:space="preserve">
+    <value>Kode QR tidak valid</value>
+    <comment>Invalid Guest ID</comment>
+  </data>
+  <data name="QRClaimValidationMessage" xml:space="preserve">
+    <value>Kode tidak boleh lebih dari 4 karakter.</value>
+    <comment>Code cannot be longer than 4 characters.</comment>
+  </data>
+  <data name="SharedLanguagePartialCantFindPhotos" xml:space="preserve">
+    <value>Tidak Dapat Menemukan Foto</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="SharedLanguagePartialEnglishUnitedStates" xml:space="preserve">
+    <value>English-(US)</value>
+    <comment>English-(US)</comment>
+  </data>
+  <data name="SharedLanguagePartialSelectLanguage" xml:space="preserve">
+    <value>Pilih Bahasa</value>
+    <comment>Select Language</comment>
+  </data>
+  <data name="ShippingAddressAddressRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Alamat</value>
+    <comment>Please enter the Address</comment>
+  </data>
+  <data name="ShippingAddressCityRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kota</value>
+    <comment>Please enter the City</comment>
+  </data>
+  <data name="ShippingAddressEmailRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Email</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="ShippingAddressEmailValidationMessage" xml:space="preserve">
+    <value>Email tidak valid</value>
+    <comment>Email is not valid</comment>
+  </data>
+  <data name="ShippingAddressFirstNameRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nama Depan</value>
+    <comment>Please enter the First Name</comment>
+  </data>
+  <data name="ShippingAddressFirstNameValidationMessage" xml:space="preserve">
+    <value>Nama Depan hanya terdiri dari huruf</value>
+    <comment>First Name can only contain letters</comment>
+  </data>
+  <data name="ShippingAddressLastNameRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nama Belakang</value>
+    <comment>Please enter the Last Name</comment>
+  </data>
+  <data name="ShippingAddressLastNameValidationMessage" xml:space="preserve">
+    <value>Nama Belakang hanya terdiri dari huruf</value>
+    <comment>Last Name can only contain letters</comment>
+  </data>
+  <data name="ShippingAddressPhoneNumberRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nomor Telepon</value>
+    <comment>Please enter the Phone Number</comment>
+  </data>
+  <data name="ShippingAddressZipCodeRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kode Pos</value>
+    <comment>Please enter the Zip Code</comment>
+  </data>
+  <data name="SocialMediaFacebookAuthenticationMessage" xml:space="preserve">
+    <value>Nama Pengguna atau Kata Sandi tidak valid.</value>
+    <comment>Invalid Username or Password.</comment>
+  </data>
+  <data name="SocialMediaFacebookPostMessage" xml:space="preserve">
+    <value>Foto berhasil diterbitkan di Facebook</value>
+    <comment>Photo posted successfully on Facebook</comment>
+  </data>
+  <data name="SocialMediaImagePostMessage" xml:space="preserve">
+    <value />
+    <comment>Sorry For inconvienence.Your posting limit for today on LinkedIn is over</comment>
+  </data>
+  <data name="SocialMediaLinkedInPostMessage" xml:space="preserve">
+    <value />
+    <comment>Photo posted successfully on LinkedIn</comment>
+  </data>
+  <data name="SocialMediaTwitterPostMessage" xml:space="preserve">
+    <value>Foto berhasil diterbitkan di Twitter</value>
+    <comment>Photo posted successfully on Twitter</comment>
+  </data>
+  <data name="SubStoreViewSubStoreBackButtonText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="SubStoreViewSubStoreClaimButtonText" xml:space="preserve">
+    <value>Klaim</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="SubStoreViewSubStoreClaimPhototext" xml:space="preserve">
+    <value>Klaim Foto Lainnya</value>
+    <comment>Claim More Photos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreDownloadPhotoText" xml:space="preserve">
+    <value>Unduh Foto</value>
+    <comment>Download Photos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreHeadingText" xml:space="preserve">
+    <value>Foto Saya</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreNextButtonText" xml:space="preserve">
+    <value>Berikutnya</value>
+    <comment>Next</comment>
+  </data>
+  <data name="SubStoreViewSubStoreNoRecord" xml:space="preserve">
+    <value>Tidak ada Foto Ditemukan</value>
+    <comment>No Photos Found</comment>
+  </data>
+  <data name="SubStoreViewSubStoreParaText" xml:space="preserve">
+    <value>Foto yang telah Anda klaim ada di bawah. Klik masing-masing foto untuk melihat, berbagi dan mengunduh.</value>
+    <comment>Photos you have claimed are below. Click each photo individually to view, share and download.</comment>
+  </data>
+  <data name="SubStoreViewSubStorePreviousButtonText" xml:space="preserve">
+    <value>Sebelumnya</value>
+    <comment>Prev</comment>
+  </data>
+  <data name="ThankYouViewCancelButtonText" xml:space="preserve">
+    <value>Batal</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="ThankYouViewCloseReceiptButtonText" xml:space="preserve">
+    <value>Tutup Kuitansi</value>
+    <comment>Close Receipt</comment>
+  </data>
+  <data name="ThankYouViewContinueShoppingButtonText" xml:space="preserve">
+    <value>Lanjut Berbelanja</value>
+    <comment>Continue Shopping</comment>
+  </data>
+  <data name="ThankYouViewContinueShoppingText" xml:space="preserve">
+    <value>Lanjut Berbelanja</value>
+    <comment>Continue Shopping</comment>
+  </data>
+  <data name="ThankYouViewDownloadInvoiceButtontext" xml:space="preserve">
+    <value>UNDUH FAKTUR</value>
+    <comment>DOWNLOAD INVOICE</comment>
+  </data>
+  <data name="ThankYouViewFaxBillingInformation" xml:space="preserve">
+    <value>Informasi Penagihan</value>
+    <comment>Billing Information</comment>
+  </data>
+  <data name="ThankYouViewOrderId" xml:space="preserve">
+    <value>ID Pemesanan</value>
+    <comment>Order Id</comment>
+  </data>
+  <data name="ThankYouViewPaymentInformation" xml:space="preserve">
+    <value>Informasi Pembayaran</value>
+    <comment>Payment Information</comment>
+  </data>
+  <data name="ThankYouViewPrintButtonText" xml:space="preserve">
+    <value>Cetak</value>
+    <comment>Print</comment>
+  </data>
+  <data name="ThankYouViewPrintOrderButtonText" xml:space="preserve">
+    <value>CETAK PESANAN</value>
+    <comment>PRINT ORDER</comment>
+  </data>
+  <data name="ThankYouViewResponseMessage" xml:space="preserve">
+    <value>Pesanan Anda telah diterima. Terima kasih atas pembelian Anda!</value>
+    <comment>Your order has been received. Thank you for your purchase!</comment>
+  </data>
+  <data name="ThankYouViewShippingCost" xml:space="preserve">
+    <value>Biaya Pengiriman :</value>
+    <comment>Shipping Cost  :</comment>
+  </data>
+  <data name="ThankYouViewShippingInformation" xml:space="preserve">
+    <value>Informasi Pengiriman</value>
+    <comment>Shipping Information</comment>
+  </data>
+  <data name="ThankYouViewShoppingButtonText" xml:space="preserve">
+    <value>Berbelanja</value>
+    <comment>Shopping</comment>
+  </data>
+  <data name="ThankYouViewSpecialRequest" xml:space="preserve">
+    <value />
+    <comment>Special Request :</comment>
+  </data>
+  <data name="ThankYouViewSubTotal" xml:space="preserve">
+    <value>Sub total：</value>
+    <comment>Sub  Total :</comment>
+  </data>
+  <data name="ThankYouViewTotal" xml:space="preserve">
+    <value>Total:</value>
+    <comment>Total:</comment>
+  </data>
+  <data name="ThankYouViewValidationMessage" xml:space="preserve">
+    <value>ID Pesanan Anda Tidak Valid</value>
+    <comment>Your Order Id Is Not Valid</comment>
+  </data>
+  <data name="UserAddressRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Alamat</value>
+    <comment>Please enter the Address</comment>
+  </data>
+  <data name="UserCityRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kota</value>
+    <comment>Please enter the City</comment>
+  </data>
+  <data name="UserConfirmPasswordRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kata Sandi Konfirmasi</value>
+    <comment>Please enter the Confirm Password</comment>
+  </data>
+  <data name="UserConfirmPasswordText" xml:space="preserve">
+    <value>Konfirmasi Kata Sandi</value>
+    <comment>Confirm Password</comment>
+  </data>
+  <data name="UserConfirmPasswordValidationMessage" xml:space="preserve">
+    <value>Kata Sandi dan Kata Sandi Konfirmasi tidak cocok</value>
+    <comment>Password and Confirm Password do not match</comment>
+  </data>
+  <data name="UserDOBFutureDateValidationMessage" xml:space="preserve">
+    <value>Tanggal Lahir di Masa Depan tidak diizinkan</value>
+    <comment>Future Date Of Birth not allowed</comment>
+  </data>
+  <data name="UserDOBRequiredMessage" xml:space="preserve">
+    <value>Tanggal Lahir Diperlukan.</value>
+    <comment>Please enter valid Date Of Birth (Your age should be above 18-yrs)</comment>
+  </data>
+  <data name="UserDOBValidationMessage" xml:space="preserve">
+    <value>Harap masukkan Tanggal Lahir yang Benar.</value>
+    <comment>Please enter Valid Date Of Birth.</comment>
+  </data>
+  <data name="UserEmailRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Email</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="UserEmailText" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="UserEmailValidationMessage" xml:space="preserve">
+    <value>Email tidak valid</value>
+    <comment>Email is not valid</comment>
+  </data>
+  <data name="UserFirstNameRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nama Depan</value>
+    <comment>Please enter the First Name</comment>
+  </data>
+  <data name="UserFirstNameText" xml:space="preserve">
+    <value>Nama Depan</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="UserFirstNameValidationMessage" xml:space="preserve">
+    <value>Nama Depan hanya terdiri dari huruf</value>
+    <comment>First Name can only contain letters</comment>
+  </data>
+  <data name="UserGenderText" xml:space="preserve">
+    <value>Jenis kelamin</value>
+    <comment>Gender</comment>
+  </data>
+  <data name="UserLastNameRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nama Belakang</value>
+    <comment>Please enter the Last Name</comment>
+  </data>
+  <data name="UserLastNameText" xml:space="preserve">
+    <value>Nama Belakang</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="UserLastNameValidationMessage" xml:space="preserve">
+    <value>Nama Belakang hanya terdiri dari huruf</value>
+    <comment>Last Name can only contain letters</comment>
+  </data>
+  <data name="UserNationalityText" xml:space="preserve">
+    <value>Kewarganegaraan</value>
+    <comment>Nationality</comment>
+  </data>
+  <data name="UserPasswordRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kata Sandi</value>
+    <comment>Please enter the Password</comment>
+  </data>
+  <data name="UserPasswordText" xml:space="preserve">
+    <value>Kata Sandi</value>
+    <comment>Password</comment>
+  </data>
+  <data name="UserPasswordValidationMessage" xml:space="preserve">
+    <value>Panjang kata sandi minimal 8 dan maksimal 50 karakter tanpa spasi.</value>
+    <comment>Password length minimum 8 and maximum 50 without spaces.</comment>
+  </data>
+  <data name="UserPhoneNumberRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Nomor Telepon</value>
+    <comment>Please enter the Phone Number</comment>
+  </data>
+  <data name="UserPromotionMessageText" xml:space="preserve">
+    <value>Saya ingin menerima pesan-pesan promosi &amp; buletin.</value>
+    <comment>I wish to receive promotional messages &amp; newsletters.</comment>
+  </data>
+  <data name="UserSaveUsersCorrectCaptchaMessage" xml:space="preserve">
+    <value>Harap masukkan captcha yang benar</value>
+    <comment>Please enter correct captcha</comment>
+  </data>
+  <data name="UserSaveUsersEmailAlreadyExistMessage" xml:space="preserve">
+    <value>ID Email sudah ada</value>
+    <comment>Email Id already exist</comment>
+  </data>
+  <data name="UserViewAlreadyRegisteredText" xml:space="preserve">
+    <value>Sudah Terdaftar?</value>
+    <comment>Already Registered?</comment>
+  </data>
+  <data name="UserViewAprMonthText" xml:space="preserve">
+    <value>Apr</value>
+    <comment>Apr</comment>
+  </data>
+  <data name="UserViewAugMonthText" xml:space="preserve">
+    <value>Agt</value>
+    <comment>Aug</comment>
+  </data>
+  <data name="UserViewDecMonthText" xml:space="preserve">
+    <value>Des</value>
+    <comment>Dec</comment>
+  </data>
+  <data name="UserViewFebMonthText" xml:space="preserve">
+    <value>Feb</value>
+    <comment>Feb</comment>
+  </data>
+  <data name="UserViewFemaleText" xml:space="preserve">
+    <value />
+    <comment>Female</comment>
+  </data>
+  <data name="UserViewJanMonthText" xml:space="preserve">
+    <value>Jan</value>
+    <comment>Jan</comment>
+  </data>
+  <data name="UserViewJulMonthText" xml:space="preserve">
+    <value>Jul</value>
+    <comment>Jul</comment>
+  </data>
+  <data name="UserViewJunMonthText" xml:space="preserve">
+    <value>Jun</value>
+    <comment>Jun</comment>
+  </data>
+  <data name="UserViewMaleText" xml:space="preserve">
+    <value />
+    <comment>Male</comment>
+  </data>
+  <data name="UserViewMarMonthText" xml:space="preserve">
+    <value>Mar</value>
+    <comment>Mar</comment>
+  </data>
+  <data name="UserViewMayMonthText" xml:space="preserve">
+    <value>Mei</value>
+    <comment>May</comment>
+  </data>
+  <data name="UserViewNovMonthText" xml:space="preserve">
+    <value>Nov</value>
+    <comment>Nov</comment>
+  </data>
+  <data name="UserViewOctMonthText" xml:space="preserve">
+    <value>Okt</value>
+    <comment>Oct</comment>
+  </data>
+  <data name="UserViewRegisterButtonText" xml:space="preserve">
+    <value>Kirim</value>
+    <comment>SUBMIT</comment>
+  </data>
+  <data name="UserViewRegistrationText" xml:space="preserve">
+    <value>PENDAFTARAN</value>
+    <comment>REGISTRATION</comment>
+  </data>
+  <data name="UserViewSelectGenderText" xml:space="preserve">
+    <value />
+    <comment>Select Gender</comment>
+  </data>
+  <data name="UserViewSepMonthText" xml:space="preserve">
+    <value>Sep</value>
+    <comment>Sep</comment>
+  </data>
+  <data name="UserZipCodeRequiredMessage" xml:space="preserve">
+    <value>Silakan masukkan Kode Pos</value>
+    <comment>Please enter the Zip Code</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosDownloadPhotosText" xml:space="preserve">
+    <value>UNDUH FOTO</value>
+    <comment>DOWNLOAD PHOTOS</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosMyPhotosText" xml:space="preserve">
+    <value>Foto Saya</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailIdRequiredAlert" xml:space="preserve">
+    <value>Identitas email diperlukan</value>
+    <comment>Email ID is required</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailIdValidationAlert" xml:space="preserve">
+    <value>ID email tidak valid</value>
+    <comment>Email id is not valid</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEnablePopupAlertMessage" xml:space="preserve">
+    <value>Mohon aktifkan pop up untuk situs ini untuk melanjutkan.</value>
+    <comment>Please enable popups for this site to continue.</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewBackText" xml:space="preserve">
+    <value>Kembali</value>
+    <comment>Back</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewClaimText" xml:space="preserve">
+    <value>Klaim</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewInstruction" xml:space="preserve">
+    <value>Foto yang telah Anda klaim ada di bawah. Klik masing-masing foto untuk melihat, berbagi dan mengunduh.</value>
+    <comment>Photos you have claimed are below. Click each photo individually to view, share and download.</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewMyPhoto" xml:space="preserve">
+    <value>Foto Saya</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="AccountEditViewSaveButtonText" xml:space="preserve">
+    <value>Simpan</value>
+    <comment>Save</comment>
+  </data>
+  <data name="AccountForgotPasswordCancelButtonText" xml:space="preserve">
+    <value>Batal</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewClaimCodeText" xml:space="preserve">
+    <value>KODE KLAIM</value>
+    <comment>Guest ID</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewGoTittleText" xml:space="preserve">
+    <value>LANJUT</value>
+    <comment>GO</comment>
+  </data>
+  <data name="ErrorPartialViewErrorText" xml:space="preserve">
+    <value>Eror</value>
+    <comment>Error</comment>
+  </data>
+  <data name="ErrorPartialViewReloginText" xml:space="preserve">
+    <value>Berikut ini adalah tautan untuk Masuk Kembali</value>
+    <comment>Here is a link for Relogin</comment>
+  </data>
+  <data name="LoginPartialViewGoTittleText" xml:space="preserve">
+    <value>LANJUT</value>
+    <comment>GO</comment>
+  </data>
+  <data name="SubStoreViewSubStoreDownloadVideosText" xml:space="preserve">
+    <value>Unduh Video</value>
+    <comment>Download Videos</comment>
+  </data>
+  <data name="TimeOutRedirectPartialViewHeadingText" xml:space="preserve">
+    <value>Eror Batas Waktu</value>
+    <comment>Timeout Error</comment>
+  </data>
+  <data name="TimeOutRedirectPartialViewInstruction1Text" xml:space="preserve">
+    <value>Maaf, sesi Anda telah habis. Anda akan diarahkan ke Halaman Masuk dalam 5 detik ...</value>
+    <comment>Sorry, but your session has timed out. You'll be redirected to the Log in page in 5 seconds...</comment>
+  </data>
+  <data name="UserCountryRequiredMessage" xml:space="preserve">
+    <value>Silakan pilih negara Anda</value>
+    <comment>Please select your country</comment>
+  </data>
+  <data name="UserSaveUsersSuccessfullyRegisteredMessage" xml:space="preserve">
+    <value>Anda telah berhasil Terdaftar! Silakan klaim foto Anda dengan memberikan Kode QR Anda</value>
+    <comment>You have been successfully Registered! Please claim your photos by providing your QR Code</comment>
+  </data>
+  <data name="UserViewAndText" xml:space="preserve">
+    <value>dan</value>
+    <comment>and</comment>
+  </data>
+  <data name="UserViewByClickingText" xml:space="preserve">
+    <value>Dengan mengklik tombol</value>
+    <comment>By clicking</comment>
+  </data>
+  <data name="UserViewConfirmText" xml:space="preserve">
+    <value>, Anda mengkonfirmasi bahwa Anda menerima</value>
+    <comment>button, you confirm that you accept our</comment>
+  </data>
+  <data name="UserViewDayText" xml:space="preserve">
+    <value>Hari</value>
+    <comment>Day</comment>
+  </data>
+  <data name="UserViewMonthText" xml:space="preserve">
+    <value>Bulan</value>
+    <comment>Month</comment>
+  </data>
+  <data name="UserViewPrivacyPolicyText" xml:space="preserve">
+    <value>Kebijakan Privasi</value>
+    <comment>Privacy Policy</comment>
+  </data>
+  <data name="UserViewSubmitText" xml:space="preserve">
+    <value>Kirim</value>
+    <comment>Submit</comment>
+  </data>
+  <data name="UserViewTermsofUseText" xml:space="preserve">
+    <value>Syarat Penggunaan</value>
+    <comment>Terms of Use</comment>
+  </data>
+  <data name="UserViewYearText" xml:space="preserve">
+    <value>Tahun</value>
+    <comment>Year</comment>
+  </data>
+  <data name="ViewDownloadSubStoreClickHereDownloadPhotosText" xml:space="preserve">
+    <value>Klik di sini untuk mengunduh Foto mySnapps</value>
+    <comment>Click here to download RockCity Photos</comment>
+  </data>
+  <data name="ViewDownloadSubStoreClickHereDownloadVideosText" xml:space="preserve">
+    <value>Klik di sini untuk mengunduh Video mySnapps</value>
+    <comment>Click here to download RockCity Videos</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosClaimText" xml:space="preserve">
+    <value>Klaim</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosInstructionText" xml:space="preserve">
+    <value>Jika unduhan Anda tidak dimulai dalam 30 detik, maka</value>
+    <comment>If your download will not start in 30 seconds, then</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosMobileInstruction" xml:space="preserve">
+    <value>Jika Anda menggunakan iPhone, maka Anda memerlukan sarana unzip untuk membuka zip foto Anda.</value>
+    <comment>If you are using IPhone, then you need some unzip utility to unzip your photos.</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosText" xml:space="preserve">
+    <value>Anda dapat mengunduh foto Anda dari halaman ini.</value>
+    <comment>You can download your photos from this page.</comment>
+  </data>
+  <data name="ViewDownloadSubStoreVideosText" xml:space="preserve">
+    <value>Anda dapat mengunduh video Anda dari halaman ini.</value>
+    <comment>You can download your videos from this page.</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewDownloadText" xml:space="preserve">
+    <value>Unduh</value>
+    <comment>Download</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewEmailText" xml:space="preserve">
+    <value>Email</value>
+    <comment>Email</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewShareText" xml:space="preserve">
+    <value>BAGIKAN</value>
+    <comment>Share</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewVideoText" xml:space="preserve">
+    <value>Video</value>
+    <comment>Video</comment>
+  </data>
+  <data name="JAlertCancelButtonText" xml:space="preserve">
+    <value>Batal</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="JAlertNoButtonText" xml:space="preserve">
+    <value>Tidak</value>
+    <comment>No</comment>
+  </data>
+  <data name="JAlertOKButtonText" xml:space="preserve">
+    <value>Ok</value>
+    <comment>Ok</comment>
+  </data>
+  <data name="JAlertYesButtonText" xml:space="preserve">
+    <value>Ya</value>
+    <comment>Yes</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailmessageText" xml:space="preserve">
+    <value>Masukkan pesan</value>
+    <comment>Enter the message</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailRecepientAddressText" xml:space="preserve">
+    <value>Masukkan Alamat Penerima</value>
+    <comment>Enter Recepient Address</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailSubjectText" xml:space="preserve">
+    <value>Masukkan subjek</value>
+    <comment>Enter the subject</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailVideoTittleText" xml:space="preserve">
+    <value>Video Email</value>
+    <comment>Email Video</comment>
+  </data>
+  <data name="SubstorePhotosViewFacebookVideoTittleText" xml:space="preserve">
+    <value>Video Facebook</value>
+    <comment>Facebook Video</comment>
+  </data>
+  <data name="SubStorePhotosViewRequiredText" xml:space="preserve">
+    <value>Diperlukan</value>
+    <comment>Required</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewAlertText" xml:space="preserve">
+    <value>Peringatan</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderFailed" xml:space="preserve">
+    <value>Pembayaran Gagal</value>
+    <comment>Payment Failed</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderNo" xml:space="preserve">
+    <value>Nomor Pemesanan</value>
+    <comment>Order No.</comment>
+  </data>
+  <data name="PaymentReceiptViewQty" xml:space="preserve">
+    <value>Jml :</value>
+    <comment>Qty :</comment>
+  </data>
+  <data name="Addressdetails" xml:space="preserve">
+    <value>Detail alamat</value>
+    <comment>Address details</comment>
+  </data>
+  <data name="DearText" xml:space="preserve">
+    <value>Kepada</value>
+    <comment>Dear</comment>
+  </data>
+  <data name="InclusiveAllTaxesMsg" xml:space="preserve">
+    <value>(Termasuk semua pajak dan biaya pengiriman)</value>
+    <comment>(Inclusive all taxes and shipping cost)</comment>
+  </data>
+  <data name="KindRegards" xml:space="preserve">
+    <value>Salam hangat</value>
+    <comment>Kind Regards</comment>
+  </data>
+  <data name="LayoutPartialViewPleaseWaitText" xml:space="preserve">
+    <value>Silakan tunggu....</value>
+    <comment>Please Wait....</comment>
+  </data>
+  <data name="LayoutPartialViewSendingEmailText" xml:space="preserve">
+    <value>Mengirimkan Email....</value>
+    <comment>Sending Email…</comment>
+  </data>
+  <data name="mySnapps" xml:space="preserve">
+    <value>mySnapps Photos</value>
+    <comment>mySnapps Photos</comment>
+  </data>
+  <data name="ThankYouViewPaymentStatusText" xml:space="preserve">
+    <value>Status Pembayaran</value>
+    <comment>Payment Status</comment>
+  </data>
+  <data name="TimeOutRedirectPartialViewInstruction2Text" xml:space="preserve">
+    <value>Klik di sini untuk Masuk</value>
+    <comment>Click here for Login</comment>
+  </data>
+  <data name="UserDetailModelFirstNameText" xml:space="preserve">
+    <value>Nama Depan</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="UserDetailModelLastNameText" xml:space="preserve">
+    <value>Nama Belakang</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="CustomerSupportViewSelectText" xml:space="preserve">
+    <value>--Pilih--</value>
+    <comment>--Select--</comment>
+  </data>
+  <data name="FBLoginViewAlertText" xml:space="preserve">
+    <value>Peringatan</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="FBLoginViewErrorAlertMessage" xml:space="preserve">
+    <value>Terjadi eror saat menerbitkan media di Facebook</value>
+    <comment>Error while posting media on Facebook</comment>
+  </data>
+  <data name="FBLoginViewFBLoggedinText" xml:space="preserve">
+    <value>Sudah masuk ke Facebook</value>
+    <comment>Facebook logged in.</comment>
+  </data>
+  <data name="FBLoginViewPleaseLogIntoAppText" xml:space="preserve">
+    <value>ke aplikasi ini.</value>
+    <comment>into this app.</comment>
+  </data>
+  <data name="FBLoginViewPleaseLogIntoFacebookText" xml:space="preserve">
+    <value>ke Facebook</value>
+    <comment>into Facebook</comment>
+  </data>
+  <data name="FBLoginViewPleaseLogText" xml:space="preserve">
+    <value>Silakan masuk</value>
+    <comment>Please log</comment>
+  </data>
+  <data name="ImageDownloadMsg" xml:space="preserve">
+    <value>Klik di sini untuk mengunduh gambar beresolusi tinggi</value>
+    <comment>Click here to download a high resolution image</comment>
+  </data>
+  <data name="PaymentGateWayResponseCancelMsg" xml:space="preserve">
+    <value>Pesanan Anda telah dibatalkan</value>
+    <comment>Your order has been canceled</comment>
+  </data>
+  <data name="PaymentGateWayResponseErrorMsg" xml:space="preserve">
+    <value>Kami menghadapi masalah teknis saat memroses pembayaran Anda. Silakan hubungi helpdesk@digiphotoglobal.com jika masalah ini terus berlanjut</value>
+    <comment>We faced a technical issue while processing your payment.Please contact helpdesk@digiphotoglobal.com if this issue persists</comment>
+  </data>
+  <data name="PaymentGateWayResponseReviewMsg" xml:space="preserve">
+    <value>Pesanan Anda telah dibatalkan</value>
+    <comment>Your order has been canceled</comment>
+  </data>
+  <data name="PaymentMoneyText" xml:space="preserve">
+    <value>{Uang}</value>
+    <comment>{Money}</comment>
+  </data>
+  <data name="PaymentStatusFailedMsg" xml:space="preserve">
+    <value>Pembayaran {money} gagal!</value>
+    <comment>Payment of {money} failed !</comment>
+  </data>
+  <data name="PaymentStatusSuccessMsg" xml:space="preserve">
+    <value>Pembayaran {money} diterima!</value>
+    <comment>Payment of {money} is received !</comment>
+  </data>
+  <data name="UserViewSelectText" xml:space="preserve">
+    <value>Pilih</value>
+    <comment>Select</comment>
+  </data>
+  <data name="VideoDownloadMsg" xml:space="preserve">
+    <value>Klik di sini untuk Melihat/Mengunduh Video</value>
+    <comment>Click here to View/Download the Video</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailNotSentAlertMessage" xml:space="preserve">
+    <value>Email belum terkirim</value>
+    <comment>Email has not been sent</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailSentAlertMessage" xml:space="preserve">
+    <value>Email berhasil terkirim</value>
+    <comment>Email has been sent successfully</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoUnexpectedErrorMessage" xml:space="preserve">
+    <value>Eror tak terduga! URL Video tidak tersedia!</value>
+    <comment>Unexpected Error! Video URL Not available !</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderSuccess" xml:space="preserve">
+    <value>Pembayaran berhasil</value>
+    <comment>Payment is successful</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsClaimMessageBeta" xml:space="preserve">
+    <value>Saya mengklaim ID Retrieval saya tapi tidak semua foto saya muncul</value>
+    <comment>I claimed my Retrieval ID but not all of my photos appeared</comment>
+  </data>
+  <data name="EditPhoto1WaterMarkMsg" xml:space="preserve">
+    <value>Kamu punya</value>
+    <comment>You have</comment>
+  </data>
+  <data name="EditPhoto1WaterMarkMsglast" xml:space="preserve">
+    <value>Gambar kiri untuk pengalaman</value>
+    <comment>images left to experience.</comment>
+  </data>
+  <data name="ViewSubStorePhotosDownloadWaterMark" xml:space="preserve">
+    <value>Anda tidak bisa mendownload foto karena semua foto diberi watermark.</value>
+  </data>
+  <data name="ShippingCityLetterMessage" xml:space="preserve">
+    <value>Kota hanya bisa berisi huruf</value>
+    <comment>City can only contain letters</comment>
+  </data>
+  <data name="ShippingNumericMessage" xml:space="preserve">
+    <value>Nilai numerik diperbolehkan</value>
+    <comment>Numeric value is allowed.</comment>
+  </data>
+  <data name="ThankYouViewPhotos" xml:space="preserve">
+    <value>Silakan pergi ke My Photos untuk melihat foto Anda</value>
+    <comment>Please go to My Photos to view your photos</comment>
+  </data>
+  <data name="CustomerSupportValidNumberTcketMsg" xml:space="preserve">
+    <value>Nomor Tiket Dukungan Lapangan harus berupa angka.</value>
+    <comment>The field Support Ticket Number must be a number.</comment>
+  </data>
+  <data name="StatusAssigned" xml:space="preserve">
+    <value>Ditugaskan</value>
+    <comment>Assigned</comment>
+  </data>
+  <data name="StatusCancel" xml:space="preserve">
+    <value>Membatalkan</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="StatusClosed" xml:space="preserve">
+    <value>Tutup</value>
+    <comment>Closed</comment>
+  </data>
+  <data name="StatusDuplicate" xml:space="preserve">
+    <value>Duplikat</value>
+    <comment>Duplicate</comment>
+  </data>
+  <data name="StatusInProgress" xml:space="preserve">
+    <value>Sedang berlangsung</value>
+    <comment>InProgress</comment>
+  </data>
+  <data name="StatusInSufficientInformation" xml:space="preserve">
+    <value>Informasi yang InSufficient</value>
+    <comment>InSufficient Information</comment>
+  </data>
+  <data name="StatusNew" xml:space="preserve">
+    <value>Baru</value>
+    <comment>New</comment>
+  </data>
+  <data name="StatusOnHold" xml:space="preserve">
+    <value>Tertahan</value>
+    <comment>OnHold</comment>
+  </data>
+  <data name="StatusReOpen" xml:space="preserve">
+    <value>ReOpen</value>
+    <comment>ReOpen</comment>
+  </data>
+  <data name="StatusResolved" xml:space="preserve">
+    <value>Terselesaikan</value>
+    <comment>Resolved</comment>
+  </data>
+</root>

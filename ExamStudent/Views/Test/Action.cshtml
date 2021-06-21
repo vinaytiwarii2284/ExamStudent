@@ -1,0 +1,654 @@
+﻿@model ExamStudent.ViewModel.UserViewModels
+
+@{
+    ViewBag.Title = "Action";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+@*@model ExamStudent.Models.UserDetail*@
+
+@using System.Web.Mvc
+
+
+@{
+    ViewBag.Title = "Register";
+}
+
+@*<h2>Register</h2>*@
+
+
+@*<link href="~/Content/style1.css" rel="stylesheet" />*@
+<script src="https://www.google.com/recaptcha/api.js"></script>
+
+
+@*Cascading DropDownList*@
+
+<script type="text/javascript">
+    $(document).ready(function () {
+
+        $('#BoardTypeID').change(function () {
+            //alert($('#BoardTypeName').val());
+            $.ajax({
+                type: "post",
+                url: "/Subject/GetMediums",
+                data: { BoardTypeId: $('#BoardTypeID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    //debugger;
+                    //alert("bind data now");
+                    var district = "<select id='MediumID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#MediumID').html(district);
+                }
+            });
+        });
+
+        $('#MediumID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/Subject/GetStandard",
+                data: { MediumId: $('#MediumID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='StandardID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#StandardID').html(district);
+                }
+            });
+        });
+
+        $('#StateID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/UserAccount/GetState",
+                data: { StateId: $('#StateID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='CityID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#CityID').html(district);
+                }
+            });
+        });
+
+        $('#EmpStateID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/UserAccount/GetEmpState",
+                data: { StateId: $('#EmpStateID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='Emp_CityID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#Emp_CityID').html(district);
+                }
+            });
+        });
+    });
+</script>
+
+@*ReCaptcha Script*@
+
+<script>
+    function NumbersOnly(event) {
+        var charCode = (event.which) ? event.which : event.keyCode;
+        //var charCode = event.keyCode;
+        //alert(charCode);
+        if ((charCode > 45 && charCode < 58) || charCode == 8) {
+
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+</script>
+
+
+@*ReCaptcha Script*@
+<script>
+    function ValidateNumber(e) {
+        var evt = (e) ? e : window.event;
+        var charCode = (evt.keyCode) ? evt.keyCode : evt.which;
+        if (charCode > 31 && (charCode < 48 || charCode > 57)) {
+            $('.ValidationErrorMsg .Captcha').show('Count must be a number only false');
+            return false;
+        }
+        $('.ValidationErrorMsg .Captcha').show('Count must be a number only true');
+        return true;
+    };
+
+      function resetCaptchaImg() {
+        $(".captchaImage").attr("src", "@Url.Action("CaptchaImage", "User")");
+
+
+    }
+
+     $(function () {
+            $('#GetCaptcha').click(function () {
+
+                $.ajax({
+                    type: "GET",
+                    url:  '@Url.Action("CaptchaImage", "User")',
+                    contentType: "image/png",
+                    success: function (data) {
+                        $('.captchaImage').attr('src', '@Url.Action("CaptchaImage", "User")');
+                    },
+                   error: function(error, txtStatus) {
+                            console.log(txtStatus);
+                            console.log('error');
+                        }
+                });
+            });
+        });
+
+    function resetBtnCaptchaImg() {
+        $(".captchaImage").attr("src", "@Url.Action("CaptchaImage", "User")");
+    }
+    function lettersOnly() {
+
+        var charCode = event.keyCode;
+
+        if ((charCode > 64 && charCode < 91) || (charCode > 96 && charCode < 123) || charCode == 8)
+
+            return true;
+        else
+            return false;
+    }
+    function NumbersOnly(event) {
+        var charCode = (event.which) ? event.which : event.keyCode;
+        if ((charCode > 45 && charCode < 58) || charCode == 8) {
+
+            return true;
+        }
+        else {
+            return false;
+        }
+    }
+
+    function getVal() {
+         var CaptchaValue = $("#CaptchaValue").val();
+        if (CaptchaValue == "") {
+           // alert(CaptchaValue)
+            var errmsg = '@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.NewCaptchaValidationErrorMsg'
+               $("#showMessage").text(errmsg);
+        }
+        else {
+            $("#showMessage").text("");
+        }
+        alert(errmsg);
+        //alert("CaptchaValue-" + CaptchaValue);
+        $("#Captcha").val(CaptchaValue);
+
+        //alert(CaptchaValue)
+    }
+
+</script>
+
+
+
+<script language="javascript" src="http://code.jquery.com/jquery-1.11.1.js"></script>
+<script language="javascript" type="text/javascript">
+    function AcceptTermAndcondition() {
+
+        if ($("#chkcondition").is(':checked')) {
+            return true;
+        }
+        else {
+            alert("Please accept term and condition");
+            return false;
+        }
+    }
+</script>
+
+
+<div class="container register">
+    <div class="row">
+        <div class="col-md-3 register-left">
+            <img src="https://image.ibb.co/n7oTvU/logo_white.png" alt="" />
+            <h3>Welcome</h3>
+            <p style="color: #fff">You are 30 seconds away from earning your own money!</p>
+            <input type="submit" name="" value="Login" /><br />
+        </div>
+        <div class="col-md-9 register-right">
+            <ul class="nav nav-tabs nav-justified" id="myTab" role="tablist">
+                <li class="nav-item">
+                    <a class="nav-link active" id="home-tab" data-toggle="tab" href="#home" role="tab" aria-controls="home" aria-selected="true">Student</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" id="profile-tab" data-toggle="modal" href="#profile" role="tab" aria-controls="profile" aria-selected="false" data-target="#exampleModalScrollable">Employee</a>
+                </li>
+
+
+            </ul>
+            <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home" role="tabpanel" aria-labelledby="home-tab">
+                    <h3 class="register-heading">Apply as a Student</h3>
+
+                    <label for="recipient-name" class="col-form-label" value="@Session["username"]">@Session["username"]</label>
+
+                    <form method="post">
+
+
+                        <div class="row register-form">
+
+
+                            <div class="col-md-6">
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter User Name *" name="FirstName" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Email Address *" name="EmailAddress" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="date" class="form-control" placeholder="Enter Date Of Birth Name *" name="DOB" value="" />
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    @Html.DropDownListFor(m => m.StateID, new SelectList(Model.StatesList, "StateID", "StateName"), "Select State Name",
+                                                        new { @class = "form-control" })
+                                </div>
+
+
+                                <div class="form-group">
+
+                                    @Html.DropDownListFor(m => m.CityID, new SelectList(Model.CitiesList, "CityID", "CityName"), "Select City Name ",
+                                                       new { @class = "form-control" })
+                                </div>
+
+
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Enter Block *" name="Block" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="text" class="form-control" placeholder="Mobile Number*" name="MobileNumber" minlength="10" maxlength="10" value="" />
+                                </div>
+
+                                <div class="form-group">
+
+                                    <label>Amount :</label>
+                                    <input type="text" value="1999" id="amount" name="Amount" class="form-control" placeholder="Amount *" readonly="readonly" />
+                                    <a href="" class="text-danger">1699 + 300(GST)</a>
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="hidden" name="txtprodinfo" id="txtprodinfo" value="test" />
+                                </div>
+
+                            </div>
+                            <div class="col-md-6">
+
+
+
+                                <div class="form-group">
+
+                                    @Html.DropDownListFor(m => m.BoardTypeID, new SelectList(Model.BoardTypeList, "BoardTypeID", "BoardTypeName"), "Select BoardType Name ",
+                                                       new { @class = "form-control", @placeholder = "-select- BoardType" })
+                                </div>
+
+                                <div class="form-group">
+
+                                    @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumId", "MediumName"), "Select Medium Name",
+                                                        new { @class = "form-control" })
+                                </div>
+
+                                <div class="form-group">
+
+                                    @Html.DropDownListFor(m => m.StandardID, new SelectList(Model.StandardList, "StandardId", "StandardName"), "Select Standard Name",
+                                                       new { @class = "form-control" })
+                                </div>
+
+                                <div class="form-group">
+
+
+                                    @Html.DropDownListFor(m => m.EmpID, new SelectList(Model.EmpCoursesList, "EmpID", "Course"), "Select Other Course",
+                                                         new { @class = "form-control" })
+
+                                </div>
+
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Password *" name="Password" value="" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input type="password" class="form-control" placeholder="Confirm Password*" name="confirmPassword" />
+                                </div>
+
+                                <div class="form-group">
+                                    <input name="usercode" class="form-control" type="text" placeholder="Enter Reffral Code" />
+
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.Partial("_Captcha", new Digiphoto.iMix.ClaimPortal.Model.Captcha())
+                                    @Html.Partial("_InvisibleCaptcha", new Digiphoto.iMix.ClaimPortal.Model.InvisibleCaptcha())
+                                    @Html.HiddenFor(m => m.Captcha)
+                                </div>
+
+                                <div class="form-group">
+                                    @Html.CheckBox("Condition", false, new { @id = "chkcondition" })<a href="#"> I accept the <u>Terms and Conditions?</u><p>If the student referral to any student, then Commission of 15% will be given to the student and 10% of the admin will be in every payment & payment will not be refunded.</p></a>
+                                </div>
+                            </div>
+
+                            <input type="submit" class="btnRegister" name="submitbutton1" formaction="/UserAccount/Register" value="Register" onclick="javascript:return AcceptTermAndcondition();" />
+                        </div>
+
+                        <div style="color:Red">@ViewBag.Message</div>
+
+                    </form>
+
+                </div>
+
+                <div class="tab-pane fade show" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+                    <h3 class="register-heading">Apply as a Employee</h3>
+
+                    @*form code here*@
+
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<div class="modal fade" id="exampleModalScrollable" tabindex="-1" role="dialog" aria-labelledby="exampleModalScrollableTitle" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-scrollable" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalScrollableTitle">Apply as a Employee</h5>
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+            <div class="modal-body">
+                <form action="" method="post">
+
+                    <div class="row register-form">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="User Name *" name="Employee_Name" value="" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="email" class="form-control" placeholder="Email *" name="Emp_EmailAddress" value="" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="datetime-local" id="birthdaytime" class="form-control" placeholder="Date of Birth *" name="Emp_DOB" value="" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="text" maxlength="10" minlength="10" class="form-control" placeholder="Phone *" name="Emp_MobileNumber" value="" required />
+                            </div>
+
+
+                            <div class="form-group">
+
+                                @Html.DropDownListFor(m => m.EmpStateID, new SelectList(Model.EmpStateList, "EmpStateID", "Emp_State"), "Select State Name",
+                                                    new { @class = "form-control" })
+                            </div>
+
+
+                            <div class="form-group">
+
+                                @Html.DropDownListFor(m => m.Emp_CityID, new SelectList(Model.Emp_CityList, "Emp_CityID", "Emp_CityName"), "Select City Name ",
+                                                   new { @class = "form-control" })
+                            </div>
+
+
+
+                            <div class="form-group">
+                                <input type="text" class="form-control" placeholder="Enter Block *" name="Emp_Block" value="" required />
+                            </div>
+
+
+
+                        </div>
+                        <div class="col-md-6">
+
+                            <div class="form-group">
+
+                                @Html.DropDownListFor(m => m.PostID, new SelectList(Model.PostFormsList, "PostID", "PostName"), "Select Your Post Name ",
+                                                   new { @class = "form-control" })
+                            </div>
+
+
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Password *" name="Emp_Password" value="" required />
+                            </div>
+                            <div class="form-group">
+                                <input type="password" class="form-control" placeholder="Confirm Password *" name="Emp_ConfirmPassword" value="" required />
+                            </div>
+
+
+                            <div class="form-group">
+                                <label>Amount :</label>
+                                <input type="text" value="1999" id="Emp_amount" name="EmpAmount" class="form-control" placeholder="Amount *" readonly="readonly" />
+                                <a href="" class="text-danger">1699 + 300(GST)</a>
+                            </div>
+
+
+                            <div class="form-group">
+                                <input name="usercode" class="form-control" type="text" placeholder="Enter Reffral Code" />
+                            </div>
+
+                            <p><input id="field_terms" onchange="this.setCustomValidity(validity.valueMissing ? 'Please indicate that you accept the Terms and Conditions' : '');" type="checkbox" required name="terms"> I accept the <u>Terms and Conditions?</u> 1% commission will be given to the <b>District Coordinator</b> for doing the total business, 5% commission will be given to the <b>Block Coordinator</b> for doing the total business, 40% commission will be given to the<b> teacher</b> for doing the total business, 10% of<b> the administrator</b> will be in every payment, <b>and Payment will not be refunded.</b> </p>
+
+                            @if (Model.Employee_ID.HasValue)
+                            {
+                                <input type="submit" class="btnRegister" name="submitbutton2" formaction="/Test/Action" value="Update" />
+                            }
+                            else
+                            {
+                                <input type="submit" class="btnRegister" name="submitbutton2" formaction="/Test/Action" value="Submit" />
+                            }
+
+
+                        </div>
+                    </div>
+
+                </form>
+
+            </div>
+            @*<div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Save changes</button>
+                </div>*@
+        </div>
+    </div>
+</div>
+
+
+<script>
+    document.getElementById("field_terms").setCustomValidity("Please indicate that you accept the Terms and Conditions");
+</script>
+
+<style>
+
+    .register {
+        background: -webkit-linear-gradient(left, #3931af, #00c6ff);
+        margin-top: 3%;
+        padding: 3%;
+    }
+
+    .register-left {
+        text-align: center;
+        color: #fff;
+        margin-top: 4%;
+    }
+
+        .register-left input {
+            border: none;
+            border-radius: 1.5rem;
+            padding: 2%;
+            width: 60%;
+            background: #f8f9fa;
+            font-weight: bold;
+            color: #383d41;
+            margin-top: 30%;
+            margin-bottom: 3%;
+            cursor: pointer;
+        }
+
+    .register-right {
+        background: #f8f9fa;
+        border-top-left-radius: 10% 50%;
+        border-bottom-left-radius: 10% 50%;
+    }
+
+    .register-left img {
+        margin-top: 15%;
+        margin-bottom: 5%;
+        width: 25%;
+        -webkit-animation: mover 2s infinite alternate;
+        animation: mover 1s infinite alternate;
+    }
+
+    @@-webkit-keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    @@keyframes mover {
+        0% {
+            transform: translateY(0);
+        }
+
+        100% {
+            transform: translateY(-20px);
+        }
+    }
+
+    .register-left p {
+        font-weight: lighter;
+        padding: 12%;
+        margin-top: -9%;
+    }
+
+    .register .register-form {
+        padding: 10%;
+        margin-top: 10%;
+    }
+
+    .btnRegister {
+        float: right;
+        margin-top: 10%;
+        border: none;
+        border-radius: 1.5rem;
+        padding: 2%;
+        background: #0062cc;
+        color: #fff;
+        font-weight: 600;
+        width: 50%;
+        cursor: pointer;
+    }
+
+    .register .nav-tabs {
+        margin-top: 3%;
+        border: none;
+        background: #0062cc;
+        border-radius: 1.5rem;
+        width: 28%;
+        float: right;
+    }
+
+        .register .nav-tabs .nav-link {
+            padding: 2%;
+            height: 34px;
+            font-weight: 600;
+            color: #fff;
+            border-top-right-radius: 1.5rem;
+            border-bottom-right-radius: 1.5rem;
+        }
+
+            .register .nav-tabs .nav-link:hover {
+                border: none;
+            }
+
+            .register .nav-tabs .nav-link.active {
+                width: 100px;
+                color: #0062cc;
+                border: 2px solid #0062cc;
+                border-top-left-radius: 1.5rem;
+                border-bottom-left-radius: 1.5rem;
+            }
+
+    .register-heading {
+        text-align: center;
+        margin-top: 8%;
+        margin-bottom: -15%;
+        color: #495057;
+    }
+    }
+</style>
+
+
+
+<style>
+
+    body {
+        margin: 0;
+        background-color: #ffd800;
+    }
+    /* Scroll to Top */
+    #scroll-to-top {
+        cursor: pointer;
+        position: fixed;
+        bottom: 20px;
+        right: 20px;
+        display: none;
+    }
+</style>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+

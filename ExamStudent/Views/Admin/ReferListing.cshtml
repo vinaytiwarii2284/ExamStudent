@@ -1,0 +1,59 @@
+﻿@*@model List<ExamStudent.Models.Refer>
+
+@{
+    ViewBag.Title = "ReferListing";
+}
+
+<br />
+<br />
+
+<h2 class="text-center text-dark">Refer Listing</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Refer", null, new { @class = "btn btn-primary" })
+</p>
+
+<br />
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ReferName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.VoucherRefer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.ContectNumber)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </th>
+        <th></th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ReferName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.VoucherRefer)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.ContectNumber)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.EmailAddress)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "GetReferByID", new { id = item.ReferID } , new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ReferID } , new { @class = "btn btn-primary" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ReferID } , new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>*@

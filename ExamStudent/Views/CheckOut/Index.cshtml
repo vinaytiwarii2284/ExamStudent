@@ -1,0 +1,380 @@
+﻿@model ExamStudent.ViewModel.CheckoutViewModel
+
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<script type='text/javascript'>
+
+    $(function () {        
+        var DdlState = $('#DdlState');
+        var DdlUserState = $('#DdlUserState');
+        if (DdlState[0].length.toString() != "0") {
+            $('#divState').css({ 'display': 'table-row' });
+        }
+        else {
+            GetState($("#DdlCountry option:selected").text());
+
+        } if (DdlUserState[0].length.toString() != "0") {
+
+            $('#divUserState').css({ 'display': 'table-row' });
+        }
+        else {            
+            GetUserState($("#DdlUserCountry option:selected").text());
+        }
+    });
+    function GetState(CountryId) {        
+        $('#DdlState').empty();
+        $('#divState').css({ 'display': 'none' });
+        var url = "../Checkout/GetState/";
+        $.ajax({
+            url: url,
+            data: { CountryName: CountryId },
+            cache: false,
+            type: "POST",
+            success: function (Store) {
+
+                if (Store.length != 0) {
+
+                    $('#divState').css({ 'display': 'table-row' });
+                }
+                $('#DdlState').empty();
+                $('#DdlState').removeAttr("disabled");
+                var markup = "";
+                for (var x = 0; x < Store.length; x++) {
+                    markup += "<option value=" + Store[x].Value + ">" + Store[x].Text + "</option>";
+                }
+                $("#DdlState").html(markup).show();
+            },
+            error: function (reponse) {
+                var s = reponse;
+                var markup = "<option value='0'>Select Store</option>";
+                $("#DdlState").html(markup).show();
+            }
+        });
+    }
+    function GetUserState(CountryId) {
+        var DdlStateName = $("#DdlState option:selected").text();        
+        $('#DdlUserState').empty();
+        $('#divUserState').css({ 'display': 'none' });
+        var url = "../Checkout/GetState/";
+        $.ajax({
+            url: url,
+            data: { CountryName: CountryId, StateName: DdlStateName },
+            cache: false,
+            type: "POST",
+            success: function (Store) {                
+                if (Store.length != 0) {
+
+                    $('#divUserState').css({ 'display': 'table-row' });
+                }
+                $('#divUserState').removeAttr("disabled");
+                var markup = "";
+                for (var x = 0; x < Store.length; x++) {
+                    markup += "<option value=" + Store[x].Value + ">" + Store[x].Text + "</option>";
+                }
+                $("#DdlUserState").html(markup).show();
+             },
+            error: function (reponse) {
+                var s = reponse;
+                var markup = "<option value='0'>Select Store</option>";
+                $("#DdlUserState").html(markup).show();
+            }
+        });
+    }
+
+    function GetUserStateAsShipping(CountryId) {
+        var DdlStateName = $("#DdlState option:selected").text();        
+        $('#DdlUserState').empty();
+        $('#divUserState').css({ 'display': 'none' });
+        var url = "../Checkout/GetState/";
+        $.ajax({
+            url: url,
+            data: { CountryName: CountryId, StateName: DdlStateName },
+            cache: false,
+            type: "POST",
+            success: function (Store) {                
+                if (Store.length != 0) {
+
+                    $('#divUserState').css({ 'display': 'table-row' });
+                }
+                $('#divUserState').removeAttr("disabled");
+                var markup = "";
+                for (var x = 0; x < Store.length; x++) {
+                    markup += "<option value=" + Store[x].Value + ">" + Store[x].Text + "</option>";
+                }
+                $("#DdlUserState").html(markup).show();
+                $("#DdlUserCountry")[0].selectedIndex = $("#DdlCountry")[0].selectedIndex;
+                $("#DdlUserState")[0].selectedIndex = $("#DdlState")[0].selectedIndex;
+            },
+            error: function (reponse) {
+                var s = reponse;
+                var markup = "<option value='0'>Select Store</option>";
+                $("#DdlUserState").html(markup).show();
+            }
+        });
+    }
+    $(function () {
+        $('#User_UseBillingAsShipping').change(function () {               
+
+            if (this.checked) {
+                $('input[original = BillingText]').each(function () {
+
+                    $(this).attr('disabled', 'disabled');
+
+                });
+
+                $('span[id = BillingValidation]').each(function () {
+
+                    $(this).attr('style', 'color: #b01a33;visibility:hidden');
+                });
+                $('select[original = BillingText]').each(function () {
+
+                    $(this).attr('disabled', 'disabled');
+
+                });
+
+                GetUserStateAsShipping($("#DdlCountry option:selected").text());                               
+                $("#User_FirstName")[0].value = $("#ShippingAddress_FirstName")[0].value;
+                $("#User_LastName")[0].value = $("#ShippingAddress_LastName")[0].value;
+                $("#User_Address")[0].value = $("#ShippingAddress_Address")[0].value;
+                $("#User_Address2")[0].value = $("#ShippingAddress_Address2")[0].value;
+                $("#User_City")[0].value = $("#ShippingAddress_City")[0].value;
+                $("#User_FirstName")[0].value = $("#ShippingAddress_FirstName")[0].value;
+                $("#User_ZipCode")[0].value = $("#ShippingAddress_ZipCode")[0].value;
+                $("#User_Phone")[0].value = $("#ShippingAddress_Phone")[0].value;
+                $("#User_Email")[0].value = $("#ShippingAddress_Email")[0].value;
+
+            }
+            else {
+                $('input[original = BillingText]').each(function () {
+                    $(this).removeAttr('disabled');
+                    $(this)[0].value = "";
+                });
+                $('span[id = BillingValidation]').each(function () {
+
+                    $(this).attr('style', 'color: #b01a33;');
+                });
+
+
+                $('select[original = BillingText]').each(function () {
+                    $(this).removeAttr('disabled');
+                    $(this)[0].selectedIndex = 0;               
+                 });
+                GetUserState($("#DdlUserCountry option:selected").text());
+            }
+        });
+    });
+    $(function () {
+
+        if ($('#hdnChk').val() == "true" || $('#hdnChk').val() == "True") {            
+            $('input[original = BillingText]').each(function () {
+               $(this).attr('disabled', 'disabled');
+            });
+            $('select[original = BillingText]').each(function () {
+                 
+                $(this).attr('disabled', 'disabled');
+            });
+        }
+    });
+</script>
+@using (Html.BeginForm("SaveUserAddress", "Checkout", FormMethod.Post, new { Currency = "form", @class = "form-inline", novalidate = "novalidate" }))
+{
+
+     <div class=" " style="">
+                <h1 class="row">
+                    <div class="col-xs-4 text-left ww_title_links"><a class="" href="/Cart/Index">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewBackButtonText</a> </div>
+                    <div class="col-xs-4 text-center ww_title_links"><span class="ww_title_links">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewBillingFormText</span></div>
+                    <div class="col-xs-4 text-right">  </div>
+                    <div class="clearfix"></div>
+                </h1>
+            </div>
+
+    
+    <div id="" class="">
+        <div class="ww_static_header1">
+            
+        </div>
+        <div id="photosOptions" class="inner photoscontainer">
+            <div class="row">
+                <div class="col-md-12 col-sm-12 billingFormSec">
+                    <div class="billingForm">
+                        <div class="col-md-11 col-sm-11" style="margin-bottom:10px;">
+                            @Html.CheckBoxFor(m => m.User.UseBillingAsShipping, new { @Styles = "margin:0 5px 0 10px;" })
+                            @Html.HiddenFor(m => m.User.UseBillingAsShipping, new { @id = "hdnChk" })
+                            <label style="font-weight:normal; font-size:13px; display:inline;" for="billAdd">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewUseAsBillingAddress</label>
+                        </div>
+                        @*<div>@Html.ValidationSummary()</div>*@
+
+
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="heading col-md-12 col-sm-12 no-padding-left">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewShippingAddress</div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewFirstName</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.FirstName, new { maxlength = "50", @class = "billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.FirstName)
+                                </span>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewLastName</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.LastName, new { maxlength = "50", @class ="billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.LastName)
+                                </span>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress</div>
+                            <div class="col-md-8 col-sm-12 ">
+                                @Html.TextBoxFor(m => m.ShippingAddress.Address, new { maxlength = "255", @class = "billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.Address)
+                                </span>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress2</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.Address2, new { maxlength = "255", @class = "billingFormInput" })
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCity</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.City, new { maxlength = "50", @class = "billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.City)
+                                </span>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCountry</div>
+                            <div class="col-md-8 col-sm-12">
+
+                                @Html.DropDownListFor(m => m.ShippingAddress.Country, (SelectList)ViewBag.CountryList, new { @class = "width-90 billingFormInput", @id = "DdlCountry", @onchange = "javascript:GetState(this.value);" })
+
+                            </div>
+
+                            <div id="divState" style="display:block;">
+                                <div class="col-md-4 col-sm-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewState</div>
+                                <div class="col-md-8 col-sm-12">
+                                    @Html.DropDownListFor(m => m.ShippingAddress.State, (SelectList)ViewBag.StateList, new { @class = "width-90", @id = "DdlState" })
+                                </div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewZipCode</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.ZipCode, new { maxlength = "20", @class = "billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.ZipCode)
+                                </span>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewPhone</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.Phone, new { maxlength = "25", @class = "billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.Phone)
+                                </span>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewEmail</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.ShippingAddress.Email, new { maxlength = "50", @class = "billingFormInput" })
+                                <span class="ValidationErrorMsg-1">
+                                    @Html.ValidationMessageFor(m => m.ShippingAddress.Email)
+                                </span>
+                            </div>
+                        </div>
+
+                        <div class="col-md-6 col-sm-6">
+                            <div class="col-md-12 col-sm-12">
+                                <div class="heading col-md-12 col-sm-12 no-padding-left">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewBillingAddress</div>
+                            </div>
+
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewFirstName</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.FirstName, new { @class = "BillingInfo billingFormInput", maxlength = "50", original = "BillingText" })
+                                @Html.HiddenFor(m => m.User.PartnerUserId)
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    @Html.ValidationMessageFor(m => m.User.FirstName)
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewLastName</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.LastName, new { @class = "BillingInfo billingFormInput", maxlength = "50", original = "BillingText" })
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    @Html.ValidationMessageFor(m => m.User.LastName)
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress </div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.Address, new { @class = "BillingInfo billingFormInput", maxlength = "255", original = "BillingText" })
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    <span class="ValidationErrorMsg-1" data-valmsg-for="User.Address" data-valmsg-replace="true">
+                                        @Html.ValidationMessageFor(m => m.User.Address)
+                                    </span>
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress2</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.Address2, new { @class = "BillingInfo billingFormInput", maxlength = "255", original = "BillingText" })
+                            </div>
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCity</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.City, new { @class = "BillingInfo billingFormInput", maxlength = "50", original = "BillingText" })
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    @Html.ValidationMessageFor(m => m.User.City)
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCountry</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.DropDownListFor(m => m.User.Country, (SelectList)ViewBag.CountryList, new { @class = "BillingInfo billingFormInput", @id = "DdlUserCountry", @onchange = "javascript:GetUserState(this.value);", original = "BillingText" })
+                            </div>
+                            <div id="divUserState" style="display:none;">
+
+                                <div class="col-md-4 col-sm-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewState</div>
+                                <div class="col-md-8 col-sm-12">
+                                    @Html.DropDownListFor(m => m.User.State, (SelectList)ViewBag.StateList, new { @class = "BillingInfo billingFormInput", @id = "DdlUserState", original = "BillingText" })
+                                </div>
+                            </div>
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewZipCode</div>
+                            <div class="col-md-8 col-sm-12">
+
+                                @Html.TextBoxFor(m => m.User.ZipCode, new { @class = "BillingInfo billingFormInput", maxlength = "20", original = "BillingText" })
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    @Html.ValidationMessageFor(m => m.User.ZipCode)
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewPhone</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.Phone, new { @class = "BillingInfo billingFormInput", maxlength = "25", original = "BillingText" })
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    @Html.ValidationMessageFor(m => m.User.Phone)
+                                </span>
+                            </div>
+                            <div class="col-md-4 col-sm-12 required">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewEmail</div>
+                            <div class="col-md-8 col-sm-12">
+                                @Html.TextBoxFor(m => m.User.Email, new { @class = "BillingInfo billingFormInput", maxlength = "50", original = "BillingText" })
+                                <span class="ValidationErrorMsg-1" id="BillingValidation">
+                                    @Html.ValidationMessageFor(m => m.User.Email)
+                                </span>
+                            </div>
+                        </div>
+
+
+
+                        <div class="col-md-12 col-sm-12 text-center padd_25" style="border-top: 1px solid #bf2236; margin: 40px 0 0 0;">
+                            <input type="submit" id="btnClear" value="@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CheckoutIndexViewContinueButtonText" name="btnClear" class="btn btn-danger" style="margin:0 auto; display:table;" />
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+}
+

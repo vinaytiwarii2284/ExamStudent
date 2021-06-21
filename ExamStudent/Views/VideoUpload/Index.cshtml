@@ -1,0 +1,39 @@
+﻿@model IEnumerable<ExamStudent.Models.Video>
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<div class="container">
+    <table class="table">
+        <thead>
+            <tr>
+                <th>Title</th>
+                <th>Board Type Name</th>
+                <th>Medium Name</th>
+                <th>Standard Name</th>
+                <th>Video</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.Title</td>
+                    <td>@item.BoardType.BoardTypeName</td>
+                    <td>@item.Medium.MediumName</td>
+                    <td>@item.Standard.StandardName</td>
+                    <td>
+                        <div class="video-frame">
+                            <video style="width:100%; height:200px;" controls>
+                                <source src="@Url.Content(@item.UploadVideo)" type="video/mp4" />
+                            </video>
+                        </div>
+                    </td>
+                </tr>           
+             }
+        </tbody>
+    </table>
+</div>
+

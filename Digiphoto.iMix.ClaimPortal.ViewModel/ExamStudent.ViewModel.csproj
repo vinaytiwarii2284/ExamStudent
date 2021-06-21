@@ -1,0 +1,139 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{7397615A-BB85-4086-B4C8-35D44C2DCCDB}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>ExamStudent.ViewModel</RootNamespace>
+    <AssemblyName>ExamStudent.ViewModel</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Web.Helpers, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=5.2.2.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.5.2.2\lib\net45\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.3.2.2\lib\net45\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=3.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.3.2.2\lib\net45\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Models\BoardTypeModel.cs" />
+    <Compile Include="Models\CaptchaModel.cs" />
+    <Compile Include="Models\Category.cs" />
+    <Compile Include="Models\Cart.cs" />
+    <Compile Include="Models\CartLineItem.cs" />
+    <Compile Include="Models\CloudinaryImageInfo.cs" />
+    <Compile Include="Models\ConfigurationMaster.cs" />
+    <Compile Include="Models\ConfigurationValue.cs" />
+    <Compile Include="Models\Country.cs" />
+    <Compile Include="Models\CustomerSupportTicketInfo.cs" />
+    <Compile Include="Models\DownloadInfo.cs" />
+    <Compile Include="Models\EditPhoto.cs" />
+    <Compile Include="Models\ErrorModel.cs" />
+    <Compile Include="Models\FreshdeskLocation.cs" />
+    <Compile Include="Models\MediumModel.cs" />
+    <Compile Include="Models\Order.cs" />
+    <Compile Include="Models\OrderHistory.cs" />
+    <Compile Include="Models\OrderItem.cs" />
+    <Compile Include="Models\Payment.cs" />
+    <Compile Include="Models\Product.cs" />
+    <Compile Include="Models\ProductPlaceHolderCoordinates.cs" />
+    <Compile Include="Models\QRClaim.cs" />
+    <Compile Include="Models\Refeer.cs" />
+    <Compile Include="Models\Shipping.cs" />
+    <Compile Include="Models\ShippingAddress.cs" />
+    <Compile Include="Models\SourceImageInfo.cs" />
+    <Compile Include="Models\Standard.cs" />
+    <Compile Include="Models\State.cs" />
+    <Compile Include="Models\SubStores.cs" />
+    <Compile Include="Models\SupportTicketAttributeDetail.cs" />
+    <Compile Include="Models\SupportTickets.cs" />
+    <Compile Include="Models\TicketAttributeMaster.cs" />
+    <Compile Include="Models\TicketAttributeValue.cs" />
+    <Compile Include="Models\TicketAttributeMasterDetail.cs" />
+    <Compile Include="Models\Users.cs" />
+    <Compile Include="Models\UserDetail.cs" />
+    <Compile Include="Models\UserTuple.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="ViewModel\AccountViewModel.cs" />
+    <Compile Include="ViewModel\CheckoutViewModel.cs" />
+    <Compile Include="ViewModel\ContentPageViewModel.cs" />
+    <Compile Include="ViewModel\CountryViewModel.cs" />
+    <Compile Include="ViewModel\CustomerSupportModel.cs" />
+    <Compile Include="ViewModel\CustomerSupportTicketInfoViewModel.cs" />
+    <Compile Include="ViewModel\EditPhotoViewModel.cs" />
+    <Compile Include="ViewModel\HomeViewModel.cs" />
+    <Compile Include="ViewModel\OrderHistoryViewModel.cs" />
+    <Compile Include="ViewModel\PaymentViewModel.cs" />
+    <Compile Include="ViewModel\ProductListViewModel.cs" />
+    <Compile Include="ViewModel\QRClaimViewModel.cs" />
+    <Compile Include="ViewModel\SubStoresViewModel.cs" />
+    <Compile Include="ViewModel\UserViewModel.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Digiphoto.iMix.ClaimPortal.Common\Digiphoto.iMix.ClaimPortal.Common.csproj">
+      <Project>{e7c1e460-5318-482e-afd7-dd09072d62b5}</Project>
+      <Name>Digiphoto.iMix.ClaimPortal.Common</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

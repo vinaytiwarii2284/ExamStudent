@@ -1,0 +1,77 @@
+﻿@model IEnumerable<ExamStudent.Models.EmpBankDetail>
+
+@{
+    ViewBag.Title = "EmpBankList";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<br /><br /><br /><br /><br />
+<h2 class="text-center text-danger">Employee Bank Details</h2>
+
+<hr />
+
+<div class="container table-responsive">
+    @Html.ActionLink("Create New", "Create", "", new { @class = "btn btn-primary" })
+</div>
+
+<br />
+
+<div class="container table-responsive">
+
+    <table class="table">
+        <tr class="warning">
+            <th>
+                Account Number
+
+            </th>
+            <th>
+                IFSC Code
+
+            </th>
+            <th>
+                BankName
+
+            </th>
+            <th>
+                Account Holder Name
+
+            </th>
+            <th>
+                Address
+
+            </th>
+            <th>Action</th>
+        </tr>
+
+        @foreach (var item in Model)
+        {
+            <tr>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.IFSCCode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.BankName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.AccountHolderName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Address)
+                </td>
+                <td>
+                    @Html.ActionLink("Edit", "Edit", new { id = item.EmpBankDetailsID }) |
+                    @Html.ActionLink("Details", "Details", new { id = item.EmpBankDetailsID }) |
+                    @Html.ActionLink("Delete", "Delete", new { id = item.EmpBankDetailsID })
+                </td>
+            </tr>
+        }
+
+    </table>
+</div>

@@ -1,0 +1,53 @@
+﻿@model IEnumerable<ExamStudent.Models.MasterSalary>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<h2>Index</h2>
+
+<p>
+    @Html.ActionLink("Add New Salary", "Salary" , null ,new {@class= "btn btn-primary" })
+</p>
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.PostID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Salary)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.MinRefer)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Comssion)
+        </th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.PostID)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Salary)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.MinRefer)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.Comssion)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.SalaryMasterID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.SalaryMasterID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.SalaryMasterID })
+        </td>
+    </tr>
+}
+
+</table>

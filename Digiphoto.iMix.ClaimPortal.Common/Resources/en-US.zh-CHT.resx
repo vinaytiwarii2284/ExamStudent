@@ -1,0 +1,2104 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountEditViewBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="AccountEditViewCancelButtonText" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="AccountEditViewConfirmPassword" xml:space="preserve">
+    <value>確認密碼</value>
+    <comment>Confirm Password</comment>
+  </data>
+  <data name="AccountEditViewEditProfileText" xml:space="preserve">
+    <value>編輯個人資料</value>
+    <comment>Edit Profile</comment>
+  </data>
+  <data name="AccountEditViewEmail" xml:space="preserve">
+    <value>電郵</value>
+    <comment>Email</comment>
+  </data>
+  <data name="AccountEditViewFirstName" xml:space="preserve">
+    <value>名字</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="AccountEditViewLastName" xml:space="preserve">
+    <value>姓氏</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="AccountEditViewMyAccountText" xml:space="preserve">
+    <value>我的帳戶</value>
+    <comment>My Account</comment>
+  </data>
+  <data name="AccountEditViewPassword" xml:space="preserve">
+    <value>密碼</value>
+    <comment>Password</comment>
+  </data>
+  <data name="AccountEditViewSaveButtonText" xml:space="preserve">
+    <value>儲存</value>
+    <comment>Save</comment>
+  </data>
+  <data name="AccountEditViewSubmitButtonText" xml:space="preserve">
+    <value>提交</value>
+    <comment>Submit</comment>
+  </data>
+  <data name="AccountForgotPasswordBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="AccountForgotPasswordCancelButtonText" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="AccountForgotPasswordContinueButtonText" xml:space="preserve">
+    <value>繼續</value>
+    <comment>Continue</comment>
+  </data>
+  <data name="AccountForgotPasswordInstruction" xml:space="preserve">
+    <value>輸入您所登記的電郵地址，我們將會向您發出一個臨時密碼</value>
+    <comment>Enter your registered email address and we will send you a temporary password</comment>
+  </data>
+  <data name="AccountForgotPasswordRegisterMessage" xml:space="preserve">
+    <value>你還未有登記我們的網頁！</value>
+    <comment>You are not registered with us!</comment>
+  </data>
+  <data name="AccountForgotPasswordTemporaryPasswordMessage" xml:space="preserve">
+    <value>臨時密碼已發送到您的電郵地址</value>
+    <comment>Temporary password has been sent to your email address</comment>
+  </data>
+  <data name="AccountForgotPasswordViewHeadingText" xml:space="preserve">
+    <value>忘記密碼</value>
+    <comment>Forgot Password</comment>
+  </data>
+  <data name="AccountIndexViewBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="AccountIndexViewCustomerInformation" xml:space="preserve">
+    <value>客戶資料</value>
+    <comment>Customer Information</comment>
+  </data>
+  <data name="AccountIndexViewEditProfileLinkText" xml:space="preserve">
+    <value>編輯個人資料</value>
+    <comment>Edit Profile</comment>
+  </data>
+  <data name="AccountIndexViewMyAccountText" xml:space="preserve">
+    <value>我的個人資料</value>
+    <comment>My Profile</comment>
+  </data>
+  <data name="AccountIndexViewMyOrdersLinkText" xml:space="preserve">
+    <value>我的訂單</value>
+    <comment>My Orders</comment>
+  </data>
+  <data name="AccountIndexViewName" xml:space="preserve">
+    <value>名稱</value>
+    <comment>Name</comment>
+  </data>
+  <data name="AccountIndexViewWelcomeMessage" xml:space="preserve">
+    <value>歡迎來到您的帳戶</value>
+    <comment>Welcome to your account</comment>
+  </data>
+  <data name="AccountLoginEmail" xml:space="preserve">
+    <value>電子郵件</value>
+    <comment>Email</comment>
+  </data>
+  <data name="AccountLoginEmailRequiredMessage" xml:space="preserve">
+    <value>請輸入電郵地址</value>
+    <comment>Please enter Email address</comment>
+  </data>
+  <data name="AccountLoginLogIn" xml:space="preserve">
+    <value>登入</value>
+    <comment>Login</comment>
+  </data>
+  <data name="AccountLoginLoginErrorMessage" xml:space="preserve">
+    <value>請輸入用戶名稱或密碼。</value>
+    <comment>Please enter user name or password.</comment>
+  </data>
+  <data name="AccountLoginPasswordHash" xml:space="preserve">
+    <value>密碼</value>
+    <comment>Password</comment>
+  </data>
+  <data name="AccountLoginPasswordRequiredMessage" xml:space="preserve">
+    <value>請輸入密碼</value>
+    <comment>Please enter Password</comment>
+  </data>
+  <data name="AccountLoginRememberMe" xml:space="preserve">
+    <value>儲存密碼</value>
+    <comment>Remember me</comment>
+  </data>
+  <data name="AccountLoginUserName" xml:space="preserve">
+    <value>用戶名稱</value>
+    <comment>User Name</comment>
+  </data>
+  <data name="AccountLoginValidationErrorMessage" xml:space="preserve">
+    <value>無效的電郵或密碼</value>
+    <comment>Invalid Email or Password</comment>
+  </data>
+  <data name="AccountUserViewModelConfirmPasswordRequiredMessage" xml:space="preserve">
+    <value>請輸入確認密碼</value>
+    <comment>Please enter the Confirm Password</comment>
+  </data>
+  <data name="AccountUserViewModelConfirmPasswordText" xml:space="preserve">
+    <value>確認密碼</value>
+    <comment>Confirm Password</comment>
+  </data>
+  <data name="AccountUserViewModelConfirmPasswordValidationMessage" xml:space="preserve">
+    <value>密碼和確認密碼不符</value>
+    <comment>Password and Confirm Password do not match</comment>
+  </data>
+  <data name="AccountUserViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>請輸入電郵</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="AccountUserViewModelEmailValidationMessage" xml:space="preserve">
+    <value>電郵無效</value>
+    <comment>Email is not valid</comment>
+  </data>
+  <data name="AccountUserViewModelFirstNameRequiredMessage" xml:space="preserve">
+    <value>請輸入名字</value>
+    <comment>Please enter the First Name</comment>
+  </data>
+  <data name="AccountUserViewModelFirstNameText" xml:space="preserve">
+    <value>名字</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="AccountUserViewModelFirstNameValidationMessage" xml:space="preserve">
+    <value>名字只能包含字母</value>
+    <comment>First Name can only contain letters</comment>
+  </data>
+  <data name="AccountUserViewModelLastNameRequiredMessage" xml:space="preserve">
+    <value>請輸入姓氏</value>
+    <comment>Please enter the Last Name</comment>
+  </data>
+  <data name="AccountUserViewModelLastNameText" xml:space="preserve">
+    <value>姓氏</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="AccountUserViewModelLastNameValidationMessage" xml:space="preserve">
+    <value>姓氏只能包含字母</value>
+    <comment>Last Name can only contain letters</comment>
+  </data>
+  <data name="AccountUserViewModelNameLengthValidationMessage" xml:space="preserve">
+    <value>最多50個字</value>
+    <comment>Maximum of 50 characters allowed.</comment>
+  </data>
+  <data name="AccountUserViewModelPasswordRequiredMessage" xml:space="preserve">
+    <value>請輸入密碼</value>
+    <comment>Please enter the Password</comment>
+  </data>
+  <data name="AccountUserViewModelPasswordText" xml:space="preserve">
+    <value>密碼</value>
+    <comment>Password</comment>
+  </data>
+  <data name="AccountUserViewModelPasswordValidationMessage" xml:space="preserve">
+    <value>密碼最少8個位，最多50個位，中間無空格</value>
+    <comment>Password length minimum 8 and maximum 50 without spaces.</comment>
+  </data>
+  <data name="Addressdetails" xml:space="preserve">
+    <value>詳細地址</value>
+    <comment>Address details</comment>
+  </data>
+  <data name="CaptchaModelRequiredMessage" xml:space="preserve">
+    <value>請輸入文字編碼</value>
+    <comment>Please enter the text code</comment>
+  </data>
+  <data name="CaptchaModelValidationMessage" xml:space="preserve">
+    <value>輸入的文字編碼不正確</value>
+    <comment>Incorrect text code entered</comment>
+  </data>
+  <data name="CaptchaPartialViewICaseSensitiveText" xml:space="preserve">
+    <value>驗證碼圖像區分大小寫</value>
+    <comment>Captcha image is case sensitive</comment>
+  </data>
+  <data name="CaptchaPartialViewText" xml:space="preserve">
+    <value>輸入下面的文字編碼</value>
+    <comment>Enter text code below</comment>
+  </data>
+  <data name="CartSummaryViewItemsText" xml:space="preserve">
+    <value>選購項目 -</value>
+    <comment>Items -</comment>
+  </data>
+  <data name="CartViewCantFindPhotosText" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="CartViewCheckOutText" xml:space="preserve">
+    <value>結帳</value>
+    <comment>Checkout</comment>
+  </data>
+  <data name="CartViewClearCartButtonText" xml:space="preserve">
+    <value>清空購物車</value>
+    <comment>Clear Cart</comment>
+  </data>
+  <data name="CartViewContinueShoppingText" xml:space="preserve">
+    <value>繼續選購</value>
+    <comment>Continue Shopping</comment>
+  </data>
+  <data name="CartViewEnglishLanguageText" xml:space="preserve">
+    <value>英文-（美式）</value>
+    <comment>English-(US)</comment>
+  </data>
+  <data name="CartViewGrandTotalText" xml:space="preserve">
+    <value>總計 ：</value>
+    <comment>Grand Total :</comment>
+  </data>
+  <data name="CartViewItemText" xml:space="preserve">
+    <value>項目</value>
+    <comment>Item</comment>
+  </data>
+  <data name="CartViewPriceText" xml:space="preserve">
+    <value>單價</value>
+    <comment>Unit Price</comment>
+  </data>
+  <data name="CartViewProductNameText" xml:space="preserve">
+    <value>產品名稱</value>
+    <comment>Product Name</comment>
+  </data>
+  <data name="CartViewQuantityText" xml:space="preserve">
+    <value>數量</value>
+    <comment>Quantity</comment>
+  </data>
+  <data name="CartViewRemoveButtonText" xml:space="preserve">
+    <value>取消</value>
+    <comment>Remove</comment>
+  </data>
+  <data name="CartViewRemoveItemText" xml:space="preserve">
+    <value>取消項目</value>
+    <comment>Remove Item</comment>
+  </data>
+  <data name="CartViewSelectLanguageText" xml:space="preserve">
+    <value>選擇語言</value>
+    <comment>Select Language</comment>
+  </data>
+  <data name="CartViewShoppingCartText" xml:space="preserve">
+    <value>購物車</value>
+    <comment>Shopping Cart</comment>
+  </data>
+  <data name="CartViewSubtotalText" xml:space="preserve">
+    <value>小計</value>
+    <comment>Sub Total</comment>
+  </data>
+  <data name="CheckoutIndexViewContinueButtonText" xml:space="preserve">
+    <value>繼續</value>
+    <comment>CONTINUE</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewClaimCodeText" xml:space="preserve">
+    <value>照片確認編碼</value>
+    <comment>CLAIM CODE</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewEnterText" xml:space="preserve">
+    <value>輸入編碼</value>
+    <comment>Enter Code</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewGoButtonText" xml:space="preserve">
+    <value>去</value>
+    <comment>GO</comment>
+  </data>
+  <data name="ClaimQRCodePartialViewGoTittleText" xml:space="preserve">
+    <value>去</value>
+    <comment>GO</comment>
+  </data>
+  <data name="ClaimViewBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="ClaimViewClaimButtonText" xml:space="preserve">
+    <value>確認</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="CommonBackText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="CommonFullSiteText" xml:space="preserve">
+    <value>完整網站</value>
+    <comment>Full Site</comment>
+  </data>
+  <data name="CustomerSupportControllerAfterText" xml:space="preserve">
+    <value>之後</value>
+    <comment>After</comment>
+  </data>
+  <data name="CustomerSupportControllerBeforeText" xml:space="preserve">
+    <value>之前</value>
+    <comment>Before</comment>
+  </data>
+  <data name="CustomerSupportControllerNoonText" xml:space="preserve">
+    <value>中午</value>
+    <comment>Noon</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsCantClaimMessage" xml:space="preserve">
+    <value>我無法取得我的照片編號</value>
+    <comment>I can't claim my Photo ID</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsClaimMessage" xml:space="preserve">
+    <value>我已取得照片編號，但只有我的一部分而不是全部照片</value>
+    <comment>I claimed my Photo ID and some, but not all of my photos appeared</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsLostPhotoMessage" xml:space="preserve">
+    <value>我遺失了一或多張照片編號</value>
+    <comment>I lost one or more Photo ID(s)</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsSupportRequestAuthentication" xml:space="preserve">
+    <value>請查看您的支援要求號碼</value>
+    <comment>Please check your Support Request Number</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoSubmitButtonText" xml:space="preserve">
+    <value>提交</value>
+    <comment>Submit</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoSupportTicketRequiredMessage" xml:space="preserve">
+    <value>請輸入支援要求號碼</value>
+    <comment>Please enter Support Request Number</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewCommentText" xml:space="preserve">
+    <value>評語：</value>
+    <comment>Comment :</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewHeadingText" xml:space="preserve">
+    <value>客戶支援要求資料</value>
+    <comment>Customer Support Request Info</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewIssueDescriptionText" xml:space="preserve">
+    <value>支援要求詳情：</value>
+    <comment>Issue Description :</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewLocation" xml:space="preserve">
+    <value>地點</value>
+    <comment>Location</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewStatus" xml:space="preserve">
+    <value>狀況</value>
+    <comment>Status</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewStatusUpdatedDate" xml:space="preserve">
+    <value>狀況更新日期</value>
+    <comment>Status Updated Date</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoViewSupportRequestNumber" xml:space="preserve">
+    <value>支援要求號碼</value>
+    <comment>Support Request Number</comment>
+  </data>
+  <data name="CustomerSupportViewAlertMessage" xml:space="preserve">
+    <value>請選定問題類型</value>
+    <comment>Please check type of problem</comment>
+  </data>
+  <data name="CustomerSupportViewAllowedFileTypeText" xml:space="preserve">
+    <value>只接受 JPEG / JPG文檔。 （文檔大小必須在10 MB以下）</value>
+    <comment>Only JPEG/JPG files allowed. (File must be under 10 MB in size)</comment>
+  </data>
+  <data name="CustomerSupportViewBrowseButtonText" xml:space="preserve">
+    <value>瀏覽</value>
+    <comment>Browse</comment>
+  </data>
+  <data name="CustomerSupportViewCancelButtonText" xml:space="preserve">
+    <value>取消</value>
+    <comment>CANCEL</comment>
+  </data>
+  <data name="CustomerSupportViewCantClaimText" xml:space="preserve">
+    <value>無法取得我的照片編號</value>
+    <comment>I can't claim my Photo ID</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureDateGreaterThanAlertMessage" xml:space="preserve">
+    <value>鎖定日期應大於01/01/1905。</value>
+    <comment>Capture Date is greater than 01/01/1905.</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureDateLessThanAlertMessage" xml:space="preserve">
+    <value>鎖定日期應少於今天日期</value>
+    <comment>Capture Date should be less than today date</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureDateRequiredAlertMessage" xml:space="preserve">
+    <value>必須鎖定日期</value>
+    <comment>Capture Date is required</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureLocationRequiredAlertMessage" xml:space="preserve">
+    <value>必須鎖定地點</value>
+    <comment>Capture Location is required</comment>
+  </data>
+  <data name="CustomerSupportViewCaptureTimeRequiredAlertMessage" xml:space="preserve">
+    <value>必須鎖定時間</value>
+    <comment>Capture Time is required</comment>
+  </data>
+  <data name="CustomerSupportViewDayText" xml:space="preserve">
+    <value>天</value>
+    <comment>Day</comment>
+  </data>
+  <data name="CustomerSupportViewEmailIDNotValidAlertMessage" xml:space="preserve">
+    <value>電郵編號無效</value>
+    <comment>Emailid is not valid</comment>
+  </data>
+  <data name="CustomerSupportViewEmailIDRequiredAlertMessage" xml:space="preserve">
+    <value>必須電郵編號</value>
+    <comment>Email id is required</comment>
+  </data>
+  <data name="CustomerSupportViewErrorAlertMessage" xml:space="preserve">
+    <value>有一些錯誤。</value>
+    <comment>There is some error.</comment>
+  </data>
+  <data name="CustomerSupportViewFileValidationAlertText" xml:space="preserve">
+    <value>請選擇一個有效擴展的文檔。</value>
+    <comment>Please select a file with valid extension.</comment>
+  </data>
+  <data name="CustomerSupportViewHeadingText" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction" xml:space="preserve">
+    <value>嘗試尋找遺失的照片或缺少的照片編號？</value>
+    <comment>Trying to find missing photos or a missing Photo ID?</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction1" xml:space="preserve">
+    <value>請盡可能詳細提供以下資料，然後點擊發送，我們將盡力尋找您的照片。</value>
+    <comment>Please fill in the information below as completely as you can and click Send, and we will do everything we can to find your photos.</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction2" xml:space="preserve">
+    <value>如果你知道，請輸入遺失照片的編號，用逗號或空格分隔。 如果不知道，輸入“遺失”。</value>
+    <comment>If known, enter the Photo ID that are missing photos, separated by commas or spaces. If not known, enter "LOST".</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction3" xml:space="preserve">
+    <value>提供照片可以加快尋找進程。請上傳遺失照片中一或多人的照片。</value>
+    <comment>Providing a photo can expedite the process. Please upload a photo of one or more people in the missing photos.</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction4" xml:space="preserve">
+    <value>盡量提供更多細節以助我們進行搜尋；提供的資料越多，成功搜尋的機會越大：包括年齡、性別、穿著衣服的顏色/類型、特徵，或任何其他您認為有助我們找到照片的資料。</value>
+    <comment>Provide as many details as possible to aid us in our search; the more information provided, the better we can help. Include age, gender, color/type of clothes worn, distinguishing features or any other information you think will help us locate your photos.</comment>
+  </data>
+  <data name="CustomerSupportViewInstruction5" xml:space="preserve">
+    <value>如果您已提供圖片，請在傳送圖像文件時耐心等候。視乎您的互聯網連接狀況，這可能需要幾分鐘時間。完成後將顯示一個確認頁面。</value>
+    <comment>If you have included an image, please be patient while we transmit the image file. Depending on your internet connection, this can take up to a few minutes. A confirmation page will be displayed when this has finished.</comment>
+  </data>
+  <data name="CustomerSupportViewMonthText" xml:space="preserve">
+    <value>月</value>
+    <comment>Month</comment>
+  </data>
+  <data name="CustomerSupportViewNameRequiredAlertMessage" xml:space="preserve">
+    <value>必須提供姓名</value>
+    <comment>Name is required</comment>
+  </data>
+  <data name="CustomerSupportViewNoteText" xml:space="preserve">
+    <value>注意：必須提供資料的欄目標有星號</value>
+    <comment>Note: Required fields are marked with an asterisk</comment>
+  </data>
+  <data name="CustomerSupportViewPhotoIDRequiredAlertMessage" xml:space="preserve">
+    <value>必須照片編號</value>
+    <comment>Photo id is required</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseCheckAlertMessage" xml:space="preserve">
+    <value>請選定</value>
+    <comment>Please Check</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseEnterAlertMessage" xml:space="preserve">
+    <value>請輸入</value>
+    <comment>Please enter</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectAlertMessage" xml:space="preserve">
+    <value>請選擇</value>
+    <comment>Please select</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectFileAlertMessage" xml:space="preserve">
+    <value>請選擇有效的圖像文檔</value>
+    <comment>Please select valid Image file</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectFileSizeAlertMessage" xml:space="preserve">
+    <value>圖像文檔必須小於10MB</value>
+    <comment>Image file size must be less than 10MB</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectPeopleMessage" xml:space="preserve">
+    <value>必須選擇人數</value>
+    <comment>Select # of people is required</comment>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectVenueAlertMessage" xml:space="preserve">
+    <value>請選擇地點</value>
+    <comment>Please select venue.</comment>
+  </data>
+  <data name="CustomerSupportViewProblemDescriptionText" xml:space="preserve">
+    <value>請詳述您遇到的問題：</value>
+    <comment>Please describe the problem you are experiencing:</comment>
+  </data>
+  <data name="CustomerSupportViewResetButtonText" xml:space="preserve">
+    <value>重設</value>
+    <comment>RESET</comment>
+  </data>
+  <data name="CustomerSupportViewSaveButtonText" xml:space="preserve">
+    <value>儲存</value>
+    <comment>SAVE</comment>
+  </data>
+  <data name="CustomerSupportViewSelectCaptureDateText" xml:space="preserve">
+    <value>請選擇鎖定日期。</value>
+    <comment>Please select Capture Date.</comment>
+  </data>
+  <data name="CustomerSupportViewSelectText" xml:space="preserve">
+    <value>- 選擇 -</value>
+    <comment>--Select--</comment>
+  </data>
+  <data name="CustomerSupportViewValidationText" xml:space="preserve">
+    <value>此欄目中只能使用字母數字字符和空格</value>
+    <comment>Only alphanumeric characters and spaces are valid in this field</comment>
+  </data>
+  <data name="CustomerSupportViewValidCaptureDateRequiredAlertMessage" xml:space="preserve">
+    <value>請選擇鎖定日期的有效日期。</value>
+    <comment>Please select valid date for Capture Date.</comment>
+  </data>
+  <data name="CustomerSupportViewYearText" xml:space="preserve">
+    <value>年</value>
+    <comment>Year</comment>
+  </data>
+  <data name="DateOfBirthText" xml:space="preserve">
+    <value>出生日期</value>
+    <comment>Date Of Birth</comment>
+  </data>
+  <data name="DearText" xml:space="preserve">
+    <value>尊敬的</value>
+    <comment>Dear</comment>
+  </data>
+  <data name="EditPhoto1BorderTabNote" xml:space="preserve">
+    <value>請向下滾動查看更多花邊</value>
+    <comment>Please scroll down for more Borders</comment>
+  </data>
+  <data name="EditPhoto1PhotoSuccessAlertMessage" xml:space="preserve">
+    <value>您的電郵已成功發送。</value>
+    <comment>Your email has been sent successfully.</comment>
+  </data>
+  <data name="EditPhoto1SelectPhotoAlertMessage" xml:space="preserve">
+    <value>請在畫布上選擇照片</value>
+    <comment>Please select photo on Canvas</comment>
+  </data>
+  <data name="EditPhoto1StickerTabNote" xml:space="preserve">
+    <value>請向下滾動查看更多貼紙</value>
+    <comment>Please scroll down for more Stickers</comment>
+  </data>
+  <data name="EditPhoto1ViewAddProductToCartAlertMessage" xml:space="preserve">
+    <value>數量不能為空白或 0</value>
+    <comment>Quantity can not be empty or 0</comment>
+  </data>
+  <data name="EditPhoto1ViewAddToCartButtonText" xml:space="preserve">
+    <value>添加到購物車</value>
+    <comment>Add To Cart</comment>
+  </data>
+  <data name="EditPhoto1ViewAvailableUntilText" xml:space="preserve">
+    <value>有效期至</value>
+    <comment>Available Until</comment>
+  </data>
+  <data name="EditPhoto1ViewBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="EditPhoto1ViewBackText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="EditPhoto1ViewBorder" xml:space="preserve">
+    <value>花邊</value>
+    <comment>Borders</comment>
+  </data>
+  <data name="EditPhoto1ViewClaimText" xml:space="preserve">
+    <value>確認照片</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="EditPhoto1ViewComments" xml:space="preserve">
+    <value>評語</value>
+    <comment>Comments</comment>
+  </data>
+  <data name="EditPhoto1ViewDelete" xml:space="preserve">
+    <value>刪除</value>
+    <comment>Delete</comment>
+  </data>
+  <data name="EditPhoto1ViewDownload" xml:space="preserve">
+    <value>下載照片</value>
+    <comment>Download Photo</comment>
+  </data>
+  <data name="EditPhoto1ViewEmail" xml:space="preserve">
+    <value>電郵</value>
+    <comment>Email</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailIDNotValidAlertMessage" xml:space="preserve">
+    <value>電郵編號無效</value>
+    <comment>Email id is not valid</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailMessage" xml:space="preserve">
+    <value>在電郵中與家人和朋友分享您的媒體。</value>
+    <comment>Share your media with family and friends on Email.</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailNotSentSuccessText" xml:space="preserve">
+    <value>電郵尚未發送</value>
+    <comment>Email has not been sent</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailRequiredAlertMessage" xml:space="preserve">
+    <value>必須電郵編號</value>
+    <comment>Email id is required</comment>
+  </data>
+  <data name="EditPhoto1ViewEmailSentSuccessText" xml:space="preserve">
+    <value>電郵已成功發送</value>
+    <comment>Email has been sent successfully</comment>
+  </data>
+  <data name="EditPhoto1ViewEnterCommentsText" xml:space="preserve">
+    <value>輸入訊息</value>
+    <comment>Enter the Message</comment>
+  </data>
+  <data name="EditPhoto1ViewEnterEmailAddressesText" xml:space="preserve">
+    <value>輸入收件人電郵地址</value>
+    <comment>Enter Recepient Email Address</comment>
+  </data>
+  <data name="EditPhoto1ViewEnterSubjectText" xml:space="preserve">
+    <value>輸入主旨</value>
+    <comment>Enter the Subject</comment>
+  </data>
+  <data name="EditPhoto1ViewErrorTextText" xml:space="preserve">
+    <value>錯誤訊息</value>
+    <comment>Error message</comment>
+  </data>
+  <data name="EditPhoto1Viewfacebook" xml:space="preserve">
+    <value>Facebook</value>
+    <comment>Facebook</comment>
+  </data>
+  <data name="EditPhoto1ViewFacebookMessage" xml:space="preserve">
+    <value>在 Facebook 上與家人和朋友分享您的媒體。</value>
+    <comment>Share your media with family and friends on facebook.</comment>
+  </data>
+  <data name="EditPhoto1ViewGraphics" xml:space="preserve">
+    <value>貼紙。</value>
+    <comment>Stickers</comment>
+  </data>
+  <data name="EditPhoto1ViewLinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+    <comment>LinkedIn</comment>
+  </data>
+  <data name="EditPhoto1ViewLinkedInMessage" xml:space="preserve">
+    <value>在 Linkedin 上與家人和朋友分享您的照片。</value>
+    <comment>Share your photo with family and friends on Linkedin.</comment>
+  </data>
+  <data name="EditPhoto1ViewMessage" xml:space="preserve">
+    <value>訊息</value>
+    <comment>Message</comment>
+  </data>
+  <data name="EditPhoto1ViewMultipleAddressText" xml:space="preserve">
+    <value>輸入多個地址時可以逗號(，)分隔。</value>
+    <comment>Enter multiple address separated by comma (,).</comment>
+  </data>
+  <data name="EditPhoto1ViewMyPhotosText" xml:space="preserve">
+    <value>我的照片</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="EditPhoto1ViewPhotoSavedAlertText" xml:space="preserve">
+    <value>照片已成功儲存</value>
+    <comment>Photo saved successfully</comment>
+  </data>
+  <data name="EditPhoto1ViewPhotoSelectAlertMessage" xml:space="preserve">
+    <value>請在畫布上選擇照片</value>
+    <comment>Please select photo on canvas</comment>
+  </data>
+  <data name="EditPhoto1ViewPostButtonText" xml:space="preserve">
+    <value>發佈</value>
+    <comment>Post</comment>
+  </data>
+  <data name="EditPhoto1ViewProducts" xml:space="preserve">
+    <value>產品</value>
+    <comment>Products</comment>
+  </data>
+  <data name="EditPhoto1ViewQuantity" xml:space="preserve">
+    <value>數量</value>
+    <comment>Quantity</comment>
+  </data>
+  <data name="EditPhoto1ViewRemoveStickerText" xml:space="preserve">
+    <value>刪除貼紙</value>
+    <comment>Remove Sticker</comment>
+  </data>
+  <data name="EditPhoto1ViewRestore" xml:space="preserve">
+    <value>還原</value>
+    <comment>RESTORE</comment>
+  </data>
+  <data name="EditPhoto1ViewRestoreOriginalAlertMessage" xml:space="preserve">
+    <value>您確定要還原原來的照片嗎？</value>
+    <comment>Are you sure you want to restore the original photo?</comment>
+  </data>
+  <data name="EditPhoto1ViewRestorePhotoText" xml:space="preserve">
+    <value>還原照片？</value>
+    <comment>Restore photo?</comment>
+  </data>
+  <data name="EditPhoto1ViewSave" xml:space="preserve">
+    <value>儲存</value>
+    <comment>SAVE</comment>
+  </data>
+  <data name="EditPhoto1ViewSaveChangesAlertText" xml:space="preserve">
+    <value>儲存更改？</value>
+    <comment>Save Changes?</comment>
+  </data>
+  <data name="EditPhoto1ViewSendButtonText" xml:space="preserve">
+    <value>發送</value>
+    <comment>SEND</comment>
+  </data>
+  <data name="EditPhoto1ViewShare" xml:space="preserve">
+    <value>分享</value>
+    <comment>SHARE</comment>
+  </data>
+  <data name="EditPhoto1ViewSharePictureFailedText" xml:space="preserve">
+    <value>分享媒體失敗</value>
+    <comment>Share media failed</comment>
+  </data>
+  <data name="EditPhoto1ViewSharePictureSucceededText" xml:space="preserve">
+    <value>分享媒體成功</value>
+    <comment>Share media succeeded</comment>
+  </data>
+  <data name="EditPhoto1ViewSomethingBadMessageText" xml:space="preserve">
+    <value>伺服器出現問題，請重試。</value>
+    <comment>Something bad happened at server side, Please Retry.</comment>
+  </data>
+  <data name="EditPhoto1ViewSubject" xml:space="preserve">
+    <value>主旨</value>
+    <comment>Subject</comment>
+  </data>
+  <data name="EditPhoto1ViewSuccessMessageText" xml:space="preserve">
+    <value>成功訊息</value>
+    <comment>Success message</comment>
+  </data>
+  <data name="EditPhoto1ViewTakenText" xml:space="preserve">
+    <value>接納</value>
+    <comment>Taken</comment>
+  </data>
+  <data name="EditPhoto1ViewTwitter" xml:space="preserve">
+    <value>Twitter</value>
+    <comment>Twitter</comment>
+  </data>
+  <data name="EditPhoto1ViewTwitterMessage" xml:space="preserve">
+    <value>在 Twitter 上與家人和朋友分享您的照片。</value>
+    <comment>Share your photo with family and friends on Twitter.</comment>
+  </data>
+  <data name="EditPhoto1ViewUndo" xml:space="preserve">
+    <value>取消</value>
+    <comment>UNDO</comment>
+  </data>
+  <data name="EditPhoto1ViewUnitPrice" xml:space="preserve">
+    <value>單價</value>
+    <comment>Unit Price</comment>
+  </data>
+  <data name="EditPhoto1ViewVideoDownloadText" xml:space="preserve">
+    <value>下載</value>
+    <comment>Download</comment>
+  </data>
+  <data name="EditPhoto1ViewVideoShareText" xml:space="preserve">
+    <value>分享</value>
+    <comment>Share</comment>
+  </data>
+  <data name="EditPhoto1ViewWouldYouLiketAlertMessage" xml:space="preserve">
+    <value>您要儲存更改嗎？</value>
+    <comment>Would you like to save the changes?</comment>
+  </data>
+  <data name="EditPhotoViewAlertText" xml:space="preserve">
+    <value>提示</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ErrorPartialViewErrorText" xml:space="preserve">
+    <value>錯誤</value>
+    <comment>Error</comment>
+  </data>
+  <data name="ErrorPartialViewReloginText" xml:space="preserve">
+    <value>這是重新登入的連結</value>
+    <comment>Here is a link for Relogin</comment>
+  </data>
+  <data name="ErrorViewErrorMessageText" xml:space="preserve">
+    <value>處理您的請求時發生錯誤</value>
+    <comment>An error occurred while processing your request.</comment>
+  </data>
+  <data name="ErrorViewErrorText" xml:space="preserve">
+    <value>錯誤</value>
+    <comment>Error</comment>
+  </data>
+  <data name="FBLoginViewAlertText" xml:space="preserve">
+    <value>提示</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="FBLoginViewErrorAlertMessage" xml:space="preserve">
+    <value>在 Facebook 上發布時出錯</value>
+    <comment>Error while posting media on Facebook</comment>
+  </data>
+  <data name="FBLoginViewFBLoggedinText" xml:space="preserve">
+    <value>已登入 Facebook</value>
+    <comment>Facebook logged in.</comment>
+  </data>
+  <data name="FBLoginViewInvalidAlertMessage" xml:space="preserve">
+    <value>用戶名稱或密碼無效</value>
+    <comment>Invalid Username or Password</comment>
+  </data>
+  <data name="FBLoginViewLoginButtonText" xml:space="preserve">
+    <value>登入</value>
+    <comment>Login</comment>
+  </data>
+  <data name="FBLoginViewPassword" xml:space="preserve">
+    <value>密碼</value>
+    <comment>Password</comment>
+  </data>
+  <data name="FBLoginViewPleaseLogIntoAppText" xml:space="preserve">
+    <value>進入這個程式</value>
+    <comment>into this app.</comment>
+  </data>
+  <data name="FBLoginViewPleaseLogIntoFacebookText" xml:space="preserve">
+    <value>進入Facebook</value>
+    <comment>into Facebook</comment>
+  </data>
+  <data name="FBLoginViewPleaseLogText" xml:space="preserve">
+    <value>請登入</value>
+    <comment>Please log</comment>
+  </data>
+  <data name="FBLoginViewProcessingMessage" xml:space="preserve">
+    <value>正在處理中，請稍候。。。</value>
+    <comment>Processing, please wait . . .</comment>
+  </data>
+  <data name="FBLoginViewSuccessAlertMessage" xml:space="preserve">
+    <value>媒體成功在 Facebook 上發布</value>
+    <comment>Media posted successfully on Facebook</comment>
+  </data>
+  <data name="FBLoginViewUsername" xml:space="preserve">
+    <value>用戶名稱</value>
+    <comment>Username</comment>
+  </data>
+  <data name="ForgotPasswordViewEmailText" xml:space="preserve">
+    <value>電郵編號</value>
+    <comment>Email Id</comment>
+  </data>
+  <data name="ForgotPasswordViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>请输入电子邮箱</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="ForgotPasswordViewModelEmailValidationMessage" xml:space="preserve">
+    <value>電郵無效。</value>
+    <comment>Email is not valid.</comment>
+  </data>
+  <data name="HomeIndexViewClaim" xml:space="preserve">
+    <value>確認照片</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="HomeIndexViewInstruction" xml:space="preserve">
+    <value>如果這是您第一次使用本網站，請點擊網站上的“確認照片”標籤，並輸入您的照片確認編碼。 按照指示設立您的帳戶。</value>
+    <comment>If this is your first time on the site, please click on the "Claim" tab and enter your Claim Code. Follow the instructions to create your account.</comment>
+  </data>
+  <data name="HomeIndexViewInstruction1" xml:space="preserve">
+    <value>如果您已設立帳戶，請點擊“登入”標籤，並輸入您</value>
+    <comment>If you are a returning guest, please click on the "Sign In" tab and enter the information used when you</comment>
+  </data>
+  <data name="HomeIndexViewInstruction2" xml:space="preserve">
+    <value>首次設立照片帳戶時所使用的資料。</value>
+    <comment>first created your photo account.</comment>
+  </data>
+  <data name="HomeIndexViewSignIn" xml:space="preserve">
+    <value>登入</value>
+    <comment>Sign In</comment>
+  </data>
+  <data name="HomeIndexViewWelcome" xml:space="preserve">
+    <value>歡迎</value>
+    <comment>Welcome</comment>
+  </data>
+  <data name="HomeIndexViewWelcomeMessage" xml:space="preserve">
+    <value>歡迎“mySnapps”Photos 的網上個人相簿體驗！</value>
+    <comment>WELCOME TO "mySnapps" PHOTOS ONLINE EXPERIENCE!</comment>
+  </data>
+  <data name="ImageDownloadMsg" xml:space="preserve">
+    <value>點擊這裡下載高解析度圖像</value>
+    <comment>Click here to download a high resolution image</comment>
+  </data>
+  <data name="InclusiveAllTaxesMsg" xml:space="preserve">
+    <value>（連所有稅項和運費）</value>
+    <comment>(Inclusive all taxes and shipping cost)</comment>
+  </data>
+  <data name="IndexViewAddress" xml:space="preserve">
+    <value>地址</value>
+    <comment>Address</comment>
+  </data>
+  <data name="IndexViewAddress2" xml:space="preserve">
+    <value>地址2</value>
+    <comment>Address2</comment>
+  </data>
+  <data name="IndexViewBackText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="IndexViewBillingAddress" xml:space="preserve">
+    <value>帳單地址</value>
+    <comment>Billing Address</comment>
+  </data>
+  <data name="IndexViewBillingFormText" xml:space="preserve">
+    <value>帳單型式</value>
+    <comment>Billing Form</comment>
+  </data>
+  <data name="IndexViewCity" xml:space="preserve">
+    <value>市</value>
+    <comment>City</comment>
+  </data>
+  <data name="IndexViewCountry" xml:space="preserve">
+    <value>國家</value>
+    <comment>Country</comment>
+  </data>
+  <data name="IndexViewEmail" xml:space="preserve">
+    <value>電郵</value>
+    <comment>Email</comment>
+  </data>
+  <data name="IndexViewFirstName" xml:space="preserve">
+    <value>名字</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="IndexViewLastName" xml:space="preserve">
+    <value>姓氏</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="IndexViewPhone" xml:space="preserve">
+    <value>電話</value>
+    <comment>Phone</comment>
+  </data>
+  <data name="IndexViewShippingAddress" xml:space="preserve">
+    <value>送貨地址</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="IndexViewState" xml:space="preserve">
+    <value>州</value>
+    <comment>State</comment>
+  </data>
+  <data name="IndexViewUseAsBillingAddress" xml:space="preserve">
+    <value>帳單地址與送貨地址相同</value>
+    <comment>Billing Address same as Shipping Address</comment>
+  </data>
+  <data name="IndexViewZipCode" xml:space="preserve">
+    <value>郵政編碼</value>
+    <comment>Zip Code</comment>
+  </data>
+  <data name="JAlertCancelButtonText" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="JAlertNoButtonText" xml:space="preserve">
+    <value>不是</value>
+    <comment>No</comment>
+  </data>
+  <data name="JAlertOKButtonText" xml:space="preserve">
+    <value>好</value>
+    <comment>Ok</comment>
+  </data>
+  <data name="JAlertYesButtonText" xml:space="preserve">
+    <value>是</value>
+    <comment>Yes</comment>
+  </data>
+  <data name="KindRegards" xml:space="preserve">
+    <value>此致</value>
+    <comment>Kind Regards</comment>
+  </data>
+  <data name="LanguagePartialViewCantFindPhotosText" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="LanguagePartialViewSelectLanguageText" xml:space="preserve">
+    <value>選擇語言</value>
+    <comment>Select Language</comment>
+  </data>
+  <data name="LayoutPartialViewAboutUsLinkText" xml:space="preserve">
+    <value>關於我們</value>
+    <comment>About Us</comment>
+  </data>
+  <data name="LayoutPartialViewApplicationTittle" xml:space="preserve">
+    <value>Digiphoto - mySnapps</value>
+    <comment>Digiphoto - mySnapps</comment>
+  </data>
+  <data name="LayoutPartialViewCantFindPhotosLinkText" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="LayoutPartialViewCartViewButtonText" xml:space="preserve">
+    <value>查看購物車</value>
+    <comment>View Cart</comment>
+  </data>
+  <data name="LayoutPartialViewContactUsLinkText" xml:space="preserve">
+    <value>聯繫我們</value>
+    <comment>Contact Us</comment>
+  </data>
+  <data name="LayoutPartialViewDEIText" xml:space="preserve">
+    <value>DEI</value>
+    <comment>DEI</comment>
+  </data>
+  <data name="LayoutPartialViewHelpLinkText" xml:space="preserve">
+    <value>客戶支援</value>
+    <comment>Help</comment>
+  </data>
+  <data name="LayoutPartialViewMyAccountButtonText" xml:space="preserve">
+    <value>我的帳戶</value>
+    <comment>My Account</comment>
+  </data>
+  <data name="LayoutPartialViewMyPhotosLinkText" xml:space="preserve">
+    <value>我的照片</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="LayoutPartialViewMySnappsLogo" xml:space="preserve">
+    <value>mySnapps</value>
+    <comment>mySnapps</comment>
+  </data>
+  <data name="LayoutPartialViewMySnappsText" xml:space="preserve">
+    <value>mySnapps</value>
+    <comment>mySnapps</comment>
+  </data>
+  <data name="LayoutPartialViewPageNameText" xml:space="preserve">
+    <value>頁面名稱</value>
+    <comment>Page Name</comment>
+  </data>
+  <data name="LayoutPartialViewPleaseWaitText" xml:space="preserve">
+    <value>請稍候....</value>
+    <comment>Please Wait....</comment>
+  </data>
+  <data name="LayoutPartialViewPoweredByText" xml:space="preserve">
+    <value>網頁製作</value>
+    <comment>Powered By: </comment>
+  </data>
+  <data name="LayoutPartialViewPrivacyPolicyLinkText" xml:space="preserve">
+    <value>私隱政策</value>
+    <comment>Privacy Policy</comment>
+  </data>
+  <data name="LayoutPartialViewRegisterButtonText" xml:space="preserve">
+    <value>登記</value>
+    <comment>Register</comment>
+  </data>
+  <data name="LayoutPartialViewSendingEmailText" xml:space="preserve">
+    <value>發送電郵...</value>
+    <comment>Sending Email…</comment>
+  </data>
+  <data name="LayoutPartialViewSignInButtonText" xml:space="preserve">
+    <value>登入</value>
+    <comment>Sign In</comment>
+  </data>
+  <data name="LayoutPartialViewSignOutButtonText" xml:space="preserve">
+    <value>登出</value>
+    <comment>Sign Out</comment>
+  </data>
+  <data name="LayoutPartialViewTermsAndConditionsLinkText" xml:space="preserve">
+    <value>條款和條件</value>
+    <comment>Terms and Conditions</comment>
+  </data>
+  <data name="LayoutSharedViewMobileSite" xml:space="preserve">
+    <value>手機網站</value>
+    <comment>Mobile Site</comment>
+  </data>
+  <data name="LockOutViewLockedOutDetailText" xml:space="preserve">
+    <value>此帳戶已被鎖定，請稍後再試。</value>
+    <comment>This account has been locked out, please try again later.</comment>
+  </data>
+  <data name="LockOutViewLockedOutText" xml:space="preserve">
+    <value>鎖定</value>
+    <comment>Locked out.</comment>
+  </data>
+  <data name="LoginPartialViewEnterEmailText" xml:space="preserve">
+    <value>請輸入您的電郵：</value>
+    <comment>Please Enter Your Email:</comment>
+  </data>
+  <data name="LoginPartialViewEnterPasswordText" xml:space="preserve">
+    <value>請輸入您的密碼：</value>
+    <comment>Please Enter Your Password:</comment>
+  </data>
+  <data name="LoginPartialViewForgotPasswordLinkText" xml:space="preserve">
+    <value>忘記密碼 ？</value>
+    <comment>Forgot Password ?</comment>
+  </data>
+  <data name="LoginPartialViewGoButtonText" xml:space="preserve">
+    <value>去</value>
+    <comment>GO</comment>
+  </data>
+  <data name="LoginPartialViewGoTittleText" xml:space="preserve">
+    <value>去</value>
+    <comment>GO</comment>
+  </data>
+  <data name="LoginViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>請輸入電郵</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="LoginViewModelEmailValidationMessage" xml:space="preserve">
+    <value>電郵無效。</value>
+    <comment>Email is not valid.</comment>
+  </data>
+  <data name="LoginViewModelPasswordRequiredMessage" xml:space="preserve">
+    <value>請輸入密碼</value>
+    <comment>Please enter the Password</comment>
+  </data>
+  <data name="LoginViewModelPasswordValidationMessage" xml:space="preserve">
+    <value>密碼最少為8個位，最多為50個位，無空格。</value>
+    <comment>Password length minimum 8 and maximum 50 without spaces.</comment>
+  </data>
+  <data name="mySnapps" xml:space="preserve">
+    <value>mySnapps Photos</value>
+    <comment>mySnapps Photos</comment>
+  </data>
+  <data name="PaumentViewGiftCertificatesDiscountsKits" xml:space="preserve">
+    <value>禮品券/折扣/套裝</value>
+    <comment>Gift Certificates / Discounts / Kits</comment>
+  </data>
+  <data name="PaymentGateWayResponseCancelMsg" xml:space="preserve">
+    <value>您的訂單已被取消</value>
+    <comment>Your order has been canceled</comment>
+  </data>
+  <data name="PaymentGateWayResponseErrorMsg" xml:space="preserve">
+    <value>處理您的付款時發生技術問題。如果此問題仍然存在，請聯繫helpdesk@digiphotoglobal.com</value>
+    <comment>We faced a technical issue while processing your payment.Please contact helpdesk@digiphotoglobal.com if this issue persists</comment>
+  </data>
+  <data name="PaymentGateWayResponseReviewMsg" xml:space="preserve">
+    <value>您的訂單已被取消</value>
+    <comment>Your order has been canceled</comment>
+  </data>
+  <data name="PaymentMoneyText" xml:space="preserve">
+    <value>{金額}</value>
+    <comment>{Money}</comment>
+  </data>
+  <data name="PaymentReceiptViewFax" xml:space="preserve">
+    <value>傳真</value>
+    <comment>Fax</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderDate" xml:space="preserve">
+    <value>訂購日期</value>
+    <comment>Order Date</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderFailed" xml:space="preserve">
+    <value>付款失敗</value>
+    <comment>Payment Failed</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderFailMsg" xml:space="preserve">
+    <value>付款失敗</value>
+    <comment>Payment failed.</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderNo" xml:space="preserve">
+    <value>訂單編號。</value>
+    <comment>Order No.</comment>
+  </data>
+  <data name="PaymentReceiptViewOrderSuccessMsg" xml:space="preserve">
+    <value>訂購成功</value>
+    <comment>Order is successful</comment>
+  </data>
+  <data name="PaymentReceiptViewOtherInformation" xml:space="preserve">
+    <value>其他資料</value>
+    <comment>Other  Information</comment>
+  </data>
+  <data name="PaymentReceiptViewPayableAmount" xml:space="preserve">
+    <value>應付金額：</value>
+    <comment>Payable Amount:</comment>
+  </data>
+  <data name="PaymentReceiptViewpaymentInformation" xml:space="preserve">
+    <value>付款資料</value>
+    <comment>Payment Information</comment>
+  </data>
+  <data name="PaymentReceiptViewPaymentReceipt" xml:space="preserve">
+    <value>付款收據</value>
+    <comment>Payment Receipt</comment>
+  </data>
+  <data name="PaymentReceiptViewPaymentType" xml:space="preserve">
+    <value>付款方式</value>
+    <comment>Payment Type</comment>
+  </data>
+  <data name="PaymentReceiptViewProductName" xml:space="preserve">
+    <value>產品名稱</value>
+    <comment>Product Name</comment>
+  </data>
+  <data name="PaymentReceiptViewQty" xml:space="preserve">
+    <value>數量</value>
+    <comment>Qty :</comment>
+  </data>
+  <data name="PaymentReceiptViewQuantity" xml:space="preserve">
+    <value>數量</value>
+    <comment>Quantity</comment>
+  </data>
+  <data name="PaymentReceiptViewShippingCost" xml:space="preserve">
+    <value>運費</value>
+    <comment>Shipping Cost</comment>
+  </data>
+  <data name="PaymentReceiptViewSubTotal" xml:space="preserve">
+    <value>小計:</value>
+    <comment>Sub Total :</comment>
+  </data>
+  <data name="PaymentReceiptViewTax" xml:space="preserve">
+    <value>稅項</value>
+    <comment>Tax</comment>
+  </data>
+  <data name="PaymentReceiptViewTotal" xml:space="preserve">
+    <value>總數</value>
+    <comment>Total</comment>
+  </data>
+  <data name="PaymentReceiptViewTotalAmt" xml:space="preserve">
+    <value>總數：</value>
+    <comment>Total :</comment>
+  </data>
+  <data name="PaymentReceiptViewTrackingNumber" xml:space="preserve">
+    <value>交易參考號</value>
+    <comment>Transaction Ref No</comment>
+  </data>
+  <data name="PaymentReceiptViewUnitPrice" xml:space="preserve">
+    <value>單價</value>
+    <comment>Unit Price</comment>
+  </data>
+  <data name="PaymentStatusFailedMsg" xml:space="preserve">
+    <value>{金額}的付款失敗！</value>
+    <comment>Payment of {money} failed !</comment>
+  </data>
+  <data name="PaymentStatusSuccessMsg" xml:space="preserve">
+    <value>{金額}的付款已收到！</value>
+    <comment>Payment of {money} is received !</comment>
+  </data>
+  <data name="PaymentViewAddCoupon" xml:space="preserve">
+    <value>添加優惠券</value>
+    <comment>Add Coupon</comment>
+  </data>
+  <data name="PaymentViewAmericanexpress" xml:space="preserve">
+    <value>美國運通</value>
+    <comment>American express</comment>
+  </data>
+  <data name="PaymentViewAmountDue" xml:space="preserve">
+    <value>應付金額</value>
+    <comment>Amount Due</comment>
+  </data>
+  <data name="PaymentViewBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>BACK</comment>
+  </data>
+  <data name="PaymentViewBillingAddress" xml:space="preserve">
+    <value>帳單地址</value>
+    <comment>Billing Address</comment>
+  </data>
+  <data name="PaymentViewCardNumber" xml:space="preserve">
+    <value>卡號</value>
+    <comment>Card Number</comment>
+  </data>
+  <data name="PaymentViewCardType" xml:space="preserve">
+    <value>卡的種類</value>
+    <comment>Card Type</comment>
+  </data>
+  <data name="PaymentViewCouponCode" xml:space="preserve">
+    <value>優惠券代碼</value>
+    <comment>Coupon Code</comment>
+  </data>
+  <data name="PaymentViewCreditCard" xml:space="preserve">
+    <value>信用卡</value>
+    <comment>Credit Card</comment>
+  </data>
+  <data name="PaymentViewEditLinkText" xml:space="preserve">
+    <value>編輯</value>
+    <comment>Edit</comment>
+  </data>
+  <data name="PaymentViewExpiryMonth" xml:space="preserve">
+    <value>到期月份</value>
+    <comment>Expiry Month</comment>
+  </data>
+  <data name="PaymentViewExpiryYear" xml:space="preserve">
+    <value>到期年份</value>
+    <comment>Expiry Year</comment>
+  </data>
+  <data name="PaymentViewMerchandise" xml:space="preserve">
+    <value>商品</value>
+    <comment>Merchandise</comment>
+  </data>
+  <data name="PaymentViewOrderTotal" xml:space="preserve">
+    <value>合計訂單</value>
+    <comment>Order Total</comment>
+  </data>
+  <data name="PaymentViewPayment" xml:space="preserve">
+    <value>查看付款明細</value>
+    <comment>Review Payment Details</comment>
+  </data>
+  <data name="PaymentViewPlaceOrderButtonText" xml:space="preserve">
+    <value>付款</value>
+    <comment>PAY</comment>
+  </data>
+  <data name="PaymentViewPleaseWaitText" xml:space="preserve">
+    <value>請稍候...我們正在將您轉往網上保安支付網關站。</value>
+    <comment>Please Wait... We are redirecting you to the secure payment gateway site.</comment>
+  </data>
+  <data name="PaymentViewREVIEWPAYMENTDETAILSText" xml:space="preserve">
+    <value>查看付款細節</value>
+    <comment>REVIEW PAYMENT DETAILS</comment>
+  </data>
+  <data name="PaymentViewSameAsShipping" xml:space="preserve">
+    <value>（與送貨地址相同）</value>
+    <comment>(Same as Shipping Address)</comment>
+  </data>
+  <data name="PaymentViewSecurityCode" xml:space="preserve">
+    <value>網上保安編碼</value>
+    <comment>Security Code</comment>
+  </data>
+  <data name="PaymentViewShippingAddress" xml:space="preserve">
+    <value>送貨地址</value>
+    <comment>Shipping Address</comment>
+  </data>
+  <data name="PostSubmitRequestViewHeadingText" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="PostSubmitRequestViewInstruction" xml:space="preserve">
+    <value>您可以任何時候使用此登記號碼檢視您的查詢狀況</value>
+    <comment>Anytime you can go check the status of your request with this ticket number</comment>
+  </data>
+  <data name="PostSubmitRequestViewSupportTicketNumberText" xml:space="preserve">
+    <value>您的登記號碼是：</value>
+    <comment>Your support ticket number is :</comment>
+  </data>
+  <data name="PostSubmitRequestViewThankYouMessage" xml:space="preserve">
+    <value>感謝您提交查詢。</value>
+    <comment>Thank you for submitting the request.</comment>
+  </data>
+  <data name="QRClaimRequiredMessage" xml:space="preserve">
+    <value>請輸入您的密碼</value>
+    <comment>Please enter your Code</comment>
+  </data>
+  <data name="QRClaimValidateQRCodeExpirationMessage" xml:space="preserve">
+    <value>您的密碼已過期</value>
+    <comment>Your Code has expired.</comment>
+  </data>
+  <data name="QRClaimValidateQRCodeExpiryDaysMessage" xml:space="preserve">
+    <value>無法為此合作夥伴獲取二維碼選購有效期設置。</value>
+    <comment>Unable to get QRCodeClaimExpiryDays Setting for this Partner.</comment>
+  </data>
+  <data name="QRClaimValidateQRCodeInvalidCodeMessage" xml:space="preserve">
+    <value>無效的二維碼</value>
+    <comment>Invalid QR-Code</comment>
+  </data>
+  <data name="QRClaimValidationMessage" xml:space="preserve">
+    <value>密碼不能超過4個字符。</value>
+    <comment>Code cannot be longer than 4 characters.</comment>
+  </data>
+  <data name="SharedLanguagePartialCantFindPhotos" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>Can't Find Photos</comment>
+  </data>
+  <data name="SharedLanguagePartialEnglishUnitedStates" xml:space="preserve">
+    <value>英文-（美式）</value>
+    <comment>English-(US)</comment>
+  </data>
+  <data name="SharedLanguagePartialSelectLanguage" xml:space="preserve">
+    <value>選擇語言</value>
+    <comment>Select Language</comment>
+  </data>
+  <data name="ShippingAddressAddressRequiredMessage" xml:space="preserve">
+    <value>請輸入地址</value>
+    <comment>Please enter the Address</comment>
+  </data>
+  <data name="ShippingAddressCityRequiredMessage" xml:space="preserve">
+    <value>請進入城市</value>
+    <comment>Please enter the City</comment>
+  </data>
+  <data name="ShippingAddressEmailRequiredMessage" xml:space="preserve">
+    <value>請輸入電郵</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="ShippingAddressEmailValidationMessage" xml:space="preserve">
+    <value>電郵無效</value>
+    <comment>Email is not valid</comment>
+  </data>
+  <data name="ShippingAddressFirstNameRequiredMessage" xml:space="preserve">
+    <value>請輸入名字</value>
+    <comment>Please enter the First Name</comment>
+  </data>
+  <data name="ShippingAddressFirstNameValidationMessage" xml:space="preserve">
+    <value>名字只能包含字母</value>
+    <comment>First Name can only contain letters</comment>
+  </data>
+  <data name="ShippingAddressLastNameRequiredMessage" xml:space="preserve">
+    <value>請輸入姓氏</value>
+    <comment>Please enter the Last Name</comment>
+  </data>
+  <data name="ShippingAddressLastNameValidationMessage" xml:space="preserve">
+    <value>姓氏只能包含字母</value>
+    <comment>Last Name can only contain letters</comment>
+  </data>
+  <data name="ShippingAddressPhoneNumberRequiredMessage" xml:space="preserve">
+    <value>請輸入電話號碼</value>
+    <comment>Please enter the Phone Number</comment>
+  </data>
+  <data name="ShippingAddressZipCodeRequiredMessage" xml:space="preserve">
+    <value>請輸入郵政編碼</value>
+    <comment>Please enter the Zip Code</comment>
+  </data>
+  <data name="SocialMediaFacebookAuthenticationMessage" xml:space="preserve">
+    <value>用戶名稱或密碼無效</value>
+    <comment>Invalid Username or Password.</comment>
+  </data>
+  <data name="SocialMediaFacebookPostMessage" xml:space="preserve">
+    <value>照片已在 Facebook 上成功發布</value>
+    <comment>Photo posted successfully on Facebook</comment>
+  </data>
+  <data name="SocialMediaImagePostMessage" xml:space="preserve">
+    <value>抱歉為您帶來不便。您今天在 LinkedIn 上的發布已超出限制</value>
+    <comment>Sorry For inconvienence.Your posting limit for today on LinkedIn is over</comment>
+  </data>
+  <data name="SocialMediaLinkedInPostMessage" xml:space="preserve">
+    <value>照片已在 LinkedIn 上成功發布</value>
+    <comment>Photo posted successfully on LinkedIn</comment>
+  </data>
+  <data name="SocialMediaTwitterPostMessage" xml:space="preserve">
+    <value>照片已在 Twitter 上成功發布</value>
+    <comment>Photo posted successfully on Twitter</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailmessageText" xml:space="preserve">
+    <value>輸入信息</value>
+    <comment>Enter the message</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailRecepientAddressText" xml:space="preserve">
+    <value>輸入收件人地址</value>
+    <comment>Enter Recepient Address</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailSubjectText" xml:space="preserve">
+    <value>輸入主旨</value>
+    <comment>Enter the subject</comment>
+  </data>
+  <data name="SubstorePhotosViewEmailVideoTittleText" xml:space="preserve">
+    <value>電郵視頻</value>
+    <comment>Email Video</comment>
+  </data>
+  <data name="SubstorePhotosViewFacebookVideoTittleText" xml:space="preserve">
+    <value>Facebook視頻</value>
+    <comment>Facebook Video</comment>
+  </data>
+  <data name="SubStorePhotosViewRequiredText" xml:space="preserve">
+    <value>必須</value>
+    <comment>Required</comment>
+  </data>
+  <data name="SubStoreViewSubStoreBackButtonText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="SubStoreViewSubStoreClaimButtonText" xml:space="preserve">
+    <value>確認 (照片)</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="SubStoreViewSubStoreClaimPhototext" xml:space="preserve">
+    <value>確認更多照片</value>
+    <comment>Claim More Photos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreDownloadPhotoText" xml:space="preserve">
+    <value>下載照片</value>
+    <comment>Download Photos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreDownloadVideosText" xml:space="preserve">
+    <value>下載視頻</value>
+    <comment>Download Videos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreHeadingText" xml:space="preserve">
+    <value>我的照片</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="SubStoreViewSubStoreNextButtonText" xml:space="preserve">
+    <value>下一</value>
+    <comment>Next</comment>
+  </data>
+  <data name="SubStoreViewSubStoreNoRecord" xml:space="preserve">
+    <value>找不到照片</value>
+    <comment>No Photos Found</comment>
+  </data>
+  <data name="SubStoreViewSubStoreParaText" xml:space="preserve">
+    <value>您所確認的照片如下。 單擊每張照片以觀看、分享和下載。</value>
+    <comment>Photos you have claimed are below. Click each photo individually to view, share and download.</comment>
+  </data>
+  <data name="SubStoreViewSubStorePreviousButtonText" xml:space="preserve">
+    <value>預覽</value>
+    <comment>Prev</comment>
+  </data>
+  <data name="ThankYouViewCancelButtonText" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="ThankYouViewCloseReceiptButtonText" xml:space="preserve">
+    <value>關閉收據</value>
+    <comment>Close Receipt</comment>
+  </data>
+  <data name="ThankYouViewContinueShoppingButtonText" xml:space="preserve">
+    <value>繼續選購</value>
+    <comment>Continue Shopping</comment>
+  </data>
+  <data name="ThankYouViewContinueShoppingText" xml:space="preserve">
+    <value>繼續選購</value>
+    <comment>Continue Shopping</comment>
+  </data>
+  <data name="ThankYouViewDownloadInvoiceButtontext" xml:space="preserve">
+    <value>下載發票</value>
+    <comment>DOWNLOAD INVOICE</comment>
+  </data>
+  <data name="ThankYouViewFaxBillingInformation" xml:space="preserve">
+    <value>賬單資料</value>
+    <comment>Billing Information</comment>
+  </data>
+  <data name="ThankYouViewOrderId" xml:space="preserve">
+    <value>訂單編號</value>
+    <comment>Order Id</comment>
+  </data>
+  <data name="ThankYouViewPaymentInformation" xml:space="preserve">
+    <value>付款資料</value>
+    <comment>Payment Information</comment>
+  </data>
+  <data name="ThankYouViewPaymentStatusText" xml:space="preserve">
+    <value>付款狀態</value>
+    <comment>Payment Status</comment>
+  </data>
+  <data name="ThankYouViewPrintButtonText" xml:space="preserve">
+    <value>列印</value>
+    <comment>Print</comment>
+  </data>
+  <data name="ThankYouViewPrintOrderButtonText" xml:space="preserve">
+    <value>列印訂單</value>
+    <comment>PRINT ORDER</comment>
+  </data>
+  <data name="ThankYouViewResponseMessage" xml:space="preserve">
+    <value>您的訂單已收到。 感謝您的惠顧！</value>
+    <comment>Your order has been received. Thank you for your purchase!</comment>
+  </data>
+  <data name="ThankYouViewShippingCost" xml:space="preserve">
+    <value>運費 ：</value>
+    <comment>Shipping Cost  :</comment>
+  </data>
+  <data name="ThankYouViewShippingInformation" xml:space="preserve">
+    <value>送貨資料</value>
+    <comment>Shipping Information</comment>
+  </data>
+  <data name="ThankYouViewShoppingButtonText" xml:space="preserve">
+    <value>選購</value>
+    <comment>Shopping</comment>
+  </data>
+  <data name="ThankYouViewSpecialRequest" xml:space="preserve">
+    <value>小計</value>
+    <comment>Special Request :</comment>
+  </data>
+  <data name="ThankYouViewSubTotal" xml:space="preserve">
+    <value>小计：</value>
+    <comment>Sub  Total :</comment>
+  </data>
+  <data name="ThankYouViewTotal" xml:space="preserve">
+    <value>總數</value>
+    <comment>Total:</comment>
+  </data>
+  <data name="ThankYouViewValidationMessage" xml:space="preserve">
+    <value>您的訂單編號無效</value>
+    <comment>Your Order Id Is Not Valid</comment>
+  </data>
+  <data name="TimeOutRedirectPartialViewHeadingText" xml:space="preserve">
+    <value>超時錯誤</value>
+    <comment>Timeout Error</comment>
+  </data>
+  <data name="TimeOutRedirectPartialViewInstruction1Text" xml:space="preserve">
+    <value>對不起，但您的登入已超時。 您將在5秒內轉往登入頁面...</value>
+    <comment>Sorry, but your session has timed out. You'll be redirected to the Log in page in 5 seconds...</comment>
+  </data>
+  <data name="TimeOutRedirectPartialViewInstruction2Text" xml:space="preserve">
+    <value>點擊這裡登入</value>
+    <comment>Click here for Login</comment>
+  </data>
+  <data name="UserAddressRequiredMessage" xml:space="preserve">
+    <value>請輸入地址</value>
+    <comment>Please enter the Address</comment>
+  </data>
+  <data name="UserCityRequiredMessage" xml:space="preserve">
+    <value>請輸入城市</value>
+    <comment>Please enter the City</comment>
+  </data>
+  <data name="UserConfirmPasswordRequiredMessage" xml:space="preserve">
+    <value>請輸入確認密碼</value>
+    <comment>Please enter the Confirm Password</comment>
+  </data>
+  <data name="UserConfirmPasswordText" xml:space="preserve">
+    <value>確認密碼</value>
+    <comment>Confirm Password</comment>
+  </data>
+  <data name="UserConfirmPasswordValidationMessage" xml:space="preserve">
+    <value>密碼和確認密碼不符</value>
+    <comment>Password and Confirm Password do not match</comment>
+  </data>
+  <data name="UserCountryRequiredMessage" xml:space="preserve">
+    <value>請選擇你的國家</value>
+    <comment>Please select your country</comment>
+  </data>
+  <data name="UserDetailModelFirstNameText" xml:space="preserve">
+    <value>名字</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="UserDetailModelLastNameText" xml:space="preserve">
+    <value>姓氏</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="UserDOBFutureDateValidationMessage" xml:space="preserve">
+    <value>出生日期不可以是未來的日子</value>
+    <comment>Future Date Of Birth not allowed</comment>
+  </data>
+  <data name="UserDOBRequiredMessage" xml:space="preserve">
+    <value>必須提供出生日期。</value>
+    <comment>Date Of Birth is Required.</comment>
+  </data>
+  <data name="UserDOBValidationMessage" xml:space="preserve">
+    <value>請輸入有效的出生日期。</value>
+    <comment>Please enter Valid Date Of Birth.</comment>
+  </data>
+  <data name="UserEmailRequiredMessage" xml:space="preserve">
+    <value>請輸入電郵</value>
+    <comment>Please enter the Email</comment>
+  </data>
+  <data name="UserEmailText" xml:space="preserve">
+    <value>電郵</value>
+    <comment>Email</comment>
+  </data>
+  <data name="UserEmailValidationMessage" xml:space="preserve">
+    <value>電郵無效</value>
+    <comment>Email is not valid</comment>
+  </data>
+  <data name="UserFirstNameRequiredMessage" xml:space="preserve">
+    <value>請輸入名字</value>
+    <comment>Please enter the First Name</comment>
+  </data>
+  <data name="UserFirstNameText" xml:space="preserve">
+    <value>名字</value>
+    <comment>First Name</comment>
+  </data>
+  <data name="UserFirstNameValidationMessage" xml:space="preserve">
+    <value>名字只能包含字母</value>
+    <comment>First Name can only contain letters</comment>
+  </data>
+  <data name="UserGenderText" xml:space="preserve">
+    <value>性別</value>
+    <comment>Gender</comment>
+  </data>
+  <data name="UserLastNameRequiredMessage" xml:space="preserve">
+    <value>請輸入姓氏</value>
+    <comment>Please enter the Last Name</comment>
+  </data>
+  <data name="UserLastNameText" xml:space="preserve">
+    <value>姓氏</value>
+    <comment>Last Name</comment>
+  </data>
+  <data name="UserLastNameValidationMessage" xml:space="preserve">
+    <value>姓氏只能包含字母</value>
+    <comment>Last Name can only contain letters</comment>
+  </data>
+  <data name="UserNationalityText" xml:space="preserve">
+    <value>國籍</value>
+    <comment>Nationality</comment>
+  </data>
+  <data name="UserPasswordRequiredMessage" xml:space="preserve">
+    <value>請輸入密碼</value>
+    <comment>Please enter the Password</comment>
+  </data>
+  <data name="UserPasswordText" xml:space="preserve">
+    <value>密碼</value>
+    <comment>Password</comment>
+  </data>
+  <data name="UserPasswordValidationMessage" xml:space="preserve">
+    <value>密碼最少8個位，最多50個位，無空格。</value>
+    <comment>Password length minimum 8 and maximum 50 without spaces.</comment>
+  </data>
+  <data name="UserPhoneNumberRequiredMessage" xml:space="preserve">
+    <value>請輸入電話號碼</value>
+    <comment>Please enter the Phone Number</comment>
+  </data>
+  <data name="UserPromotionMessageText" xml:space="preserve">
+    <value>我希望收到促銷信息和通訊。</value>
+    <comment>I wish to receive promotional messages &amp; newsletters.</comment>
+  </data>
+  <data name="UserSaveUsersCorrectCaptchaMessage" xml:space="preserve">
+    <value>請輸入正確的驗證碼</value>
+    <comment>Please enter correct captcha</comment>
+  </data>
+  <data name="UserSaveUsersEmailAlreadyExistMessage" xml:space="preserve">
+    <value>電郵編號已存在</value>
+    <comment>Email Id already exist</comment>
+  </data>
+  <data name="UserSaveUsersSuccessfullyRegisteredMessage" xml:space="preserve">
+    <value>您已成功登記！ 請通過提供您的二維碼確認您的照片</value>
+    <comment>You have been successfully Registered! Please claim your photos by providing your QR Code</comment>
+  </data>
+  <data name="UserViewAlreadyRegisteredText" xml:space="preserve">
+    <value>已經登記？</value>
+    <comment>Already Registered?</comment>
+  </data>
+  <data name="UserViewAndText" xml:space="preserve">
+    <value>和</value>
+    <comment>and</comment>
+  </data>
+  <data name="UserViewAprMonthText" xml:space="preserve">
+    <value>四月</value>
+    <comment>Apr</comment>
+  </data>
+  <data name="UserViewAugMonthText" xml:space="preserve">
+    <value>八月</value>
+    <comment>Aug</comment>
+  </data>
+  <data name="UserViewByClickingText" xml:space="preserve">
+    <value>點擊</value>
+    <comment>By clicking</comment>
+  </data>
+  <data name="UserViewConfirmText" xml:space="preserve">
+    <value>按鈕，你確認你接受我們的</value>
+    <comment>button, you confirm that you accept our</comment>
+  </data>
+  <data name="UserViewDayText" xml:space="preserve">
+    <value>天</value>
+    <comment>Day</comment>
+  </data>
+  <data name="UserViewDecMonthText" xml:space="preserve">
+    <value>十二月</value>
+    <comment>Dec</comment>
+  </data>
+  <data name="UserViewFebMonthText" xml:space="preserve">
+    <value>二月</value>
+    <comment>Feb</comment>
+  </data>
+  <data name="UserViewFemaleText" xml:space="preserve">
+    <value>女</value>
+    <comment>Female</comment>
+  </data>
+  <data name="UserViewJanMonthText" xml:space="preserve">
+    <value>一月</value>
+    <comment>Jan</comment>
+  </data>
+  <data name="UserViewJulMonthText" xml:space="preserve">
+    <value>七月</value>
+    <comment>Jul</comment>
+  </data>
+  <data name="UserViewJunMonthText" xml:space="preserve">
+    <value>六月</value>
+    <comment>Jun</comment>
+  </data>
+  <data name="UserViewMaleText" xml:space="preserve">
+    <value>男</value>
+    <comment>Male</comment>
+  </data>
+  <data name="UserViewMarMonthText" xml:space="preserve">
+    <value>三月</value>
+    <comment>Mar</comment>
+  </data>
+  <data name="UserViewMayMonthText" xml:space="preserve">
+    <value>五月</value>
+    <comment>May</comment>
+  </data>
+  <data name="UserViewMonthText" xml:space="preserve">
+    <value>月</value>
+    <comment>Month</comment>
+  </data>
+  <data name="UserViewNovMonthText" xml:space="preserve">
+    <value>十一月</value>
+    <comment>Nov</comment>
+  </data>
+  <data name="UserViewOctMonthText" xml:space="preserve">
+    <value>十月</value>
+    <comment>Oct</comment>
+  </data>
+  <data name="UserViewPrivacyPolicyText" xml:space="preserve">
+    <value>私隱政策</value>
+    <comment>Privacy Policy</comment>
+  </data>
+  <data name="UserViewRegisterButtonText" xml:space="preserve">
+    <value>提交</value>
+    <comment>SUBMIT</comment>
+  </data>
+  <data name="UserViewRegistrationText" xml:space="preserve">
+    <value>登記</value>
+    <comment>REGISTRATION</comment>
+  </data>
+  <data name="UserViewSelectGenderText" xml:space="preserve">
+    <value>選擇性別</value>
+    <comment>Select Gender</comment>
+  </data>
+  <data name="UserViewSelectText" xml:space="preserve">
+    <value>選擇</value>
+    <comment>Select</comment>
+  </data>
+  <data name="UserViewSepMonthText" xml:space="preserve">
+    <value>九月</value>
+    <comment>Sep</comment>
+  </data>
+  <data name="UserViewSubmitText" xml:space="preserve">
+    <value>提交</value>
+    <comment>Submit</comment>
+  </data>
+  <data name="UserViewTermsofUseText" xml:space="preserve">
+    <value>使用條款</value>
+    <comment>Terms of Use</comment>
+  </data>
+  <data name="UserViewYearText" xml:space="preserve">
+    <value>年</value>
+    <comment>Year</comment>
+  </data>
+  <data name="UserZipCodeRequiredMessage" xml:space="preserve">
+    <value>請輸入郵政編碼</value>
+    <comment>Please enter the Zip Code</comment>
+  </data>
+  <data name="VideoDownloadMsg" xml:space="preserve">
+    <value>點擊此處查看/下載視頻</value>
+    <comment>Click here to View/Download the Video</comment>
+  </data>
+  <data name="ViewDownloadSubStoreClickHereDownloadPhotosText" xml:space="preserve">
+    <value>點擊此處下載mySnapps照片</value>
+    <comment>Click here to download mySnapps Photos</comment>
+  </data>
+  <data name="ViewDownloadSubStoreClickHereDownloadVideosText" xml:space="preserve">
+    <value>點擊此處下載mySnapps視頻</value>
+    <comment>Click here to download mySnapps Videos</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosClaimText" xml:space="preserve">
+    <value>確認照片</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosDownloadPhotosText" xml:space="preserve">
+    <value>下載照片</value>
+    <comment>DOWNLOAD PHOTOS</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosInstructionText" xml:space="preserve">
+    <value>如果您的下載不在30秒內開始，則</value>
+    <comment>If your download will not start in 30 seconds, then</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosMobileInstruction" xml:space="preserve">
+    <value>如果您使用的是蘋果 Iphone 電話，則需要一些解壓程式為您的照片解壓。</value>
+    <comment>If you are using IPhone, then you need some unzip utility to unzip your photos.</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosMyPhotosText" xml:space="preserve">
+    <value>我的照片</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="ViewDownloadSubStorePhotosText" xml:space="preserve">
+    <value>您可以從此頁面下載您的照片。</value>
+    <comment>You can download your photos from this page.</comment>
+  </data>
+  <data name="ViewDownloadSubStoreVideosText" xml:space="preserve">
+    <value>您可以從此頁面下載您的照片。</value>
+    <comment>You can download your videos from this page.</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailIdRequiredAlert" xml:space="preserve">
+    <value>必須提供電郵編號</value>
+    <comment>Email id is required</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailIdValidationAlert" xml:space="preserve">
+    <value>電郵編號無效</value>
+    <comment>Email id is not valid</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailNotSentAlertMessage" xml:space="preserve">
+    <value>電郵尚未發送</value>
+    <comment>Email has not been sent</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailSentAlertMessage" xml:space="preserve">
+    <value>電郵已成功發送</value>
+    <comment>Email has been sent successfully</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoEnablePopupAlertMessage" xml:space="preserve">
+    <value>請啟用此網站的彈出窗口繼續。</value>
+    <comment>Please enable popups for this site to continue.</comment>
+  </data>
+  <data name="ViewSubStorePhotosVideoUnexpectedErrorMessage" xml:space="preserve">
+    <value>意外錯誤！ 視頻網址不可用！</value>
+    <comment>Unexpected Error! Video URL Not available !</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewAlertText" xml:space="preserve">
+    <value>提示</value>
+    <comment>Alert</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewBackText" xml:space="preserve">
+    <value>返回</value>
+    <comment>Back</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewClaimText" xml:space="preserve">
+    <value>確認 (照片)</value>
+    <comment>Claim</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewDownloadText" xml:space="preserve">
+    <value>下載</value>
+    <comment>Download</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewEmailText" xml:space="preserve">
+    <value>電郵</value>
+    <comment>Email</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewInstruction" xml:space="preserve">
+    <value>您所確認的照片如下。 單擊每張照片以查看、分享和下載。</value>
+    <comment>Photos you have claimed are below. Click each photo individually to view, share and download.</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewMyPhoto" xml:space="preserve">
+    <value>我的照片</value>
+    <comment>My Photos</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewShareText" xml:space="preserve">
+    <value>分享</value>
+    <comment>Share</comment>
+  </data>
+  <data name="ViewSubStorePhotosViewVideoText" xml:space="preserve">
+    <value>視頻</value>
+    <comment>Video</comment>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsClaimMessageBeta" xml:space="preserve">
+    <value>我聲明我的Retrieval ID，但並不是我所有的照片出現</value>
+    <comment>I claimed my Retrieval ID but not all of my photos appeared</comment>
+  </data>
+  <data name="EditPhoto1WaterMarkMsg" xml:space="preserve">
+    <value>你有</value>
+    <comment>You have</comment>
+  </data>
+  <data name="EditPhoto1WaterMarkMsglast" xml:space="preserve">
+    <value>圖片留下體驗。</value>
+    <comment>images left to experience.</comment>
+  </data>
+  <data name="ViewSubStorePhotosDownloadWaterMark" xml:space="preserve">
+    <value>您無法下載照片，因為所有照片都加水印。</value>
+    <comment>You can not download the photos because all photos are watermarked.</comment>
+  </data>
+  <data name="ShippingCityLetterMessage" xml:space="preserve">
+    <value>城市只能包含字母</value>
+    <comment>City can only contain letters</comment>
+  </data>
+  <data name="ShippingNumericMessage" xml:space="preserve">
+    <value>允許數值。</value>
+    <comment>Numeric value is allowed.</comment>
+  </data>
+  <data name="ThankYouViewPhotos" xml:space="preserve">
+    <value>請轉到我的照片查看您的照片</value>
+    <comment>Please go to My Photos to view your photos</comment>
+  </data>
+  <data name="CustomerSupportValidNumberTcketMsg" xml:space="preserve">
+    <value>現場支持票號必須是一個數字。</value>
+    <comment>The field Support Ticket Number must be a number.</comment>
+  </data>
+  <data name="StatusAssigned" xml:space="preserve">
+    <value>分配</value>
+    <comment>Assigned</comment>
+  </data>
+  <data name="StatusCancel" xml:space="preserve">
+    <value>取消</value>
+    <comment>Cancel</comment>
+  </data>
+  <data name="StatusClosed" xml:space="preserve">
+    <value>關閉</value>
+    <comment>Closed</comment>
+  </data>
+  <data name="StatusDuplicate" xml:space="preserve">
+    <value>重複</value>
+    <comment>Duplicate</comment>
+  </data>
+  <data name="StatusInProgress" xml:space="preserve">
+    <value>進行中</value>
+    <comment>InProgress</comment>
+  </data>
+  <data name="StatusInSufficientInformation" xml:space="preserve">
+    <value>信息不足</value>
+    <comment>InSufficient Information</comment>
+  </data>
+  <data name="StatusNew" xml:space="preserve">
+    <value>新</value>
+    <comment>New</comment>
+  </data>
+  <data name="StatusOnHold" xml:space="preserve">
+    <value>等候接聽</value>
+    <comment>OnHold</comment>
+  </data>
+  <data name="StatusReOpen" xml:space="preserve">
+    <value>重新打開</value>
+    <comment>ReOpen</comment>
+  </data>
+  <data name="StatusResolved" xml:space="preserve">
+    <value>解決</value>
+    <comment>Resolved</comment>
+  </data>
+</root>

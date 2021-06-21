@@ -1,0 +1,59 @@
+﻿@model ExamStudent.Models.Franchy
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+
+
+<div class="container">
+    <h4 class="main-title-w3layouts mb-2 text-center">Franchy Details</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Code)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Code)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Amount)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Amount)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.gstPercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.gstPercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Transpercentage)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Transpercentage)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.FranchiesName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.FranchiesName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }, new { @class = "btn btn-danger" }) |
+    @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-primary" })
+</p>

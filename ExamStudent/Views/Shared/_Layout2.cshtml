@@ -1,0 +1,52 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <title>@Page.Title</title>
+    @RenderSection("head", required: false)
+
+    <title>DashBoard</title>
+
+    <link href="~/Content/bootstrap.css" rel="stylesheet" />
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+
+   
+
+    @Scripts.Render("~/bundles/jquery")
+</head>
+<body>
+
+    <div class="row">
+
+        <div class="col-lg-2 col-md-2 col-sm-2 col-xs-2" style="height:900px;border:1px solid gray; background: #808080">
+            <ul class="list-group">
+                <li class="list-group-item"><a class="font-weight-bold btn btn-primary" href="/Admin/DashBoard">DashBoard</a></li>
+                <li class="list-group-item"><a class="font-weight-bold btn btn-success" href="/Admin/ScheduleExam">Set Exam Schedule</a></li>
+                <li class="list-group-item"><a class="font-weight-bold btn btn-info" href="/Admin/Category">Add New Category</a></li>
+                <li class="list-group-item"><a class="font-weight-bold btn btn-warning" href="/Admin/AddQuestion">Add New Question</a></li>
+                <li class="list-group-item"><a class="font-weight-bold btn btn-danger" href="/Admin/AddAnswer">Add New Answer</a></li>
+                <li class="list-group-item"><a class="font-weight-bold btn btn-primary" href="/Admin/AddChoice">Add Choice Answer</a></li>
+
+                <li class="list-group-item"><a class="font-weight-bold btn btn-success" href="/Admin/Report">Report</a></li>
+                <li class="list-group-item"><a class="font-weight-bold btn btn-danger" href="/Admin/Logout">LogOut</a></li>
+
+            </ul>
+
+            <ul class="list-group">
+                <li class="list-group-item"><a class="font-weight-bold btn btn-primary" href="/Quiz/ScheduleIndex">Schedule Details</a></li>
+               
+
+            </ul>
+
+        </div>
+
+        <div class="col-lg-10 col-md-10 col-sm-10 col-xs-10" style="">
+        
+            @RenderBody()
+
+        </div>
+
+    </div>
+
+   
+</body>
+</html>

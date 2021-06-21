@@ -1,0 +1,294 @@
+﻿@model IEnumerable<ExamStudent.Models.Tab_User_Info_Temp>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<h2 class="main-title-w3layouts mb-2 text-center">Get All Student List</h2>
+<br />
+
+@section styles{
+    <!-- DataTables -->
+    <link href="~/Content/assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <!-- Responsive datatable examples -->
+    <link href="~/Content/assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+    <style>
+        .switch {
+            position: relative;
+            display: inline-block;
+            width: 60px;
+            height: 34px;
+        }
+
+            /* Hide default HTML checkbox */
+            .switch input {
+                opacity: 0;
+                width: 0;
+                height: 0;
+            }
+
+        /* The slider */
+        .slider {
+            position: absolute;
+            cursor: pointer;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background-color: #ccc;
+            -webkit-transition: .4s;
+            transition: .4s;
+        }
+
+            .slider:before {
+                position: absolute;
+                content: "";
+                height: 26px;
+                width: 26px;
+                left: 4px;
+                bottom: 4px;
+                background-color: white;
+                -webkit-transition: .4s;
+                transition: .4s;
+            }
+
+        input:checked + .slider {
+            background-color: #2196F3;
+        }
+
+        input:focus + .slider {
+            box-shadow: 0 0 1px #2196F3;
+        }
+
+        input:checked + .slider:before {
+            -webkit-transform: translateX(26px);
+            -ms-transform: translateX(26px);
+            transform: translateX(26px);
+        }
+
+        /* Rounded sliders */
+        .slider.round {
+            border-radius: 34px;
+        }
+
+            .slider.round:before {
+                border-radius: 50%;
+            }
+    </style>
+}
+
+<div class="table-responsive">
+
+    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+        <thead>
+            <tr>
+
+                <th>
+
+                    Name
+
+                </th>
+                <th>
+                    Email-Address
+
+                </th>
+
+
+                <th>
+                    BoardType Name
+
+                </th>
+                <th>
+                    Medium Name
+
+                </th>
+                <th>
+                    Standard Name
+
+                </th>
+
+                <th>
+                    usercode
+
+                </th>
+                <th>
+                    ReferlName
+
+                </th>
+
+                <th>
+                    State
+
+                </th>
+                <th>
+                    City
+
+                </th>
+                <th>
+                    Course
+                </th>
+                <th>
+                    Mobile Number
+
+                </th>
+                <th>
+                    Date
+                </th>
+
+
+                <th>
+                    Password
+
+                </th>
+                <th>
+                    Confirm Password
+
+                </th>
+               
+                <th>I Approve</th>
+
+            </tr>
+        </thead>
+        <tbody>
+
+            @foreach (var item in Model)
+            {
+            <tr>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.Name)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmailAddress)
+                </td>
+
+
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.BoardType.BoardTypeName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Medium.MediumName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Standard.StandardName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.usercode)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ReferlName)
+                </td>
+
+                <td>
+                    @Html.DisplayFor(modelItem => item.State.StateName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.City.CityName)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.EmpID)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.MobileNumber)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Date)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.Password)
+                </td>
+                <td>
+                    @Html.DisplayFor(modelItem => item.ConfirmPassword)
+                </td>
+               
+
+                <!--<td>
+    @Html.ActionLink("Edit", "Edit", new { id = item.Id }, new { @class = "btn btn-primary" }) |
+    @Html.ActionLink("Details", "Details", new { id = item.Id }, new { @class = "btn btn-danger" }) |-->
+                @*@Html.ActionLink("Delete", "Delete", new { id = item.Id })*@
+                <!--</td>-->
+
+                <td>
+
+                    @if (item.IsApproved == true)
+                    {
+                        <label class="switch">
+                            <input type="checkbox" checked id="@item.Id" onchange="statusChange(this)">
+
+                            <span class="slider round"></span>
+                        </label>
+                    }
+                    @if (item.IsApproved != true)
+                    {
+                        <label class="switch">
+                            <input type="checkbox" id="@item.Id" onchange="statusChange(this)">
+
+                            <span class="slider round"></span>
+                        </label>
+                    }
+
+
+                </td>
+
+            </tr>
+            }
+        </tbody>
+    </table>
+
+</div>
+
+@section scripts{
+    <!-- Required datatable js -->
+    <script src="~/Content/assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="~/Content/assets/libs/jszip/jszip.min.js"></script>
+    <script src="~/Content/assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="~/Content/assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Responsive examples -->
+    <script src="~/Content/assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+    <script src="~/Content/assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+
+
+}
+
+<script src="~/Content/assets/libs/jquery/jquery.min.js"></script>
+<script>
+    $(document).ready(function () {
+
+        $('#datatable').DataTable({
+            dom: 'Bfrtip',
+            buttons: [
+                'copyHtml5',
+                'excelHtml5',
+                'csvHtml5',
+                'pdfHtml5',
+                'print'
+            ]
+        });
+
+    });
+    function statusChange(element) {
+        var id = element.id;
+        var status = element.checked;
+        $.ajax({
+            type: "Get",
+            url: '../../Admin/UserStatuStudent?checkid=' + id + '&&status=' + status + '',
+            dataType: "json",
+            contentType: "application/json; charset=utf-8",
+            success: function () {
+            }
+        });
+    }
+</script>

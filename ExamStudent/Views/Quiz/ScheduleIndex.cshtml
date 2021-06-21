@@ -1,0 +1,58 @@
+﻿@model IEnumerable<ExamStudent.Models.ScheduleExam>
+
+@{
+    ViewBag.Title = "ScheduleIndex";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+
+
+
+
+<h2>Schedule Index</h2>
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table id="Schedule" class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.ScheduleDateTime)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.BoardType.BoardTypeName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Medium.MediumName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.Standard.StandardName)
+        </th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.ScheduleDateTime)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoardType.BoardTypeName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Medium.MediumName)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.Standard.StandardName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "ScheduleEdit", new { id = item.ExamScheduleID } , new {@class = "btn btn-primary" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.ExamScheduleID }, new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.ExamScheduleID }, new { @class = "btn btn-danger" })
+            </td>
+        </tr>
+    }
+
+</table>
+

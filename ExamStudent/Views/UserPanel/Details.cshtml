@@ -1,0 +1,227 @@
+﻿@model ExamStudent.Models.Tab_User_Info_Temp
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>Details</h2>
+
+<div>
+    <h4>Tab_User_Info_Temp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.ApplicationID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ApplicationID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.MobileNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.MobileNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BoardType)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BoardType)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medium)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medium)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Standard)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Standard)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.IsActive)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.IsActive)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.CreatedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.CreatedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ModifiedDate)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ModifiedDate)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ConfirmPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Block)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Block)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usercode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usercode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferlName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferlName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.u_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.u_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.City.CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.City.CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpCourse.Course)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpCourse.Course)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.State.StateName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.State.StateName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tab_User_Info_Temp1.ApplicationID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tab_User_Info_Temp1.ApplicationID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Tab_User_Info_Temp2.ApplicationID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Tab_User_Info_Temp2.ApplicationID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.BoardType1.BoardTypeName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.BoardType1.BoardTypeName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Medium1.MediumName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Medium1.MediumName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Standard1.StandardName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Standard1.StandardName)
+        </dd>
+
+    </dl>
+</div>
+<p>
+    @Html.ActionLink("Edit", "Edit", new { id = Model.Id }) |
+    @Html.ActionLink("Back to List", "Index")
+</p>

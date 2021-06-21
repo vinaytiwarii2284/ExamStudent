@@ -1,0 +1,51 @@
+﻿
+@{
+    ViewBag.Title = "AdminCMS";
+}
+
+    <br /><br /><br /><br /><br /><br /><br /><br /><br /><br />
+
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<style>
+    .bs-example {
+        margin: 20px;
+    }
+</style>
+
+
+<h2>Admin CMS</h2>
+
+<div class="bs-example">
+    <ul class="nav nav-tabs">
+
+        <li class="nav-item">
+            <a href="@Url.Action("Subject" , "Admin")" class="nav-link active">Create Subject</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="@Url.Action("Subject" , "Admin")" class="nav-link">Create Subject</a>
+        </li>
+        <li class="nav-item">
+            <a href="@Url.Action("create" , "BoardType")" class="nav-link">Create BoardTypes</a>
+        </li>
+        <li class="nav-item">
+            <a href="@Url.Action("create" , "Meadium")" class="nav-link">Create Meadium</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="@Url.Action("create" , "Course")" class="nav-link">Create Course</a>
+        </li>
+
+        <li class="nav-item">
+            <a href="@Url.Action("create" , "Standard")" class="nav-link">Create Standard</a>
+        </li>
+    </ul>
+</div>
+
+
+
+<br /><br /><br /><br /><br /><br /><br />

@@ -1,0 +1,165 @@
+﻿@model ExamStudent.ViewModels.BillViewmodel
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<div class="container" id="registerdata">
+    <h2 class="text-dark text-center"> @Model.UserName Payment Bill</h2><br /> 
+    <hr />
+    <div class="card">
+        <div class="card-header">
+            Invoice
+            <strong>@DateTime.Now</strong>
+            <span class="float-right"> <strong>Status:</strong> Pending</span>
+        </div>
+        <div class="card-body">
+            <h1 class="d-print-none">
+                <a class="navbar-brand" href="@Url.Action("Index" , "Home")">
+                    E<span>d</span><span>u</span>Al<span>p</span>h<span>a</span>b<span>e</span>t<span>.com</span>
+                </a>
+            </h1>
+            <br />
+            <div class="row mb-4">
+                <div class="col-sm-6">
+
+                    <div>
+                        <strong>Dear</strong>
+                    </div>
+                    <br />
+                    <div><strong>User Name :</strong> @Model.CustomerName</div>
+                    <div><strong>Email :</strong>  @Model.email</div>
+                    <div><strong>Phone :</strong>  @Model.Mobile</div>
+                </div>
+            </div>
+
+            @*<div class="table-responsive-sm">
+            <table class="table table-striped">
+                <thead>
+                    <tr>
+                        <th class="center">Amount</th>
+                        <th>18% GST</th>
+                        <th>3% Transaction Charge</th>
+
+                        <th class="right">Total</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td class="center">@Model.Amount</td>
+                        <td class="left strong">@Model.gst</td>
+                        <td class="left">@Model.tramt</td>
+                        <td class="right">@Model.Total</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>*@
+            <div class="row">
+                <div class="col-lg-4 col-sm-5">
+
+                </div>
+
+                <div class="col-lg-4 col-sm-5 ml-auto">
+                    <table class="table table-clear">
+                        <tbody>
+                            <tr>
+                                <td class="left">
+                                    <strong>Fee Amount</strong>
+                                </td>
+                                <td class="right"><span>&#8377;</span>@Model.Amount</td>
+                            </tr>
+                            <tr>
+                                <td class="left">
+                                    <strong>GST (18%)</strong>
+                                </td>
+                                <td class="right"><span>&#8377;</span>@Model.gst</td>
+                            </tr>
+                            <tr>
+                                <td class="left">
+                                    <strong>Transaction Charge (3%)</strong>
+                                </td>
+                                <td class="right"><span>&#8377;</span>@Model.tramt</td>
+                            </tr>
+                            <tr>
+                                <td class="left">
+                                    <strong>Total</strong>
+                                </td>
+                                <td class="right">
+                                    <strong><span>&#8377;</span>@Model.Total</strong>
+                                </td>
+                            </tr>
+                        </tbody>
+                    </table>
+
+                </div>
+
+            </div>
+
+            <div class="d-print-none">
+                <div class="float-right">
+                    @*<a href="javascript:window.print()"  class="btn btn-success">Print</a>*@
+                    <a href="../../UserAccount/Pay/@Model.APPID" class="btn btn-primary ml-2 btn-lg">Pay Now</a>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+
+<script>
+    $(document).ready(function () {
+        focusAction()
+    });
+
+    function focusAction() {
+        $('html , body').animate({
+            scrollTop: $("#registerdata").offset().top - 200
+        }, 1000)
+    }
+
+</script>
+
+
+
+<!--<div class="container table-responsive" id="registerdata">
+
+    <h2 class="text-dark text-center"> @Model.UserName Payment Bil</h2><br />
+    <table id="datatable" class="table table-bordered dt-responsive nowrap" style="border-collapse: collapse; border-spacing: 0; width: 100%;">
+        <thead>
+
+            <tr class="warning">
+                <th>Amount</th>
+                <th>18% GST</th>
+                <th>3% Transaction Charge</th>
+                <th>Total</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>@Model.Amount</td>
+                <td>@Model.gst</td>
+                <td>@Model.tramt</td>
+                <td>@Model.Total</td>
+            </tr>
+
+        </tbody>
+    </table>
+    <div class="d-print-none">
+        <div class="float-right">-->
+            @*<a href="javascript:window.print()"  class="btn btn-success">Print</a>*@
+            <!--<a href="../../UserAccount/Pay/@Model.APPID" class="btn btn-primary ml-2">Pay Now</a>
+        </div>
+    </div>
+</div>-->

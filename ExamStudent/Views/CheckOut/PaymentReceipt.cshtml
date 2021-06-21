@@ -1,0 +1,64 @@
+﻿@model ExamStudent.ViewModel.Order
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewPaymentReceipt</title>
+    <style type="text/css">
+        body {
+            font-family: Calibri, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+    <script type="text/javascript">
+        function refreshAndClose() {
+             
+            window.opener.location.reload(true);
+            window.close();
+        }
+         
+        function PrintElem(elem) {
+             
+            Popup($(elem).html());
+        }
+
+        function Popup(data) {
+            var mywindow = window.open('', '', 'height=' + screen.height + ',width=' + screen.width + ',resizable=yes');
+            mywindow.document.write('<html><head><title></title>');
+            mywindow.document.write('</head><body >');
+            mywindow.document.write(data);
+            mywindow.document.write('</body></html>');
+            mywindow.document.close(); // necessary for IE >= 10
+            mywindow.focus(); // necessary for IE >= 10
+            mywindow.print();
+            mywindow.close();
+            return true;
+        }
+    </script>
+</head>
+<body style="overflow-y: auto;position: relative;-ms-overflow-style:scrollbar" onbeforeunload="refreshAndClose();">
+    @*<div style=" text-align:center; margin:0 20px 0;">
+        <img src="http://imixpartnerbrandedweb.commdel.com//Images/logo.png" />
+    </div>*@
+
+    <div class="ww_static_header">
+        <div class="heading text-center">Payment Information</div>
+    </div>
+
+    <div class="container" id="">
+
+        <div id="photosOptions" class="inner">
+            <div class="col-md-12 col-sm-12 shopCartSec" id="printReceipt">
+                @Html.Partial("_PaymentDetail")               
+            </div>
+            <div >
+                <input class="btn yellow_btn pull-right" type='submit' value="CANCEL" style="margin: 0 10px;" name='btnSave' id='btnSave' onclick='window.close()' />&nbsp;&nbsp;&nbsp;&nbsp;
+                <input class="btn yellow_btn pull-right " type='button' value="PRINT" name='btnSave' id='btnSave' onclick="PrintElem('#printReceipt')" />
+                
+            </div>
+
+        </div>
+    </div>
+</body>
+</html>

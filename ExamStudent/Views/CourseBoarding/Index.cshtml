@@ -1,0 +1,56 @@
+﻿@model IEnumerable<ExamStudent.Models.BoardType>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br />
+<br />
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<h2 class="text-dark text-center"> BoardType List Panel</h2>
+
+<br />
+<br />
+
+<p>
+    @Html.ActionLink("Create New", "BoardType", null, new { @class = "btn btn-primary" })
+</p>
+
+<br />
+
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.BoardTypeName)
+        </th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.BoardTypeName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "GetBoardTypeID", new { id = item.BoardTypeID }, new { @class = "btn btn-danger" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.BoardTypeID }, new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Delete", "Delete", new { id = item.BoardTypeID }, new { @class = "btn btn-primary", onclick = "return confirmDelete()" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+
+<script>
+
+    function confirmDelete() {
+      
+        return confirm('Are You Sure You Wath To Delete This Record????.');
+             
+    }          
+</script>

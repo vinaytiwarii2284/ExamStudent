@@ -1,0 +1,145 @@
+﻿@model ExamStudent.Models.Employee_Form_Temp
+
+@{
+    ViewBag.Title = "Delete";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+}
+
+<h2>Delete</h2>
+
+<h3>Are you sure you want to delete this?</h3>
+<div>
+    <h4>Employee_Form_Temp</h4>
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayNameFor(model => model.Employee_Name)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Employee_Name)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_DOB)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_DOB)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_MobileNumber)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_MobileNumber)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_Block)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_Block)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_Password)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_Password)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_ConfirmPassword)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_ConfirmPassword)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_EmailAddress)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_EmailAddress)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_AppID)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_AppID)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.usercode)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.usercode)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferlName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferlName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.u_status)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.u_status)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.Emp_City.Emp_CityName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Emp_City.Emp_CityName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.EmpState.Emp_State)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.EmpState.Emp_State)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.PostForm.PostName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.PostForm.PostName)
+        </dd>
+
+        <dt>
+            @Html.DisplayNameFor(model => model.ReferalForm.ReferalName)
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.ReferalForm.ReferalName)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Delete" class="btn btn-default" /> |
+            @Html.ActionLink("Back to List", "Index")
+        </div>
+    }
+</div>

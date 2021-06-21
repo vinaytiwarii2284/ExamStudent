@@ -1,0 +1,45 @@
+﻿@model ExamStudent.ViewModels.StandardViewModel
+
+@{
+    ViewBag.Title = "Standard";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<h2 class="text-center text-dark">Standard</h2>
+<br />
+<br />
+<hr />
+
+<div class="container">
+
+    <form method="post">
+
+        <h2>@ViewBag.errormsg</h2>
+
+        <div class="form-group">
+
+            @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumId", "MediumName"),
+                                                   new { @class = "form-control col-md-5" })
+        </div>
+
+        <div class="form-group">
+
+            <label>Standard Name</label>
+
+            <input name="StandardName" type="text" class="form-control col-md-5" />
+
+        </div>
+
+        <button class="btn btn-primary">Save</button>
+
+    </form>
+</div>
+<br />
+<br />
+<br />
+<br />

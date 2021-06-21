@@ -1,0 +1,80 @@
+﻿@model ExamStudent.ViewModel.Order
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <link rel="stylesheet" href="~/Content/bootstrap.css" />
+    <link rel="stylesheet" href="~/Content/custom-mediaQuery.css" />
+    <link rel="stylesheet" href="~/Content/theme.css" />
+    <title>Thanks</title>
+    <style>
+        .bntlink {
+            margin-left: 10px;
+        }
+    </style>
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12">
+                    <div class="text-center">
+                        <a href="/SubStores/ViewSubStores"><img src="/Images/logo.png" alt="">   </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </header>
+    <div class="container">
+        <div class="ww_title">
+            <h1 class="row">
+                <div class="col-xs-4 text-left"></div>
+                <div class="col-xs-4 text-center"><span class="ww_title_links">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPaymentInformation</span></div>
+                <div class="col-xs-4 text-right"></div>
+                <div class="clearfix"></div>
+            </h1>
+        </div>
+        <div id="photosOptions" class="photoscontainer">
+            <div class="col-md-12 col-sm-12 shopCartSec" style="padding-left:0px;">
+                @Html.Partial("_PaymentDetail")
+                <div class="row no-margin">
+                    @*@if (Model.OrderItems != null)
+                        {
+                            <a href="#" class="pinkbtn pull-left" onclick="myFunction();">
+                                @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPrintOrderButtonText
+                            </a>
+                        }*@
+                    @if (Model.OrderStatus == 1)
+                    {
+                        <a style=" float: left; margin: 12px 0 0 20px; width:130px; color:#bf2236;" class="bntlink" href='@Url.Action("ViewSubStores", "SubStores", "")'>
+                            @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPhotos
+
+                            <img src="~/Images/Invoice_icon.png" style="float: right; margin: 5px 0 0;" />
+                        </a>
+                        
+                        <a style=" float: left; margin: 12px 0 0 20px; width:130px; color:#bf2236;" class="bntlink" href='@Url.Action("GeneratePdfMobile", "Checkout", Model )'>
+                            @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewDownloadInvoiceButtontext
+
+                            <img src="~/Images/Invoice_icon.png" style="float: right; margin: 5px 0 0;" />
+                        </a>
+                        <a style=" float: left; margin: 12px 0 0 20px; width:130px; color:#bf2236;" class="bntlink" href='@ViewBag.CloseMobileReceiptPath'>
+                            @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewCloseReceiptButtonText
+
+                            <img src="~/Images/CloseMReceipt.png" style="float: right; margin: 5px 0 0;" />
+                        </a>
+                        
+                    }                   
+                </div>
+            </div>
+            <div class="clearfix"></div>
+        </div>
+    </div>
+</body>
+</html>
+
+

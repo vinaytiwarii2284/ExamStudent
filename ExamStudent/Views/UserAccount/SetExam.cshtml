@@ -1,0 +1,59 @@
+﻿@model ExamStudent.ViewModels.SetExamCategoryViewModel
+@{
+    ViewBag.Title = "SetExam";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+}
+
+<h2 class="display-4 text-center">Student Set Exam</h2>
+
+<div class="container">
+
+    <div class="row">
+
+        <form method="post"action="@Url.Action("StudentExam","UserAccount")"  class="search-job">
+            <div class="col-md-6">
+
+                @Html.DropDownListFor(m => m.Category_ID, new SelectList(Model.CategoriesList, "Category_ID", "Category_Name"), "--Select Exam -- ",
+                                            new { @class = "form-control " })
+
+
+                <br /><br />
+
+                <div class="dropdown btn-group">
+                    <a class="btn btn-default dropdown-toggle" data-toggle="dropdown" href="#">
+                        Select Category <span class="caret"></span>
+                    </a>
+                    <ul class="dropdown-menu">
+
+                        @if (Model.CategoriesList != null && Model.CategoriesList.Count > 0)
+                        {
+                            foreach (var category in Model.CategoriesList)
+                            {
+                                <li><a href="@Url.Action("StudentExam","UserAccount" , new { categoryID = category.Category_ID})">@category.Category_Name</a></li>
+                               
+                                @*<li><a href="/UserAccount/StudentExam/@category.Category_ID">@category.Category_Name</a></li>*@
+
+                            }
+                        }
+                        else
+                        {
+                            <li><a class="text-danger"> <b>No Records Founds.</b></a></li>
+                        }
+
+                    </ul>
+                </div>
+
+            </div>
+
+
+            <button class="btn btn-primary">Submit</button>
+
+        </form>
+
+
+
+    </div>
+
+</div>
+
+

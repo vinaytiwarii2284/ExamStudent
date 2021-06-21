@@ -1,0 +1,1504 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<root>
+  <!-- 
+    Microsoft ResX Schema 
+    
+    Version 2.0
+    
+    The primary goals of this format is to allow a simple XML format 
+    that is mostly human readable. The generation and parsing of the 
+    various data types are done through the TypeConverter classes 
+    associated with the data types.
+    
+    Example:
+    
+    ... ado.net/XML headers & schema ...
+    <resheader name="resmimetype">text/microsoft-resx</resheader>
+    <resheader name="version">2.0</resheader>
+    <resheader name="reader">System.Resources.ResXResourceReader, System.Windows.Forms, ...</resheader>
+    <resheader name="writer">System.Resources.ResXResourceWriter, System.Windows.Forms, ...</resheader>
+    <data name="Name1"><value>this is my long string</value><comment>this is a comment</comment></data>
+    <data name="Color1" type="System.Drawing.Color, System.Drawing">Blue</data>
+    <data name="Bitmap1" mimetype="application/x-microsoft.net.object.binary.base64">
+        <value>[base64 mime encoded serialized .NET Framework object]</value>
+    </data>
+    <data name="Icon1" type="System.Drawing.Icon, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+        <value>[base64 mime encoded string representing a byte array form of the .NET Framework object]</value>
+        <comment>This is a comment</comment>
+    </data>
+                
+    There are any number of "resheader" rows that contain simple 
+    name/value pairs.
+    
+    Each data row contains a name, and value. The row also contains a 
+    type or mimetype. Type corresponds to a .NET class that support 
+    text/value conversion through the TypeConverter architecture. 
+    Classes that don't support this are serialized and stored with the 
+    mimetype set.
+    
+    The mimetype is used for serialized objects, and tells the 
+    ResXResourceReader how to depersist the object. This is currently not 
+    extensible. For a given mimetype the value must be set accordingly:
+    
+    Note - application/x-microsoft.net.object.binary.base64 is the format 
+    that the ResXResourceWriter will generate, however the reader can 
+    read any of the formats listed below.
+    
+    mimetype: application/x-microsoft.net.object.binary.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Binary.BinaryFormatter
+            : and then encoded with base64 encoding.
+    
+    mimetype: application/x-microsoft.net.object.soap.base64
+    value   : The object must be serialized with 
+            : System.Runtime.Serialization.Formatters.Soap.SoapFormatter
+            : and then encoded with base64 encoding.
+
+    mimetype: application/x-microsoft.net.object.bytearray.base64
+    value   : The object must be serialized into a byte array 
+            : using a System.ComponentModel.TypeConverter
+            : and then encoded with base64 encoding.
+    -->
+  <xsd:schema id="root" xmlns="" xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:msdata="urn:schemas-microsoft-com:xml-msdata">
+    <xsd:import namespace="http://www.w3.org/XML/1998/namespace" />
+    <xsd:element name="root" msdata:IsDataSet="true">
+      <xsd:complexType>
+        <xsd:choice maxOccurs="unbounded">
+          <xsd:element name="metadata">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" />
+              </xsd:sequence>
+              <xsd:attribute name="name" use="required" type="xsd:string" />
+              <xsd:attribute name="type" type="xsd:string" />
+              <xsd:attribute name="mimetype" type="xsd:string" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="assembly">
+            <xsd:complexType>
+              <xsd:attribute name="alias" type="xsd:string" />
+              <xsd:attribute name="name" type="xsd:string" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="data">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+                <xsd:element name="comment" type="xsd:string" minOccurs="0" msdata:Ordinal="2" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" msdata:Ordinal="1" />
+              <xsd:attribute name="type" type="xsd:string" msdata:Ordinal="3" />
+              <xsd:attribute name="mimetype" type="xsd:string" msdata:Ordinal="4" />
+              <xsd:attribute ref="xml:space" />
+            </xsd:complexType>
+          </xsd:element>
+          <xsd:element name="resheader">
+            <xsd:complexType>
+              <xsd:sequence>
+                <xsd:element name="value" type="xsd:string" minOccurs="0" msdata:Ordinal="1" />
+              </xsd:sequence>
+              <xsd:attribute name="name" type="xsd:string" use="required" />
+            </xsd:complexType>
+          </xsd:element>
+        </xsd:choice>
+      </xsd:complexType>
+    </xsd:element>
+  </xsd:schema>
+  <resheader name="resmimetype">
+    <value>text/microsoft-resx</value>
+  </resheader>
+  <resheader name="version">
+    <value>2.0</value>
+  </resheader>
+  <resheader name="reader">
+    <value>System.Resources.ResXResourceReader, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <resheader name="writer">
+    <value>System.Resources.ResXResourceWriter, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
+  </resheader>
+  <data name="AccountUserViewModelLastNameValidationMessage" xml:space="preserve">
+    <value>Last Name can only contain letters</value>
+  </data>
+  <data name="AccountUserViewModelNameLengthValidationMessage" xml:space="preserve">
+    <value>Maximum of 50 characters allowed.</value>
+  </data>
+  <data name="AccountUserViewModelPasswordRequiredMessage" xml:space="preserve">
+    <value>Please enter the Password</value>
+  </data>
+  <data name="AccountUserViewModelPasswordText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="AccountUserViewModelPasswordValidationMessage" xml:space="preserve">
+    <value>Password length minimum 8 and maximum 50 without spaces.</value>
+  </data>
+  <data name="Addressdetails" xml:space="preserve">
+    <value>Address details</value>
+  </data>
+  <data name="CaptchaModelRequiredMessage" xml:space="preserve">
+    <value>Please enter the text code</value>
+  </data>
+  <data name="CaptchaModelValidationMessage" xml:space="preserve">
+    <value>Incorrect text code entered</value>
+  </data>
+  <data name="CaptchaPartialViewICaseSensitiveText" xml:space="preserve">
+    <value>Captcha image is case sensitive</value>
+  </data>
+  <data name="CaptchaPartialViewText" xml:space="preserve">
+    <value>Enter text code below</value>
+  </data>
+  <data name="CartSummaryViewItemsText" xml:space="preserve">
+    <value>Items -</value>
+  </data>
+  <data name="CartViewCantFindPhotosText" xml:space="preserve">
+    <value>Can't Find Photos</value>
+  </data>
+  <data name="CartViewCheckOutText" xml:space="preserve">
+    <value>Checkout</value>
+  </data>
+  <data name="CartViewClearCartButtonText" xml:space="preserve">
+    <value>Clear Cart</value>
+  </data>
+  <data name="CartViewContinueShoppingText" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="CartViewEnglishLanguageText" xml:space="preserve">
+    <value>English-(US)</value>
+  </data>
+  <data name="CartViewGrandTotalText" xml:space="preserve">
+    <value>Grand Total:</value>
+  </data>
+  <data name="CartViewItemText" xml:space="preserve">
+    <value>Item</value>
+  </data>
+  <data name="CartViewPriceText" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="CartViewProductNameText" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="CartViewQuantityText" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="CartViewRemoveButtonText" xml:space="preserve">
+    <value>Remove</value>
+  </data>
+  <data name="CartViewRemoveItemText" xml:space="preserve">
+    <value>Remove Item</value>
+  </data>
+  <data name="CartViewSelectLanguageText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="CartViewShoppingCartText" xml:space="preserve">
+    <value>Shopping Cart</value>
+  </data>
+  <data name="CartViewSubtotalText" xml:space="preserve">
+    <value>Sub Total</value>
+  </data>
+  <data name="CheckoutIndexViewContinueButtonText" xml:space="preserve">
+    <value>CONTINUE</value>
+  </data>
+  <data name="ClaimQRCodePartialViewClaimCodeText" xml:space="preserve">
+    <value>Guest ID</value>
+  </data>
+  <data name="ClaimQRCodePartialViewEnterText" xml:space="preserve">
+    <value>Enter Code</value>
+  </data>
+  <data name="ClaimQRCodePartialViewGoButtonText" xml:space="preserve">
+    <value>CONTINUE</value>
+  </data>
+  <data name="ClaimQRCodePartialViewGoTittleText" xml:space="preserve">
+    <value>CONTINUE</value>
+  </data>
+  <data name="ClaimViewBackButtonText" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="ClaimViewClaimButtonText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="CommonBackText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="CommonFullSiteText" xml:space="preserve">
+    <value>Full Site</value>
+  </data>
+  <data name="CustomerSupportControllerAfterText" xml:space="preserve">
+    <value>After</value>
+  </data>
+  <data name="CustomerSupportControllerBeforeText" xml:space="preserve">
+    <value>Before</value>
+  </data>
+  <data name="CustomerSupportControllerNoonText" xml:space="preserve">
+    <value>Noon</value>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsCantClaimMessage" xml:space="preserve">
+    <value>I can't claim my Photo ID</value>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsClaimMessage" xml:space="preserve">
+    <value>I claimed my Photo ID and some, but not all of my photos appeared</value>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsClaimMessageBeta" xml:space="preserve">
+    <value>I claimed my Retrieval ID but not all of my photos appeared</value>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsLostPhotoMessage" xml:space="preserve">
+    <value>I lost one or more Photo ID(s)</value>
+  </data>
+  <data name="CustomerSupportTicketInfoDetailsSupportRequestAuthentication" xml:space="preserve">
+    <value>Please check your Support Request Number</value>
+  </data>
+  <data name="CustomerSupportTicketInfoSubmitButtonText" xml:space="preserve">
+    <value>Submit</value>
+  </data>
+  <data name="CustomerSupportTicketInfoSupportTicketRequiredMessage" xml:space="preserve">
+    <value>Please enter Support Request Number</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewCommentText" xml:space="preserve">
+    <value>Comment :</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewHeadingText" xml:space="preserve">
+    <value>Customer Support Request Info</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewIssueDescriptionText" xml:space="preserve">
+    <value>Issue Description :</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewLocation" xml:space="preserve">
+    <value>Location</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewStatus" xml:space="preserve">
+    <value>Status</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewStatusUpdatedDate" xml:space="preserve">
+    <value>Status Updated Date</value>
+  </data>
+  <data name="CustomerSupportTicketInfoViewSupportRequestNumber" xml:space="preserve">
+    <value>Support Request Number</value>
+  </data>
+  <data name="CustomerSupportValidNumberTcketMsg" xml:space="preserve">
+    <value>The field Support Ticket Number must be a number.</value>
+  </data>
+  <data name="CustomerSupportViewAlertMessage" xml:space="preserve">
+    <value>Please check type of problem</value>
+  </data>
+  <data name="CustomerSupportViewAllowedFileTypeText" xml:space="preserve">
+    <value>Only JPEG/JPG files allowed. (File must be under 10 MB in size)</value>
+  </data>
+  <data name="CustomerSupportViewBrowseButtonText" xml:space="preserve">
+    <value>Browse</value>
+  </data>
+  <data name="CustomerSupportViewCancelButtonText" xml:space="preserve">
+    <value>CANCEL</value>
+  </data>
+  <data name="CustomerSupportViewCantClaimText" xml:space="preserve">
+    <value>I can't claim my Photo ID</value>
+  </data>
+  <data name="CustomerSupportViewCaptureDateGreaterThanAlertMessage" xml:space="preserve">
+    <value>Capture Date is greater than 01/01/1905.</value>
+  </data>
+  <data name="CustomerSupportViewCaptureDateLessThanAlertMessage" xml:space="preserve">
+    <value>Capture Date should be less than today date</value>
+  </data>
+  <data name="CustomerSupportViewCaptureDateRequiredAlertMessage" xml:space="preserve">
+    <value>Capture Date is required</value>
+  </data>
+  <data name="CustomerSupportViewCaptureLocationRequiredAlertMessage" xml:space="preserve">
+    <value>Capture Location is required</value>
+  </data>
+  <data name="CustomerSupportViewCaptureTimeRequiredAlertMessage" xml:space="preserve">
+    <value>Capture Time is required</value>
+  </data>
+  <data name="CustomerSupportViewDayText" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="CustomerSupportViewEmailIDNotValidAlertMessage" xml:space="preserve">
+    <value>Emailid is not valid</value>
+  </data>
+  <data name="CustomerSupportViewEmailIDRequiredAlertMessage" xml:space="preserve">
+    <value>Email ID is required</value>
+  </data>
+  <data name="CustomerSupportViewErrorAlertMessage" xml:space="preserve">
+    <value>There is some error.</value>
+  </data>
+  <data name="CustomerSupportViewFileValidationAlertText" xml:space="preserve">
+    <value>Please select a file with valid extension.</value>
+  </data>
+  <data name="CustomerSupportViewHeadingText" xml:space="preserve">
+    <value>Can't Find Photos</value>
+  </data>
+  <data name="CustomerSupportViewInstruction" xml:space="preserve">
+    <value>Trying to find missing photos or a missing Photo ID?</value>
+  </data>
+  <data name="CustomerSupportViewInstruction1" xml:space="preserve">
+    <value>Please fill in the information below as completely as you can and click Save, and we will do everything we can to find your photos.</value>
+  </data>
+  <data name="CustomerSupportViewInstruction2" xml:space="preserve">
+    <value>If known, enter the Photo ID that are missing photos, separated by commas or spaces. If not known, enter "LOST".</value>
+  </data>
+  <data name="CustomerSupportViewInstruction3" xml:space="preserve">
+    <value>Providing a photo can expedite the process. Please upload a photo of one or more people in the missing photos.</value>
+  </data>
+  <data name="CustomerSupportViewInstruction4" xml:space="preserve">
+    <value>Provide as many details as possible to aid us in our search; the more information provided, the better we can help. Include age, gender, color/type of clothes worn, distinguishing features or any other information you think will help us locate your photos.</value>
+  </data>
+  <data name="CustomerSupportViewInstruction5" xml:space="preserve">
+    <value>If you have included an image, please be patient while we transmit the image file. Depending on your internet connection, this can take up to a few minutes. A confirmation page will be displayed when this has finished.</value>
+  </data>
+  <data name="CustomerSupportViewMonthText" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="CustomerSupportViewNameRequiredAlertMessage" xml:space="preserve">
+    <value>Name is required</value>
+  </data>
+  <data name="CustomerSupportViewNoteText" xml:space="preserve">
+    <value>Note: Required fields are marked with an asterisk</value>
+  </data>
+  <data name="CustomerSupportViewPhotoIDRequiredAlertMessage" xml:space="preserve">
+    <value>Photo ID is required</value>
+  </data>
+  <data name="CustomerSupportViewPleaseCheckAlertMessage" xml:space="preserve">
+    <value>Please Check</value>
+  </data>
+  <data name="CustomerSupportViewPleaseEnterAlertMessage" xml:space="preserve">
+    <value>Please enter</value>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectAlertMessage" xml:space="preserve">
+    <value>Please select</value>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectFileAlertMessage" xml:space="preserve">
+    <value>Please select a file with valid extension</value>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectFileSizeAlertMessage" xml:space="preserve">
+    <value>Image file size must be less than 10MB</value>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectPeopleMessage" xml:space="preserve">
+    <value>Select # of people is required</value>
+  </data>
+  <data name="CustomerSupportViewPleaseSelectVenueAlertMessage" xml:space="preserve">
+    <value>Please select venue.</value>
+  </data>
+  <data name="CustomerSupportViewProblemDescriptionText" xml:space="preserve">
+    <value>Please describe the problem you are experiencing:</value>
+  </data>
+  <data name="CustomerSupportViewResetButtonText" xml:space="preserve">
+    <value>RESET</value>
+  </data>
+  <data name="CustomerSupportViewSaveButtonText" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="CustomerSupportViewSelectCaptureDateText" xml:space="preserve">
+    <value>Please select Capture Date.</value>
+  </data>
+  <data name="CustomerSupportViewSelectText" xml:space="preserve">
+    <value>--Select--</value>
+  </data>
+  <data name="CustomerSupportViewValidationText" xml:space="preserve">
+    <value>Only alphanumeric characters and spaces are valid in this field</value>
+  </data>
+  <data name="CustomerSupportViewValidCaptureDateRequiredAlertMessage" xml:space="preserve">
+    <value>Please select valid date for Capture Date.</value>
+  </data>
+  <data name="CustomerSupportViewYearText" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="DateOfBirthText" xml:space="preserve">
+    <value>Date Of Birth</value>
+  </data>
+  <data name="DearText" xml:space="preserve">
+    <value>Dear</value>
+  </data>
+  <data name="EditPhoto1BorderTabNote" xml:space="preserve">
+    <value>Please scroll down for more Borders</value>
+  </data>
+  <data name="EditPhoto1PhotoSuccessAlertMessage" xml:space="preserve">
+    <value>Your email has been sent successfully.</value>
+  </data>
+  <data name="EditPhoto1SelectPhotoAlertMessage" xml:space="preserve">
+    <value>Please select photo on Canvas</value>
+  </data>
+  <data name="EditPhoto1StickerTabNote" xml:space="preserve">
+    <value>Please scroll down for more Stickers</value>
+  </data>
+  <data name="EditPhoto1ViewAddProductToCartAlertMessage" xml:space="preserve">
+    <value>Quantity can not be empty or 0</value>
+  </data>
+  <data name="EditPhoto1ViewAddToCartButtonText" xml:space="preserve">
+    <value>Add To Cart</value>
+  </data>
+  <data name="EditPhoto1ViewAvailableUntilText" xml:space="preserve">
+    <value>Available Until</value>
+  </data>
+  <data name="EditPhoto1ViewBackButtonText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="EditPhoto1ViewBackText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="EditPhoto1ViewBorder" xml:space="preserve">
+    <value>Borders</value>
+  </data>
+  <data name="EditPhoto1ViewClaimText" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="EditPhoto1ViewComments" xml:space="preserve">
+    <value>Comments</value>
+  </data>
+  <data name="EditPhoto1ViewDelete" xml:space="preserve">
+    <value>Delete</value>
+  </data>
+  <data name="EditPhoto1ViewDownload" xml:space="preserve">
+    <value>Download Photo</value>
+  </data>
+  <data name="EditPhoto1ViewEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="EditPhoto1ViewEmailIDNotValidAlertMessage" xml:space="preserve">
+    <value>Email id is not valid</value>
+  </data>
+  <data name="EditPhoto1ViewEmailMessage" xml:space="preserve">
+    <value>Share your media with family and friends on Email.</value>
+  </data>
+  <data name="EditPhoto1ViewEmailNotSentSuccessText" xml:space="preserve">
+    <value>Email has not been sent</value>
+  </data>
+  <data name="EditPhoto1ViewEmailRequiredAlertMessage" xml:space="preserve">
+    <value>Email ID is required</value>
+  </data>
+  <data name="EditPhoto1ViewEmailSentSuccessText" xml:space="preserve">
+    <value>Email has been sent successfully</value>
+  </data>
+  <data name="EditPhoto1ViewEnterCommentsText" xml:space="preserve">
+    <value>Enter the Message</value>
+  </data>
+  <data name="EditPhoto1ViewEnterEmailAddressesText" xml:space="preserve">
+    <value>Enter Recepient Email Address</value>
+  </data>
+  <data name="EditPhoto1ViewEnterSubjectText" xml:space="preserve">
+    <value>Enter the Subject</value>
+  </data>
+  <data name="EditPhoto1ViewErrorTextText" xml:space="preserve">
+    <value>Error message</value>
+  </data>
+  <data name="EditPhoto1Viewfacebook" xml:space="preserve">
+    <value>Facebook</value>
+  </data>
+  <data name="EditPhoto1ViewFacebookMessage" xml:space="preserve">
+    <value>Share your media with family and friends on facebook.</value>
+  </data>
+  <data name="EditPhoto1ViewGraphics" xml:space="preserve">
+    <value>Stickers</value>
+  </data>
+  <data name="EditPhoto1ViewLinkedIn" xml:space="preserve">
+    <value>LinkedIn</value>
+  </data>
+  <data name="EditPhoto1ViewLinkedInMessage" xml:space="preserve">
+    <value>Share your photo with family and friends on Linkedin.</value>
+  </data>
+  <data name="EditPhoto1ViewMessage" xml:space="preserve">
+    <value>Message</value>
+  </data>
+  <data name="EditPhoto1ViewMultipleAddressText" xml:space="preserve">
+    <value>Enter multiple address separated by comma (,).</value>
+  </data>
+  <data name="EditPhoto1ViewMyPhotosText" xml:space="preserve">
+    <value>My Photos</value>
+  </data>
+  <data name="EditPhoto1ViewPhotoSavedAlertText" xml:space="preserve">
+    <value>Photo saved successfully</value>
+  </data>
+  <data name="EditPhoto1ViewPhotoSelectAlertMessage" xml:space="preserve">
+    <value>Please select photo on canvas</value>
+  </data>
+  <data name="EditPhoto1ViewPostButtonText" xml:space="preserve">
+    <value>Post</value>
+  </data>
+  <data name="EditPhoto1ViewProducts" xml:space="preserve">
+    <value>Products</value>
+  </data>
+  <data name="EditPhoto1ViewQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="EditPhoto1ViewRemoveStickerText" xml:space="preserve">
+    <value>Remove Sticker</value>
+  </data>
+  <data name="EditPhoto1ViewRestore" xml:space="preserve">
+    <value>RESTORE</value>
+  </data>
+  <data name="EditPhoto1ViewRestoreOriginalAlertMessage" xml:space="preserve">
+    <value>Are you sure you want to restore the original photo?</value>
+  </data>
+  <data name="EditPhoto1ViewRestorePhotoText" xml:space="preserve">
+    <value>Restore photo?</value>
+  </data>
+  <data name="EditPhoto1ViewSave" xml:space="preserve">
+    <value>SAVE</value>
+  </data>
+  <data name="EditPhoto1ViewSaveChangesAlertText" xml:space="preserve">
+    <value>Save Changes?</value>
+  </data>
+  <data name="EditPhoto1ViewSendButtonText" xml:space="preserve">
+    <value>SEND</value>
+  </data>
+  <data name="EditPhoto1ViewShare" xml:space="preserve">
+    <value>SHARE</value>
+  </data>
+  <data name="EditPhoto1ViewSharePictureFailedText" xml:space="preserve">
+    <value>Share media failed</value>
+  </data>
+  <data name="EditPhoto1ViewSharePictureSucceededText" xml:space="preserve">
+    <value>Share media succeeded</value>
+  </data>
+  <data name="EditPhoto1ViewSomethingBadMessageText" xml:space="preserve">
+    <value>Something bad happened at server side, Please Retry.</value>
+  </data>
+  <data name="EditPhoto1ViewSubject" xml:space="preserve">
+    <value>Subject</value>
+  </data>
+  <data name="EditPhoto1ViewSuccessMessageText" xml:space="preserve">
+    <value>Success message</value>
+  </data>
+  <data name="EditPhoto1ViewTakenText" xml:space="preserve">
+    <value>Taken</value>
+  </data>
+  <data name="EditPhoto1ViewTwitter" xml:space="preserve">
+    <value>Twitter</value>
+  </data>
+  <data name="EditPhoto1ViewTwitterMessage" xml:space="preserve">
+    <value>Share your photo with family and friends on Twitter.</value>
+  </data>
+  <data name="EditPhoto1ViewUndo" xml:space="preserve">
+    <value>UNDO</value>
+  </data>
+  <data name="EditPhoto1ViewUnitPrice" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="EditPhoto1ViewVideoDownloadText" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="EditPhoto1ViewVideoShareText" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="EditPhoto1ViewWouldYouLiketAlertMessage" xml:space="preserve">
+    <value>Would you like to save the changes?</value>
+  </data>
+  <data name="EditPhoto1WaterMarkMsg" xml:space="preserve">
+    <value>You have</value>
+  </data>
+  <data name="EditPhoto1WaterMarkMsglast" xml:space="preserve">
+    <value>images left to experience.</value>
+  </data>
+  <data name="EditPhotoViewAlertText" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="ErrorPartialViewErrorText" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="ErrorPartialViewReloginText" xml:space="preserve">
+    <value>Here is a link for Relogin</value>
+  </data>
+  <data name="ErrorViewErrorMessageText" xml:space="preserve">
+    <value>An error occurred while processing your request.</value>
+  </data>
+  <data name="ErrorViewErrorText" xml:space="preserve">
+    <value>Error</value>
+  </data>
+  <data name="FBLoginViewAlertText" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="FBLoginViewErrorAlertMessage" xml:space="preserve">
+    <value>Error while posting media on Facebook</value>
+  </data>
+  <data name="FBLoginViewFBLoggedinText" xml:space="preserve">
+    <value>Facebook logged in.</value>
+  </data>
+  <data name="FBLoginViewInvalidAlertMessage" xml:space="preserve">
+    <value>Invalid Username or Password</value>
+  </data>
+  <data name="FBLoginViewLoginButtonText" xml:space="preserve">
+    <value>Login</value>
+  </data>
+  <data name="FBLoginViewPassword" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="FBLoginViewPleaseLogIntoAppText" xml:space="preserve">
+    <value>into this app.</value>
+  </data>
+  <data name="FBLoginViewPleaseLogIntoFacebookText" xml:space="preserve">
+    <value>into Facebook</value>
+  </data>
+  <data name="FBLoginViewPleaseLogText" xml:space="preserve">
+    <value>Please log</value>
+  </data>
+  <data name="FBLoginViewProcessingMessage" xml:space="preserve">
+    <value>Processing, please wait . . .</value>
+  </data>
+  <data name="FBLoginViewSuccessAlertMessage" xml:space="preserve">
+    <value>Media posted successfully on Facebook</value>
+  </data>
+  <data name="FBLoginViewTittleText" xml:space="preserve">
+    <value>Facebook Login</value>
+  </data>
+  <data name="FBLoginViewUsername" xml:space="preserve">
+    <value>Username</value>
+  </data>
+  <data name="ForgotPasswordViewEmailText" xml:space="preserve">
+    <value>Email Id</value>
+  </data>
+  <data name="ForgotPasswordViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>Please enter the Email</value>
+  </data>
+  <data name="ForgotPasswordViewModelEmailValidationMessage" xml:space="preserve">
+    <value>Email is not valid.</value>
+  </data>
+  <data name="HomeIndexViewClaim" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="HomeIndexViewInstruction" xml:space="preserve">
+    <value>If this is your first time on the site, please click on the "Claim" tab and enter your Guest ID. Follow the instructions to create your account.</value>
+  </data>
+  <data name="HomeIndexViewInstruction1" xml:space="preserve">
+    <value>If you are a returning guest, please click on the "Sign In" tab and enter the information used when you</value>
+  </data>
+  <data name="HomeIndexViewInstruction2" xml:space="preserve">
+    <value>first created your photo account.</value>
+  </data>
+  <data name="HomeIndexViewSignIn" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="HomeIndexViewWelcome" xml:space="preserve">
+    <value>Welcome</value>
+  </data>
+  <data name="HomeIndexViewWelcomeMessage" xml:space="preserve">
+    <value>WELCOME TO "RockCity" PHOTOS ONLINE EXPERIENCE!</value>
+  </data>
+  <data name="ImageDownloadMsg" xml:space="preserve">
+    <value>Click here to download a high resolution image</value>
+  </data>
+  <data name="ImageViewBrowserSupportMessage" xml:space="preserve">
+    <value>Your browser does not support the video tag.</value>
+  </data>
+  <data name="InclusiveAllTaxesMsg" xml:space="preserve">
+    <value>(Inclusive all taxes and shipping cost)</value>
+  </data>
+  <data name="IndexViewAddress" xml:space="preserve">
+    <value>Address</value>
+  </data>
+  <data name="IndexViewAddress2" xml:space="preserve">
+    <value>Address2</value>
+  </data>
+  <data name="IndexViewBackText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="IndexViewBillingAddress" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+  <data name="IndexViewBillingFormText" xml:space="preserve">
+    <value>Billing Form</value>
+  </data>
+  <data name="IndexViewCity" xml:space="preserve">
+    <value>City</value>
+  </data>
+  <data name="IndexViewCountry" xml:space="preserve">
+    <value>Country</value>
+  </data>
+  <data name="IndexViewEmail" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="IndexViewFirstName" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="IndexViewLastName" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="IndexViewPhone" xml:space="preserve">
+    <value>Phone</value>
+  </data>
+  <data name="IndexViewShippingAddress" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="IndexViewState" xml:space="preserve">
+    <value>State</value>
+  </data>
+  <data name="IndexViewUseAsBillingAddress" xml:space="preserve">
+    <value>Billing Address same as Shipping Address</value>
+  </data>
+  <data name="IndexViewZipCode" xml:space="preserve">
+    <value>Zip Code</value>
+  </data>
+  <data name="JAlertCancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="JAlertNoButtonText" xml:space="preserve">
+    <value>No</value>
+  </data>
+  <data name="JAlertOKButtonText" xml:space="preserve">
+    <value>Ok</value>
+  </data>
+  <data name="JAlertYesButtonText" xml:space="preserve">
+    <value>Yes</value>
+  </data>
+  <data name="KindRegards" xml:space="preserve">
+    <value>Kind Regards</value>
+  </data>
+  <data name="LanguagePartialViewCantFindPhotosText" xml:space="preserve">
+    <value>Can't Find Photos</value>
+  </data>
+  <data name="LanguagePartialViewSelectLanguageText" xml:space="preserve">
+    <value>Language</value>
+  </data>
+  <data name="LayoutPartialViewAboutUsLinkText" xml:space="preserve">
+    <value>About Us</value>
+  </data>
+  <data name="LayoutPartialViewApplicationTittle" xml:space="preserve">
+    <value>Digiphoto - RockCity</value>
+  </data>
+  <data name="LayoutPartialViewCantFindPhotosLinkText" xml:space="preserve">
+    <value>Can't Find Photos</value>
+  </data>
+  <data name="LayoutPartialViewCartViewButtonText" xml:space="preserve">
+    <value>View Cart</value>
+  </data>
+  <data name="LayoutPartialViewContactUsLinkText" xml:space="preserve">
+    <value>Contact Us</value>
+  </data>
+  <data name="LayoutPartialViewDEIText" xml:space="preserve">
+    <value>TALVEZ</value>
+  </data>
+  <data name="LayoutPartialViewHelpLinkText" xml:space="preserve">
+    <value>Help</value>
+  </data>
+  <data name="LayoutPartialViewMyAccountButtonText" xml:space="preserve">
+    <value>My Account</value>
+  </data>
+  <data name="LayoutPartialViewMyPhotosLinkText" xml:space="preserve">
+    <value>My Photos</value>
+  </data>
+  <data name="LayoutPartialViewMySnappsLogo" xml:space="preserve">
+    <value>RockCity</value>
+  </data>
+  <data name="LayoutPartialViewMySnappsText" xml:space="preserve">
+    <value>RockCity</value>
+  </data>
+  <data name="LayoutPartialViewPageNameText" xml:space="preserve">
+    <value>Page Name</value>
+  </data>
+  <data name="LayoutPartialViewPleaseWaitText" xml:space="preserve">
+    <value>Please Wait....</value>
+  </data>
+  <data name="LayoutPartialViewPoweredByText" xml:space="preserve">
+    <value>Powered By  : </value>
+  </data>
+  <data name="LayoutPartialViewPrivacyPolicyLinkText" xml:space="preserve">
+    <value>Privacy Policy</value>
+  </data>
+  <data name="LayoutPartialViewRegisterButtonText" xml:space="preserve">
+    <value>Register</value>
+  </data>
+  <data name="LayoutPartialViewSendingEmailText" xml:space="preserve">
+    <value>Sending Email…</value>
+  </data>
+  <data name="LayoutPartialViewSignInButtonText" xml:space="preserve">
+    <value>Sign In</value>
+  </data>
+  <data name="LayoutPartialViewSignOutButtonText" xml:space="preserve">
+    <value>Sign Out</value>
+  </data>
+  <data name="LayoutPartialViewTermsAndConditionsLinkText" xml:space="preserve">
+    <value>Terms and Conditions</value>
+  </data>
+  <data name="LayoutSharedViewMobileSite" xml:space="preserve">
+    <value>Mobile Site</value>
+  </data>
+  <data name="LockOutViewLockedOutDetailText" xml:space="preserve">
+    <value>This account has been locked out, please try again later.</value>
+  </data>
+  <data name="LockOutViewLockedOutText" xml:space="preserve">
+    <value>Locked out.</value>
+  </data>
+  <data name="LoginPartialViewEnterEmailText" xml:space="preserve">
+    <value>USER NAME</value>
+  </data>
+  <data name="LoginPartialViewEnterPasswordText" xml:space="preserve">
+    <value>PASSWORD</value>
+  </data>
+  <data name="LoginPartialViewForgotPasswordLinkText" xml:space="preserve">
+    <value>Forgot Password ?</value>
+  </data>
+  <data name="LoginPartialViewGoButtonText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="LoginPartialViewGoTittleText" xml:space="preserve">
+    <value>Continue</value>
+  </data>
+  <data name="LoginViewModelEmailRequiredMessage" xml:space="preserve">
+    <value>Please enter the Email</value>
+  </data>
+  <data name="LoginViewModelEmailValidationMessage" xml:space="preserve">
+    <value>Email is not valid.</value>
+  </data>
+  <data name="LoginViewModelPasswordRequiredMessage" xml:space="preserve">
+    <value>Please enter the Password</value>
+  </data>
+  <data name="LoginViewModelPasswordValidationMessage" xml:space="preserve">
+    <value>Password length minimum 8 and maximum 50 without spaces.</value>
+  </data>
+  <data name="mySnapps" xml:space="preserve">
+    <value>RockCity Photos</value>
+  </data>
+  <data name="NewCaptchaValidationErrorMsg" xml:space="preserve">
+    <value>Please enter the answer</value>
+  </data>
+  <data name="PaumentViewGiftCertificatesDiscountsKits" xml:space="preserve">
+    <value>Gift Certificates / Discounts / Kits</value>
+  </data>
+  <data name="PaymentGateWayResponseCancelMsg" xml:space="preserve">
+    <value>Your have canceled the Order</value>
+  </data>
+  <data name="PaymentGateWayResponseErrorMsg" xml:space="preserve">
+    <value>We faced a technical issue while processing your payment.Please contact helpdesk@digiphotoglobal.com if this issue persists</value>
+  </data>
+  <data name="PaymentGateWayResponseReviewMsg" xml:space="preserve">
+    <value>Your order has been canceled</value>
+  </data>
+  <data name="PaymentMoneyText" xml:space="preserve">
+    <value>{Money}</value>
+  </data>
+  <data name="PaymentReceiptViewFax" xml:space="preserve">
+    <value>Fax</value>
+  </data>
+  <data name="PaymentReceiptViewOrderDate" xml:space="preserve">
+    <value>Order Date</value>
+  </data>
+  <data name="PaymentReceiptViewOrderFailed" xml:space="preserve">
+    <value>Payment Failed</value>
+  </data>
+  <data name="PaymentReceiptViewOrderFailMsg" xml:space="preserve">
+    <value>Payment failed.</value>
+  </data>
+  <data name="PaymentReceiptViewOrderNo" xml:space="preserve">
+    <value>Order No.</value>
+  </data>
+  <data name="PaymentReceiptViewOrderSuccess" xml:space="preserve">
+    <value>Payment is successful</value>
+  </data>
+  <data name="PaymentReceiptViewOrderSuccessMsg" xml:space="preserve">
+    <value>Order is successful</value>
+  </data>
+  <data name="PaymentReceiptViewOtherInformation" xml:space="preserve">
+    <value>Other  Information</value>
+  </data>
+  <data name="PaymentReceiptViewPayableAmount" xml:space="preserve">
+    <value>Payable Amount:</value>
+  </data>
+  <data name="PaymentReceiptViewpaymentInformation" xml:space="preserve">
+    <value>Payment Information</value>
+  </data>
+  <data name="PaymentReceiptViewPaymentReceipt" xml:space="preserve">
+    <value>Payment Receipt</value>
+  </data>
+  <data name="PaymentReceiptViewPaymentType" xml:space="preserve">
+    <value>Payment Type</value>
+  </data>
+  <data name="PaymentReceiptViewProductName" xml:space="preserve">
+    <value>Product Name</value>
+  </data>
+  <data name="PaymentReceiptViewQty" xml:space="preserve">
+    <value>Qty :</value>
+  </data>
+  <data name="PaymentReceiptViewQuantity" xml:space="preserve">
+    <value>Quantity</value>
+  </data>
+  <data name="PaymentReceiptViewShippingCost" xml:space="preserve">
+    <value>Shipping Cost</value>
+  </data>
+  <data name="PaymentReceiptViewSubTotal" xml:space="preserve">
+    <value>Sub Total :</value>
+  </data>
+  <data name="PaymentReceiptViewTax" xml:space="preserve">
+    <value>Tax</value>
+  </data>
+  <data name="PaymentReceiptViewTotal" xml:space="preserve">
+    <value>Total</value>
+  </data>
+  <data name="PaymentReceiptViewTotalAmt" xml:space="preserve">
+    <value>Total :</value>
+  </data>
+  <data name="PaymentReceiptViewTrackingNumber" xml:space="preserve">
+    <value>Transaction Ref No</value>
+  </data>
+  <data name="PaymentReceiptViewUnitPrice" xml:space="preserve">
+    <value>Unit Price</value>
+  </data>
+  <data name="PaymentStatusFailedMsg" xml:space="preserve">
+    <value>Payment of {money} failed !</value>
+  </data>
+  <data name="PaymentStatusSuccessMsg" xml:space="preserve">
+    <value>Payment of {money} is received !</value>
+  </data>
+  <data name="PaymentViewAddCoupon" xml:space="preserve">
+    <value>Add Coupon</value>
+  </data>
+  <data name="PaymentViewAmericanexpress" xml:space="preserve">
+    <value>American express</value>
+  </data>
+  <data name="PaymentViewAmountDue" xml:space="preserve">
+    <value>Amount Due</value>
+    <comment>PaymentReceiptView</comment>
+  </data>
+  <data name="PaymentViewBackButtonText" xml:space="preserve">
+    <value>BACK</value>
+  </data>
+  <data name="PaymentViewBillingAddress" xml:space="preserve">
+    <value>Billing Address</value>
+  </data>
+  <data name="PaymentViewCardNumber" xml:space="preserve">
+    <value>Card Number</value>
+  </data>
+  <data name="PaymentViewCardType" xml:space="preserve">
+    <value>Card Type</value>
+  </data>
+  <data name="PaymentViewCouponCode" xml:space="preserve">
+    <value>Coupon Code</value>
+  </data>
+  <data name="PaymentViewCreditCard" xml:space="preserve">
+    <value>Credit Card</value>
+  </data>
+  <data name="PaymentViewEditLinkText" xml:space="preserve">
+    <value>Edit</value>
+  </data>
+  <data name="PaymentViewExpiryMonth" xml:space="preserve">
+    <value>Expiry Month</value>
+  </data>
+  <data name="PaymentViewExpiryYear" xml:space="preserve">
+    <value>Expiry Year</value>
+  </data>
+  <data name="PaymentViewMerchandise" xml:space="preserve">
+    <value>Merchandise</value>
+  </data>
+  <data name="PaymentViewOrderTotal" xml:space="preserve">
+    <value>Order Total</value>
+  </data>
+  <data name="PaymentViewPayment" xml:space="preserve">
+    <value>Review Payment Details</value>
+  </data>
+  <data name="PaymentViewPlaceOrderButtonText" xml:space="preserve">
+    <value>PAY</value>
+  </data>
+  <data name="PaymentViewPleaseWaitText" xml:space="preserve">
+    <value>Please Wait... We are redirecting you to the secure payment gateway site.</value>
+  </data>
+  <data name="PaymentViewREVIEWPAYMENTDETAILSText" xml:space="preserve">
+    <value>REVIEW PAYMENT DETAILS</value>
+  </data>
+  <data name="PaymentViewSameAsShipping" xml:space="preserve">
+    <value>(Same as Shipping Address)</value>
+  </data>
+  <data name="PaymentViewSecurityCode" xml:space="preserve">
+    <value>Security Code</value>
+  </data>
+  <data name="PaymentViewShippingAddress" xml:space="preserve">
+    <value>Shipping Address</value>
+  </data>
+  <data name="PostSubmitRequestViewHeadingText" xml:space="preserve">
+    <value>Can't Find Photos</value>
+  </data>
+  <data name="PostSubmitRequestViewInstruction" xml:space="preserve">
+    <value>Anytime you can go check the status of your request with this ticket number</value>
+  </data>
+  <data name="PostSubmitRequestViewSupportTicketNumberText" xml:space="preserve">
+    <value>Your support ticket number is :</value>
+  </data>
+  <data name="PostSubmitRequestViewThankYouMessage" xml:space="preserve">
+    <value>Thank you for submitting the request.</value>
+  </data>
+  <data name="QRClaimRequiredMessage" xml:space="preserve">
+    <value>Please enter your Guest ID</value>
+  </data>
+  <data name="QRClaimValidateQRCodeExpirationMessage" xml:space="preserve">
+    <value>Your Code has expired.</value>
+  </data>
+  <data name="QRClaimValidateQRCodeExpiryDaysMessage" xml:space="preserve">
+    <value>Unable to get QRCodeClaimExpiryDays Setting for this Partner.</value>
+  </data>
+  <data name="QRClaimValidateQRCodeInvalidCodeMessage" xml:space="preserve">
+    <value>Invalid Guest ID</value>
+  </data>
+  <data name="QRClaimValidationMessage" xml:space="preserve">
+    <value>Code cannot be longer than 4 characters.</value>
+  </data>
+  <data name="RegistrationCaptchaContentMessage" xml:space="preserve">
+    <value>Please calculate and enter the answer in the below text box</value>
+  </data>
+  <data name="RegistrationCaptchaInvalidMessage" xml:space="preserve">
+    <value>Invalid captcha, please try again.</value>
+  </data>
+  <data name="RegistrationCaptchaRequiredMessage" xml:space="preserve">
+    <value>Please calculate and enter the answer</value>
+  </data>
+  <data name="SelectUs" xml:space="preserve">
+    <value>US</value>
+  </data>
+  <data name="SharedLanguagePartialCantFindPhotos" xml:space="preserve">
+    <value>Can't Find Photos</value>
+  </data>
+  <data name="SharedLanguagePartialEnglishUnitedStates" xml:space="preserve">
+    <value>English-(US)</value>
+  </data>
+  <data name="SharedLanguagePartialSelectLanguage" xml:space="preserve">
+    <value>Select Language</value>
+  </data>
+  <data name="ShippingAddressAddressRequiredMessage" xml:space="preserve">
+    <value>Please enter the Address</value>
+  </data>
+  <data name="ShippingAddressCityRequiredMessage" xml:space="preserve">
+    <value>Please enter the City</value>
+  </data>
+  <data name="ShippingAddressEmailRequiredMessage" xml:space="preserve">
+    <value>Please enter the Email</value>
+  </data>
+  <data name="ShippingAddressEmailValidationMessage" xml:space="preserve">
+    <value>Email is not valid</value>
+  </data>
+  <data name="ShippingAddressFirstNameRequiredMessage" xml:space="preserve">
+    <value>Please enter the First Name</value>
+  </data>
+  <data name="ShippingAddressFirstNameValidationMessage" xml:space="preserve">
+    <value>First Name can only contain letters</value>
+  </data>
+  <data name="ShippingAddressLastNameRequiredMessage" xml:space="preserve">
+    <value>Please enter the Last Name</value>
+  </data>
+  <data name="ShippingAddressLastNameValidationMessage" xml:space="preserve">
+    <value>Last Name can only contain letters</value>
+  </data>
+  <data name="ShippingAddressPhoneNumberRequiredMessage" xml:space="preserve">
+    <value>Please enter the Phone Number</value>
+  </data>
+  <data name="ShippingAddressZipCodeRequiredMessage" xml:space="preserve">
+    <value>Please enter the Zip Code</value>
+  </data>
+  <data name="ShippingCityLetterMessage" xml:space="preserve">
+    <value>City can only contain letters</value>
+  </data>
+  <data name="ShippingNumericMessage" xml:space="preserve">
+    <value>Numeric value is allowed.</value>
+  </data>
+  <data name="SocialMediaFacebookAuthenticationMessage" xml:space="preserve">
+    <value>Invalid Username or Password.</value>
+  </data>
+  <data name="SocialMediaFacebookPostMessage" xml:space="preserve">
+    <value>Photo posted successfully on Facebook</value>
+  </data>
+  <data name="SocialMediaImagePostMessage" xml:space="preserve">
+    <value>Sorry For inconvienence.Your posting limit for today on LinkedIn is over</value>
+  </data>
+  <data name="SocialMediaLinkedInPostMessage" xml:space="preserve">
+    <value>Photo posted successfully on LinkedIn</value>
+  </data>
+  <data name="SocialMediaTwitterPostMessage" xml:space="preserve">
+    <value>Photo posted successfully on Twitter</value>
+  </data>
+  <data name="StatusAssigned" xml:space="preserve">
+    <value>Assigned</value>
+  </data>
+  <data name="StatusCancel" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="StatusClosed" xml:space="preserve">
+    <value>Closed</value>
+  </data>
+  <data name="StatusDuplicate" xml:space="preserve">
+    <value>Duplicate</value>
+  </data>
+  <data name="StatusInProgress" xml:space="preserve">
+    <value>InProgress</value>
+  </data>
+  <data name="StatusInSufficientInformation" xml:space="preserve">
+    <value>InSufficient Information</value>
+  </data>
+  <data name="StatusNew" xml:space="preserve">
+    <value>New</value>
+  </data>
+  <data name="StatusOnHold" xml:space="preserve">
+    <value>OnHold</value>
+  </data>
+  <data name="StatusReOpen" xml:space="preserve">
+    <value>ReOpen</value>
+  </data>
+  <data name="StatusResolved" xml:space="preserve">
+    <value>Resolved</value>
+  </data>
+  <data name="SubstorePhotosViewEmailmessageText" xml:space="preserve">
+    <value>Enter the message</value>
+  </data>
+  <data name="SubstorePhotosViewEmailRecepientAddressText" xml:space="preserve">
+    <value>Enter recepient address</value>
+  </data>
+  <data name="SubstorePhotosViewEmailSubjectText" xml:space="preserve">
+    <value>Enter the subject</value>
+  </data>
+  <data name="SubstorePhotosViewEmailVideoTittleText" xml:space="preserve">
+    <value>Email Video</value>
+  </data>
+  <data name="SubstorePhotosViewFacebookVideoTittleText" xml:space="preserve">
+    <value>Facebook Video</value>
+  </data>
+  <data name="SubStorePhotosViewRequiredText" xml:space="preserve">
+    <value>Required</value>
+  </data>
+  <data name="SubStoreViewSubStoreBackButtonText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="SubStoreViewSubStoreClaimButtonText" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="SubStoreViewSubStoreClaimPhototext" xml:space="preserve">
+    <value>Claim More Photos</value>
+  </data>
+  <data name="SubStoreViewSubStoreDownloadPhotoText" xml:space="preserve">
+    <value>Download Photos</value>
+  </data>
+  <data name="SubStoreViewSubStoreDownloadVideosText" xml:space="preserve">
+    <value>Download Videos</value>
+  </data>
+  <data name="SubStoreViewSubStoreHeadingText" xml:space="preserve">
+    <value>My Photos</value>
+  </data>
+  <data name="SubStoreViewSubStoreNextButtonText" xml:space="preserve">
+    <value>Next</value>
+  </data>
+  <data name="SubStoreViewSubStoreNoRecord" xml:space="preserve">
+    <value>No Photos Found</value>
+  </data>
+  <data name="SubStoreViewSubStoreParaText" xml:space="preserve">
+    <value>Photos you have claimed are below. Click each photo individually to view, share and download.</value>
+  </data>
+  <data name="SubStoreViewSubStorePreviousButtonText" xml:space="preserve">
+    <value>Prev</value>
+  </data>
+  <data name="ThankYouViewCancelButtonText" xml:space="preserve">
+    <value>Cancel</value>
+  </data>
+  <data name="ThankYouViewCloseReceiptButtonText" xml:space="preserve">
+    <value>Close Receipt</value>
+  </data>
+  <data name="ThankYouViewContinueShoppingButtonText" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="ThankYouViewContinueShoppingText" xml:space="preserve">
+    <value>Continue Shopping</value>
+  </data>
+  <data name="ThankYouViewDownloadInvoiceButtontext" xml:space="preserve">
+    <value>DOWNLOAD INVOICE</value>
+  </data>
+  <data name="ThankYouViewFaxBillingInformation" xml:space="preserve">
+    <value>Billing Information</value>
+  </data>
+  <data name="ThankYouViewOrderId" xml:space="preserve">
+    <value>Order Id</value>
+  </data>
+  <data name="ThankYouViewPaymentInformation" xml:space="preserve">
+    <value>Payment Information</value>
+  </data>
+  <data name="ThankYouViewPaymentStatusText" xml:space="preserve">
+    <value>Payment Status</value>
+  </data>
+  <data name="ThankYouViewPhotos" xml:space="preserve">
+    <value>Please go to My Photos to view your photos</value>
+  </data>
+  <data name="ThankYouViewPrintButtonText" xml:space="preserve">
+    <value>Print</value>
+  </data>
+  <data name="ThankYouViewPrintOrderButtonText" xml:space="preserve">
+    <value>PRINT ORDER</value>
+  </data>
+  <data name="ThankYouViewResponseMessage" xml:space="preserve">
+    <value>Your order has been received. Thank you for your purchase!</value>
+  </data>
+  <data name="ThankYouViewShippingCost" xml:space="preserve">
+    <value>Shipping Cost  :</value>
+  </data>
+  <data name="ThankYouViewShippingInformation" xml:space="preserve">
+    <value>Shipping Information</value>
+  </data>
+  <data name="ThankYouViewShoppingButtonText" xml:space="preserve">
+    <value>Shopping</value>
+  </data>
+  <data name="ThankYouViewSpecialRequest" xml:space="preserve">
+    <value>Special Request :</value>
+  </data>
+  <data name="ThankYouViewSubTotal" xml:space="preserve">
+    <value>Sub  Total :</value>
+  </data>
+  <data name="ThankYouViewTotal" xml:space="preserve">
+    <value>Total:</value>
+  </data>
+  <data name="ThankYouViewValidationMessage" xml:space="preserve">
+    <value>Your Order Id Is Not Valid</value>
+  </data>
+  <data name="TimeOutRedirectPartialViewHeadingText" xml:space="preserve">
+    <value>Timeout Error</value>
+  </data>
+  <data name="TimeOutRedirectPartialViewInstruction1Text" xml:space="preserve">
+    <value>Sorry, but your session has timed out. You'll be redirected to the Log in page in 5 seconds...</value>
+  </data>
+  <data name="TimeOutRedirectPartialViewInstruction2Text" xml:space="preserve">
+    <value>Click here for Login</value>
+  </data>
+  <data name="UserAddressRequiredMessage" xml:space="preserve">
+    <value>Please enter the Address</value>
+  </data>
+  <data name="UserCityRequiredMessage" xml:space="preserve">
+    <value>Please enter the City</value>
+  </data>
+  <data name="UserConfirmPasswordRequiredMessage" xml:space="preserve">
+    <value>Please enter the Confirm Password</value>
+  </data>
+  <data name="UserConfirmPasswordText" xml:space="preserve">
+    <value>Confirm Password</value>
+  </data>
+  <data name="UserConfirmPasswordValidationMessage" xml:space="preserve">
+    <value>Password and Confirm Password do not match</value>
+  </data>
+  <data name="UserCountryRequiredMessage" xml:space="preserve">
+    <value>Please select your country</value>
+  </data>
+  <data name="UserDetailModelFirstNameText" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="UserDetailModelLastNameText" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="UserDOBFutureDateValidationMessage" xml:space="preserve">
+    <value>Future Date Of Birth not allowed</value>
+  </data>
+  <data name="UserDOBRequiredMessage" xml:space="preserve">
+    <value>Please enter valid Date Of Birth (Your age should be above 18-yrs)</value>
+  </data>
+  <data name="UserDOBValidationMessage" xml:space="preserve">
+    <value>Please enter Valid Date Of Birth.</value>
+  </data>
+  <data name="UserEmailRequiredMessage" xml:space="preserve">
+    <value>Please enter the Email</value>
+  </data>
+  <data name="UserEmailText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="UserEmailValidationMessage" xml:space="preserve">
+    <value>Email is not valid</value>
+  </data>
+  <data name="UserFirstNameRequiredMessage" xml:space="preserve">
+    <value>Please enter the First Name</value>
+  </data>
+  <data name="UserFirstNameText" xml:space="preserve">
+    <value>First Name</value>
+  </data>
+  <data name="UserFirstNameValidationMessage" xml:space="preserve">
+    <value>First Name can only contain letters</value>
+  </data>
+  <data name="UserGenderText" xml:space="preserve">
+    <value>Gender</value>
+  </data>
+  <data name="UserLastNameRequiredMessage" xml:space="preserve">
+    <value>Please enter the Last Name</value>
+  </data>
+  <data name="UserLastNameText" xml:space="preserve">
+    <value>Last Name</value>
+  </data>
+  <data name="UserLastNameValidationMessage" xml:space="preserve">
+    <value>Last Name can only contain letters</value>
+  </data>
+  <data name="UserNationalityText" xml:space="preserve">
+    <value>Nationality</value>
+  </data>
+  <data name="UserPasswordRequiredMessage" xml:space="preserve">
+    <value>Please enter the Password</value>
+  </data>
+  <data name="UserPasswordText" xml:space="preserve">
+    <value>Password</value>
+  </data>
+  <data name="UserPasswordValidationMessage" xml:space="preserve">
+    <value>Password length minimum 8 and maximum 50 without spaces.</value>
+  </data>
+  <data name="UserPhoneNumberRequiredMessage" xml:space="preserve">
+    <value>Please enter the Phone Number</value>
+  </data>
+  <data name="UserPromotionMessageText" xml:space="preserve">
+    <value>I wish to receive promotional messages &amp; newsletters.</value>
+  </data>
+  <data name="UserSaveUsersCorrectCaptchaMessage" xml:space="preserve">
+    <value>Please enter correct captcha</value>
+  </data>
+  <data name="UserSaveUsersEmailAlreadyExistMessage" xml:space="preserve">
+    <value>Email Id already exist</value>
+  </data>
+  <data name="UserSaveUsersSuccessfullyRegisteredMessage" xml:space="preserve">
+    <value>You have been successfully Registered! Please claim your photos by providing your QR Code</value>
+  </data>
+  <data name="UserViewAlreadyRegisteredText" xml:space="preserve">
+    <value>Already Registered?</value>
+  </data>
+  <data name="UserViewAndText" xml:space="preserve">
+    <value>and</value>
+  </data>
+  <data name="UserViewAprMonthText" xml:space="preserve">
+    <value>Apr</value>
+  </data>
+  <data name="UserViewAugMonthText" xml:space="preserve">
+    <value>Aug</value>
+  </data>
+  <data name="UserViewByClickingText" xml:space="preserve">
+    <value>By clicking the</value>
+  </data>
+  <data name="UserViewConfirmText" xml:space="preserve">
+    <value>button, you confirm that you accept our</value>
+  </data>
+  <data name="UserViewDayText" xml:space="preserve">
+    <value>Day</value>
+  </data>
+  <data name="UserViewDecMonthText" xml:space="preserve">
+    <value>Dec</value>
+  </data>
+  <data name="UserViewFebMonthText" xml:space="preserve">
+    <value>Feb</value>
+  </data>
+  <data name="UserViewFemaleText" xml:space="preserve">
+    <value>Female</value>
+  </data>
+  <data name="UserViewJanMonthText" xml:space="preserve">
+    <value>Jan</value>
+  </data>
+  <data name="UserViewJulMonthText" xml:space="preserve">
+    <value>Jul</value>
+  </data>
+  <data name="UserViewJunMonthText" xml:space="preserve">
+    <value>Jun</value>
+  </data>
+  <data name="UserViewMaleText" xml:space="preserve">
+    <value>Male</value>
+  </data>
+  <data name="UserViewMarMonthText" xml:space="preserve">
+    <value>Mar</value>
+  </data>
+  <data name="UserViewMayMonthText" xml:space="preserve">
+    <value>May</value>
+  </data>
+  <data name="UserViewMonthText" xml:space="preserve">
+    <value>Month</value>
+  </data>
+  <data name="UserViewNovMonthText" xml:space="preserve">
+    <value>Nov</value>
+  </data>
+  <data name="UserViewOctMonthText" xml:space="preserve">
+    <value>Oct</value>
+  </data>
+  <data name="UserViewPrivacyPolicyText" xml:space="preserve">
+    <value>privacy policy</value>
+  </data>
+  <data name="UserViewRegisterButtonText" xml:space="preserve">
+    <value>SUBMIT</value>
+  </data>
+  <data name="UserViewRegistrationText" xml:space="preserve">
+    <value>REGISTRATION</value>
+  </data>
+  <data name="UserViewSelectGenderText" xml:space="preserve">
+    <value>Select Gender</value>
+  </data>
+  <data name="UserViewSelectText" xml:space="preserve">
+    <value>Select</value>
+  </data>
+  <data name="UserViewSepMonthText" xml:space="preserve">
+    <value>Sep</value>
+  </data>
+  <data name="UserViewSubmitText" xml:space="preserve">
+    <value>"Submit"</value>
+  </data>
+  <data name="UserViewTermsofUseText" xml:space="preserve">
+    <value>terms of use</value>
+  </data>
+  <data name="UserViewYearText" xml:space="preserve">
+    <value>Year</value>
+  </data>
+  <data name="UserZipCodeRequiredMessage" xml:space="preserve">
+    <value>Please enter the Zip Code</value>
+  </data>
+  <data name="VideoDownloadMsg" xml:space="preserve">
+    <value>Click here to View/Download the Video</value>
+  </data>
+  <data name="ViewDownloadSubStoreClickHereDownloadPhotosText" xml:space="preserve">
+    <value>Click here to download RockCity Photos</value>
+  </data>
+  <data name="ViewDownloadSubStoreClickHereDownloadVideosText" xml:space="preserve">
+    <value>Click here to download RockCity Videos</value>
+  </data>
+  <data name="ViewDownloadSubStorePhotosClaimText" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="ViewDownloadSubStorePhotosDownloadPhotosText" xml:space="preserve">
+    <value>DOWNLOAD PHOTOS</value>
+  </data>
+  <data name="ViewDownloadSubStorePhotosInstructionText" xml:space="preserve">
+    <value>If your download will not start in 30 seconds, then</value>
+  </data>
+  <data name="ViewDownloadSubStorePhotosMobileInstructionText" xml:space="preserve">
+    <value>If you are using IPhone, then you need some unzip utility to unzip your photos.</value>
+  </data>
+  <data name="ViewDownloadSubStorePhotosMyPhotosText" xml:space="preserve">
+    <value>My Photos</value>
+  </data>
+  <data name="ViewDownloadSubStorePhotosText" xml:space="preserve">
+    <value>You can download your photos from this page.</value>
+  </data>
+  <data name="ViewDownloadSubStoreVideosText" xml:space="preserve">
+    <value>You can download your videos from this page.</value>
+  </data>
+  <data name="ViewSubStorePhotosDownloadWaterMark" xml:space="preserve">
+    <value>You can not download the photos because all photos are watermarked.</value>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailIdRequiredAlert" xml:space="preserve">
+    <value>Email ID is required</value>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailIdValidationAlert" xml:space="preserve">
+    <value>Email id is not valid</value>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailNotSentAlertMessage" xml:space="preserve">
+    <value>Email has not been sent</value>
+  </data>
+  <data name="ViewSubStorePhotosVideoEmailSentAlertMessage" xml:space="preserve">
+    <value>Email has been sent successfully</value>
+  </data>
+  <data name="ViewSubStorePhotosVideoEnablePopupAlertMessage" xml:space="preserve">
+    <value>Please enable popups for this site to continue.</value>
+  </data>
+  <data name="ViewSubStorePhotosVideoUnexpectedErrorMessage" xml:space="preserve">
+    <value>Unexpected Error! Video URL Not available !</value>
+  </data>
+  <data name="ViewSubStorePhotosViewAlertText" xml:space="preserve">
+    <value>Alert</value>
+  </data>
+  <data name="ViewSubStorePhotosViewBackText" xml:space="preserve">
+    <value>Back</value>
+  </data>
+  <data name="ViewSubStorePhotosViewClaimText" xml:space="preserve">
+    <value>Claim</value>
+  </data>
+  <data name="ViewSubStorePhotosViewDownloadText" xml:space="preserve">
+    <value>Download</value>
+  </data>
+  <data name="ViewSubStorePhotosViewEmailText" xml:space="preserve">
+    <value>Email</value>
+  </data>
+  <data name="ViewSubStorePhotosViewInstruction" xml:space="preserve">
+    <value>Photos you have claimed are below. Click each photo individually to view, share and download.</value>
+  </data>
+  <data name="ViewSubStorePhotosViewMyPhoto" xml:space="preserve">
+    <value>My Photos</value>
+  </data>
+  <data name="ViewSubStorePhotosViewShareText" xml:space="preserve">
+    <value>Share</value>
+  </data>
+  <data name="ViewSubStorePhotosViewVideoText" xml:space="preserve">
+    <value>Video</value>
+  </data>
+  <data name="Vinay" xml:space="preserve">
+    <value>विनय</value>
+  </data>
+</root>

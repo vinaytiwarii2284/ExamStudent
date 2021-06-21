@@ -1,0 +1,283 @@
+﻿@model ExamStudent.ViewModels.ScheduleExamViewModel
+@{
+    ViewBag.Title = "ScheduleExam";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+<script src="/Scripts/jquery-3.3.1.js"></script>
+
+<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/css/bootstrap.min.css" rel="stylesheet" id="bootstrap-css">
+<script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
+<script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+
+
+
+
+<style>
+
+   
+
+   #vinaytiwari {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        margin: 0;
+        padding: 0;
+        display: flex;
+    }
+
+    #vinaytiwari li {
+        list-style: none;
+        margin: 0 40px;
+    }
+
+        #vinaytiwari li .fa {
+            font-size: 40px;
+            color: #262626;
+            line-height: 80px;
+            transition: .5s;
+        }
+
+        #vinaytiwari li a {
+            position: relative;
+            display: block;
+            width: 80px;
+            height: 80px;
+            background-color: #fff;
+            text-align: center;
+            transform: perspective(100px) rotate(-30deg) skew(25deg) translate(0,0);
+            transition: .5s;
+            box-shadow: -20px 20px 10px rgb(0, 0, 0, 0.5);
+        }
+
+            #vinaytiwari li a::before {
+                content: "";
+                position: absolute;
+                top: 10px;
+                left: -20px;
+                height: 100%;
+                width: 20px;
+                background: #b1b1b1;
+                transition: .5s;
+                transform: rotate(0deg) skewY(-45deg);
+            }
+
+            #vinaytiwari li a::after {
+                content: "";
+                position: absolute;
+                top: 80px;
+                left: -11px;
+                height: 20px;
+                width: 100%;
+                background: #b1b1b1;
+                transition: .5s;
+                transform: rotate(0deg) skewX(-45deg);
+            }
+
+            #vinaytiwari li a:hover {
+                transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+                box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+            }
+
+        #vinaytiwari li:hover .fa {
+            color: #fff;
+        }
+
+        #vinaytiwari li a:hover {
+            transform: perspective(1000px) rotate(-30deg) skew(25deg) translate(20px, -20px);
+            box-shadow: -50px 50px 50px rgb(0, 0, 0, 0.5);
+        }
+
+        #vinaytiwari li:hover:nth-child(1) a {
+            background: #3b5999;
+        }
+
+            #vinaytiwari li:hover:nth-child(1) a:before {
+                background: #2e4a86;
+            }
+
+            #vinaytiwari li:hover:nth-child(1) a:after {
+                background: #4a69ad;
+            }
+
+        #vinaytiwari li:hover:nth-child(2) a {
+            background: #55acee;
+        }
+
+            #vinaytiwari li:hover:nth-child(2) a:before {
+                background: #4184b7;
+            }
+
+            #vinaytiwari li:hover:nth-child(2) a:after {
+                background: #4d9fde;
+            }
+
+        #vinaytiwari li:hover:nth-child(3) a {
+            background: #dd4b39;
+        }
+
+            #vinaytiwari li:hover:nth-child(3) a:before {
+                background: #c13929;
+            }
+
+            #vinaytiwari li:hover:nth-child(3) a:after {
+                background: #e83322;
+            }
+
+        #vinaytiwari li:hover:nth-child(4) a {
+            background: #0077B5;
+        }
+
+            #vinaytiwari li:hover:nth-child(4) a:before {
+                background: #036aa0;
+            }
+
+            #vinaytiwari li:hover:nth-child(4) a:after {
+                background: #0d82bf;
+            }
+
+        #vinaytiwari li:hover:nth-child(5) a {
+            background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+        }
+
+            #vinaytiwari li:hover:nth-child(5) a:before {
+                background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+            }
+
+            #vinaytiwari li:hover:nth-child(5) a:after {
+                background: linear-gradient(#400080, transparent), linear-gradient(200deg, #d047d1, #ff0000, #ffff00);
+            }
+</style>
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#BoardTypeID').change(function () {
+            //alert($('#BoardTypeName').val());
+            $.ajax({
+                type: "post",
+                url: "/Admin/GetMediumsss",
+                data: { BoardTypeId: $('#BoardTypeID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    //debugger;
+                    //alert("bind data now");
+                    var district = "<select id='MediumID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#MediumID').html(district);
+                }
+            });
+        });
+
+        $('#MediumID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/Admin/GetStandarddd",
+                data: { MediumId: $('#MediumID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='StandardID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#StandardID').html(district);
+                }
+            });
+        });
+
+        $('#StandardID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: '@Url.Action("GetCategory", "Admin")',
+                data: { StandardId: $('#StandardID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='Category_ID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#Category_ID').html(district);
+                }
+            });
+        });
+    });
+</script>
+
+<h1 style="color: darkgreen">@TempData["Message"]</h1>
+<form method="post">
+
+    <div class=""style="width:500px;font-size:13px;">
+        <h2>Schedule Exam</h2>
+        <div class="">
+
+            <div class="form-group">
+                <label>Schedule Date Time</label>
+                <input type="datetime-local" id="birthdaytime" name="ScheduleDateTime" class="form-control ">
+            </div>
+
+            <br /> <br />
+
+            <div class="form-group">
+                <label>Select Board Type </label>
+                @Html.DropDownListFor(m => m.BoardTypeID, new SelectList(Model.BoardTypeList, "BoardTypeId", "BoardTypeName"), "--Select BoardType Name-- ",
+                                        new { @class = "form-control " })
+            </div>
+
+            <br /> <br />
+
+            <div class="form-group">
+                <label>select Medium Name</label>
+                @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumId", "MediumName"), "--Select Medium Name-- ",
+                                           new { @class = "form-control " })
+            </div>
+
+            <br /> <br />
+
+            <div class="form-group">
+                <label>Select Standard Name</label>
+                @Html.DropDownListFor(m => m.StandardID, new SelectList(Model.StandardList, "StandardId", "StandardName"), "--Select Standard Name-- ",
+                                           new { @class = "form-control " })
+            </div>
+
+
+            <button class="btn btn-success">Save</button>
+        </div>
+
+    </div>
+
+</form>
+
+<div>
+
+    <ul id="vinaytiwari">
+        <li id=""><a href="https://www.facebook.com"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>
+        <li><a href="https://www.linkedin.com/in/raj-kumar-web-designer/"><i class="fa fa-linkedin" aria-hidden="true"></i></a></li>
+        <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>
+    </ul>
+</div>

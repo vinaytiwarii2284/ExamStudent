@@ -1,0 +1,21 @@
+﻿@model ExamStudent.User
+
+@{
+    ViewBag.Title = "LoggedIn";
+}
+
+<h2>User Account </h2>
+
+<div class="container">
+
+    @if (Session["Id"] != null)
+    {
+        <h4>Hello , @Session["UserName"].ToString()</h4>
+    }
+
+
+    @Html.ActionLink("User Details", "Details", new { id = @Session["Id"] } , new {@class="btn btn-danger" })
+
+    @*//@Html.ActionLink("Details", "Details", "Login", new { id = @Session["Id"] })*@
+</div>
+

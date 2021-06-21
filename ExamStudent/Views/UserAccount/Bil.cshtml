@@ -1,0 +1,13 @@
+﻿
+@{
+    ViewBag.Title = "Bil";
+    Layout = "~/Views/Shared/_LayoutAdmin2.cshtml";
+}
+
+<h2>Bil</h2>
+
+<div>
+    <h1>@Session["Amount"]</h1>
+
+    <a class="btn btn-primary btn-lg" href="@Url.Action("Pay" , "UserAccount")">Pay Now</a>
+</div>

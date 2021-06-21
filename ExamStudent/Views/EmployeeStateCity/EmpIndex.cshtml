@@ -1,0 +1,40 @@
+﻿@model IEnumerable<ExamStudent.Models.Emp_City>
+
+@{
+    ViewBag.Title = "EmpIndex";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>EmpIndex</h2>
+
+<p>
+    @Html.ActionLink("Create New", "EmpCity" , null ,new {@class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.Emp_CityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.EmpState.Emp_State)
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.Emp_CityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.EmpState.Emp_State)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.Emp_CityID }) |
+            @Html.ActionLink("Details", "Details", new { id=item.Emp_CityID }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.Emp_CityID })
+        </td>
+    </tr>
+}
+
+</table>

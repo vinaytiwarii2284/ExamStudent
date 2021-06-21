@@ -1,0 +1,38 @@
+﻿
+@model ExamStudent.ViewModels.ShopViewModel
+@{
+    ViewBag.Title = "Checkout";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Checkout</h2>
+
+
+<h2>Checkout</h2>
+
+@if (Model != null)
+{
+    if (Model.CartProducts != null && Model.CartProducts.Count > 0)
+    {
+        <div>
+            @foreach (var product in Model.CartProducts)
+            {
+                var productQuantity = Model.CartProductsIDs.Where(productID => productID == product.SubjectID).Count();
+
+                <div>
+                    Name : @product.SubjectName - Price : @product.subjectPrice - Quantity : @productQuantity Total Price : @(product.subjectPrice * productQuantity)
+                </div>
+            }
+        </div>
+
+        <div>
+            Total Bill : @Model.CartProducts.Sum(x => x.subjectPrice * Model.CartProductsIDs.Where(productID => productID == x.SubjectID).Count())
+        </div>
+    }
+    else
+    {
+        <div>
+            No Product in Cart.
+        </div>
+    }
+}

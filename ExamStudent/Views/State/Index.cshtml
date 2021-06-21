@@ -1,0 +1,42 @@
+﻿@model IEnumerable<ExamStudent.Models.State>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="text-center text-danger">All State</h2>
+
+<hr />
+
+<p>
+    @Html.ActionLink("Create New", "Create" , ""  , new {@class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.StateName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.CountryId)
+        </th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.StateName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.CountryId)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.StateID } , new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Details", "Details", new { id=item.StateID } , new { @class = "btn btn-danger" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.StateID } , new { @class = "btn btn-info" })
+        </td>
+    </tr>
+}
+
+</table>

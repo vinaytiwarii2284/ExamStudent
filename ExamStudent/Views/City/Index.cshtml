@@ -1,0 +1,41 @@
+﻿@model IEnumerable<ExamStudent.Models.City>
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="text-center text-danger">All City</h2>
+
+<hr />
+<p>
+    @Html.ActionLink("Create New", "Create", "", new { @class = "btn btn-primary" })
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.CityName)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StateID)
+        </th>
+        <th>Action</th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.CityName)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.StateID)
+        </td>
+        <td>
+            @Html.ActionLink("Edit", "Edit", new { id=item.CityID }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Details", "Details", new { id=item.CityID }, new { @class = "btn btn-danger" }) |
+            @Html.ActionLink("Delete", "Delete", new { id=item.CityID }, new { @class = "btn btn-info" })
+        </td>
+    </tr>
+}
+
+</table>

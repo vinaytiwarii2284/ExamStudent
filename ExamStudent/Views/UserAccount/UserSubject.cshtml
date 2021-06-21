@@ -1,0 +1,515 @@
+﻿@using ExamStudent.EnumsCode
+
+@model ExamStudent.ViewModel.UserListingViewModel
+
+@{
+    ViewBag.Title = "UserSubject";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+
+
+}
+
+<!-- Custom Theme files -->
+<link href="~/Content/Ecomm/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/Content/Ecomm/css/style.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/Content/Ecomm/css/menu.css" rel="stylesheet" type="text/css" media="all" /> <!-- menu style -->
+<link href="~/Content/Ecomm/css/animate.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="~/Content/Ecomm/css/owl.carousel.css" rel="stylesheet" type="text/css" media="all"> <!-- carousel slider -->
+<!-- //Custom Theme files -->
+<!-- font-awesome icons -->
+<link href="~/Content/Ecomm/css/font-awesome.css" rel="stylesheet">
+<!-- //font-awesome icons -->
+<!-- js -->
+<script src="~/Content/Ecomm/js/jquery-2.2.3.min.js"></script>
+<script src="~/Content/Ecomm/js/owl.carousel.js"></script>
+<!-- //js -->
+<!-- web-fonts -->
+<link href='//fonts.googleapis.com/css?family=Roboto+Condensed:400,300,300italic,400italic,700,700italic' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Lovers+Quarrel' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Offside' rel='stylesheet' type='text/css'>
+<link href='//fonts.googleapis.com/css?family=Tangerine:400,700' rel='stylesheet' type='text/css'>
+<!-- web-fonts -->
+<!-- scroll to fixed-->
+<script src="~/Content/Ecomm/js/jquery-scrolltofixed-min.js" type="text/javascript"></script>
+
+<!-- //scroll to fixed-->
+<!-- start-smooth-scrolling -->
+<script type="text/javascript" src="~/Content/Ecomm/js/move-top.js"></script>
+<script type="text/javascript" src="~/Content/Ecomm/js/easing.js"></script>
+
+<!-- //smooth-scrolling-of-move-up -->
+<!-- the jScrollPane script -->
+<script type="text/javascript" src="~/Content/Ecomm/js/jquery.jscrollpane.min.js"></script>
+
+<!-- //the jScrollPane script -->
+<script type="text/javascript" src="~/Content/Ecomm/js/jquery.mousewheel.js"></script>
+<!-- the mousewheel plugin -->
+
+@Scripts.Render("~/bundles/jquery")
+
+
+@*@Scripts.Render("~/bundles/jquery")*@
+
+
+<script src="@Url.Content("~/Scripts/jquery-3.3.1.js")" type="text/javascript"></script>
+<script src="@Url.Content("~/Scripts/jquery.validate.min.js")" type="text/javascript"></script>
+
+
+<script src="//code.jquery.com/jquery-1.10.2.js"></script>
+<script src="//code.jquery.com/ui/1.11.4/jquery-ui.js"></script>
+
+
+@ViewBag.msg
+
+<script type="text/javascript">
+
+    function AddProductToCart(SubjectID, subjectPrice) {
+
+        alert(SubjectID);
+        alert(subjectPrice);
+        var ProductPrice = subjectPrice;
+        var ProductId = SubjectID;
+        var Quantity = 1;
+
+        alert('hey');
+        if (Quantity != "") {
+
+            var url = "../Cart/AddProductToCartIndex";
+            $.ajax({
+                url: url,
+                data: { productId: ProductId, quantity: Quantity, productPrice: ProductPrice },
+                cache: false,
+                type: "POST",
+                success: function (msg) {
+                    //alert("success");
+                    window.location = '../Cart/Cart';
+                },
+                error: function (reponse) {
+                    //alert("success repsonse");
+                    window.location = '../Cart/Cart';
+                }
+            });
+        }
+        else {
+            alert("Something is wrong");
+        }
+    }
+
+</script>
+
+<script>
+
+    //function fillFields(name, email, mobile) {
+    //    $("#field-name").value(name)
+    //    $("#field-email").value(email)
+    //    $("#field-mobile").value(mobile)
+    //}
+    //$("#exampleModalCenter").show()
+
+    $(document).ready(function () {
+        $('#exampleModalCenter').on('show.bs.modal', function (event) {
+
+            var button = $(event.relatedTarget) // Button that triggered the modal
+            var recipient = button.data('whatever') // Extract info from data-* attributes
+            // If necessary, you could initiate an AJAX request here (and then do the updating in a callback).
+            // Update the modal's content. We'll use jQuery here, but you could use a data binding library or other methods instead.
+            var modal = $(this)
+            modal.find('.modal-title').text('New message to ' + recipient)
+            modal.find('.modal-body input').val(recipient)
+        })
+    });
+</script>
+
+<!-- products -->
+<div class="products">
+    <div class="container">
+        <div class="col-md-9 product-w3ls-right">
+            <!-- breadcrumbs -->
+            <ol class="breadcrumb breadcrumb1">
+                <li><a href="index.html">Home</a></li>
+                <li class="active">Subjects</li>
+            </ol>
+            <div class="clearfix"> </div>
+            <!-- //breadcrumbs -->
+            <div class="product-top">
+                <h4>Books</h4>
+
+
+                <ul>
+                    <li class="dropdown head-dpdn">
+                        <a class="dropdown-toggle" data-toggle="dropdown">Filter By<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.Default  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.Default ? "active" : string.Empty : string.Empty )">Default - Newest</a></li>
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.Popularity  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.Popularity ? "active" : string.Empty : string.Empty )">Popularity</a></li>
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.PriceLowToHigh  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.PriceLowToHigh ? "active" : string.Empty : string.Empty )">Price: low to high</a></li>
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.PriceHighToLow  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.PriceHighToLow ? "active" : string.Empty : string.Empty )">Price: high to low</a></li>
+                        </ul>
+                    </li>
+                    <li class="dropdown head-dpdn">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown">Brands<span class="caret"></span></a>
+
+                        @foreach (var item in Model.Subjects)
+                        {
+                            <ul class="dropdown-menu">
+                                <li><a href="@Url.Action("UserSubject", "UserAccount", new { subjectID = item.SubjectID })">@item.SubjectName</a></li>
+
+                            </ul>
+                        }
+                    </li>
+                </ul>
+                <div class="clearfix"> </div>
+            </div>
+            <div class="products-row" id="productDiv">
+                @if (Model.Ispaids == true)
+                {
+                    if (Model.Subjects != null && Model.Subjects.Count > 0)
+                    {
+                        foreach (var item in Model.Subjects)
+                        {
+                            <div class="col-md-3 product-grids">
+                                <div class="agile-products">
+                                    <div class="new-tag"><h6>New</h6></div>
+
+
+                                    @*@{
+                                var coverImg = item.PDFFile.Replace("pdf", "png");
+                                coverImg = "~/Content/SubjectPDFNotes/" + @coverImg;
+                            }*@
+
+                                    <a href="single.html"><img src="../../@item.CoverFilePath" class="img-responsive" alt="img"></a>
+
+                                    <div class="agile-product-text">
+                                        <h5><a href="single.html">@item.SubjectName</a></h5>
+                                        <h6><del>Rs.5</del> Rs.@item.subjectPrice</h6>
+                                        @if (Model.Ispaids == true)
+                                        {
+                                            @Html.ActionLink("Download", "DownloadFile", new { fileName = item.FileName })
+                                        }
+
+                                        <form action="#" method="post">
+                                            <input type="hidden" name="cmd" value="_cart" />
+                                            <input type="hidden" name="add" value="1" />
+                                            <input type="hidden" name="w3ls_item" value="@item.SubjectName" />
+                                            <input type="hidden" name="amount" value="@item.subjectPrice" />
+
+
+
+                                            @Html.TextBox("Quantity", "1", new { style = "width:50px!important;", maxlength = "2" })
+
+
+
+
+                                            <button type="submit" class="w3ls-cart pw3ls-cart" data-id="@item.SubjectID" onclick="AddProductToCart(@item.SubjectID,@item.subjectPrice)"><i class="fa fa-cart-plus" aria-hidden="true"></i> Add to cart</button>
+
+                                            @*<button class="addToCart btn btn-danger" data-id="@item.SubjectID">Add To Cart</button>*@
+                                        </form>
+                                    </div>
+                                </div>
+                            </div>
+                        }
+                    }
+                    else
+                    {
+
+                        <br /> <br /> <br />
+                        <h3 class="text-center text-danger">No Record Found..</h3>
+
+                    }
+                }
+                @if (Model.Ispaids == false)
+                {
+                    <h3 class="text-center text-danger">You are not paid Student...</h3>
+                }
+
+                <div class="clearfix"> </div>
+            </div>
+            <!-- add-products -->
+            <div class="w3ls-add-grids w3agile-add-products">
+                <a href="#">
+                    <h4>TOP 10 TRENDS FOR YOU FLAT <span>20%</span> OFF</h4>
+                    <h6>Shop now <i class="fa fa-arrow-circle-right" aria-hidden="true"></i></h6>
+                </a>
+            </div>
+            <!-- //add-products -->
+        </div>
+
+
+        <!-- Search Field Functionality -->
+
+        <div class="widget widget-search">
+            <form role="search" method="get" class="search-form" action="@Url.Action("UserSubject" , "UserAccount")">
+                <label>
+                    <input type="search" class="search-field form-control" placeholder="Search …" value="" name="SearchTrem">
+                </label>
+                <input type="submit" class="search-submit btn btn-primary" value="Search">
+                <input type="reset" class=" btn btn-danger" value="Reset"> ||
+                <a href="@Url.Action("UserSubject" , "UserAccount") " class="btn btn-warning">Reset Filter</a>
+            </form>
+        </div><!-- /.widget-search -->
+
+        <br />
+
+        <div class="col-md-3 rsidebar">
+            <div class="rsidebar-top">
+                <div class="slider-left">
+                    <h4>Sort By Filter</h4>
+                    <div class="sidebar-row">
+                        <ul class="">
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.Default  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.Default ? "active" : string.Empty : string.Empty )">Default - Newest</a></li>
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.Popularity  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.Popularity ? "active" : string.Empty : string.Empty )">Popularity</a></li>
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.PriceLowToHigh  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.PriceLowToHigh ? "active" : string.Empty : string.Empty )">Price: low to high</a></li>
+                            <li><a href="@Url.Action("UserSubject" , "UserAccount" ,new {sortBy =(int)SortByEnums.PriceHighToLow  } )" class="@(Model.SortBy.HasValue ? Model.SortBy.Value == (int)SortByEnums.PriceHighToLow ? "active" : string.Empty : string.Empty )">Price: high to low</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <br /> <br />
+
+                <div class="slider-left">
+                    <h4>Filter By Price</h4>
+                    <input type="range" id="slide-range">
+                    Price: <input type="text" id="amount" disabled="disabled">
+                </div>
+
+                <br /><br />
+                <div class="sidebar-row">
+                    <h4>Books & Music</h4>
+                    <ul class="faq">
+                        <li class="item1">
+                            <a href="#">Books<span class="glyphicon glyphicon-menu-down"></span></a>
+                            @foreach (var subject in Model.Subjects)
+                            {
+
+                                <ul>
+                                    <li><a href="@Url.Action("UserSubject", "UserAccount", new { subjectID = subject.SubjectID })">@subject.SubjectName</a></li>
+
+                                </ul>
+                            }
+                        </li>
+
+                        @*<li class="item2">
+                                <a href="#">Music<span class="glyphicon glyphicon-menu-down"></span></a>
+                                <ul>
+                                    <li class="subitem1"><a href="#">Pop</a></li>
+                                    <li class="subitem1"><a href="#">New Releases</a></li>
+                                    <li class="subitem1"><a href="#">Jewellery</a></li>
+                                    <li class="subitem1"><a href="#">Album Songs</a></li>
+                                </ul>
+                            </li>
+                            <li class="item3">
+                                <a href="#">Movies<span class="glyphicon glyphicon-menu-down"></span></a>
+                                <ul>
+                                    <li class="subitem1"><a href="#">Animated</a></li>
+                                    <li class="subitem1"><a href="#">Children & Family</a></li>
+                                    <li class="subitem1"><a href="#">Adventure</a></li>
+                                </ul>
+                            </li>*@
+                    </ul>
+
+                    <!-- script for tabs -->
+                    <script type="text/javascript">
+                        $(function () {
+
+                            var menu_ul = $('.faq > li > ul'),
+                                menu_a = $('.faq > li > a');
+
+                            menu_ul.hide();
+
+                            menu_a.click(function (e) {
+                                e.preventDefault();
+                                if (!$(this).hasClass('active')) {
+                                    menu_a.removeClass('active');
+                                    menu_ul.filter(':visible').slideUp('normal');
+                                    $(this).addClass('active').next().stop(true, true).slideDown('normal');
+                                } else {
+                                    $(this).removeClass('active');
+                                    $(this).next().stop(true, true).slideUp('normal');
+                                }
+                            });
+
+                        });
+                    </script>
+                    <!-- script for tabs -->
+                </div>
+                <div class="sidebar-row">
+                    <h4>DISCOUNTS</h4>
+                    <div class="row row1 scroll-pane">
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Upto - 10% (20)</label>
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>70% - 60% (5)</label>
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>50% - 40% (7)</label>
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>30% - 20% (2)</label>
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>10% - 5% (5)</label>
+
+                        <label class="checkbox"><input type="checkbox" name="checkbox"><i></i>Other(50)</label>
+                    </div>
+                </div>
+                <br /><br />
+            </div>
+
+            <br /><br />
+
+            <div class="related-row">
+                <h4>Related Searches</h4>
+
+                @foreach (var subject in Model.Subjects)
+                {
+                    <ul>
+                        <li><a href="@Url.Action("UserSubject" , "UserAccount" , new {subjectID = subject.SubjectID })">@subject.SubjectName</a></li>
+
+                    </ul>
+                }
+
+
+            </div>
+
+            <div class="related-row">
+                <h4>YOU MAY ALSO LIKE</h4>
+                <div class="galry-like">
+                    <a href="single.html"><img src="~/CoverImage/3d-book-smart-object.png" class="img-responsive" alt="img"></a>
+                    <h4><a href="products.html">Audio speaker</a></h4>
+                    <h5>$100</h5>
+                </div>
+            </div>
+
+            <br /><br />
+
+            <a href="@Url.Action("UserSubject" , "UserAccount") " class="btn btn-primary">Reset Filter</a>
+
+        </div>
+        <div class="clearfix"> </div>
+
+
+        <!-- recommendations -->
+        <div class="recommend">
+            <h3 class="w3ls-title">Our Recommendations </h3>
+
+            @*<script>
+                  $(document).ready(function () {
+                      $("#owl-demo5").owlCarousel({
+
+                          autoPlay: 3000, //Set AutoPlay to 3 seconds
+
+                          items: 4,
+                          itemsDesktop: [640, 5],
+                          itemsDesktopSmall: [414, 4],
+                          navigation: true
+
+                      });
+
+                  });
+                </script>*@
+            @*id="owl-demo5" class="owl-carousel"*@
+
+            <div>
+
+
+                @foreach (var subject in Model.Subjects)
+                {
+                    <div class="item">
+                        <div class="glry-w3agile-grids agileits">
+                            <div class="new-tag"><h6>20% <br> Off</h6></div>
+                            <a href="products1.html"><img src="@subject.ImageURL" alt="img"></a>
+                            <div class="view-caption agileits-w3layouts">
+                                <h4><a href="products1.html">@subject.SubjectName</a></h4>
+                                <p>@subject.subjectDescription</p>
+                                <h5>$@subject.subjectPrice</h5>
+                                <form action="#" method="post">
+                                    <input type="hidden" name="cmd" value="_cart" />
+                                    <input type="hidden" name="add" value="1" />
+                                    <input type="hidden" name="w3ls_item" value="@subject.SubjectName" />
+                                    <input type="hidden" name="amount" value="@subject.subjectPrice" />
+
+
+
+
+                                    <button type="button" class="w3ls-cart" data-toggle="modal" data-target="#exampleModalCenter"
+                                            data-whatever="@Model.Teachers.Where(x=>x.SubjectID==subject.SubjectID).Select(x=>x.TeacherName).FirstOrDefault()">
+                                        <i class="fa fa-cart-plus" aria-hidden="true"></i>Teacher Details
+                                    </button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                }
+
+            </div>
+
+        </div>
+        <!-- //recommendations -->
+
+    </div>
+
+    <!-- coming soon -->
+    <div class="soon">
+        <div class="container">
+            <h3>Mega Deal Of the Week</h3>
+            <h4>Coming Soon Don't Miss Out</h4>
+            <div id="countdown1" class="ClassyCountdownDemo">
+                <div class="ClassyCountdown-wrapper">
+                    <div class="ClassyCountdown-days" style="height: 144px;">
+                        <div style="display: inline; height: 129.6px; width: 129.6px;">
+                            <canvas width="161" height="161" style="width: 129.6px; height: 129.6px;"></canvas>
+                            <input type="text" readonly="readonly" style="display: none; width: 0px; visibility: hidden;">
+                        </div>
+                        <span class="ClassyCountdown-value" style="font-weight: 300; color: rgb(255, 255, 255); margin-top: -37px; font-size: 34px;"><div>3</div><span style="font-size: 16px;">Days</span></span>
+                    </div><div class="ClassyCountdown-hours" style="height: 143px;"><div style="display: inline; height: 128.7px; width: 128.7px;"><canvas width="160" height="160" style="width: 128.7px; height: 128.7px;"></canvas><input type="text" readonly="readonly" style="display: none; width: 0px; visibility: hidden;"></div><span class="ClassyCountdown-value" style="font-weight: 300; color: rgb(255, 255, 255); margin-top: -37px; font-size: 34px;"><div>1</div><span style="font-size: 16px;">Hours</span></span></div><div class="ClassyCountdown-minutes" style="height: 143px;"><div style="display: inline; height: 128.7px; width: 128.7px;"><canvas width="160" height="160" style="width: 128.7px; height: 128.7px;"></canvas><input type="text" readonly="readonly" style="display: none; width: 0px; visibility: hidden;"></div><span class="ClassyCountdown-value" style="font-weight: 300; color: rgb(255, 255, 255); margin-top: -37px; font-size: 34px;"><div>56</div><span style="font-size: 16px;">Minutes</span></span></div><div class="ClassyCountdown-seconds" style="height: 144px;"><div style="display: inline; height: 129.6px; width: 129.6px;"><canvas width="161" height="161" style="width: 129.6px; height: 129.6px;"></canvas><input type="text" readonly="readonly" style="display: none; width: 0px; visibility: hidden;"></div><span class="ClassyCountdown-value" style="font-weight: 300; color: rgb(255, 255, 255); margin-top: -37px; font-size: 34px;"><div>11</div><span style="font-size: 16px;">Seconds</span></span></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- //coming soon -->
+
+</div>
+<!--//products-->
+
+
+<script>
+
+    var products = [];
+
+    $(".addToCart").click(function () {
+
+       
+
+        var productID = $(this).attr('data-id');
+
+        products.push(productID);
+
+        $.cookie('CartProducts', products.join('-'), { path: '/' });
+
+        alert("Product Added To cart")
+    })
+
+
+
+    var priceSlider = $("#slide-range").slider({
+
+        range: true,
+        min: 0,
+        max: @Model.MaximumPrice,
+        values: [0, @Model.MaximumPrice],
+        slide: function (event, ui) {
+            var minPrice = ui.values[0];
+            var maxPrice = ui.values[1];
+
+            $("#amount").val("$" + minPrice + ".00" + " - " + "$" + maxPrice + ".00");
+            alert: alert("hetr"),
+            GetData(minPrice, maxPrice);
+
+
+        }
+    });
+
+    function GetData(minimumPrice, maximumPrice) {
+        $.ajax({
+            url: '@Url.Action("UserSubject" , "UserAccount")',
+            minimumPrice: minimumPrice,
+            maximumPrice: maximumPrice
+        })
+            .done(function (response) {
+                $("#productDiv").html(response)
+            })
+    }
+
+</script>
+
+

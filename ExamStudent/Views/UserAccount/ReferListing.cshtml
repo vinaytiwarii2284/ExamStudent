@@ -1,0 +1,45 @@
+﻿
+@{
+    ViewBag.Title = "ReferListing";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+}
+
+<h2 class="display-4 text-center">Refer List</h2>
+
+
+
+<div class="container">
+   
+    <table class="table table-bordered table-hover">
+        <thead>
+            <tr>
+                <th>
+                    State
+                </th>
+                <th>City</th>
+                <th>Block</th>
+                <th>Refferal Name</th>
+            </tr>
+        </thead>
+
+        <tbody>
+
+
+
+            @foreach (var item in Session["users"] as List<ExamStudent.Models.Tab_User_Info_Temp>)
+            {
+                <tr>
+                    <td>@item.State.StateName</td>
+                    <td>@item.City.CityName</td>
+                    <th>@item.Block</th>
+                    <td>
+                        @item.Name
+                    </td>
+                </tr>
+            }
+        </tbody>
+
+    </table>
+</div>
+
+
