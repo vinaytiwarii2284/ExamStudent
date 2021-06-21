@@ -1,0 +1,29 @@
+﻿@model ExamStudent.Models.User
+
+@{
+    ViewBag.Title = "UserAccount";
+}
+
+<h2 class="text-dark">User Account</h2>
+
+<div class="container">
+
+    <label>Full Name</label>
+    @Html.TextBoxFor(model => model.FullName);
+
+</div>
+
+<div class="container">
+
+    @if (Session["Id"] != null)
+    {
+        <h4>Hello , @Session["LoginName"].ToString()</h4>
+    }
+
+    @Html.ActionLink("Details", "Details", new { id = @Session["Id"] })
+
+    @*@Html.ActionLink("Details", "Details", "Login", new { id = @Session["Id"] })*@
+</div>
+
+
+

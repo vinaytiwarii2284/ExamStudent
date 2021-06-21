@@ -1,0 +1,231 @@
+﻿@model ExamStudent.ViewModels.SubjectListingViewModel
+
+@{
+    ViewBag.Title = "SuccessPay";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="text-center text-danger">Success Pay Student And Employee</h2>
+<hr />
+
+
+<div class="container">
+
+    <form method="post">
+
+        <div class="row">
+
+            <div class="col-md-5">
+
+                <div class="form-group">
+
+                    <label class="text-gray-dark">Search</label>
+
+                    <input id="searchTxt" name="search" class="form-control" value="@Model.SearchTerm" />
+
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-7">
+
+                <div class="form-group">
+
+                    <label>Action</label>
+
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <button class="btn btn-primary" type="button" id="searchBtn">Search</button> ||
+
+                            <button class="btn btn-primary" type="reset">Reset</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+   
+
+</div>
+<br />
+
+<div class="container">
+
+    <table class="table" id="TableContainer">
+        <tr>
+            <th>
+                Date
+
+            </th>
+            <th>
+                Name
+
+            </th>
+            <th>
+                Amount
+
+            </th>
+            <th>
+                productInfo
+
+            </th>
+            <th>
+                Email Address
+
+            </th>
+            <th>
+                Phone Number
+
+            </th>
+            <th>
+                Transection-ID
+
+            </th>
+            <th>
+                IsPaid
+
+            </th>
+            <th>
+                ApplicationID
+
+            </th>
+            <th></th>
+        </tr>
+
+
+        @if (Model.TabPayumoneyTransectionLogs != null && Model.TabPayumoneyTransectionLogs.Count > 0)
+        {
+            foreach (var item in Model.TabPayumoneyTransectionLogs)
+            {
+                <tr>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Date)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.FirstName)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.Amount)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.productInfo)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.EmailAddress)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.PhoneNumber)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.TransectionID)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.IsPaid)
+                    </td>
+                    <td>
+                        @Html.DisplayFor(modelItem => item.ApplicationID)
+                    </td>
+                    <td>
+                        @Html.ActionLink("Edit", "Edit", new { id = item.ID }) |
+                        @Html.ActionLink("Details", "Details", new { id = item.ID }) |
+                        @Html.ActionLink("Delete", "Delete", new { id = item.ID })
+                    </td>
+                </tr>
+            }
+        }
+        else
+        {
+            <tr>
+                <td class="text-danger" colspan="4">
+                    No Record Found.
+                </td>
+            </tr>
+        }
+
+
+    </table>
+
+
+
+    <div>
+        @*@if (Model.PageNo != 1) // ye kya krega ki first page me disable rhega.  // Pagination functionality
+            {
+                <button class="pageButtons" data-pageNo="@(Model.PageNo - 1)">Previous</button>
+            }*@
+
+
+        <button class="pageButtons btn btn-danger" data-pageNo="@(Model.PageNo - 1)">Previous</button>
+
+        <button class="pageButtons  btn btn-danger" data-pageNo="@(Model.PageNo + 1)">Next</button>
+    </div>
+
+</div>
+
+
+<script>
+
+    $(".pageButtons").click(function () {
+
+        $.ajax({
+            url: '/Admin/SuccessPay', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+
+            data: {
+                pageNo: $(this).attr("data-pageNo")
+            }
+        })
+            .done(function (data) {
+
+                /*alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                $("#TableContainer").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+
+
+    $("#searchBtn").click(function () {   //search functionalities
+
+        var searchValue = $("#searchTxt").val();
+
+        $.ajax({
+            url: '/Admin/SuccessPay', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+            data: {
+                search: searchValue
+            }
+        })
+            .done(function (data) {
+
+                /* alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                $("#TableContainer").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+
+
+
+</script>
+

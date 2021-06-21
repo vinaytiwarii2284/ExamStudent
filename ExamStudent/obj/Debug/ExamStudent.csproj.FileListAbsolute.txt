@@ -1,0 +1,587 @@
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudent.dll.config
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudent.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudent.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\csc.exe
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\csc.exe.config
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\csc.rsp
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\csi.exe
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\csi.exe.config
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\csi.rsp
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Managed.Core.targets
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.AppContext.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Collections.Immutable.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Console.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.IO.Compression.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Reflection.Metadata.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.AccessControl.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.Claims.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Security.Principal.Windows.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.ValueTuple.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XmlDocument.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\vbc.exe
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\vbc.exe.config
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\vbc.rsp
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe.config
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Antlr3.Runtime.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\EntityFramework.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Microsoft.Web.Infrastructure.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Newtonsoft.Json.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Helpers.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Mvc.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Optimization.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Razor.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.WebPages.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\WebGrease.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\EntityFramework.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Helpers.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Mvc.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Optimization.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.Razor.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.WebPages.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Newtonsoft.Json.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Antlr3.Runtime.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CopyComplete
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\obj\Debug\ExamStudent.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\obj\Debug\ExamStudent.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csprojAssemblyReference.cache
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudents.Business.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudents.Business.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Content\imageupload\125b820e-b260-4acf-a3a0-5f5e2908bf10.png
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Content\imageupload\53050e5f-ed9f-4412-8d3d-6d86f16ab094.jpg
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Content\imageupload\7c19a3d9-e28c-410f-8586-49669cc9fbf2.jpg
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Content\imageupload\b76ad5b3-40ca-405c-9424-32f069d5b098.png
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Content\imageupload\d612e484-1bdf-4b8f-afac-63fccf753eed.jpg
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudent\bin\Content\imageupload\da5adeab-c79a-4696-b043-c42c043e8b60.jpg
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csprojAssemblyReference.cache
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CoreCompileInputs.cache
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\125b820e-b260-4acf-a3a0-5f5e2908bf10.png
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\53050e5f-ed9f-4412-8d3d-6d86f16ab094.jpg
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\7c19a3d9-e28c-410f-8586-49669cc9fbf2.jpg
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\b76ad5b3-40ca-405c-9424-32f069d5b098.png
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\d612e484-1bdf-4b8f-afac-63fccf753eed.jpg
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\da5adeab-c79a-4696-b043-c42c043e8b60.jpg
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.dll.config
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csc.exe
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csc.exe.config
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csc.rsp
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csi.exe
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csi.exe.config
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csi.rsp
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CSharp.Core.targets
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Managed.Core.targets
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.VisualBasic.Core.targets
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.AppContext.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Collections.Immutable.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Console.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.StackTrace.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.Compression.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.Primitives.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.AccessControl.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Reflection.Metadata.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.AccessControl.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Claims.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Encoding.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Primitives.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Principal.Windows.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Text.Encoding.CodePages.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.ValueTuple.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.ReaderWriter.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XmlDocument.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.XDocument.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\vbc.exe
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\vbc.exe.config
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\vbc.rsp
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe.config
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Antlr3.Runtime.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.Business.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Microsoft.Web.Infrastructure.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Newtonsoft.Json.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Helpers.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Mvc.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Optimization.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Razor.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\WebGrease.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.Business.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Helpers.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Mvc.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Optimization.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Razor.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Newtonsoft.Json.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Antlr3.Runtime.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\bin\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CopyComplete
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Content\imageupload\125b820e-b260-4acf-a3a0-5f5e2908bf10.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Content\imageupload\53050e5f-ed9f-4412-8d3d-6d86f16ab094.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Content\imageupload\7c19a3d9-e28c-410f-8586-49669cc9fbf2.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Content\imageupload\b76ad5b3-40ca-405c-9424-32f069d5b098.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Content\imageupload\d612e484-1bdf-4b8f-afac-63fccf753eed.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Content\imageupload\da5adeab-c79a-4696-b043-c42c043e8b60.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudent.dll.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\csc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\csc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\csc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\csi.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\csi.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\csi.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.AppContext.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Collections.Immutable.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Console.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.IO.Compression.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Reflection.Metadata.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.Claims.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.ValueTuple.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\vbc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\vbc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\vbc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Antlr3.Runtime.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\EntityFramework.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Newtonsoft.Json.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Helpers.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Optimization.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\WebGrease.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\EntityFramework.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Helpers.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Mvc.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Optimization.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.WebPages.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Newtonsoft.Json.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Antlr3.Runtime.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.ExamStudentResource.resources
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.GenerateResource.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudent\bin\Rotativa.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Content\imageupload\125b820e-b260-4acf-a3a0-5f5e2908bf10.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Content\imageupload\53050e5f-ed9f-4412-8d3d-6d86f16ab094.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Content\imageupload\7c19a3d9-e28c-410f-8586-49669cc9fbf2.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Content\imageupload\b76ad5b3-40ca-405c-9424-32f069d5b098.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Content\imageupload\d612e484-1bdf-4b8f-afac-63fccf753eed.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Content\imageupload\da5adeab-c79a-4696-b043-c42c043e8b60.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\csc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\csc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\csc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\csi.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\csi.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\csi.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.AppContext.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Collections.Immutable.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Console.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.IO.Compression.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Reflection.Metadata.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.Claims.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.ValueTuple.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\vbc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\vbc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\vbc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Antlr3.Runtime.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\EntityFramework.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Newtonsoft.Json.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Rotativa.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Helpers.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Optimization.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\WebGrease.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\EntityFramework.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Helpers.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Mvc.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Optimization.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.WebPages.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Newtonsoft.Json.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Antlr3.Runtime.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.ExamStudentResource.resources
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.GenerateResource.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\obj\Debug\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudent\bin\ExamStudent.dll.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\125b820e-b260-4acf-a3a0-5f5e2908bf10.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\53050e5f-ed9f-4412-8d3d-6d86f16ab094.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\7c19a3d9-e28c-410f-8586-49669cc9fbf2.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\b76ad5b3-40ca-405c-9424-32f069d5b098.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\d612e484-1bdf-4b8f-afac-63fccf753eed.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Content\imageupload\da5adeab-c79a-4696-b043-c42c043e8b60.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.dll.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csi.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csi.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\csi.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.AppContext.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Collections.Immutable.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Console.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.Compression.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Reflection.Metadata.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Claims.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.ValueTuple.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\vbc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\vbc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\vbc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Antlr3.Runtime.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Newtonsoft.Json.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Rotativa.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Helpers.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Optimization.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\WebGrease.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Helpers.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Mvc.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Optimization.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Newtonsoft.Json.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Antlr3.Runtime.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\bin\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.ExamStudentResource.resources
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.GenerateResource.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudent\obj\Debug\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Content\imageupload\125b820e-b260-4acf-a3a0-5f5e2908bf10.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Content\imageupload\53050e5f-ed9f-4412-8d3d-6d86f16ab094.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Content\imageupload\7c19a3d9-e28c-410f-8586-49669cc9fbf2.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Content\imageupload\b76ad5b3-40ca-405c-9424-32f069d5b098.png
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Content\imageupload\d612e484-1bdf-4b8f-afac-63fccf753eed.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Content\imageupload\da5adeab-c79a-4696-b043-c42c043e8b60.jpg
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudent.dll.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudent.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\csc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\csc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\csc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\csi.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\csi.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\csi.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Build.Tasks.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.CSharp.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.Scripting.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CodeAnalysis.VisualBasic.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.CSharp.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.amd64.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.DiaSymReader.Native.x86.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.Managed.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\Microsoft.VisualBasic.Core.targets
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.AppContext.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Collections.Immutable.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Console.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.FileVersionInfo.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Diagnostics.StackTrace.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.IO.Compression.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.IO.FileSystem.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.IO.Pipes.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Reflection.Metadata.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.AccessControl.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.Claims.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Algorithms.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Encoding.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.Primitives.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.Cryptography.X509Certificates.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Security.Principal.Windows.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Text.Encoding.CodePages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.ValueTuple.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Xml.ReaderWriter.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XmlDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\System.Xml.XPath.XDocument.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\vbc.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\vbc.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\vbc.rsp
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\roslyn\VBCSCompiler.exe.config
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Antlr3.Runtime.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\EntityFramework.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Newtonsoft.Json.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Rotativa.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Helpers.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Optimization.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\WebGrease.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\EntityFramework.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\EntityFramework.SqlServer.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Helpers.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Mvc.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Optimization.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.WebPages.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.WebPages.Deployment.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\System.Web.WebPages.Razor.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Newtonsoft.Json.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Antlr3.Runtime.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.xml
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\bin\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.ExamStudentResource.resources
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.GenerateResource.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\29-05-21 with GST Payment\ExamStudent\ExamStudent\obj\Debug\ExamStudent.pdb

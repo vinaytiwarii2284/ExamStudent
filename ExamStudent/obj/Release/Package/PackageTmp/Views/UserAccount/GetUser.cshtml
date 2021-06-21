@@ -1,0 +1,69 @@
+﻿@model ExamStudent.ViewModel.UserViewModel
+
+@{
+    ViewBag.Title = "GetUser";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+}
+
+<script src="https://unpkg.com/sweetalert/dist/sweetalert.min.js"></script>
+
+
+<div class="container">
+    <div class="jumbotron">
+        <h1>
+            Start the Quiz
+           
+        </h1>
+        <h5 class="btn btn-primary"> Good luck!</h5>
+    </div>
+
+</div>
+
+
+<div class="row">
+
+    <div class="container" style="min-height:500px; border:1px inset black ;margin-top: 50px; border-radius:5px;">
+
+        <div class="row" style="background-color:#9f0a0a;min-height: 80px;padding:10px;">
+
+            <h4 style="color:#ffffff">Enter User First Name</h4>
+        </div>
+
+       
+
+            <div class="panel panel-default" style="width: 37%; margin: 20% 32%;">
+                <div class="panel-heading">Let's Begin  ^_^</div>
+                <div class="panel-body">
+                    @using (Html.BeginForm("GetUser", "UserAccount", FormMethod.Post))
+                    {
+                        @Html.EditorFor(c => c.FirstName, new { htmlAttributes = new { @class = "form-control", @placeholder = "First Name ..." } })<br />
+                        <button type="submit" id="Enter" class="btn btn-info btn-lg" style="width:100%;"><span class="glyphicon glyphicon-user"></span>   Enter</button>
+                    }
+                </div>
+                @if (ViewBag.Msg != null)
+                {
+                    <div class="well well-sm well-danger"> @ViewBag.Msg </div>
+                }
+            </div>
+
+    </div>
+
+
+   
+
+</div>
+
+
+<script>
+    $(document).ready(function () {
+        swal({
+            title: "Your Mock Test Start!",
+            text: "You clicked the button!",
+            icon: "success",
+            button: "Aww yiss!",
+        });
+    })
+
+
+
+</script>

@@ -1,0 +1,339 @@
+﻿@model ExamStudent.ViewModel.Cart
+
+@{
+    ViewBag.Title = "Cart";
+    Layout = "~/Views/Shared/_LayoutAddToCart.cshtml";
+
+}
+
+@*@{
+        Html.RenderPartial("CartItem");
+    }*@
+
+<style>
+    /*class of disable action link*/
+    a.disabled {
+        pointer-events: none;
+        cursor: default;
+        color: #428bca !important;
+    }
+
+        a.disabled:hover {
+            cursor: default !important;
+            color: #428bca !important;
+            text-decoration: none !important;
+        }
+
+    input.disabled {
+        pointer-events: none;
+        cursor: default;
+        color: #428bca !important;
+    }
+
+    .position-relative.langSec1 {
+        height: 46px !important;
+    }
+
+    #photosOptions.inner {
+        padding-bottom: 0;
+    }
+</style>
+
+
+
+<script type="text/javascript">
+    function IncrementQty(_ProductId, _PhotoId) {
+        var Id = _PhotoId + "-" + _ProductId;
+        var Quantity = $("#Quantity_" + Id)[0].innerHTML;
+        var SubTotal = $("#SubTotal")[0].innerHTML;
+        var UnitPrice = $("#UnitPrice_" + Id)[0].innerHTML;
+        var url = "../Cart/AddProductToCart1";
+        $.ajax({
+            url: url,
+            data: { ProductId: _ProductId, quantity: 1, PhotoId: _PhotoId },
+            cache: false,
+            type: "POST",
+            datatype: "json",
+            success: function (data) {
+                for (var i = 0; i < data.CartLineItems.length; i++) {
+                    if (Id == data.CartLineItems[i].PhotoId + "-" + data.CartLineItems[i].Product.ProductID) {
+                        $("#Quantity_" + Id)[0].innerHTML = data.CartLineItems[i].Quantity;
+                        $("#SubTotal_" + Id)[0].innerHTML = data.CartLineItems[i].Subtotal.replace(',', '.');
+                    }
+                }
+                $("#SubTotal")[0].innerHTML = data.TotalCurrentValue.replace(',', '.');
+                $("#CartAmount")[0].innerHTML = data.TotalCurrentValue;
+            },
+            error: function (reponse) {
+
+            }
+        });
+    }
+    function DecrementQty(_ProductId, _Quantity, _PhotoId) {
+        var Id = _PhotoId + "-" + _ProductId;
+        var Quantity = $("#Quantity_" + Id)[0].innerHTML;
+        var SubTotal = $("#SubTotal")[0].innerHTML;
+        var UnitPrice = $("#UnitPrice_" + Id)[0].innerHTML
+        var Count = 0;
+        if (Quantity != 1) {
+            var url = "../Cart/RemoveProductFromCart1";
+            $.ajax({
+                url: url,
+                data: { ProductId: _ProductId, Quantity: _Quantity, PhotoId: _PhotoId },
+                cache: false,
+                type: "POST",
+                datatype: "json",
+                success: function (data) {
+                    for (var i = 0; i < data.CartLineItems.length; i++) {
+                        if (data.CartLineItems[i].ProductId != _ProductId) {
+                            Count = Count + 1;
+                        }
+                        for (var i = 0; i < data.CartLineItems.length; i++) {
+                            if (Id == data.CartLineItems[i].PhotoId + "-" + data.CartLineItems[i].Product.ProductID) {
+                                $("#Quantity_" + Id)[0].innerHTML = data.CartLineItems[i].Quantity;
+                                $("#SubTotal_" + Id)[0].innerHTML = data.CartLineItems[i].Subtotal.replace(',', '.');
+                            }
+                        }
+                        $("#SubTotal")[0].innerHTML = data.TotalCurrentValue.replace(',', '.');
+                        $("#CartAmount")[0].innerHTML = data.TotalCurrentValue;
+                    }
+                },
+                error: function (reponse) {
+                }
+            });
+        }
+    }
+</script>
+
+<br /><br /><br />
+
+<div class="ww_cartsumhd">
+    <h1 class="row">
+        <div class="col-xs-4 text-left ww_title_links"><a class="btn btn-link" href=@Html.Raw(ViewBag.PreviousAction)>Continue Shopping</a></div>
+
+        <div class="col-xs-4 text-center ww_title_links"><span class="ww_title_links"><h3>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewShoppingCartText</h3></span></div>
+
+        @*<div class="col-xs-4 text-right">
+              <span class=" ww_title_links">
+
+              @if (Model.CartLineItems.Count == 0)
+              {
+                  <a class="btn btn-link disabled " href="@Url.Action("Index", "CheckOut")">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewCheckOutText</a>
+              }
+              else
+              {
+                  <a class="btn btn-link ww_title_links" href="@Url.Action("Index", "CheckOut")">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewCheckOutText</a>
+              }
+                 </span>
+            </div>*@
+    </h1>
+
+    @*<div class="col-xs-4 text-center ww_title_links"><span class="ww_title_links"><h3>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewShoppingCartText</h3></span></div>*@
+
+</div> <!--ww_title-->
+
+
+<br /><br /><br />
+
+<div class="ww_contentcont photoscontainer">
+    <div class="row">
+        <div class="col-sm-12">
+            <div class="productlistingcontainer">
+                <div class="table_responsive table">
+
+                    <table class="layout display responsive-table table">
+                        <thead>
+                            <tr>
+
+                                <th>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewProductNameText</th>
+                                @*<th>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewItemText</th>*@
+                                <th>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewQuantityText</th>
+                                <th>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewPriceText</th>
+                                <th>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewSubtotalText</th>
+                                <th>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewRemoveItemText</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            @foreach (var item in Model.CartLineItems)
+                            {
+                                <tr>
+                                    <td class="organisationnumber">
+                                        <div class="quantitycontainer text-center">
+                                            <div class="quantitynos" id="Quantity_@item.PhotoId-@item.Product.ProductID">@item.Product.ProductName</div>
+                                        </div>
+                                    </td>
+                                    <td class="organisationname">
+                                        <div class="quantitycontainer text-center">
+                                            <div class="quantitynos" id="Quantity_@item.PhotoId-@item.Product.ProductID">@item.Quantity</div>
+                                            <div class="incdecquanity">
+                                                <input type="hidden" id="quantity" name="quantity" value="1" />
+                                                <input type="hidden" id="ProductId" name="ProductId" value="@item.Product.ProductID">
+                                            </div>
+                                        </div>
+                                    </td>
+                                    <td class="organisationname" id="UnitPrice_@item.PhotoId-@item.Product.ProductID">@item.Product.UnitPriceCurrency.Replace(',', '.')</td>
+                                    <td class="organisationname" id="SubTotal_@item.PhotoId-@item.Product.ProductID">@item.Subtotal.Replace(',', '.')</td>
+                                    <td class="actions"><a href="/Cart/RemoveProductFromCart?PhotoId=@item.PhotoId &amp;ProductId=@item.Product.ProductID" class="remove-item" title="Remove">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewRemoveButtonText</a></td>
+                                </tr>
+                            }
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="grandtotalvalue">
+        <div class="col-lg-8"></div>
+        <div style="text-align: left;" class="col-lg-4 grandtotalText">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewGrandTotalText <span id="SubTotal">@Model.Total(Model.CartLineItems).Replace(',', '.')</span></div>
+        <div style="clear: both;"></div>
+    </div>
+
+
+    @*<div class="clearCartBtn_sec text-right paddingRight_20">
+            @using (Html.BeginForm("ClearCart", "Cart", FormMethod.Post))
+            {
+                if (Model.CartLineItems.Count > 0)
+                {
+                    <input type="submit" style="" class="pinkbtn clearCartBtn" value="@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewClearCartButtonText" />
+                }
+                else
+                {
+                    <input type="submit" disabled class="pinkbtn disabled clearCartBtnDisabled" value="@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewClearCartButtonText" />
+
+                }
+            }
+        </div>*@
+</div>
+
+
+
+
+
+<div class="row">
+    <div class="col-25">
+        <div class="container" id="con">
+            @foreach (var item in Model.CartLineItems)
+            {
+                <h4>
+                    Cart
+                    <span class="price" style="color:black">
+                        <i class="fa fa-shopping-cart"></i>
+                        <b>4</b>
+                    </span>
+                </h4>
+                <p><a href="#">Product Name</a>;<span class="price">@item.Product.ProductName</span></p>
+
+                <p><a href="#">Quantity</a> <span class="price">@item.Quantity</span></p>
+                <p><a href="#">Unit Price</a> <span class="price">@item.Product.UnitPriceCurrency.Replace(',', '.')</span></p>
+                <p><a href="#">Sub Total</a> <span class="price">@item.Subtotal.Replace(',', '.')</span></p>
+                <p><a href="#">Remove Item</a> <span class="price">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.CartViewRemoveButtonText</span></p>
+            }
+            <hr>
+            <p>Total <span class="price" style="color:black"><b>@Model.Total(Model.CartLineItems).Replace(',', '.')</b></span></p>
+        </div>
+    </div>
+
+
+</div>
+
+<div class="container">
+
+    <div class="float-right">
+
+        <a href="@Url.Action("Index" , "CheckOut")" class="btn btn-primary" style="width : 200px;">CheckOut</a>
+    </div>
+
+</div>
+
+
+<br /><br /><br />
+
+  
+
+
+<style>
+
+    .row {
+        display: -ms-flexbox; /* IE10 */
+        display: flex;
+        -ms-flex-wrap: wrap; /* IE10 */
+        flex-wrap: wrap;
+        margin: 0 -16px;
+    }
+
+    .col-25 {
+        -ms-flex: 25%; /* IE10 */
+        flex: 25%;
+    }
+
+    .col-50 {
+        -ms-flex: 50%; /* IE10 */
+        flex: 50%;
+    }
+
+
+
+    .col-25,
+    .col-50,
+    .col-75 {
+        padding: 0 16px;
+    }
+
+    #con {
+        background-color: #f2f2f2;
+        padding: 5px 20px 15px 20px;
+        border: 1px solid lightgrey;
+        border-radius: 3px;
+        width: 400px;
+    }
+
+    input[type=text] {
+        width: 100%;
+        margin-bottom: 20px;
+        padding: 12px;
+        border: 1px solid #ccc;
+        border-radius: 3px;
+    }
+
+    label {
+        margin-bottom: 10px;
+        display: block;
+    }
+
+    .icon-container {
+        margin-bottom: 20px;
+        padding: 7px 0;
+        font-size: 24px;
+    }
+
+
+    .btn {
+        background-color: #4CAF50;
+        color: white;
+        padding: 12px;
+        margin: 10px 0;
+        border: none;
+        width: 100%;
+        border-radius: 3px;
+        cursor: pointer;
+        font-size: 17px;
+    }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+
+    span.price {
+        float: right;
+        color: grey;
+    }
+
+    @@media (max-width: 800px) {
+        .row {
+            flex-direction: column-reverse;
+        }
+
+        .col-25 {
+            margin-bottom: 20px;
+        }
+</style>

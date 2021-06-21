@@ -1,0 +1,112 @@
+﻿@model ExamStudent.ViewModel.UserViewModel
+
+@using System.Web.Mvc
+
+@{
+    ViewBag.Title = "Edit";
+}
+
+
+
+
+<br />
+<br />
+<br />
+<br />
+
+<h2 class="text-success text-center">User Edit Details</h2>
+
+
+<div class="container">
+
+
+    <form method="post">
+        <input type="hidden" name="UserDetailId" value="@Model.UserDetailId" />
+        <input type="hidden" name="UserId" value="@Model.UserId" />
+
+
+        <div class="form-group">
+            <label>First Name</label>
+            <input type="text" name="FirstName" class="form-control col-md-5" value="@Model.FirstName" required />
+        </div>
+
+
+        <div class="form-group">
+            <label>Middle Name</label>
+            <input type="text" name="MiddleName" class="form-control col-md-5" value="@Model.MiddleName" required />
+        </div>
+
+        <div class="form-group">
+            <label>Last Name</label>
+            <input type="text" name="LastName" class="form-control col-md-5" value="@Model.LastName" required />
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.DOB, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.EditorFor(model => model.DOB, new { htmlAttributes = new { @class = "form-control col-md-5" } })
+                @Html.ValidationMessageFor(model => model.DOB, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <label>Email</label>
+            <input type="email" name="EmailAddress" class="form-control col-md-5" value="@Model.EmailAddress" required />
+        </div>
+
+        <div class="form-group">
+            <label>PhoneNumber</label>
+            <input type="number" name="PhoneNumber" class="form-control col-md-5" value="@Model.PhoneNumber" required />
+        </div>
+
+        <div class="form-group">
+            <label>Mobile Number</label>
+            <input type="number" name="MobileNumber" class="form-control col-md-5" value="@Model.MobileNumber" required />
+        </div>
+
+
+
+        <div class="form-group">
+            <label for="inputName">Board Type</label>
+
+            @Html.DropDownListFor(m => m.BoardTypeName, new SelectList(Model.BoardTypeList, "BoardTypeId", "BoardTypeName"),
+                                new { @class = "form-control" })
+        </div>
+
+
+        <div class="form-group">
+            <label for="inputName">Medium</label>
+
+            @Html.DropDownListFor(m => m.Mediumname, new SelectList(Model.MediumList, "MediumId", "MediumName"),
+                                new { @class = "form-control" })
+        </div>
+
+        <div class="form-group">
+            <label for="inputName">Standard</label>
+
+            @Html.DropDownListFor(m => m.Standardname, new SelectList(Model.StandardList, "StandardId", "StandardName"),
+                               new { @class = "form-control" })
+        </div>
+
+
+
+        <div class="form-group">
+            <label>Create By</label>
+            <input type="text" name="CreatedDate" class="form-control col-md-5" value="@Model.CreatedDate" required />
+        </div>
+
+        <button class="btn btn-primary">UPDATE</button> ||
+
+
+        @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-danger" })
+    </form>
+</div>
+
+
+
+
+
+<br />
+<br />
+<br />
+

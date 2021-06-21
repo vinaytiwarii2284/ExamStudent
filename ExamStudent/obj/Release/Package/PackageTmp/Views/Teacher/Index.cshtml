@@ -1,0 +1,75 @@
+﻿@model ExamStudent.ViewModels.TeacherListing
+
+@{
+    ViewBag.Title = "Index";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+
+<link rel="stylesheet"type="text/css"href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css"/>
+<script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+<h2 class="text-dark text-center">Teacher Panel</h2>
+
+<div>
+
+    <a href="@Url.Action("create" , "Teacher")"class="btn btn-primary">Add New Teacher</a>
+
+</div>
+
+<br /><br /><br /><br />
+
+<table class="table"id="ProductsTable">
+
+    <thead>
+
+        <tr>
+
+            <th>Teacher Name</th>
+            <th>BoardType Name</th>
+            <th>Medium Name</th>
+            <th>Subject Name</th>
+            <th>Action</th>
+        </tr>
+
+    </thead>
+
+    <tbody>
+
+        @if (Model.TeachersList != null && Model.TeachersList.Count > 0)
+        {
+            foreach (var item in Model.TeachersList)
+            {
+                  <tr>
+                      <td>@item.TeacherName</td>
+                      <td>@item.BoardType.BoardTypeName</td>
+                      <td>@item.Medium.MediumName</td>
+                      <td>@item.Subject.SubjectName</td>
+                      <td>
+
+                         @Html.ActionLink("Edit" ,"Edit",  new { id=item.TeacherId })
+
+                      </td>
+                  </tr>
+            }
+        }
+        else
+        {
+
+        }
+
+
+
+    </tbody>
+
+
+</table>
+
+<br /><br /><br />
+
+<script>
+
+     $('#ProductsTable').DataTable();
+
+</script>
+

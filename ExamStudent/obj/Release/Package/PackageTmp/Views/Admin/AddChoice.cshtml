@@ -1,0 +1,68 @@
+﻿@model ExamStudent.ViewModels.ChoiceViewModel
+
+@{
+    ViewBag.Title = "AddChoice";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<h2>AddChoice</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Choice</h4>
+    <hr />
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Question_Id, "Question_Id", htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-5">
+            @Html.DropDownListFor(m => m.Question_Id, new SelectList(Model.QuestionsList, "Question_Id", "Question1"), "--Select Question-- ",
+                                                         new { @class = "form-control" })
+
+            @Html.ValidationMessageFor(model => model.Question_Id, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    <div class="form-group">
+        @Html.LabelFor(model => model.ChoiceText, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-5">
+            @Html.EditorFor(model => model.ChoiceText, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.ChoiceText, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div style="overflow : scroll">
+    <table class="table table-responsive">
+        <thead>
+            <tr>
+                <th>ID</th>
+                <th>Option Name</th>
+                <th>Question ID</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in ViewData["Choices"] as List<ExamStudent.Models.Choice>)
+            {
+                <tr>
+                    <td>@item.ChoiceID</td>
+                    <td>@item.ChoiceText</td>
+                    <td>@item.Question_Id</td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

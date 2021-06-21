@@ -1,0 +1,91 @@
+﻿@model ExamStudent.ViewModels.EmpCityViewModel
+
+@{
+    ViewBag.Title = "EmpCity";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="text-center text-danger">Employee City Name</h2>
+
+
+<hr />
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("#btnsave").click(function () {
+
+            SaveItem();
+
+        });
+    });
+
+
+
+    function SaveItem() {
+        var formData = new FormData;
+        formData.append("EmpStateID", $("#EmpStateID").val());
+        formData.append("Emp_CityName", $("#Emp_CityName").val());
+
+        // formData.append("ItrmName", $("#ItrmName").val());
+        // formData.append("Description", $("#Description").val());
+        //formData.append("ItemPrice", $("#ItemPrice").val());
+        //formData.append("ImagePath", $("#ImagePath").get(0).files[0]);
+
+        $.ajax({
+            async: true,
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            url: '/EmployeeStateCity/EmpCity',
+            data: formData,
+            success: function (data) {
+
+                if (data.Success) {
+
+                     alert(data.Message);
+                     ResetItem();
+                }
+
+
+            },
+            error: function () {
+                alert('There are some error add to Itme')
+            }
+        });
+    }
+
+</script>
+
+
+<div class="container">
+
+   
+
+        <form method="post">
+
+            <div class="form-group">
+                State Name:
+                @Html.DropDownListFor(model => model.EmpStateID, new SelectList(Model.StatesSelectListItems, "Value", "Text"), new { @class = "form-control col-md-5" })
+            </div>
+
+
+            <div class="form-group">
+                <label>City Name</label>
+                <input class="form-control col-md-5" name="Emp_CityName" type="text" id="Emp_CityName" />
+            </div>
+
+            <br /><br />
+
+            <input type="button" name="save" value="Save" class="btn btn-primary" id="btnsave" /> ||
+
+            <a href="@Url.Action("EmpCity" , "EmployeeStateCity")" class="btn btn-danger">Reload this page</a>
+
+        </form>
+
+ 
+</div>
+
+

@@ -1,0 +1,265 @@
+﻿@model ExamStudent.ViewModels.SubjectListingViewModel
+
+@*<a href="~/Views/Shared/_LayoutStudent.cshtml">~/Views/Shared/_LayoutStudent.cshtml</a>*@
+@{
+    ViewBag.Title = "SubjectTable";
+    //Layout = "~/Views/Shared/_Layout.cshtml";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<br />
+<br />
+<br />
+<br />
+
+<h2 class="text-center text-dark">Subject Panel</h2>
+ 
+<br />
+
+
+
+
+
+<div class="container">
+
+    <form method="post">
+
+        <div class="row">
+
+            <div class="col-md-5">
+
+                <div class="form-group">
+
+                    <label class="text-gray-dark">Search</label>
+
+                    <input id="searchTxt" name="search" class="form-control" value="@Model.SearchTerm" />
+                   
+                </div>
+
+            </div>
+
+
+
+            <div class="col-md-7">
+
+                <div class="form-group">
+
+                    <label>Action</label>
+
+                    <div class="row">
+
+                        <div class="col-md-5">
+                            <button class="btn btn-primary" type="button" id="searchBtn">Search</button> ||
+
+                            <button class="btn btn-primary"type="reset">Reset</button>
+                        </div>
+
+
+                    </div>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+    </form>
+
+    <a href="@Url.Action("createSubject" , "Subject")" id="newBtn" class="btn btn-primary btn-md">New</a>
+
+</div>
+<br />
+
+
+
+<div class="">
+
+    <table class="table ">
+
+        <thead>
+
+            <tr>
+                <th>Subject Name</th>
+                <th>Subject Description</th>
+                <th>Subject Price</th>
+                <th>Subject Discount</th>
+                <th>subject Total Hour</th>
+                <th>Image</th>
+
+                <th>BoardType Name</th>
+                <th>Medium Name</th>
+                <th>Standard Name</th>
+                <th>Action</th>
+            </tr>
+
+        </thead>
+        <tbody>
+
+            @if (Model.GetSubjects != null && Model.GetSubjects.Count > 0)
+            {
+                foreach (var item in Model.GetSubjects)
+                {
+                      <tr>
+                            <td>@item.SubjectName</td>
+                            <td>@item.subjectDescription</td>
+                            <td>@item.subjectPrice</td>
+                            <td>@item.subjectDiscount</td>
+                            <td>@item.subjectTotalHour</td>
+                            <td>
+                                @if (System.IO.File.Exists(System.Web.HttpContext.Current.Server.MapPath("~/" + @item.ImageURL)))
+                                {
+                                    <img src=@item.ImageURL alt="Image" height="100" width="100">
+                                }
+                                else
+                                {
+                                    <img src="~/Content/imageupload/noimage.png" alt="Image" height="100" width="100">
+                                }
+                            </td>
+                           
+                            <td>@item.BoardType.BoardTypeName</td>
+                           
+                            <td>@item.Medium.MediumName</td>
+                           
+                            <td>@item.Standard.StandardName</td>
+                           
+                            <td>
+                                @Html.ActionLink("Edit", "Edit", new { id = item.SubjectID }) |
+                                @Html.ActionLink("Details", "Details", new { id = item.SubjectID }) |
+                                @Html.ActionLink("Delete", "Delete", new { id = item.SubjectID })
+                            </td>
+                      </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td class="text-danger" colspan="4">
+                        No Record Found.
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+
+    </table>
+
+    <div>
+          @*@if (Model.PageNo != 1) // ye kya krega ki first page me disable rhega.  // Pagination functionality
+            {
+                <button class="pageButtons" data-pageNo="@(Model.PageNo - 1)">Previous</button>
+            }*@
+
+
+        <button class="pageButtons btn btn-danger" data-pageNo="@(Model.PageNo - 1)">Previous</button>
+
+        <button class="pageButtons  btn btn-danger" data-pageNo="@(Model.PageNo + 1)">Next</button>
+    </div>
+
+
+
+</div>
+<div id="actionContainerArea">
+
+</div>
+
+
+<script>
+
+    $(".pageButtons").click(function () {
+
+        $.ajax({
+            url: '/Subject/SubjectTable', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+
+            data: {
+                pageNo: $(this).attr("data-pageNo")
+            }
+        })
+            .done(function (data) {
+
+                /*alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                $("#TableContainer").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+
+
+    $("#searchBtn").click(function () {   //search functionalities
+
+        var searchValue = $("#searchTxt").val();
+
+        $.ajax({
+            url: '/Subject/SubjectTable', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+            data: {
+                search: searchValue
+            }
+        })
+            .done(function (data) {
+
+                /* alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                $("#TableContainer").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+
+    //$("#newBtn").click(function () {
+
+    //    $.ajax({
+    //        url: '/Subject/createSubject', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+    //    })
+    //        .done(function (data) {
+
+    //            /*alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+    //            $("#actionContainerArea").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+    //        })
+    //        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+    //            alert("error");
+    //        })
+
+    //});
+
+
+     $(".editButton").click(function () {
+
+        $.ajax({
+            url: '/Subject/Edit', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..           
+            data: {
+                id: $(this).attr('data-id')
+            }
+        })
+            .done(function (data) {
+
+                 /*alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                $("#actionContainerArea").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+</script>
+
+<br />
+<br />
+<br />
+

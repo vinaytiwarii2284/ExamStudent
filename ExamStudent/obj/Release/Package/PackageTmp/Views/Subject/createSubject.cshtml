@@ -1,0 +1,272 @@
+﻿@model ExamStudent.ViewModels.SubjectViewModel
+
+@using System.Web.Mvc
+
+@{
+    ViewBag.Title = "createSubject";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<br />
+<br />
+<br />
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#BoardTypeID').change(function () {
+            //alert($('#BoardTypeName').val());
+            $.ajax({
+                type: "post",
+                url: "/Subject/GetMediums",
+                data: { BoardTypeId: $('#BoardTypeID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    //debugger;
+                    //alert("bind data now");
+                    var district = "<select id='MediumID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#MediumID').html(district);
+                }
+            });
+        });
+
+        $('#MediumID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/Subject/GetStandard",
+                data: { MediumId: $('#MediumID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='StandardID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#StandardID').html(district);
+                }
+            });
+        });
+    });
+</script>
+
+<h2 class="text-dark text-center">Create Subject</h2>
+
+<br /><br />
+<div class="container">
+
+    <div class="row">
+
+        <div class="col-md-6">
+
+           
+            @using (Html.BeginForm("createSubject", "Subject", FormMethod.Post, new { enctype = "multipart/form-data" }))
+            {
+                <div class="form-group">
+
+                    <label>Subject Name</label>
+
+                    <input name="SubjectName" type="text" class="form-control col-md-7" required />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Subject Description</label>
+
+                    <input name="subjectDescription" type="text" class="form-control col-md-7" required />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Subject Price</label>
+
+                    <input name="subjectPrice" type="text" class="form-control col-md-7" required />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>Subject Discount</label>
+
+                    <input name="subjectDiscount" type="text" class="form-control col-md-7" required />
+
+                </div>
+
+                <div class="form-group">
+
+                    <label>subject Total Hour</label>
+
+                    <input name="subjectTotalHour" type="time" class="form-control col-md-7" required />
+
+                </div>
+
+                <div class="form-group">
+                    <label for="inputName">Board Type</label>
+
+                    @Html.DropDownListFor(m => m.BoardTypeID, new SelectList(Model.BoardTypeList, "BoardTypeId", "BoardTypeName"),
+                                        new { @class = "form-control col-md-7" })
+                </div>
+
+                <div class="form-group">
+                    <label for="inputName">Medium</label>
+
+                    @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumId", "MediumName"),
+                                        new { @class = "form-control col-md-7" })
+                </div>
+
+                <div class="form-group">
+                    <label for="inputName">Standard</label>
+
+                    @Html.DropDownListFor(m => m.StandardID, new SelectList(Model.StandardList, "StandardId", "StandardName"),
+                                       new { @class = "form-control col-md-7" })
+
+                </div>
+
+
+                <div class="form-group">
+                    <label>Image</label>
+                    <input id="ImageURL" name="ImageURL" type="hidden" />
+
+                    <input id="imageUpload" name="Image" class="form-control col-md-7" type="file" accept=".png , .jpg" />
+
+                    <br />
+
+                    <div class="thumbnail">
+                        <img id="categoryImage" class="img-thumbnail" />
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label> Video URL</label>
+                    <input class="form-control col-md-7" name="VideoURL" type="text" />
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Your Book in Pdf Format</label>
+                    <input type="file" id="PDFFile" name="PDFFile" class="form-control col-md-7" accept=".pdf" />
+
+                </div>
+
+                <div class="form-group">
+                    <label>Upload Book cover</label>
+                    <input type="file" id="PDFFileCover" name="PDFFileCover" class="form-control col-md-7" accept="image/*"/>
+
+                </div>
+                @*<div class="form-group">
+                    @Html.TextBoxFor(m => m.PDFFile, new { type = "file" })
+                  </div>*@
+
+                <div class="form-group">
+                    <label for="comment">Comment:</label>
+                    <textarea class="form-control" rows="5" name="Comment" id="comment"></textarea>
+                </div>
+
+                <button id="saveBtn" type="submit" class="btn btn-primary">Submit</button>
+
+                @*<button class="btn btn-primary">Save</button>*@
+            }
+          
+
+        </div>
+
+
+      
+
+    </div>
+
+
+</div>
+
+<br />
+<br />
+<br />
+<br />
+
+<style>
+    #vinayImg {
+        height: 400PX;
+    }
+</style>
+
+
+<script>
+    //$("#saveBtn").click(function () {
+    //    $.ajax({
+    //        type: 'POST',
+    //        url: '/Subject/createSubject', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+    //        data: $("#createProduct").serialize()
+    //    })
+    //        .done(function (data) {
+
+    //            /* alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+    //            $("#TableContainer").html(data); //jo data aa rha hai wo hm table me attech ke diye bs
+
+    //        })
+    //        .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+    //            alert("error");
+    //        })
+
+    //});
+
+    $("#imageUpload").change(function () {
+
+        var element = this;
+
+        var formData = new FormData();
+
+        var totalFiles = element.files.length;
+
+        for (var i = 0; i < totalFiles; i++) {
+
+            var file = element.files[i];
+
+            formData.append("Photo", file);
+
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: '/Shared/UploadImage', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+            data: formData,
+            dataType: 'JSON',
+            contentType: false,
+            processData: false
+        })
+            .done(function (data) {
+                debugger;
+
+                /* alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                console.log(data);
+
+                if (data.Success == true) {
+
+                    $("#ImageURL").val(data.ImageURL); // ye DataBase se Value lega...
+
+                    $("#categoryImage").attr("src", data.ImageURL); // ye image Show  krega ...
+                }
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+
+</script>

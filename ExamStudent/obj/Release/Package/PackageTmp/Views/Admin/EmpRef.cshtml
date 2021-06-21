@@ -1,0 +1,65 @@
+﻿@model ExamStudent.ViewModels.EmpReferalViewModel
+@{
+    ViewBag.Title = "EmpRef";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2>EmpRef</h2>
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+            <th>Email</th>
+            <th>User Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.employees)
+        {
+            <tr>
+                <td>
+                    @item.Employee_Name
+                </td>
+                <td>
+                    @item.Emp_EmailAddress
+                </td>
+                <td>
+                    @item.usercode
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+
+
+<table class="table">
+    <thead>
+        <tr>
+            <th>
+                Name
+            </th>
+           
+            <th>User Code</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.referalForms)
+        {
+            <tr>
+                <td>
+                    @item.ReferalName
+                </td>
+               
+                <td>
+                    @item.usercode
+                </td>
+            </tr>
+        }
+
+    </tbody>
+</table>
+

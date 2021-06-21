@@ -1,0 +1,96 @@
+﻿
+@{
+    ViewBag.Title = "EmployeeAccount";
+    Layout = "~/Views/Shared/_LayoutEmployeeDashBoard.cshtml";
+}
+
+
+
+<div class="container">
+    <div class="row">
+        <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+            @Html.ActionLink("Profile Details", "EmployeeDetails", new { id = @Session["Id"] }, new { @class = "profile-edit-btn btn btn-primary" })||
+
+            <a href="@Url.Action("LogOut" , "UserAccount")" class="btn btn-danger">Logout</a>
+            <br>
+            <p class=" text-info">@DateTime.Now </p>
+        </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad">
+            <div class="panel panel-info">
+                <div class="panel-heading">
+                    <h3 class="panel-title text-danger">@Session["UserName"]</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        @*<div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAASSAAAAJDdiZTA0ZTAwLTkyOWUtNDQ5ZC04YTFlLWU1NGU4MTE4NDEwNA.jpg" class="img-circle img-responsive"> </div>*@
+                        <div class=" col-md-9 col-lg-9 ">
+                            <table class="table table-user-information">
+                                <tbody>
+                                    <tr>
+                                        <td>UserID:</td>
+                                        <td>@Session["UserName"]   @Session["Id"]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Name:</td>
+                                        <td>@Session["UserName"]</td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Date of Birth</td>
+                                        <td>@Session["DOB"]</td>
+                                    </tr>
+
+                                    <tr>
+                                    <tr>
+                                        <td>Your Post :</td>
+                                        <td>@Session["PostName"]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Your State :</td>
+                                        <td>@Session["Emp_StateName"]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Your City :</td>
+                                        <td>@Session["Emp_CityName"]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Your Block :</td>
+                                        <td>@Session["Emp_Block"]</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Email</td>
+                                        <td><a href=""> @Session["email"]</a></td>
+                                    </tr>
+                                    <tr>
+                                        <td>Mobile Number :</td>
+                                        <td> @Session["MobileNumber"] (Mobile)  </td>
+                                    </tr>
+
+                                    <tr>
+                                        <td>Your Refferal Number :</td>
+                                        <td> @Session["ReferlNumber"]   </td>
+                                    </tr>
+
+
+
+                                </tbody>
+                            </table>
+
+                            <a href="#" class="btn btn-primary">My Sales Performance</a>
+                            <a href="#" class="btn btn-primary">Team Sales Performance</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                    <span class="pull-right">
+                        <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                        <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                    </span>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
+

@@ -1,0 +1,269 @@
+﻿<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>@ViewBag.Title</title>
+
+    <link href="~/Content/StudentTemp/css/bootstrap.min.css" rel="stylesheet" />
+    <!-- Stylesheets -->
+    <link rel="stylesheet" href="~/Content/StudentTemp/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="~/Content/StudentTemp/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="~/Content/StudentTemp/css/flaticon.css" />
+    <link rel="stylesheet" href="~/Content/StudentTemp/css/owl.carousel.css" />
+    <link rel="stylesheet" href="~/Content/StudentTemp/css/style.css" />
+
+</head>
+<body>
+    <!-- Page Preloder -->
+    <div id="preloder">
+        <div class="loader"></div>
+    </div>
+
+    <!-- Header section -->
+    <header class="header-section">
+        <div class="header-warp">
+            <div class="container">
+                <a href="#" class="site-logo">
+                    <img src="~/Content/StudentTemp/img/logo.png" alt="">
+                </a>
+                <div class="user-panel">
+                    @*<a href="#">Login</a><span>/</span><a href="">Register</a>*@
+                    @if (Session["Id"] == null)
+                    {
+
+
+                        <a href="@Url.Action("Register" , "UserAccount")" class="btn w3ls-btn d-block">
+                            <span class="fa fa-sign-in"></span>Register
+                        </a>
+
+                        <span>/</span>
+                        <a href="@Url.Action("Login" , "UserAccount")" class="btn w3ls-btn d-block">
+                            <span class="fa fa-lock"></span> Sign in
+                        </a>
+
+                    }
+                    else
+                    {
+
+                        <a href="@Url.Action("LogOut" , "UserAccount")" class="btn w3ls-btn d-block">
+                            <span class="fa fa-lock"></span> LogOut
+                        </a>
+                        <span class="price" style="color:black">
+                            <i class="fa fa-shopping-cart " aria-hidden="true"></i>
+                            <b>4</b>
+                        </span>
+                    }
+                </div>
+                <div class="nav-switch">
+                    <i class="fa fa-bars"></i>
+                </div>
+                <ul class="main-menu">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="about.html">About us</a></li>
+                    <li><a href="courses.html">Courses</a></li>
+                    <li><a href="blog.html">News</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </header>
+    <!-- Header section end -->
+    <!-- Hero section -->
+    <section class="hero-section set-bg" data-setbg="../Content/StudentTemp/img/bg.jpg">
+        @*<img src="~/Content/StudentTemp/img/bg.jpg" />*@
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-7">
+                    <div class="hero-text text-white">
+                        <h2>Literature Course</h2>
+                        <p>Donec id mattis est. Proin nunc sapien, gravida ut sapien ut, ultrices faucibus sapien. Proin vehicula varius ex, vel feugiat massa scelerisque id. Nullam vulputate a lectus non molestie. </p>
+                        <div class="hero-author">
+                            <div class="hero-author-pic set-bg" data-setbg="img/hero-author.jpg"></div>
+                            <h5>By Sebastian Smith, <span>Senior Lead Developer</span></h5>
+                            <a href="#" class="site-btn">See Details <i class="fa fa-angle-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Hero section end -->
+    <!-- Search section -->
+    <section class="multi-search-section">
+        <div class="msf-warp">
+            <div class="container">
+                <h5>Search your Course</h5>
+                <form class="multi-search-form">
+                    <input type="text" placeholder="Course">
+                    <input type="text" placeholder="Subject">
+                    <input type="text" placeholder="Date">
+                    <input type="text" placeholder="Teacher">
+                    <input type="text" placeholder="Price">
+                    <button class="site-btn">Search <i class="fa fa-angle-right"></i></button>
+                </form>
+            </div>
+        </div>
+    </section>
+    <!-- Search section end -->
+
+    <div>
+        @RenderBody()
+    </div>
+
+    <!-- Fact section -->
+    <section class="fact-section spad">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-sm-6 fact-item">
+                    <figure>
+                        <img src="~/Content/StudentTemp/img/icons/1.png" alt="">
+                    </figure>
+                    <h2>2500</h2>
+                    <p>New Students</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 fact-item">
+                    <figure>
+                        <img src="~/Content/StudentTemp/img/icons/2.png" alt="">
+                    </figure>
+                    <h2>14k</h2>
+                    <p>Grad Students</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 fact-item">
+                    <figure>
+                        <img src="~/Content/StudentTemp/img/icons/3.png" alt="">
+                    </figure>
+                    <h2>129</h2>
+                    <p>Qualified Teachers</p>
+                </div>
+                <div class="col-lg-3 col-sm-6 fact-item">
+                    <figure>
+                        <img src="~/Content/StudentTemp/img/icons/4.png" alt="">
+                    </figure>
+                    <h2>1490</h2>
+                    <p>Amazing Courses</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Fact section end -->
+    <!-- Newslatter section -->
+    <section class="newslatter-section set-bg" data-setbg="../Content/StudentTemp/img/newslatter-bg.jpg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3">
+                    <div class="sec-title text-white sec-style-2">
+                        <span>Newsletter</span>
+                        <h2>Stay updated</h2>
+                    </div>
+                </div>
+
+                <div class="col-lg-9 nl-form-warp">
+                    <form class="newslatter-form">
+                        <input type="text" placeholder="Your E-mail">
+                        <button class="site-btn">Subscribe <i class="fa fa-angle-right"></i></button>
+                    </form>
+                    <p>*Etiam nec odio vestibulum est mattis effic iturut magna. Pellentesque sit am et tellus blandit. Etiam nec odio vestibul.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- Newslatter section end -->
+    <!-- Footer section -->
+    <footer class="footer-section spad pb-0">
+        <div class="container">
+            <div class="text-center">
+                <a href="#" class="site-btn">Enroll Now <i class="fa fa-angle-right"></i></a>
+            </div>
+            <div class="row text-white spad">
+                <div class="col-lg-3 col-sm-6 footer-widget">
+                    <h4>Engeneering</h4>
+                    <ul>
+                        <li><a href="#">Applied Studies</a></li>
+                        <li><a href="#">Computer Engeneering</a></li>
+                        <li><a href="#">Software Engeneering</a></li>
+                        <li><a href="#">Informational Engeneering</a></li>
+                        <li><a href="#">System Engeneering</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer-widget">
+                    <h4>Business School</h4>
+                    <ul>
+                        <li><a href="#">Applied Studies</a></li>
+                        <li><a href="#">Computer Engeneering</a></li>
+                        <li><a href="#">Software Engeneering</a></li>
+                        <li><a href="#">Informational Engeneering</a></li>
+                        <li><a href="#">System Engeneering</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer-widget">
+                    <h4>Art & Design</h4>
+                    <ul>
+                        <li><a href="#">Graphic Design</a></li>
+                        <li><a href="#">Motion Graphics & 3D</a></li>
+                        <li><a href="#">Classichal Painting</a></li>
+                        <li><a href="#">Sculpture</a></li>
+                        <li><a href="#">Fashion Design</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-3 col-sm-6 footer-widget">
+                    <h4>Higher Education</h4>
+                    <ul>
+                        <li><a href="#">Applied Studies</a></li>
+                        <li><a href="#">Computer Engeneering</a></li>
+                        <li><a href="#">Software Engeneering</a></li>
+                        <li><a href="#">Informational Engeneering</a></li>
+                        <li><a href="#">System Engeneering</a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+
+                <div class="social">
+                    <a href=""><i class="fa fa-pinterest"></i></a>
+                    <a href=""><i class="fa fa-facebook"></i></a>
+                    <a href=""><i class="fa fa-twitter"></i></a>
+                    <a href=""><i class="fa fa-dribbble"></i></a>
+                    <a href=""><i class="fa fa-behance"></i></a>
+                    <a href=""><i class="fa fa-linkedin"></i></a>
+                </div>
+                <ul class="footer-menu">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About us</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Courses</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+                <div class="footer-logo">
+                    <a href="#">
+                        <img src="~/Content/StudentTemp/img/footer-logo.png" alt="">
+                    </a>
+                </div>
+            </div>
+
+            <div class="row">
+                <div class="col-12">
+                    <p class="text-white  text-center">
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                        Copyright &copy;
+                        <script>document.write(new Date().getFullYear());</script> All rights reserved | This template is made with <i class="fa fa-heart-o" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+                        <!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+                    </p>
+                </div>
+
+            </div>
+        </div>
+
+
+
+    </footer>
+    <!-- Footer section end -->
+    <!--====== Javascripts & Jquery ======-->
+    <script src="~/Content/StudentTemp/js/jquery-3.2.1.min.js"></script>
+    <script src="~/Content/StudentTemp/js/bootstrap.min.js"></script>
+    <script src="~/Content/StudentTemp/js/owl.carousel.min.js"></script>
+    <script src="~/Content/StudentTemp/js/circle-progress.min.js"></script>
+    <script src="~/Content/StudentTemp/js/main.js"></script>
+
+</body>
+</html>

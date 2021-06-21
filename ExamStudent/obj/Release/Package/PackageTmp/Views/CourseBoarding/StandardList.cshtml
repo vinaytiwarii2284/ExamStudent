@@ -1,0 +1,55 @@
+﻿@model IEnumerable<ExamStudent.Models.Standard>
+
+@{
+    ViewBag.Title = "StandardList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+<br />
+<br />
+<h2 class="text-dark text-center"> Standard List Panel</h2>
+
+<br />
+<br />
+
+<p>
+    @Html.ActionLink("Create New", "Standard", null, new { @class = "btn btn-primary" })
+</p>
+<br />
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayNameFor(model => model.MediumID)
+        </th>
+        <th>
+            @Html.DisplayNameFor(model => model.StandardName)
+        </th>
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+        <tr>
+            <td>
+                @Html.DisplayFor(modelItem => item.MediumID)
+            </td>
+            <td>
+                @Html.DisplayFor(modelItem => item.StandardName)
+            </td>
+            <td>
+                @Html.ActionLink("Edit", "GetStandardByID", new { id = item.StandardID } , new { @class = "btn btn-danger" }) |
+                @Html.ActionLink("Details", "Details", new { id = item.StandardID }, new { @class = "btn btn-success" }) |
+                @Html.ActionLink("Delete", "DeleteStandard", new { id = item.StandardID }, new { @class = "btn btn-primary", onclick = "return confirmDelete()" })
+            </td>
+        </tr>
+    }
+
+</table>
+
+<script>
+
+    function confirmDelete() {
+
+        return confirm('Are You Sure You Wath To Delete This Record????.');
+
+    }
+</script>

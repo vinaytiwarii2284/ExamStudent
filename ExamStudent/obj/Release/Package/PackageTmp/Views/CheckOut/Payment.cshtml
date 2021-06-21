@@ -1,0 +1,374 @@
+﻿@model ExamStudent.ViewModel.PaymentViewModel
+
+@{
+    ViewBag.Title = "Payment";
+    Layout = "~/Views/Shared/_LayoutAddToCart.cshtml";
+}
+<script>
+    $(document).ready(function () {
+        //
+        var textInput = $('#merchant_defined_data1').val();
+        if (textInput == null || textInput == '') {
+            GetShippingPrice();
+        }
+        else if (textInput != null && $('#access_key') != null && $('#profile_id') != null &&
+		$('#transaction_uuid') != null && $('#signed_field_names') != null && $('#payment_method') != null
+		&& $('#signature') != null && $('#amount') != null && $('#transaction_type') != null) {
+
+            $('#btnSubmit').click();
+        }
+    });
+
+
+    function GetShippingPrice() {
+        //debugger;
+        var getShippingVal = $("#DdlShipping").val();
+        var price = getShippingVal.replace(',', '.');
+        $("#ShippingPrice")[0].textContent = price;
+        //debugger;
+        //Replace innerText by textContent for Firefox compatibility
+        var merchandise = parseFloat(($("#Total")[0].textContent).replace('@Model.ProdCurrency', '').replace(',', '.'));
+        var TotalAmountDue = (merchandise + parseFloat((price).replace('@Model.ProdCurrency', ''))).toFixed(2);
+        $("#ShippingCost")[0].value = parseFloat((price).replace('@Model.ProdCurrency', '.'));
+        $("#TotalAmount")[0].textContent = '$' + TotalAmountDue.replace(',', '.');
+    }
+
+</script>
+@using (Html.BeginForm("PlaceOrder", "Checkout", FormMethod.Post, new { Currency = "form", @class = "form-inline", novalidate = "novalidate" }))
+{
+
+
+    <div class="content_area">
+        <div class="col-sm-12 col-xs-12 mrg_bot_3 mar_bot_2">
+            <div class="col-sm-1 col-xs-2 col-sm-offset-0 col-xs-offset-0 padd_lef6 mrg_top_8 bk_but"><button onclick="window.location.href = '/Checkout/Index'" class="btn btn-sm btn-danger" type="button">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewBackButtonText</button></div>
+            <div class="col-sm-3 col-xs-5 col-sm-offset-4 col-xs-offset-2 col-lg-offset-3 regs_but"><button onclick="null" class="btn btn-lg btn-danger mrg_bot_9" type="button">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewREVIEWPAYMENTDETAILSText</button></div>
+        </div>
+
+        <div class="tab_area col-sm-12 col-xs-12">
+            <div class="col-md-12 col-sm-12">
+                <div class="col-md-12 col-sm-12">
+                    <div class="billingForm-1">
+                        <div class="row">
+                            <div class="col-md-4 col-sm-4">
+                                <div class="heading text-left no-padding-left">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewShippingAddress</div>
+                                <ul class="text-left no-padding-left">
+                                    <li>
+                                        @*@Html.HiddenFor(m => m.ShippingAddress.FirstName)
+                                            @Html.HiddenFor(m => m.ShippingAddress.LastName)*@
+                                        @*@Model.ShippingAddress.FirstName &nbsp; @Model.ShippingAddress.LastName*@
+                                    </li>
+                                    @*<li>
+                                            @Model.ShippingAddress.Address
+
+                                            @Html.HiddenFor(m => m.ShippingAddress.Address)
+                                        </li>
+                                        <li>
+                                            @Model.ShippingAddress.Address2
+                                            @Html.HiddenFor(m => m.ShippingAddress.Address2)
+                                        </li>
+                                        <li>
+                                            @Html.HiddenFor(m => m.ShippingAddress.City) @Html.HiddenFor(m => m.ShippingAddress.ZipCode)
+                                            @Model.ShippingAddress.City,&nbsp; @Model.ShippingAddress.ZipCode
+                                        </li>
+                                        <li>
+                                            @Html.HiddenFor(m => m.ShippingAddress.Phone)
+                                            @Model.ShippingAddress.Phone
+                                        </li>
+                                        <li>
+                                            @Html.HiddenFor(m => m.ShippingAddress.Country)
+                                            @Model.ShippingAddress.Country
+                                        </li>
+                                        <li>
+                                            @Html.HiddenFor(m => m.ShippingAddress.Email)
+                                            @Model.ShippingAddress.Email
+                                        </li>*@
+                                    <li>@Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewEditLinkText, "Index", "Checkout")</li>
+                                </ul>
+                            </div>
+                            <div class="col-md-4 col-sm-4">
+                                <div class="heading text-left no-padding">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewBillingAddress</div>
+                                @if (Model.User != null)
+                                {
+                                    if (Model.User.UseBillingAsShipping == true)
+                                    {
+                                        <ul class="text-left no-padding-left">
+                                            <li>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewSameAsShipping </li>
+                                            <li>@Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewEditLinkText, "Index", "Checkout")</li>
+                                        </ul>
+                                    }
+                                    else
+                                    {
+                                        <ul>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.FirstName)
+                                                @Html.HiddenFor(m => m.User.LastName)
+                                                @Model.User.FirstName &nbsp; @Model.User.LastName
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.Address)
+                                                @Model.User.Address
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.Address2)
+                                                @Model.User.Address2
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.City)
+                                                @Model.User.City,
+                                                @Html.HiddenFor(m => m.User.ZipCode)@Model.User.ZipCode
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.Phone)
+                                                @Model.User.Phone
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.Country)
+                                                @Model.User.Country
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.User.Email)
+                                                @Model.User.Email
+                                            </li>
+                                            <li>@Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewEditLinkText, "Index", "Checkout")</li>
+                                        </ul>
+                                    }
+                                }
+                            </div>
+                            @if (Model.Cart != null)
+                            {
+                                <div class="col-md-4 col-sm-4">
+                                    <div class="heading text-left no-padding-left">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewOrderTotal </div>
+                                    <div class="col-md-6 col-sm-6 text-left no-padding-left">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewMerchandise</div>
+                                    <div class="col-md-6 col-sm-6 text-right no-padding-right" id="Total">
+
+                                        @Model.Cart.Total(Model.Cart.CartLineItems)
+                                    </div>
+                                    @*<div class="col-md-6 col-sm-6 text-left no-padding-left">
+                                        @Html.DropDownListFor(m => m.Shipping.ShippingName, (SelectList)ViewBag.shipping, new { @class = "width-40 ", @Style = "width: 110px;", @id = "DdlShipping", @onchange = "javascript:GetShippingPrice(this);" })
+                                        @Html.HiddenFor(m => m.Shipping.ShippingID)
+                                    </div>*@
+                                    <div class="col-md-6 col-sm-6 text-right no-padding-right" id="ShippingPrice"></div>
+                                    @Html.HiddenFor(m => m.ShippingCost, new { id = "ShippingCost" })
+                                    <div style="float:left; width:100%;">
+                                        <div class="col-md-6 col-sm-6 text-left no-padding-left"><strong>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewAmountDue</strong></div>
+                                        <div class="col-md-6 col-sm-6 text-right no-padding-right" id="TotalAmount">
+                                            <strong>
+                                                @Model.Cart.Total(Model.Cart.CartLineItems)
+                                            </strong>
+                                        </div>
+                                    </div>
+                                </div>
+                            }
+
+                        </div>
+                    </div>
+                    @if (Model.OrderId == 0)
+                    {
+                        <div class="row placeOrder center">
+                            <input style="margin-bottom:15px;" type="submit" value="@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewPlaceOrderButtonText" class="btn pinkbtn pull-right" />
+                        </div>
+                        <div class="clearfix"></div>
+                    }
+                    else
+                    {
+                        <div class="col-sm-12 position-absolute top-26 center" style="color: #000; font-size: 19px; font-weight: normal; padding: 8px 0;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewPleaseWaitText</div>
+                    }
+                </div>
+
+            </div>
+            <div class="clearfix"></div>
+        </div>
+
+    </div>
+    <div class="ww_static_header1">
+
+
+        @*<div>
+                <h1 class="row">
+                    <div class="col-xs-4 text-left ww_title_links"><a href="/Checkout/Index">BACK</a> </div>
+                    <div class="col-xs-4 text-center ww_title_links"><span class="">REVIEW PAYMENT DETAILS</span></div>
+                    <div class="col-xs-4 text-right">  </div>
+                    <div class="clearfix"></div>
+                </h1>
+            </div>*@
+
+
+    </div>
+    <div class="container" id="">
+
+        @*<div id="photosOptions" class="inner photoscontainer">
+                <div class="col-md-12 col-sm-12">
+                    <div class="billingForm-1">
+                        <div class="col-md-12 col-sm-12">
+                            <div class="billingForm-1">
+                                <div class="row">
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="heading">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewShippingAddress</div>
+                                        <ul>
+                                            <li>
+                                                @Html.HiddenFor(m => m.ShippingAddress.FirstName)
+                                                @Html.HiddenFor(m => m.ShippingAddress.LastName)
+                                                @Model.ShippingAddress.FirstName &nbsp; @Model.ShippingAddress.LastName
+                                            </li>
+                                            <li>
+                                                @Model.ShippingAddress.Address
+
+                                                @Html.HiddenFor(m => m.ShippingAddress.Address)
+                                            </li>
+                                            <li>
+                                                @Model.ShippingAddress.Address2
+                                                @Html.HiddenFor(m => m.ShippingAddress.Address2)
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.ShippingAddress.City) @Html.HiddenFor(m => m.ShippingAddress.ZipCode)
+                                                @Model.ShippingAddress.City,&nbsp; @Model.ShippingAddress.ZipCode
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.ShippingAddress.Phone)
+                                                @Model.ShippingAddress.Phone
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.ShippingAddress.Country)
+                                                @Model.ShippingAddress.Country
+                                            </li>
+                                            <li>
+                                                @Html.HiddenFor(m => m.ShippingAddress.Email)
+                                                @Model.ShippingAddress.Email
+                                            </li>
+                                            <li>@Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewEditLinkText, "Index", "Checkout")</li>
+                                        </ul>
+                                    </div>
+                                    <div class="col-md-4 col-sm-4">
+                                        <div class="heading">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewBillingAddress</div>
+                                        @if (Model.User.UseBillingAsShipping == true)
+                                        {
+                                            <ul>
+                                                <li>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewSameAsShipping </li>
+                                                <li>@Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewEditLinkText, "Index", "Checkout")</li>
+                                            </ul>
+                                        }
+                                        else
+                                        {
+                                            <ul>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.FirstName)
+                                                    @Html.HiddenFor(m => m.User.LastName)
+                                                    @Model.User.FirstName &nbsp; @Model.User.LastName
+                                                </li>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.Address)
+                                                    @Model.User.Address
+                                                </li>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.Address2)
+                                                    @Model.User.Address2
+                                                </li>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.City)
+                                                    @Model.User.City,
+                                                    @Html.HiddenFor(m => m.User.ZipCode)@Model.User.ZipCode
+                                                </li>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.Phone)
+                                                    @Model.User.Phone
+                                                </li>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.Country)
+                                                    @Model.User.Country
+                                                </li>
+                                                <li>
+                                                    @Html.HiddenFor(m => m.User.Email)
+                                                    @Model.User.Email
+                                                </li>
+                                                <li>@Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewEditLinkText, "Index", "Checkout")</li>
+                                            </ul>
+                                        }
+                                    </div>
+                                    @if (Model.Cart != null)
+                                    {
+                                        <div class="col-md-4 col-sm-4">
+                                            <div class="heading">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewOrderTotal </div>
+                                            <div class="col-md-6 col-sm-6">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewMerchandise</div>
+                                            <div class="col-md-6 col-sm-6" id="Total">
+
+                                                @Model.Cart.Total(Model.Cart.CartLineItems)
+                                            </div>
+                                            <div class="col-md-6 col-sm-6">
+                                                @Html.DropDownListFor(m => m.Shipping.ShippingName, (SelectList)ViewBag.shipping, new { @class = "width-40 ", @Style = "width: 110px;", @id = "DdlShipping", @onchange = "javascript:GetShippingPrice(this);" })
+                                                @Html.HiddenFor(m => m.Shipping.ShippingID)
+                                            </div>
+                                            <div class="col-md-6 col-sm-6" id="ShippingPrice"></div>
+                                            @Html.HiddenFor(m => m.ShippingCost, new { id = "ShippingCost" })
+                                            <div style="float:left; width:100%;">
+                                                <div class="col-md-6 col-sm-6"><strong>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewAmountDue</strong></div>
+                                                <div class="col-md-6 col-sm-6" id="TotalAmount">
+                                                    <strong>
+
+                                                        @Model.Cart.Total(Model.Cart.CartLineItems)
+                                                    </strong>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    }
+
+                                </div>
+                            </div>
+                            @if (Model.OrderId == 0)
+                            {
+                                <div class="row placeOrder center">
+                                    <input style="" type="submit" value="@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentViewPlaceOrderButtonText" class="btn yellow_btn pull-right" />
+                                </div>
+                                <div class="clearfix"></div>
+                            }
+                            else
+                            {
+                                <div class="col-sm-12 position-absolute top-26 center" style="color: #000; font-size: 19px; font-weight: normal; padding: 8px 0;">Please Wait... We are redirecting you to the secure payment gateway site.</div>
+                            }
+                        </div>
+                    </div>
+                </div>
+                <div class="clearfix"></div>
+            </div>*@
+    </div>
+}
+
+@using (Html.BeginForm(null, null, FormMethod.Post, new { Currency = "form", novalidate = "novalidate", id = "Paymentconfirm", action = "https://testsecureacceptance.cybersource.com/pay" }))
+{
+    <div class="hidden" id="">
+        <div class="inner">
+            <div class="col-md-6 col-sm-6">
+                @if (Model.OrderId != null && Model.OrderId != 0)
+                {
+                    @Html.HiddenFor(m => m.access_key, new { name = "access_key", id = "access_key" })
+                    @Html.HiddenFor(m => m.profile_id, new { name = "profile_id", id = "profile_id" })
+                    @Html.HiddenFor(m => m.transaction_uuid, new { name = "transaction_uuid", id = "transaction_uuid" })
+                    @Html.HiddenFor(m => m.signed_field_names, new { name = "signed_field_names", id = "signed_field_names" })
+                    @Html.HiddenFor(m => m.unsigned_field_names, new { name = "unsigned_field_names", id = "unsigned_field_names" })
+                    @Html.HiddenFor(m => m.signed_date_time, new { name = "signed_date_time", id = "signed_date_time" })
+                    @Html.HiddenFor(m => m.locale, new { name = "locale", id = "locale" })
+                    @Html.HiddenFor(m => m.payment_method, new { name = "payment_method", id = "payment_method" })
+                    @Html.HiddenFor(m => m.transaction_type, new { name = "transaction_type", id = "transaction_type" })
+                    @Html.HiddenFor(m => m.bill_to_address_line1, new { name = "bill_to_address_line1", id = "bill_to_address_line1" })
+                    @Html.HiddenFor(m => m.bill_to_address_city, new { name = "bill_to_address_city", id = "bill_to_address_city" })
+                    @Html.HiddenFor(m => m.bill_to_address_postal_code, new { name = "bill_to_address_postal_code", id = "bill_to_address_postal_code" })
+                    @*@Html.HiddenFor(m => m.bill_to_address_state, new { name = "bill_to_address_state", id = "bill_to_address_state" })*@
+                    @Html.HiddenFor(m => m.bill_to_address_country, new { name = "bill_to_address_country", id = "bill_to_address_country" })
+                    @Html.HiddenFor(m => m.bill_to_forename, new { name = "bill_to_forename", id = "bill_to_forename" })
+                    @Html.HiddenFor(m => m.bill_to_surname, new { name = "bill_to_surname", id = "bill_to_surname" })
+                    @Html.HiddenFor(m => m.bill_to_email, new { name = "bill_to_email", id = "bill_to_email" })
+                    @Html.HiddenFor(m => m.reference_number, new { name = "reference_number", id = "reference_number" })
+                    @Html.HiddenFor(m => m.amount, new { name = "amount", id = "amount" })
+                    @Html.HiddenFor(m => m.currency, new { name = "currency", id = "currency" })
+                    @Html.HiddenFor(m => m.merchant_defined_data1, new { name = "merchant_defined_data1", id = "merchant_defined_data1" })
+                    @Html.HiddenFor(m => m.merchant_defined_data2, new { name = "merchant_defined_data2", id = "merchant_defined_data2" })
+                    @Html.HiddenFor(m => m.merchant_defined_data3, new { name = "merchant_defined_data3", id = "merchant_defined_data3" })
+                    <input id="submit" name="submit" value="Submit" type="hidden" />
+                    @Html.HiddenFor(m => m.signature, new { name = "signature", id = "signature" })
+                    <input type="submit" id="btnSubmit" name="submit00" value="Submit" />
+                }
+            </div>
+        </div>
+    </div>
+
+
+}

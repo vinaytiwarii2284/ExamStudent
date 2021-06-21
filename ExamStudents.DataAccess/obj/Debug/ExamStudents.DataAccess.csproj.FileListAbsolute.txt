@@ -1,0 +1,94 @@
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csprojAssemblyReference.cache
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Mvc.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Razor.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CopyComplete
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csprojAssemblyReference.cache
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CoreCompileInputs.cache
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Mvc.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Razor.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.DataAccess\obj\Debug\ExamStudents.DataAccess.pdb

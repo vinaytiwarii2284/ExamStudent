@@ -1,0 +1,90 @@
+﻿@model ExamStudent.ViewModels.CityViewModel
+
+@{
+    ViewBag.Title = "Create";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<h2>Add-City</h2>
+
+
+<script type="text/javascript">
+
+    $(document).ready(function () {
+
+        $("#btnsave").click(function () {
+
+            SaveItem();
+
+
+
+        });
+    });
+
+   
+
+    function SaveItem() {
+        var formData = new FormData;
+        formData.append("StateID", $("#StateID").val());
+        formData.append("CityName", $("#CityName").val());
+
+        // formData.append("ItrmName", $("#ItrmName").val());
+        // formData.append("Description", $("#Description").val());
+        //formData.append("ItemPrice", $("#ItemPrice").val());
+        //formData.append("ImagePath", $("#ImagePath").get(0).files[0]);
+
+        $.ajax({
+            async: true,
+            dataType: 'JSON',
+            type: 'POST',
+            contentType: false,
+            processData: false,
+            url: '/City/Create',
+            data: formData,
+            success: function (data) {
+
+                if (data.Success) {
+
+                     alert(data.Message);
+                     ResetItem();
+                }
+
+
+            },
+            error: function () {
+                alert('There are some error add to Itme')
+            }
+        });
+    }
+
+</script>
+
+
+<div class="container">
+
+    <div class="row">
+
+        <form method="post">
+
+            <div class="form-group">
+                State:
+                @Html.DropDownListFor(model => model.StateID, new SelectList(Model.StatesSelectListItems, "Value", "Text"), new { @class = "form-control" })
+            </div>
+
+
+            <div class="form-group">
+                <label>City Name</label>
+                <input class="form-control" name="CityName" type="text" id="CityName" />
+            </div>
+
+            <input type="button" name="save" value="Save" class="btn btn-primary" id="btnsave" />
+
+
+
+        </form>
+      
+    </div>
+
+</div>
+
+<br /><br /><br />

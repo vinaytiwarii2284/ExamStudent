@@ -1,0 +1,68 @@
+﻿@model ExamStudent.ViewModel.UserViewModel
+
+@{
+    ViewBag.Title = "Details";
+    Layout = "~/Views/Shared/_LayoutUserPanel.cshtml";
+}
+<br /><br />
+<h2 class="text-blue text-center">Profile Details</h2>
+
+<br />
+
+<div class="row">
+
+    <div class="container" style="min-height:500px; border:1px inset black ;margin-top: 50px; border-radius:5px;">
+
+        <div class="row" style="background-color:#9f0a0a;min-height: 80px;padding:10px;">
+
+            <h4 style="color:#ffffff">User Details</h4>
+        </div>
+
+
+        <div class="container">
+
+            <table class="table table-striped "style="padding:10px;">
+                <thead>
+                    <tr>
+                        <th>User Name</th>                       
+                        <th>Eamil Address</th>                     
+                        <th>Mobile Number</th>
+                        <th>Date Of Birth</th>                      
+                        <th>Password</th>
+                        <th>Created Date</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> @Html.DisplayFor(model => model.Name)</td>
+
+
+
+                        <td> @Html.DisplayFor(model => model.EmailAddress)</td>
+
+                        <td> @Html.DisplayFor(model => model.MobileNumber)</td>
+                        <td> @Html.DisplayFor(model => model.DOB)</td>
+                       
+                        <td> @Html.DisplayFor(model => model.Password)</td>
+                        <td> @Html.DisplayFor(model => model.CreatedDate)</td>
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+            <hr />
+
+            @Html.ActionLink("Edit", "UpdateUserByID", new { id = Model.Id }, new { @class = "btn btn-primary" }) |
+            @Html.ActionLink("Back to List", "Index", null, new { @class = "btn btn-success" })
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<br /><br /><br />

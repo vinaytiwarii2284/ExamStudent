@@ -1,0 +1,114 @@
+﻿@model ExamStudent.ViewModels.TeacherViewModel
+
+@using System.Web.Mvc
+
+
+@{
+    ViewBag.Title = "create";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+    <br /><br /><br /><br />
+
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#BoardTypeID').change(function () {
+            //alert($('#BoardTypeName').val());
+            $.ajax({
+                type: "post",
+                url: "/Teacher/GetMediums",
+                data: { BoardTypeId: $('#BoardTypeID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    //debugger;
+                    //alert("bind data now");
+                    var district = "<select id='MediumID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#MediumID').html(district);
+                }
+            });
+        });
+
+        $('#MediumID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/Teacher/GetStandard",
+                data: { MediumId: $('#MediumID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='SubjectID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#SubjectID').html(district);
+                }
+            });
+        });
+    });
+</script>
+
+<h2 class="text-center text-dark"> Teacher Create</h2>
+
+<div class="container">
+
+    <div class="container">
+
+        <form method="post">
+
+
+
+            <div class="form-group">
+
+                <label>Teacher Name</label>
+
+                <input name="TeacherName" type="text" class="form-control col-md-5" required />
+
+            </div>
+
+            <div class="form-group">
+                <label for="inputName">Board Type</label>
+
+                @Html.DropDownListFor(m => m.BoardTypeID, new SelectList(Model.BoardTypeList, "BoardTypeId", "BoardTypeName"),
+                                    new { @class = "form-control col-md-5" })
+            </div>
+
+            <div class="form-group">
+                <label for="inputName">Medium</label>
+
+                @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumId", "MediumName"),
+                                    new { @class = "form-control col-md-5" })
+            </div>
+
+            <div class="form-group">
+                <label for="inputName">Subject</label>
+
+                @Html.DropDownListFor(m => m.SubjectID, new SelectList(Model.SubjectList, "SubjectID", "SubjectName"),
+                                   new { @class = "form-control col-md-5" })
+
+            </div>
+
+            <br />
+
+            <button class="btn btn-danger">
+                Save
+            </button>
+
+        </form>
+    </div>
+</div>
+
+<br /><br /><br /><br />

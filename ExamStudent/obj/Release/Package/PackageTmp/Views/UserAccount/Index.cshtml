@@ -1,0 +1,174 @@
+﻿@model ExamStudent.ViewModel.UserListingViewModel
+@{
+    ViewBag.Title = "Index";
+}
+
+
+<link rel="stylesheet" type="text/css" href="//cdn.datatables.net/1.10.21/css/jquery.dataTables.min.css" />
+<script src="//cdn.datatables.net/1.10.21/js/jquery.dataTables.min.js"></script>
+
+<br />
+<br />
+<br />
+
+
+<h2 class="text-dark text-center">User Account Panel</h2>
+<br />
+<p>
+    @Html.ActionLink("Create New", "Register", null, new { @class = "btn btn-primary" })
+</p>
+
+<br />
+<br />
+
+
+
+
+<div>
+
+
+    <table class="table"  id="UserTable">
+
+        <thead>
+
+
+            <tr>
+
+
+                <th>
+                    First Name
+                </th>
+                <th>
+                    Middle Name
+                </th>
+                <th>
+                    Last Name
+                </th>
+                <th>
+                    Email Address
+                </th>
+                <th>
+                    Phone Number
+                </th>
+                <th>
+                    Mobile Number
+                </th>
+                <th>
+                    DOB
+                </th>
+
+                <th>
+                    BoardType
+                </th>
+                <th>
+                    Medium
+                </th>
+                <th>
+                    Standard
+                </th>
+                <th>
+                    Password
+                </th>
+                @*<th>
+                        IsActive
+                    </th>*@
+                <th>
+                    CreatedDate
+                </th>
+                @*<th>
+                        ModifiedDate
+                    </th>*@
+
+                <th>Action</th>
+            </tr>
+
+        </thead>
+
+        <tbody>
+
+            @if (Model.Users != null && Model.Users.Count > 0)
+            {
+
+                foreach (var item in Model.Users)
+                {
+                    <tr>
+
+                        <td>@item.UserDetail.FirstName</td>
+
+                        <td>@item.UserDetail.MiddleName</td>
+
+                        <td>@item.UserDetail.LastName</td>
+
+                        <td>@item.UserDetail.EmailAddress</td>
+                        <td>@item.UserDetail.PhoneNumber</td>
+                        <td>@item.UserDetail.MobileNumber</td>
+
+                        <td>@item.UserDetail.DOB</td>
+
+                        <td>
+                            @Html.DisplayFor(modelItem => item.BoardType)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Medium)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Standard)
+                        </td>
+                        <td>
+                            @Html.DisplayFor(modelItem => item.Password)
+                        </td>
+                        @*<td>
+                                @Html.DisplayFor(modelItem => item.IsActive)
+                            </td>*@
+                        <td>
+                            @Html.DisplayFor(modelItem => item.CreatedDate)
+                        </td>
+                        @*<td>
+                                @Html.DisplayFor(modelItem => item.ModifiedDate)
+                            </td>*@
+
+
+                        <td>
+                            @Html.ActionLink("Edit", "Edit", new { id = item.UserDetailId }, new { @class = "btn btn-danger" }) |
+                            @Html.ActionLink("Details", "Details", new { id = item.UserDetailId }, new { @class = "btn btn-success" }) |
+                            @Html.ActionLink("Delete", "DeleteUser", new { id = item.UserDetailId }, new { @class = "btn btn-primary", onclick = "return confirmDelete()" })
+                        </td>
+                    </tr>
+                }
+            }
+            else
+            {
+                <tr>
+                    <td class="text-danger" colspan="4">
+                        No Record Found.
+                    </td>
+                </tr>
+            }
+
+        </tbody>
+
+
+
+
+    </table>
+
+</div>
+
+<br />
+<br />
+<br />
+<br />
+<br />
+<br />
+
+
+<script>
+      $('#UserTable').DataTable();
+
+
+    function confirmDelete() {
+
+        return confirm('Are You Sure You Wath To Delete This Record????.');
+
+    }
+</script>

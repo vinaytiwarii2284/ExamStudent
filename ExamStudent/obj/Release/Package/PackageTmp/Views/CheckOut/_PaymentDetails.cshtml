@@ -1,0 +1,257 @@
+﻿@model ExamStudent.ViewModel.Order
+@using (Html.BeginForm("SavePhoto", "EditPhoto", FormMethod.Post, new { id = "editForm" }))
+{
+    if (Model.OrderItems != null)
+    {
+
+        <div id="RenderHtmlData">
+
+            <div class="text-center" style="font-size: 19px;">
+                @Model.OrderStatusMsg
+            </div>
+            <div style="text-align:center; font-size:13px;">
+                <b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewOrderId : </b>
+                <span id="OrderId" style="color: #bf2236; font-weight:bold;">@Model.OrderId</span> &nbsp;&nbsp;&nbsp;
+                <b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewOrderDate : </b> @Model.OrderDate
+
+            </div>
+            <br />
+            <div class="row no-margin">
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding" style="margin-bottom:10px">
+
+                    <div class=" col-md-12 col-sm-12 col-xs-12" style="background: #ededed; font-size: 18px; padding: 10px;"><b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPaymentInformation</b></div>
+
+                    <div class="col-md-12 col-sm-12 col-xs-12" style="padding:10px 0;">
+                        <div class="col-md-6 col-sm-6 col-xs-12">Payment Status</div>
+                        <div class="col-md-6 col-sm-6 col-xs-12">@Model.PaymentStatus</div>
+                    </div>
+                    @if (!string.IsNullOrEmpty(@Model.transaction_id))
+                    {
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding: 10px 0;">
+                            <div class="col-md-6 col-sm-6 col-xs-12">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTrackingNumber</div>
+                            <div class="col-md-6 col-sm-6 col-xs-12">@Model.transaction_id</div>
+                        </div>
+                    }
+                </div>
+            </div>
+
+            <div class="col-md-12 col-sm-12 no-padding">
+                <div class="table-table">
+                    <div class="table-row">
+                        <div class="table-cell">
+                            <b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewProductName</b>
+                        </div>
+
+                        <div class="table-cell">
+                            <b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewQuantity</b>
+                        </div>
+
+                        <div class="table-cell">
+                            <b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewUnitPrice</b>
+                        </div>
+
+                        <div class="table-cell">
+                            <b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTotal</b>
+                        </div>
+
+                    </div>
+                    @foreach (var item in Model.OrderItems)
+                    {
+                        <div class="table-row">
+                            <div class="table-cell">
+                                @item.ProductName
+                            </div>
+
+                            <div class="table-cell">
+                                @item.Quantity
+                            </div>
+
+                            <div class="table-cell">
+                                @item.UnitPriceWithCurrency
+                            </div>
+
+                            <div class="table-cell">
+                                @item.TotalWithCurrency
+                            </div>
+                            <img src="~/Images/nib.png" style="position: absolute; right: 207px; top: 51px;">
+                        </div>
+                    }
+                </div>
+            </div>
+            <div class="col-md-6 col-md-offset-6 col-sm-6 col-sm-offset-6 col-xs-12 no-padding" style="margin-top:10px;">
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-left: 89px;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewSubTotal</div>
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-right: 89px; text-align: right;">@Model.SubtotalWithCurrency</div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-left: 89px;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTax</div>
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-right: 89px; text-align: right;">
+                        @Model.TaxWithCurrency
+                    </div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding">
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-left: 89px;">
+                        @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewShippingCost
+                    </div>
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-right: 89px; text-align: right;">@Model.ShippingCostWithCurrency</div>
+                </div>
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding secTwo">
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-left: 82px;">
+                        <strong style="color:#b01a33; font-size:18px;padding-left: 7px;">
+                            @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewTotal
+                        </strong>
+                    </div>
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-right: 89px; text-align: right;">
+                        <strong style="color:#b01a33; font-size:18px;padding-left: 7px;">
+                            @Model.PayableAmount
+                        </strong>
+                    </div>
+                </div>
+
+
+                <div class="col-md-12 col-sm-12 col-xs-12 no-padding secTwo" style="margin:0;">
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-left: 82px;">
+                        <strong style="color:#b01a33; font-size:18px;padding-left: 7px;">
+
+                        </strong>
+                    </div>
+                    <div class="table-cell col-md-6 col-sm-6 col-xs-12" style="padding-left: 40px; text-align: right;">
+                        @if (@Model.OrderStatus == 1)
+                        {
+                            <div class="sucessfulMsg">Your order is successful</div>
+                        }
+                        else
+                        {
+                            <div class="paymentFailedMsg">Payment Failed</div>
+                        }
+                    </div>
+                </div>
+
+
+
+            </div>
+            <div class="col-md-12 col-sm-12 no-padding">
+                <div class="col-md-6 col-sm-6 col-xs-12 no-padding" style="margin-bottom: 30px;">
+                    <div class="shippingInformation">
+                        <div class="col-md-12 col-sm-12 col-xs-12" style="padding:10px; background:#ededed; font-size:18px;"><b>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewShippingInformation</b> </div>
+
+
+                        <div style="padding:10px;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style="float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewFirstName</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingFirstName</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewLastName </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingLastName</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingAddress1,@Model.ShippingAddress2</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCity</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingCity</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewState</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingState</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewZipCode</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingZip</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCountry</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingCountry</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewEmail</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.Email</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewPhone</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.ShippingPhone</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 col-sm-6 col-xs-12 no-padding" style=" margin-bottom: 30px;">
+                    <div class="shippingInformation">
+                        <div class="col-md-12 col-sm-12 col-xs-12" style=" padding:10px; background:#ededed;"> <b style="font-size:18px;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewFaxBillingInformation</b> </div>
+                        <div style="padding:10px;">
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style="float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewFirstName</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.FirstName</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewLastName </div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.LastName</div>
+                            </div>
+
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.Address1,@Model.Address2</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCity</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.City</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewState</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.State</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewZipCode</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.Zip </div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCountry</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.Country</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewEmail</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.Email</div>
+                            </div>
+
+                            <div class="col-md-12 col-sm-12 col-xs-12">
+                                <div class="col-md-6 col-sm-6 col-xs-12"><span style=" float: right; font-weight: bold; margin: 0 10px 0 0;">:</span>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewPhone</div>
+                                <div class="col-md-6 col-sm-6 col-xs-12">@Model.Phone</div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    }
+    else
+    {
+        <span> @Model.OrderStatusMsg</span>
+        <div style=" color: #000; font-size: 19px; font-weight: normal; padding: 8px 0;">
+            @Model.OrderStatusMsg
+        </div>
+        <div class="row no-margin">
+            <div class="col-md-12 col-sm-12 col-xs-12 no-padding secThree">
+                <div class="col-md-12 col-sm-12 col-xs-12" style="padding:10px 0;">
+                    <div class="col-md-6 col-sm-6 col-xs-12">Payment Status</div>
+                    <div class="col-md-6 col-sm-6 col-xs-12">@Model.PaymentStatus</div>
+                </div>
+            </div>
+        </div>
+    }
+}

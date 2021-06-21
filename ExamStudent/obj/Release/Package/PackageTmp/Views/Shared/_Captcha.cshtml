@@ -1,0 +1,91 @@
+﻿@model Digiphoto.iMix.ClaimPortal.Model.Captcha
+
+@Html.ValidationSummary(true)
+
+<div class="col-md-12 col-sm-6">
+    <div class="form-group text-left">
+        @Html.Label(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.RegistrationCaptchaContentMessage, new { @class = "required text-left control-label reg_line_height" })
+
+        @*<h5 style="font-weight: bold; margin-bottom: 0; margin: 2px 0 8px; color: #F00; font-size:13px;"> @ViewBag.Msg1</h5>*@
+        <div class="clearfix"></div>
+
+        <div class="row">
+
+            <div class="col-lg-3 col-md-3 col-sm-4 col-xs-5 no-padding-left">
+                <a class="captcha-img">
+                    <img id="captcha" src='@Url.Content("~/Captcha/Show")' alt="" class="captcha_img" onclick="return v" />
+                </a>
+            </div>
+
+            <div class="col-lg-1 col-md-1 col-sm-1 col-xs-1 no-padding-left">
+                <input class="blog-btnImg" type="button" title="Reset Captcha code" onclick="resetCaptcha(event)" value="" style="margin-left: -8px" />
+
+            </div>
+
+
+            @Html.TextBoxFor(m => m.CaptchaValue, new { @class = "form-control07", @onkeypress = "return NumbersOnly(event)", @placeholder = "", tabindex = "6", maxlength = 5, @min = "1", @max = "99999" })
+            @*<span style="color: red; font-size: 12px;font-family: arial; text-shadow: 1px 0px 3px rgb(255, 255, 255); font-weight: bold !important; display:inline-block;" id="showMessage"></span>*@
+        
+        </div>
+        <span class="ValidationErrorMsg" id="showMessage"></span>
+
+
+
+        @*<span id="SpanNote">Captcha image is case sensitive.</span>*@
+
+        @*@if (ViewBag.isValid == "false" || ViewBag.isValid == null)
+        {
+
+            @Html.ValidationMessageFor(model => model.CaptchaValue)
+        }*@
+
+        @*@if (ViewBag.ErrorCaptcha == "0")
+        {
+            <span id="showMessage"
+        }*@
+
+    </div>
+</div>
+<script type="text/javascript">
+
+       $(document).ready(function () {
+           
+           ShowCaptchaExp();
+
+         });
+
+    function ShowCaptchaExp() {
+       
+        var captchaVal = '@ViewBag.ErrorCaptcha'
+           if (captchaVal == "0") {
+                var errmsg='@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.RegistrationCaptchaInvalidMessage'
+               $("#showMessage").text(errmsg);
+           }
+           else {
+               $("#showMessage").text("");
+        }
+    }
+
+
+    function resetCaptcha(event)
+    {
+@Html.Label("");
+                var id = '_' + Math.random().toString(36).substr(2, 9);
+                //var url = '../Captcha/Show/' + id;
+        var url = '../Captcha/Show?' + new Date().getTime();
+                if (!event)
+                    event = window.event;
+                event.preventDefault();
+                $.ajax({
+                //url: '@Url.Action("Show", "Captcha")?id=' + id,
+                url: '@Url.Action("Show", "Captcha")',
+                type: 'GET',
+                cache: false,
+                success: function (result) {
+                $(".captcha_img").attr("src", url);
+                    $("#CaptchaValue").val("");
+                    $("#showMessage").text("");
+                }
+                });
+                }
+</script>

@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<edmx:Edmx Version="3.0" xmlns:edmx="http://schemas.microsoft.com/ado/2009/11/edmx">
+ <!-- EF Designer content (DO NOT EDIT MANUALLY BELOW HERE) -->
+  <edmx:Designer xmlns="http://schemas.microsoft.com/ado/2009/11/edmx">
+    <!-- Diagram content (shape and connector positions) -->
+    <edmx:Diagrams>
+      <Diagram DiagramId="2c6b3353ff4e4f25a2c7507e898eb92b" Name="Diagram1">
+        <EntityTypeShape EntityType="ExamStudentModel.Admin" Width="1.5" PointX="1" PointY="0.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Answer" Width="1.5" PointX="10.75" PointY="6.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.BoardType" Width="1.5" PointX="1" PointY="3.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Category" Width="1.5" PointX="3.25" PointY="7.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Choice" Width="1.5" PointX="10.75" PointY="9" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.City" Width="1.5" PointX="6" PointY="12.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.City_Old" Width="1.5" PointX="3" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Country" Width="1.5" PointX="16" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Currency" Width="1.5" PointX="16" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Emp_City" Width="1.5" PointX="15.25" PointY="5.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.EmpCourse" Width="1.5" PointX="3" PointY="17.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Employee_Form" Width="1.5" PointX="17.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Employee_Form_Temp" Width="1.5" PointX="20.5" PointY="4.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.EmpState" Width="1.5" PointX="13" PointY="5.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.ExamResult" Width="1.5" PointX="13.5" PointY="14.125" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Medium" Width="1.5" PointX="1" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.MockQuestionBank" Width="1.5" PointX="8" PointY="11.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.PartnerCart" Width="1.5" PointX="8" PointY="1.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.PartnerCartItem" Width="1.5" PointX="10.25" PointY="1.75" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.PostForm" Width="1.5" PointX="15.25" PointY="2.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Question" Width="1.5" PointX="8.5" PointY="6.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Refer" Width="1.5" PointX="13" PointY="9.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.ReferalForm" Width="1.5" PointX="18" PointY="1.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.ScheduleExam" Width="1.5" PointX="6.25" PointY="7.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Standard" Width="1.5" PointX="1" PointY="10.875" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.State" Width="1.5" PointX="6" PointY="22.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.State_Old" Width="1.5" PointX="0.75" PointY="14.25" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Subject" Width="1.5" PointX="3.25" PointY="1.5" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.sysdiagram" Width="1.5" PointX="18" PointY="10.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Tab_User_Info" Width="1.5" PointX="5.25" PointY="15.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Tab_User_Info_Temp" Width="1.5" PointX="8.25" PointY="15.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.TabPayumoneyTransectionLog" Width="1.5" PointX="11" PointY="18.625" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.Teacher" Width="1.5" PointX="5.5" PointY="3.375" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.User" Width="1.5" PointX="11.25" PointY="13" IsExpanded="true" />
+        <EntityTypeShape EntityType="ExamStudentModel.UserDetail" Width="1.5" PointX="9" PointY="22.875" IsExpanded="true" />
+        <AssociationConnector Association="ExamStudentModel.FK_Category_Admin" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Answer_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Category_BoardType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Question_BoardType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_ScheduleExam_BoardType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Subjects_BoardType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Teacher_BoardType" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Category_Mediums" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Category_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Question_Category" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Choices_Question" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_Temp_City" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_City_State" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_City" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_User_City" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Emp_City_EmpState" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_Emp_City" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_Temp_Emp_City" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_EmpCourse" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_Temp_EmpCourse" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_EmpState" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_PostForm" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_Temp_EmpState" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_Temp_PostForm" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_ExamResult_User" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Question_Mediums" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_ScheduleExam_Mediums" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Subjects_Mediums" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Teacher_Mediums" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_PartnerCartItem_PartnerCartItem" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Question_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_ScheduleExam_Standards" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Subjects_Standards1" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_Temp_State" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_State" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_User_State" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Teacher_Subjects" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_Tab_User_Info_Temp_Tab_User_Info_Temp" ManuallyRouted="false" />
+        <AssociationConnector Association="ExamStudentModel.FK_User_UserDetail" ManuallyRouted="false" />
+        <EntityTypeShape EntityType="ExamStudentModel.Coupon" Width="1.5" PointX="12.375" PointY="0.75" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_ReferalForm" />
+        <AssociationConnector Association="ExamStudentModel.FK_Employee_Form_Temp_ReferalForm" />
+      </Diagram>
+    </edmx:Diagrams>
+  </edmx:Designer>
+</edmx:Edmx>

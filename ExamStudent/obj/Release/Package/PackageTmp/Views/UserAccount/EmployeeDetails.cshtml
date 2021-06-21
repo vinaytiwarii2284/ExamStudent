@@ -1,0 +1,179 @@
+﻿@model ExamStudent.Models.Employee_Form_Temp
+
+@{
+    ViewBag.Title = "EmployeeDetails";
+    Layout = "~/Views/Shared/_LayoutEmployeeDashBoard.cshtml";
+}
+
+<h2>Details</h2>
+
+
+<div class="row">
+
+    <div class="container" style="min-height:500px; border:1px inset black ;margin-top: 50px; border-radius:5px;">
+
+        <div class="row" style="background-color:#9f0a0a;min-height: 80px;padding:10px;">
+
+            <h4 style="color:#ffffff">User Details</h4>
+        </div>
+
+
+        <div class="container">
+
+            <table class="table table-striped " style="padding:10px;">
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Eamil Address</th>
+                        <th>Mobile Number</th>
+                        <th>Date Of Birth</th>
+                        <th>State</th>
+                        <th>City</th>
+                        <th>Block</th>
+                        <th>Your Post</th>
+                        <th>Password</th>
+                       
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td> @Html.DisplayFor(model => model.Employee_Name)</td>
+
+                        <td> @Html.DisplayFor(model => model.Emp_EmailAddress)</td>
+
+                        <td> @Html.DisplayFor(model => model.Emp_MobileNumber)</td>
+                        <td> @Html.DisplayFor(model => model.Emp_DOB)</td>
+                        <td> @Html.DisplayFor(model => model.EmpState.Emp_State)</td>
+                        <td> @Html.DisplayFor(model => model.Emp_City.Emp_CityName)</td>
+                        <td> @Html.DisplayFor(model => model.Emp_Block)</td>
+                        <td> @Html.DisplayFor(model => model.PostForm.PostName)</td>
+                        <td> @Html.DisplayFor(model => model.Emp_Password)</td>
+
+                    </tr>
+
+
+                </tbody>
+
+            </table>
+
+            <hr />
+
+
+            @Html.ActionLink("Edit Profile", "EmployeeEdit", "UserAccount", new { id = Model.Employee_ID }, new { @class = "btn btn-primary" })||
+
+            @Html.ActionLink("Back to List", "EmployeeAccount", "", new { @class = "btn btn-danger" })
+
+
+
+
+        </div>
+
+    </div>
+
+</div>
+
+
+@*<div class="row">
+
+        <hr />
+        <dl class="dl-horizontal">
+            <dt>
+                @Html.DisplayNameFor(model => model.Employee_Name)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Employee_Name)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_DOB)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_DOB)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_MobileNumber)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_MobileNumber)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_Block)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_Block)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_Password)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_Password)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_ConfirmPassword)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_ConfirmPassword)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_EmailAddress)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_EmailAddress)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_AppID)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_AppID)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.Emp_City.Emp_CityName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.Emp_City.Emp_CityName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.EmpState.Emp_State)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.EmpState.Emp_State)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.PostForm.PostName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.PostForm.PostName)
+            </dd>
+
+            <dt>
+                @Html.DisplayNameFor(model => model.ReferalForm.ReferalName)
+            </dt>
+
+            <dd>
+                @Html.DisplayFor(model => model.ReferalForm.ReferalName)
+            </dd>
+
+        </dl>
+    </div>*@
+
+

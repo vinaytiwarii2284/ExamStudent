@@ -1,0 +1,117 @@
+﻿@model IEnumerable<ExamStudent.Models.Employee_Form_Temp>
+
+@{
+    ViewBag.Title = "EmpList";
+    Layout = "~/Views/Shared/_LayoutAdmin.cshtml";
+}
+
+<h2 class="text-center text-danger">Employee Payment Success List </h2>
+
+
+
+<hr />
+
+<p>
+    @Html.ActionLink("Create New", "Create")
+</p>
+<table class="table tab-container tab-pane" id="table_id">
+    <tr>
+        <th>
+            Name
+
+        </th>
+        <th>
+            Email-Address
+
+        </th>
+        <th>
+            Date of Birth
+
+        </th>
+        <th>
+            Mobile Number
+
+        </th>
+        <th>
+            State Name
+           
+        </th>
+        <th>
+            City Name
+           
+        </th>
+        <th>
+            Block
+        </th>
+        <th>
+            Post Name
+           
+        </th>
+        <th>
+            Password
+        </th>
+
+        <th>
+          User Code
+        </th>
+
+        <th>Reference By Name</th>
+
+        <th>Action</th>
+    </tr>
+
+    @foreach (var item in Model)
+    {
+<tr>
+    <td>
+        @Html.DisplayFor(modelItem => item.Employee_Name)
+    </td>
+    <td>
+        <a> @Html.DisplayFor(modelItem => item.Emp_EmailAddress)</a>
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Emp_DOB)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Emp_MobileNumber)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.EmpState.Emp_State)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Emp_City.Emp_CityName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Emp_Block)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.PostForm.PostName)
+    </td>
+    <td>
+        @Html.DisplayFor(modelItem => item.Emp_Password)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.usercode)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.ReferlName)
+    </td>
+
+    <td>
+        @Html.DisplayFor(modelItem => item.ReferalForm.usercode)
+    </td>
+
+
+    <td>
+        @Html.ActionLink("Edit", "Edit", new { id = item.Employee_ID }) |
+        @Html.ActionLink("Details", "Details", new { id = item.Employee_ID }) |
+        @Html.ActionLink("Delete", "Delete", new { id = item.Employee_ID })
+    </td>
+</tr>
+    }
+
+</table>
+

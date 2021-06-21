@@ -1,0 +1,98 @@
+﻿@model ExamStudent.Models.Subject
+
+@{
+    ViewBag.Title = "Register";
+}
+
+<h2>Register</h2>
+
+@using (Html.BeginForm()) 
+{
+    @Html.AntiForgeryToken()
+    
+<div class="form-horizontal">
+    <h4>Subject</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+
+    <div class="form-group">
+        <label class="control-label col-md-2">Board Type</label>
+        <div class="col-md-10">
+            @Html.DropDownList("Country", (SelectList)ViewBag.County, "Select BoardType", new { @class = "form-control", onchange = "form.submit();", style = "border-width:0px;box-shadow:none;" })
+
+            @Html.ValidationMessageFor(model => model.country, "", new { @class = "text-danger" })
+        </div>
+
+
+
+    </div>
+
+    <div class="form-group">
+
+        <label class="control-label col-md-2">Meadium</label>
+
+
+        <div class="col-md-10">
+
+            @Html.DropDownList("State", (SelectList)ViewBag.State, "Select Meadium", new { @class = "form-control", onchange = "form.submit();" })
+            @Html.ValidationMessageFor(model => model.State, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label class="control-label col-md-2">Class/Standerd</label>
+
+
+        <div class="col-md-10">
+            @Html.DropDownList("City", (SelectList)ViewBag.City, "Select Class", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.City, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+
+        <label class="control-label col-md-2">Subject Name</label>
+
+
+        <div class="col-md-10">
+            @Html.DropDownList("SubjectName", (SelectList)ViewBag.SubjectName, "Select Subject", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.SubjectName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.TeacherName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+           @Html.DropDownList("TeacherName", (SelectList) ViewBag.teacherName, "Select teacher", new { @class = "form-control" })
+            @Html.ValidationMessageFor(model => model.TeacherName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SubjectDescription, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SubjectDescription, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.SubjectDescription, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Notes, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Notes, new { htmlAttributes = new { @class = "form-control" } })
+            @Html.ValidationMessageFor(model => model.Notes, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Create" class="btn btn-default" />
+        </div>
+    </div>
+</div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

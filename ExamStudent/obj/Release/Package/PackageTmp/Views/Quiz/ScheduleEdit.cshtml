@@ -1,0 +1,145 @@
+﻿@model ExamStudent.ViewModels.ScheduleVM
+
+@{
+    ViewBag.Title = "ScheduleEdit";
+    Layout = "~/Views/Shared/_Layout2.cshtml";
+}
+
+<script type="text/javascript">
+    $(document).ready(function () {
+        $('#BoardTypeID').change(function () {
+            //alert($('#BoardTypeName').val());
+            $.ajax({
+                type: "post",
+                url: "/Quiz/GetMediumsss",
+                data: { BoardTypeId: $('#BoardTypeID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    //debugger;
+                    //alert("bind data now");
+                    var district = "<select id='MediumID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#MediumID').html(district);
+                }
+            });
+        });
+
+        $('#MediumID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/Quiz/GetStandarddd",
+                data: { MediumId: $('#MediumID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='StandardID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#StandardID').html(district);
+                }
+            });
+        });
+
+        $('#StandardID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: '@Url.Action("GetCategory", "Quiz")',
+                data: { StandardId: $('#StandardID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='Category_ID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#Category_ID').html(district);
+                }
+            });
+        });
+    });
+</script>
+
+<h1 style="color: darkgreen">@TempData["Message"]</h1>
+
+@using (Html.BeginForm("ScheduleEdit", "Quiz", FormMethod.Post))
+{
+    @Html.AntiForgeryToken()
+
+    <input type="hidden" name="ExamScheduleID" value="@Model.ExamScheduleID" />
+
+    <div class="form-horizontal">
+        <h4 class="display-4">Schedule Exam UpDate</h4>
+        <hr />
+        @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+        @Html.HiddenFor(model => model.ExamScheduleID)
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.ScheduleDateTime, htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                <input type="datetime-local" id="birthdaytime" name="ScheduleDateTime" class="form-control ">
+                @Html.ValidationMessageFor(model => model.ScheduleDateTime, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.BoardTypeID, "BoardTypeID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.BoardTypeID, new SelectList(Model.BoardTypeList, "BoardTypeId", "BoardTypeName"), "--Select BoardType Name-- ",
+                                        new { @class = "form-control " })
+
+                @Html.ValidationMessageFor(model => model.BoardTypeID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.MediumID, "MediumID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumId", "MediumName"), "--Select Medium Name-- ",
+                                           new { @class = "form-control " })
+
+                @Html.ValidationMessageFor(model => model.MediumID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            @Html.LabelFor(model => model.StandardID, "StandardID", htmlAttributes: new { @class = "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.DropDownListFor(m => m.StandardID, new SelectList(Model.StandardList, "StandardId", "StandardName"), "--Select Standard Name-- ",
+                                           new { @class = "form-control " })
+
+                @Html.ValidationMessageFor(model => model.StandardID, "", new { @class = "text-danger" })
+            </div>
+        </div>
+
+        <div class="form-group">
+            <div class="col-md-offset-2 col-md-10">
+                <input type="submit" value="Save" class="btn btn-default" />
+            </div>
+        </div>
+    </div>
+}
+
+<div>
+    @Html.ActionLink("Back to List", "Index")
+</div>

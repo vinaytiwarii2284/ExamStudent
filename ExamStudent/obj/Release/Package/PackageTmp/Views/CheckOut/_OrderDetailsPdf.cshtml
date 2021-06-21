@@ -1,0 +1,205 @@
+﻿@model ExamStudent.ViewModel.Order
+@{
+    Layout = null;
+}
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewPaymentReceipt</title>
+    <style type="text/css">
+        body {
+            font-family: Calibri, Arial, Helvetica, sans-serif;
+            font-size: 14px;
+            margin: 0;
+            padding: 0;
+        }
+    </style>
+</head>
+
+<body style="overflow-y: auto;position: relative;-ms-overflow-style:scrollbar">
+    <div style=" text-align:center">
+        <img src="http://imixpartnerbrandedweb.commdel.com//Images/logo.png" />
+        <div style="text-align:center"> <h2>Order Details</h2> </div>
+        <div style="text-align:left;width:auto"><h3>Order ID : @Model.OrderId</h3></div>
+    </div>
+    
+    <table style="background:#d8d8d8;" width="100%" border="1" cellspacing="1" cellpadding="5">
+        <tr>
+            <th style="background:#ededed;" width="25%" align="left" scope="col">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewProductName</th>
+            <th style="background:#ededed;" width="25%" align="left" scope="col">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewQuantity</th>
+            <th style="background:#ededed;" width="25%" align="left" scope="col">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewUnitPrice</th>
+            <th style="background:#ededed;" width="25%" align="left" scope="col">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTotal</th>
+        </tr>
+        @foreach (var item in Model.OrderItems)
+        {
+            <tr>
+                <td style="background:#fff;">@item.ProductName</td>
+                <td style="background:#fff;">@item.Quantity</td>
+                <td style="background:#fff;">@item.UnitPriceWithCurrency</td>
+                <td style="background:#fff;">@item.TotalWithCurrency</td>
+            </tr>
+        }
+        <tr>
+            <td colspan="2" rowspan="6" style="background:#fff;">&nbsp;</td>
+            <td style="background:#fff;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewSubTotal</td>
+            <td style="background:#fff;">@Model.SubtotalWithCurrency</td>
+        </tr>
+
+        <tr>
+            <td style="background:#fff;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTax</td>
+            <td style="background:#fff;">@Model.TaxWithCurrency</td>
+        </tr>
+
+        <tr>
+            <td style="background:#fff;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewShippingCost</td>
+            <td style="background:#fff;">@Model.ShippingCostWithCurrency</td>
+        </tr>
+        <tr>
+            <td style="background:#fff;"><strong style="color:#b01a33; font-size:18px;">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTotalAmt</strong></td>
+            <td style="background:#fff;"><strong style="color:#b01a33; font-size:18px;">@Model.PayableAmount</strong></td>
+        </tr>
+    </table>
+    <table style="margin:20px 0 0 0;" width="100%" border="0" cellspacing="0" cellpadding="0">
+        <tr>
+            <td width="50%" valign="top">
+                <table style="border:1px solid #d8d8d8;" width="100%" border="0" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td style="background:#ededed;" colspan="2"><strong>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewShippingAddress</strong></td>
+                    </tr>
+                    <tr>
+                        <td width="50%">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewFirstName</td>
+                        <td width="50%">@Model.ShippingFirstName</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewLastName</td>
+                        <td>@Model.ShippingLastName</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress</td>
+                        <td>@Model.ShippingAddress1</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress 2</td>
+                        <td>@Model.ShippingAddress2</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCity</td>
+                        <td>@Model.ShippingCity</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewState</td>
+                        <td>@Model.ShippingState</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewZipCode</td>
+                        <td>@Model.ShippingZip </td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCountry</td>
+                        <td> @Model.ShippingCountry</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewEmail</td>
+                        <td>@Model.Email</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewPhone</td>
+                        <td>@Model.ShippingPhone</td>
+                    </tr>
+                    @*<tr>
+                            <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewFax</td>
+                            <td> @Model.ShippingFax</td>
+                        </tr>*@
+                </table>
+
+            </td>
+            <td valign="top">
+                <table style="border:1px solid #d8d8d8; border-right:0;" width="100%" border="0" cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td style="background:#ededed;" colspan="2"><strong>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewBillingAddress</strong></td>
+                    </tr>
+                    <tr>
+                        <td width="50%">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewFirstName</td>
+                        <td width="50%">@Model.FirstName</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewLastName</td>
+                        <td>@Model.LastName</td>
+                    </tr>
+
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress</td>
+                        <td>@Model.Address1</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewAddress 2</td>
+                        <td>@Model.Address2</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCity</td>
+                        <td>@Model.City</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewState</td>
+                        <td>@Model.State</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewZipCode</td>
+                        <td>@Model.Zip </td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewCountry</td>
+                        <td> @Model.Country</td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewEmail</td>
+                        <td> @Model.Email </td>
+                    </tr>
+                    <tr>
+                        <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.IndexViewPhone</td>
+                        <td> @Model.Phone</td>
+                    </tr>
+                    @*<tr>
+                            <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewFax</td>
+                            <td> @Model.Fax</td>
+                        </tr>*@
+
+                </table>
+            </td>
+        </tr>
+    </table>
+    <table style="border-bottom:1px solid #d8d8d8;margin-top:10px;margin-bottom:10px" width="100%" border="0" cellspacing="0" cellpadding="5" >
+        <tr>
+            <td style="background:#ededed;" colspan="2"><strong>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewpaymentInformation</strong></td>
+        </tr>
+        <tr>
+            <td width="50%">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewPaymentType</td>
+            <td width="50%">@Model.PaymentMethod</td>
+        </tr>
+        <tr>
+            <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewOrderDate</td>
+            <td>@Model.OrderDate</td>
+        </tr>
+        <tr>
+            <td>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewTrackingNumber</td>
+            <td></td>
+        </tr>
+    </table>
+    <table style="" width="100%" border="0" cellspacing="0" cellpadding="5">
+        <tr>
+            <td style="background:#ededed;margin-top:10px;margin-bottom:10px" colspan="2"><strong>@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.PaymentReceiptViewOtherInformation</strong></td>
+        </tr>
+
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+        <tr>
+            <td></td>
+            <td></td>
+        </tr>
+    </table>
+</body>
+</html>

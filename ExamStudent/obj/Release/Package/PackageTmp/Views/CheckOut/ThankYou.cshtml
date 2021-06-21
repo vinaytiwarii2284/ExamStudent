@@ -1,0 +1,95 @@
+﻿@model ExamStudent.ViewModel.Order
+@using Digiphoto.iMix.ClaimPortal.Common;
+@{
+    ViewBag.Title = "ThankYou";
+    Layout = "~/Views/Shared/_LayoutContent.cshtml";
+}
+}
+<script>
+    function myFunction() {
+        //var OrderId = $("#OrderId")[0].innerHTML;
+        params = 'width=1000'
+        params += ', height=600'
+        params += ', top=10, left=200'
+        params += ', fullscreen=no';
+        var OrderId = window.location.pathname.split("/")[window.location.pathname.split("/").length - 1];
+        //var url = "/Checkout/PaymentReceipt/" + OrderId;
+        var url = "/Checkout/PrintOrder/" + OrderId;
+        window.open(url, "PaymentDetail", params);
+    }
+    function PrintElem(elem) {
+        Popup($(elem).html());
+    }
+    function Popup(data) {
+        var mywindow = window.open('', '', 'height=' + screen.height + ',width=' + screen.width + ',resizable=yes');
+        mywindow.document.write('<html><head><title></title>');
+        mywindow.document.write('</head><body >');
+        mywindow.document.write(data);
+        mywindow.document.write('</body></html>');
+        mywindow.document.close(); // necessary for IE >= 10
+        mywindow.focus(); // necessary for IE >= 10
+        mywindow.print();
+        mywindow.close();
+        return true;
+    }
+</script>
+<style>
+    .bntlink {
+        margin-left: 10px;
+    }
+</style>
+<div class="ww_static_header1 hidden">
+    <div class="ww_title">
+        <h1 class="row">
+            @*<div class="col-xs-4 text-left"><a class="ww_title_links" href="/SubStores/ViewSubStores">Continue Shopping</a> </div>*@
+            <div class="col-xs-4 text-left"><a class="ww_title_links" href="@ViewBag.PreviousAction">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewContinueShoppingButtonText</a> </div>
+            <div class="col-xs-4 text-center"><span class="ww_title_links cur_default">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPaymentInformation</span></div>
+            <div class="col-xs-4 text-right">  </div>
+            <div class="clearfix"></div>
+        </h1>
+    </div>
+</div>
+<div class="col-sm-12 col-xs-12 mrg_bot_3 mar_bot_2">
+    <div class="col-sm-1 col-xs-2 col-sm-offset-0 col-xs-offset-0 padd_lef6 mrg_top_8 bk_but hidden-lg hidden-md hidden-sm">
+        <button class="btn btn-sm btn-danger" onclick="window.location.href = '@ViewBag.PreviousAction'">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewShoppingButtonText</button>
+    </div>
+    <div class="col-sm-1 col-xs-2 col-sm-offset-0 col-xs-offset-0 padd_lef6 mrg_top_8 bk_but hidden-xs">
+        <button class="btn btn-sm btn-danger" onclick="window.location.href = '@ViewBag.PreviousAction'">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewContinueShoppingButtonText</button>
+    </div>
+    <div class="col-sm-3 col-xs-5 col-sm-offset-4 col-xs-offset-0 regs_but">
+        <button class="btn btn-lg btn-danger mrg_bot_9">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPaymentInformation</button>
+    </div>
+    <div class="col-sm-1 col-xs-2 col-sm-offset-3 col-xs-offset-1 no-padding-right mrg_top_8 cla_but" style="visibility:hidden;">
+        <button class="btn btn-sm btn-danger">@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewContinueShoppingButtonText</button>
+    </div>
+</div>
+<div class="tab_area_thk col-sm-12 col-xs-12" id="">
+    <div id="photosOptions" class="inner1">
+        <div class="col-md-12 col-sm-12 shopCartSec">
+            @Html.Partial("_PaymentDetail")
+            <div class="ww_recoptbtns">
+                @if (Model.OrderItems != null)
+                {
+                    @*<a href="#" class="btn yellow_btn pull-right btn-block-xs" onclick="myFunction();">
+                            PRINT ORDER
+                        </a>*@
+                    @Html.ActionLink(@Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPhotos, "ViewSubStores", "SubStores", "", new { @class = "btn yellow_btn btn-block-xs" })
+                    <a class="btn yellow_btn pull_right btn-block-xs" @*href='@Url.Action("Receipts", "Checkout", new { @id = CommonUtility.EncryptQueryString(Model.OrderId.ToString()) })'*@ onclick="PrintElem('#printReceipt');">
+                        @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewPrintOrderButtonText
+                    </a>
+                }
+                @if (Model.OrderStatus == 1)
+                {
+                    <a class="btn yellow_btn btn-block-xs" href='@Url.Action("GeneratePdf", "Checkout", Model )'>
+                        @Digiphoto.iMix.ClaimPortal.Common.Resources.en_US.ThankYouViewDownloadInvoiceButtontext
+                    </a>
+                    //@Html.ActionLink("Download Invoice", "GeneratePdf", Model, new { @class = "bntlink", });
+                }
+                <div class="clearfix"></div>
+            </div>
+        </div>
+        <div id="printReceipt" hidden="hidden">
+            @Html.Partial("_PrintOrderDetails")
+        </div>
+    </div>
+</div>

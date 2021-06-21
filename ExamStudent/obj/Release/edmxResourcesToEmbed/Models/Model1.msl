@@ -1,0 +1,598 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="ExamStudentModelStoreContainer" CdmEntityContainer="ExamStudentContext">
+    <EntitySetMapping Name="Admins">
+      <EntityTypeMapping TypeName="ExamStudentModel.Admin">
+        <MappingFragment StoreEntitySet="Admin">
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Answers">
+      <EntityTypeMapping TypeName="ExamStudentModel.Answer">
+        <MappingFragment StoreEntitySet="Answer">
+          <ScalarProperty Name="AnswerID" ColumnName="AnswerID" />
+          <ScalarProperty Name="AnswerText" ColumnName="AnswerText" />
+          <ScalarProperty Name="Question_Id" ColumnName="Question_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="BoardTypes">
+      <EntityTypeMapping TypeName="ExamStudentModel.BoardType">
+        <MappingFragment StoreEntitySet="BoardType">
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="BoardTypeName" ColumnName="BoardTypeName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Categories">
+      <EntityTypeMapping TypeName="ExamStudentModel.Category">
+        <MappingFragment StoreEntitySet="Category">
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="Category_Name" ColumnName="Category_Name" />
+          <ScalarProperty Name="AdminID" ColumnName="AdminID" />
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="StandardID" ColumnName="StandardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Choices">
+      <EntityTypeMapping TypeName="ExamStudentModel.Choice">
+        <MappingFragment StoreEntitySet="Choices">
+          <ScalarProperty Name="ChoiceID" ColumnName="ChoiceID" />
+          <ScalarProperty Name="ChoiceText" ColumnName="ChoiceText" />
+          <ScalarProperty Name="Question_Id" ColumnName="Question_Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Cities">
+      <EntityTypeMapping TypeName="ExamStudentModel.City">
+        <MappingFragment StoreEntitySet="City">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="City_Old">
+      <EntityTypeMapping TypeName="ExamStudentModel.City_Old">
+        <MappingFragment StoreEntitySet="City_Old">
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="CityName" ColumnName="CityName" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Countries">
+      <EntityTypeMapping TypeName="ExamStudentModel.Country">
+        <MappingFragment StoreEntitySet="Country">
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+          <ScalarProperty Name="CommonName" ColumnName="CommonName" />
+          <ScalarProperty Name="FormalName" ColumnName="FormalName" />
+          <ScalarProperty Name="CountryType" ColumnName="CountryType" />
+          <ScalarProperty Name="CountrySubType" ColumnName="CountrySubType" />
+          <ScalarProperty Name="Sovereignty" ColumnName="Sovereignty" />
+          <ScalarProperty Name="Capital" ColumnName="Capital" />
+          <ScalarProperty Name="CurrencyCode" ColumnName="CurrencyCode" />
+          <ScalarProperty Name="CurrencyName" ColumnName="CurrencyName" />
+          <ScalarProperty Name="TelephoneCode" ColumnName="TelephoneCode" />
+          <ScalarProperty Name="CountryCode3" ColumnName="CountryCode3" />
+          <ScalarProperty Name="CountryNumber" ColumnName="CountryNumber" />
+          <ScalarProperty Name="InternetCountryCode" ColumnName="InternetCountryCode" />
+          <ScalarProperty Name="SortOrder" ColumnName="SortOrder" />
+          <ScalarProperty Name="Enabled" ColumnName="Enabled" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Currencies">
+      <EntityTypeMapping TypeName="ExamStudentModel.Currency">
+        <MappingFragment StoreEntitySet="Currency">
+          <ScalarProperty Name="CurrencyId" ColumnName="CurrencyId" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="Code" ColumnName="Code" />
+          <ScalarProperty Name="Rate" ColumnName="Rate" />
+          <ScalarProperty Name="Symbol" ColumnName="Symbol" />
+          <ScalarProperty Name="IsDefault" ColumnName="IsDefault" />
+          <ScalarProperty Name="CurrencyIcon" ColumnName="CurrencyIcon" />
+          <ScalarProperty Name="ModifiedDateTime" ColumnName="ModifiedDateTime" />
+          <ScalarProperty Name="ModifiedBy" ColumnName="ModifiedBy" />
+          <ScalarProperty Name="SyncCode" ColumnName="SyncCode" />
+          <ScalarProperty Name="IsSynced" ColumnName="IsSynced" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Emp_City">
+      <EntityTypeMapping TypeName="ExamStudentModel.Emp_City">
+        <MappingFragment StoreEntitySet="Emp_City">
+          <ScalarProperty Name="Emp_CityID" ColumnName="Emp_CityID" />
+          <ScalarProperty Name="Emp_CityName" ColumnName="Emp_CityName" />
+          <ScalarProperty Name="EmpStateID" ColumnName="EmpStateID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpCourses">
+      <EntityTypeMapping TypeName="ExamStudentModel.EmpCourse">
+        <MappingFragment StoreEntitySet="EmpCourse">
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="Course" ColumnName="Course" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee_Form">
+      <EntityTypeMapping TypeName="ExamStudentModel.Employee_Form">
+        <MappingFragment StoreEntitySet="Employee_Form">
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+          <ScalarProperty Name="Emp_DOB" ColumnName="Emp_DOB" />
+          <ScalarProperty Name="Emp_MobileNumber" ColumnName="Emp_MobileNumber" />
+          <ScalarProperty Name="Emp_Block" ColumnName="Emp_Block" />
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="Emp_Password" ColumnName="Emp_Password" />
+          <ScalarProperty Name="Emp_ConfirmPassword" ColumnName="Emp_ConfirmPassword" />
+          <ScalarProperty Name="EmpStateID" ColumnName="EmpStateID" />
+          <ScalarProperty Name="Emp_CityID" ColumnName="Emp_CityID" />
+          <ScalarProperty Name="Emp_EmailAddress" ColumnName="Emp_EmailAddress" />
+          <ScalarProperty Name="Emp_AppID" ColumnName="Emp_AppID" />
+          <ScalarProperty Name="usercode" ColumnName="usercode" />
+          <ScalarProperty Name="RefferalID" ColumnName="RefferalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Employee_Form_Temp">
+      <EntityTypeMapping TypeName="ExamStudentModel.Employee_Form_Temp">
+        <MappingFragment StoreEntitySet="Employee_Form_Temp">
+          <ScalarProperty Name="ReferlName" ColumnName="ReferlName" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="Employee_Name" ColumnName="Employee_Name" />
+          <ScalarProperty Name="Emp_DOB" ColumnName="Emp_DOB" />
+          <ScalarProperty Name="Emp_MobileNumber" ColumnName="Emp_MobileNumber" />
+          <ScalarProperty Name="Emp_Block" ColumnName="Emp_Block" />
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="Emp_Password" ColumnName="Emp_Password" />
+          <ScalarProperty Name="Emp_ConfirmPassword" ColumnName="Emp_ConfirmPassword" />
+          <ScalarProperty Name="EmpStateID" ColumnName="EmpStateID" />
+          <ScalarProperty Name="Emp_CityID" ColumnName="Emp_CityID" />
+          <ScalarProperty Name="Emp_EmailAddress" ColumnName="Emp_EmailAddress" />
+          <ScalarProperty Name="Emp_AppID" ColumnName="Emp_AppID" />
+          <ScalarProperty Name="usercode" ColumnName="usercode" />
+          <ScalarProperty Name="RefferalID" ColumnName="RefferalID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="EmpStates">
+      <EntityTypeMapping TypeName="ExamStudentModel.EmpState">
+        <MappingFragment StoreEntitySet="EmpState">
+          <ScalarProperty Name="EmpStateID" ColumnName="EmpStateID" />
+          <ScalarProperty Name="Emp_State" ColumnName="Emp_State" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ExamResults">
+      <EntityTypeMapping TypeName="ExamStudentModel.ExamResult">
+        <MappingFragment StoreEntitySet="ExamResult">
+          <ScalarProperty Name="ExamResultID" ColumnName="ExamResultID" />
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="ExamDateTime" ColumnName="ExamDateTime" />
+          <ScalarProperty Name="Percentange" ColumnName="Percentange" />
+          <ScalarProperty Name="AnswerCount" ColumnName="AnswerCount" />
+          <ScalarProperty Name="AnswerIDs" ColumnName="AnswerIDs" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Mediums">
+      <EntityTypeMapping TypeName="ExamStudentModel.Medium">
+        <MappingFragment StoreEntitySet="Mediums">
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="MediumName" ColumnName="MediumName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="MockQuestionBanks">
+      <EntityTypeMapping TypeName="ExamStudentModel.MockQuestionBank">
+        <MappingFragment StoreEntitySet="MockQuestionBank">
+          <ScalarProperty Name="MockQuestionID" ColumnName="MockQuestionID" />
+          <ScalarProperty Name="QuestionID" ColumnName="QuestionID" />
+          <ScalarProperty Name="OptionIDA" ColumnName="OptionIDA" />
+          <ScalarProperty Name="OptionIDB" ColumnName="OptionIDB" />
+          <ScalarProperty Name="OptionIDC" ColumnName="OptionIDC" />
+          <ScalarProperty Name="OptionIDD" ColumnName="OptionIDD" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerCarts">
+      <EntityTypeMapping TypeName="ExamStudentModel.PartnerCart">
+        <MappingFragment StoreEntitySet="PartnerCart">
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="PartnerUserID" ColumnName="PartnerUserID" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="ModifiedOn" ColumnName="ModifiedOn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PartnerCartItems">
+      <EntityTypeMapping TypeName="ExamStudentModel.PartnerCartItem">
+        <MappingFragment StoreEntitySet="PartnerCartItem">
+          <ScalarProperty Name="CartItemID" ColumnName="CartItemID" />
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="PostForms">
+      <EntityTypeMapping TypeName="ExamStudentModel.PostForm">
+        <MappingFragment StoreEntitySet="PostForm">
+          <ScalarProperty Name="PostID" ColumnName="PostID" />
+          <ScalarProperty Name="PostName" ColumnName="PostName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Questions">
+      <EntityTypeMapping TypeName="ExamStudentModel.Question">
+        <MappingFragment StoreEntitySet="Question">
+          <ScalarProperty Name="Question_Id" ColumnName="Question_Id" />
+          <ScalarProperty Name="Question1" ColumnName="Question" />
+          <ScalarProperty Name="CorrectOptionId" ColumnName="CorrectOptionId" />
+          <ScalarProperty Name="Category_ID" ColumnName="Category_ID" />
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="StandardID" ColumnName="StandardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Refers">
+      <EntityTypeMapping TypeName="ExamStudentModel.Refer">
+        <MappingFragment StoreEntitySet="Refer">
+          <ScalarProperty Name="ReferalName" ColumnName="ReferalName" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+          <ScalarProperty Name="UserID" ColumnName="UserID" />
+          <ScalarProperty Name="RefferLid" ColumnName="RefferLid" />
+          <ScalarProperty Name="usercode" ColumnName="usercode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ReferalForms">
+      <EntityTypeMapping TypeName="ExamStudentModel.ReferalForm">
+        <MappingFragment StoreEntitySet="ReferalForm">
+          <ScalarProperty Name="RefferalID" ColumnName="RefferalID" />
+          <ScalarProperty Name="ReferalName" ColumnName="ReferalName" />
+          <ScalarProperty Name="RefferLid" ColumnName="RefferLid" />
+          <ScalarProperty Name="Employee_ID" ColumnName="Employee_ID" />
+          <ScalarProperty Name="usercode" ColumnName="usercode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="ScheduleExams">
+      <EntityTypeMapping TypeName="ExamStudentModel.ScheduleExam">
+        <MappingFragment StoreEntitySet="ScheduleExam">
+          <ScalarProperty Name="ExamScheduleID" ColumnName="ExamScheduleID" />
+          <ScalarProperty Name="ScheduleDateTime" ColumnName="ScheduleDateTime" />
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="StandardID" ColumnName="StandardID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Standards">
+      <EntityTypeMapping TypeName="ExamStudentModel.Standard">
+        <MappingFragment StoreEntitySet="Standards">
+          <ScalarProperty Name="StandardID" ColumnName="StandardID" />
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="StandardName" ColumnName="StandardName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="States">
+      <EntityTypeMapping TypeName="ExamStudentModel.State">
+        <MappingFragment StoreEntitySet="State">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+          <ScalarProperty Name="CountryId" ColumnName="CountryId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="State_Old">
+      <EntityTypeMapping TypeName="ExamStudentModel.State_Old">
+        <MappingFragment StoreEntitySet="State_Old">
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="StateName" ColumnName="StateName" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Subjects">
+      <EntityTypeMapping TypeName="ExamStudentModel.Subject">
+        <MappingFragment StoreEntitySet="Subjects">
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+          <ScalarProperty Name="SubjectName" ColumnName="SubjectName" />
+          <ScalarProperty Name="StandardID" ColumnName="StandardID" />
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="subjectDescription" ColumnName="subjectDescription" />
+          <ScalarProperty Name="subjectPrice" ColumnName="subjectPrice" />
+          <ScalarProperty Name="subjectDiscount" ColumnName="subjectDiscount" />
+          <ScalarProperty Name="subjectTotalHour" ColumnName="subjectTotalHour" />
+          <ScalarProperty Name="ImageURL" ColumnName="ImageURL" />
+          <ScalarProperty Name="PDFFile" ColumnName="PDFFile" />
+          <ScalarProperty Name="VideoURL" ColumnName="VideoURL" />
+          <ScalarProperty Name="Comment" ColumnName="Comment" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="ExamStudentModel.sysdiagram">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tab_User_Info">
+      <EntityTypeMapping TypeName="ExamStudentModel.Tab_User_Info">
+        <MappingFragment StoreEntitySet="Tab_User_Info">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="usercode" ColumnName="usercode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Tab_User_Info_Temp">
+      <EntityTypeMapping TypeName="ExamStudentModel.Tab_User_Info_Temp">
+        <MappingFragment StoreEntitySet="Tab_User_Info_Temp">
+          <ScalarProperty Name="ReferlName" ColumnName="ReferlName" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="Block" ColumnName="Block" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+          <ScalarProperty Name="usercode" ColumnName="usercode" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="TabPayumoneyTransectionLogs">
+      <EntityTypeMapping TypeName="ExamStudentModel.TabPayumoneyTransectionLog">
+        <MappingFragment StoreEntitySet="TabPayumoneyTransectionLog">
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Date" ColumnName="Date" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="Amount" ColumnName="Amount" />
+          <ScalarProperty Name="productInfo" ColumnName="productInfo" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="TransectionID" ColumnName="TransectionID" />
+          <ScalarProperty Name="IsPaid" ColumnName="IsPaid" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Teachers">
+      <EntityTypeMapping TypeName="ExamStudentModel.Teacher">
+        <MappingFragment StoreEntitySet="Teacher">
+          <ScalarProperty Name="TeacherId" ColumnName="TeacherId" />
+          <ScalarProperty Name="TeacherName" ColumnName="TeacherName" />
+          <ScalarProperty Name="BoardTypeID" ColumnName="BoardTypeID" />
+          <ScalarProperty Name="MediumID" ColumnName="MediumID" />
+          <ScalarProperty Name="SubjectID" ColumnName="SubjectID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Users">
+      <EntityTypeMapping TypeName="ExamStudentModel.User">
+        <MappingFragment StoreEntitySet="User">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserDetailId" ColumnName="UserDetailId" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="ConfirmPassword" ColumnName="ConfirmPassword" />
+          <ScalarProperty Name="ApplicationID" ColumnName="ApplicationID" />
+          <ScalarProperty Name="StateID" ColumnName="StateID" />
+          <ScalarProperty Name="CityID" ColumnName="CityID" />
+          <ScalarProperty Name="EmpID" ColumnName="EmpID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="UserDetails">
+      <EntityTypeMapping TypeName="ExamStudentModel.UserDetail">
+        <MappingFragment StoreEntitySet="UserDetail">
+          <ScalarProperty Name="UserDetailId" ColumnName="UserDetailId" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <FunctionImportMapping FunctionImportName="PartnerGetCart" FunctionName="ExamStudentModel.Store.PartnerGetCart">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.PartnerGetCart_Result">
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="PartnerGetCartItems" FunctionName="ExamStudentModel.Store.PartnerGetCartItems">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.PartnerGetCartItems_Result">
+          <ScalarProperty Name="ProductName" ColumnName="ProductName" />
+          <ScalarProperty Name="CartItemID" ColumnName="CartItemID" />
+          <ScalarProperty Name="CartID" ColumnName="CartID" />
+          <ScalarProperty Name="ProductID" ColumnName="ProductID" />
+          <ScalarProperty Name="ProductPrice" ColumnName="ProductPrice" />
+          <ScalarProperty Name="Quantity" ColumnName="Quantity" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_alterdiagram" FunctionName="ExamStudentModel.Store.sp_alterdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_CheckUserOrAdmin" FunctionName="ExamStudentModel.Store.sp_CheckUserOrAdmin" />
+    <FunctionImportMapping FunctionImportName="sp_creatediagram" FunctionName="ExamStudentModel.Store.sp_creatediagram" />
+    <FunctionImportMapping FunctionImportName="sp_dropdiagram" FunctionName="ExamStudentModel.Store.sp_dropdiagram" />
+    <FunctionImportMapping FunctionImportName="sp_helpdiagramdefinition" FunctionName="ExamStudentModel.Store.sp_helpdiagramdefinition">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.sp_helpdiagramdefinition_Result">
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_helpdiagrams" FunctionName="ExamStudentModel.Store.sp_helpdiagrams">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.sp_helpdiagrams_Result">
+          <ScalarProperty Name="Database" ColumnName="Database" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="ID" ColumnName="ID" />
+          <ScalarProperty Name="Owner" ColumnName="Owner" />
+          <ScalarProperty Name="OwnerID" ColumnName="OwnerID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="sp_renamediagram" FunctionName="ExamStudentModel.Store.sp_renamediagram" />
+    <FunctionImportMapping FunctionImportName="sp_upgraddiagrams" FunctionName="ExamStudentModel.Store.sp_upgraddiagrams" />
+    <FunctionImportMapping FunctionImportName="spAddSubjectCourse" FunctionName="ExamStudentModel.Store.spAddSubjectCourse" />
+    <FunctionImportMapping FunctionImportName="spUserAccount" FunctionName="ExamStudentModel.Store.spUserAccount" />
+    <FunctionImportMapping FunctionImportName="spUserDetails" FunctionName="ExamStudentModel.Store.spUserDetails" />
+    <FunctionImportMapping FunctionImportName="spUserLogin" FunctionName="ExamStudentModel.Store.spUserLogin" />
+    <FunctionImportMapping FunctionImportName="usp_StudentPayment" FunctionName="ExamStudentModel.Store.usp_StudentPayment">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.usp_StudentPayment_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_UserList" FunctionName="ExamStudentModel.Store.usp_UserList">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.usp_UserList_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserDetailId" ColumnName="UserDetailId" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="FirstName" ColumnName="FirstName" />
+          <ScalarProperty Name="LastName" ColumnName="LastName" />
+          <ScalarProperty Name="MiddleName" ColumnName="MiddleName" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="PhoneNumber" ColumnName="PhoneNumber" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_UserList_Bkp" FunctionName="ExamStudentModel.Store.usp_UserList_Bkp">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.usp_UserList_Bkp_Result">
+          <ScalarProperty Name="UserId" ColumnName="UserId" />
+          <ScalarProperty Name="UserDetailId" ColumnName="UserDetailId" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="usp_UserListRecord" FunctionName="ExamStudentModel.Store.usp_UserListRecord">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.usp_UserListRecord_Result">
+          <ScalarProperty Name="Id" ColumnName="Id" />
+          <ScalarProperty Name="BoardType" ColumnName="BoardType" />
+          <ScalarProperty Name="Medium" ColumnName="Medium" />
+          <ScalarProperty Name="Standard" ColumnName="Standard" />
+          <ScalarProperty Name="Password" ColumnName="Password" />
+          <ScalarProperty Name="IsActive" ColumnName="IsActive" />
+          <ScalarProperty Name="CreatedDate" ColumnName="CreatedDate" />
+          <ScalarProperty Name="ModifiedDate" ColumnName="ModifiedDate" />
+          <ScalarProperty Name="Name" ColumnName="Name" />
+          <ScalarProperty Name="EmailAddress" ColumnName="EmailAddress" />
+          <ScalarProperty Name="MobileNumber" ColumnName="MobileNumber" />
+          <ScalarProperty Name="DOB" ColumnName="DOB" />
+          <ScalarProperty Name="ReferID" ColumnName="ReferID" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <FunctionImportMapping FunctionImportName="uspAddProductToCart" FunctionName="ExamStudentModel.Store.uspAddProductToCart" />
+    <FunctionImportMapping FunctionImportName="uspGetCountry" FunctionName="ExamStudentModel.Store.uspGetCountry">
+      <ResultMapping>
+        <ComplexTypeMapping TypeName="ExamStudentModel.uspGetCountry_Result">
+          <ScalarProperty Name="CommonName" ColumnName="CommonName" />
+          <ScalarProperty Name="CountryCode" ColumnName="CountryCode" />
+        </ComplexTypeMapping>
+      </ResultMapping>
+    </FunctionImportMapping>
+    <EntitySetMapping Name="Coupons">
+      <EntityTypeMapping TypeName="ExamStudentModel.Coupon">
+        <MappingFragment StoreEntitySet="Coupon">
+          <ScalarProperty Name="CreatedOn" ColumnName="CreatedOn" />
+          <ScalarProperty Name="CouponDiscount" ColumnName="CouponDiscount" />
+          <ScalarProperty Name="CouponCode" ColumnName="CouponCode" />
+          <ScalarProperty Name="CouponName" ColumnName="CouponName" />
+          <ScalarProperty Name="CouponID" ColumnName="CouponID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

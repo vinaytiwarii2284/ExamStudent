@@ -1,0 +1,224 @@
+﻿@model ExamStudent.ViewModels.SubjectViewModel
+
+@using System.Web.Mvc
+
+@{
+    ViewBag.Title = "Edit";
+    Layout = "~/Views/Shared/_LayoutStudent.cshtml";
+}
+
+<h2>Edit</h2>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-horizontal">
+    <h4>Subject</h4>
+    <hr />
+    @Html.ValidationSummary(true, "", new { @class = "text-danger" })
+    @Html.HiddenFor(model => model.SubjectID)
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.SubjectName, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.SubjectName, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.SubjectName, "", new { @class = "text-danger" })
+        </div>
+    </div>
+ 
+    <div class="form-group">
+        @Html.LabelFor(model => model.subjectPrice, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.subjectPrice, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.subjectPrice, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.subjectDiscount, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.subjectDiscount, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.subjectDiscount, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.subjectTotalHour, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.subjectTotalHour, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.subjectTotalHour, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <label>BoardType Name</label>
+        @Html.DropDownListFor(m => m.BoardTypeID, new SelectList(Model.BoardTypeList, "BoardTypeID", "BoardTypeName"),
+                            new { @class = "form-control col-md-7" })
+    </div>
+
+    <div class="form-group">
+        <label for="inputName">Medium</label>
+
+        @Html.DropDownListFor(m => m.MediumID, new SelectList(Model.MediumList, "MediumID", "MediumName"),
+                            new { @class = "form-control col-md-7" })
+    </div>
+
+    <div class="form-group">
+        <label for="inputName">Standard</label>
+
+        @Html.DropDownListFor(m => m.StandardID, new SelectList(Model.StandardList, "StandardID", "StandardName"),
+                           new { @class = "form-control col-md-7" })
+    </div>
+
+    <div class="form-group">
+        <label for="inputName">Image</label>
+        <input id="ImageURL" name="ImageURL" type="hidden" />
+
+        <input id="imageUpload" name="Image" class="form-control col-md-7" type="file" accept=".png , .jpg" />
+
+        <br />
+
+        <div class="thumbnail">
+            <img id="categoryImage" class="img-thumbnail" />
+        </div>
+    </div>
+
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.PDFFile, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.PDFFile, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.PDFFile, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.VideoURL, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.VideoURL, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.VideoURL, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        @Html.LabelFor(model => model.Comment, htmlAttributes: new { @class = "control-label col-md-2" })
+        <div class="col-md-10">
+            @Html.EditorFor(model => model.Comment, new { htmlAttributes = new { @class = "form-control col-md-7" } })
+            @Html.ValidationMessageFor(model => model.Comment, "", new { @class = "text-danger" })
+        </div>
+    </div>
+
+    <div class="form-group">
+        <div class="col-md-offset-2 col-md-10">
+            <input type="submit" value="Save" class="btn btn-primary" /> ||
+            @Html.ActionLink("Back to List", "Index" , null ,new {@class= "btn btn-danger" })
+        </div>
+    </div>
+</div>
+}
+
+<div>
+   
+</div>
+
+<script type="text/javascript">
+
+    $("#imageUpload").change(function () {
+
+        var element = this;
+
+        var formData = new FormData();
+
+        var totalFiles = element.files.length;
+
+        for (var i = 0; i < totalFiles; i++) {
+
+            var file = element.files[i];
+
+            formData.append("Photo", file);
+
+        }
+
+        $.ajax({
+            type: 'POST',
+            url: '/Shared/UploadImage', //ye bta rha hai ki value kha kha save hai..whi se data uthayega..
+            data: formData,
+            dataType: 'JSON',
+            contentType: false,
+            processData: false
+        })
+            .done(function (data) {
+                debugger;
+
+                /* alert(data);*/ // ye bta rha hai hmko ki data me kya aaya hai
+
+                console.log(data);
+
+                if (data.Success == true) {
+
+                    $("#ImageURL").val(data.ImageURL); // ye DataBase se Value lega...
+
+                    $("#categoryImage").attr("src", data.ImageURL); // ye image Show  krega ...
+                }
+
+            })
+            .fail(function (XMLHttpRequest, textStatus, errorThrown) {
+                alert("error");
+            })
+
+    });
+
+
+
+
+
+    $(document).ready(function () {
+        $('#BoardTypeID').change(function () {
+            //alert($('#BoardTypeName').val());
+            $.ajax({
+                type: "post",
+                url: "/Subject/GetMediums",
+                data: { BoardTypeId: $('#BoardTypeID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+                    //debugger;
+                    //alert("bind data now");
+                    var district = "<select id='MediumID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#MediumID').html(district);
+                }
+            });
+        });
+
+        $('#MediumID').change(function () {
+
+            //alert($('#Mediumname').val());
+
+            $.ajax({
+                type: "post",
+                url: "/Subject/GetStandard",
+                data: { MediumId: $('#MediumID').val() },
+                datatype: "json",
+                traditional: true,
+                success: function (data) {
+
+                    var district = "<select id='StandardID'>";
+                    district = district + '<option value="">--Select--</option>';
+
+                    for (var i = 0; i < data.length; i++) {
+                        district = district + '<option value=' + data[i].Value + '>' + data[i].Text + '</option>';
+                    }
+                    district = district + '</select>';
+                    $('#StandardID').html(district);
+                }
+            });
+        });
+    });
+</script>

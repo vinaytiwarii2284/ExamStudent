@@ -1,0 +1,485 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>@ViewBag.Title EduAlphabet.com</title>
+
+    <meta name="keywords" content="Alphabet Responsive web template, Bootstrap Web Templates, Flat Web Templates, Android Compatible web template,
+	SmartPhone Compatible web template, free WebDesigns for Nokia, Samsung, LG, Sony Ericsson, Motorola web design" />
+
+
+    <script>
+        addEventListener("load", function () {
+            setTimeout(hideURLbar, 0);
+        }, false);
+
+        function hideURLbar() {
+            window.scrollTo(0, 1);
+        }
+    </script>
+    <!-- Custom Theme files -->
+    <link href="~/Content/Temp/css/bootstrap.css" type="text/css" rel="stylesheet" media="all">
+    <!-- portfolio -->
+    <link href="~/Content/Temp/css/gallery.css" type="text/css" rel="stylesheet" media="all">
+    <!-- testimonials -->
+    <link href="~/Content/Temp/css/testimonials.css" type="text/css" rel="stylesheet" media="all">
+    <link href="~/Content/Temp/css/style.css" type="text/css" rel="stylesheet" media="all">
+    <!-- font-awesome icons -->
+    <link href="~/Content/Temp/css/font-awesome.min.css" rel="stylesheet">
+    <!-- //Custom Theme files -->
+    <!-- online-fonts -->
+    <link href="//fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i" rel="stylesheet">
+    <!-- //online-fonts -->
+    @*@Styles.Render("~/Content/css")
+        @Scripts.Render("~/bundles/modernizr")*@
+
+    @Scripts.Render("~/bundles/jquery")
+
+
+</head>
+<body>
+    <!-- banner -->
+    <div id="home" class="position-relative">
+        <div class="header-main">
+            <div class="d-sm-flex justify-content-between">
+                <h1>
+                    <a class="navbar-brand" href="@Url.Action("Index" , "Home")">
+                      E<span>d</span><span>u</span>Al<span>p</span>h<span>a</span>b<span>e</span>t<span>.com</span>
+                    </a>
+                </h1>
+                <div class="hearder-right-w3_pvt d-flex justify-content-sm-end align-items-center  mt-sm-0 mt-4">
+                    <ul class="d-flex header-w3_pvt">
+                        @if (Session["Id"] == null)
+                        {
+
+                            <li>
+                                <a href="@Url.Action("Register" , "UserAccount")" class="btn w3ls-btn d-block">
+                                    <span class="fa fa-sign-in"></span>Register
+                                </a>
+                            </li>
+                            <li>
+                                <a href="@Url.Action("Login" , "UserAccount")" class="btn w3ls-btn d-block">
+                                    <span class="fa fa-lock"></span> Sign in
+                                </a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li>
+                                <a href="@Url.Action("MyAccount" , "UserAccount")" class="btn w3ls-btn d-block">
+                                    <span class="fa fa-unlock"></span> My Account
+                                </a>
+                            </li>
+
+
+                            <li>
+                                <a href="@Url.Action("LogOut" , "UserAccount")" class="btn w3ls-btn d-block">
+                                    <span class="fa fa-lock"></span> LogOut
+                                </a>
+                            </li>
+                        }
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="callbacks_container">
+        <ul class="rslides" id="slider3">
+            <li class="slider-img">
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col-3 col-sm-6 px-0 bg-theme1 banner-left-grid">
+                            <div class="banner-text h-100">
+                            </div>
+                        </div>
+                        <div class="col-9 col-sm-6 banner banner1 banner-text">
+                        </div>
+                        <div class="slider-info">
+                            
+                            <h3>activities <span>improves</span> mind</h3>
+                            <p class="text-white">
+                                I love online guru because I am taught by real teachers, who understand exactly where I am my studies.
+                            </p>
+                            <a class="btn bg-theme mt-4 w3_pvt-link-bnr scroll" href="#about" role="button">
+                                View
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slider-img">
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col-3 col-sm-6 px-0 bg-theme2 banner-left-grid">
+                            <div class="banner-text h-100">
+                            </div>
+                        </div>
+                        <div class="col-9 col-sm-6 banner banner2 banner-text">
+                        </div>
+                        <div class="slider-info">
+                           
+                            <h3>activities <span>improves</span> mind</h3>
+                            <p class="text-white">
+                                I love online guru because I am taught by real teachers, who understand exactly where I am my studies.
+                            </p>
+                            <a class="btn bg-theme mt-4 w3_pvt-link-bnr scroll" href="#about" role="button">
+                                View
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li class="slider-img">
+                <div class="container-fluid px-0">
+                    <div class="row">
+                        <div class="col-3 col-sm-6 px-0 bg-theme3 banner-left-grid">
+                            <div class="banner-text h-100">
+                            </div>
+                        </div>
+                        <div class="col-9 col-sm-6 banner banner3 banner-text">
+                        </div>
+                        <div class="slider-info">
+                            <span class="line"></span>
+                            <h3>activities <span>improves</span> mind</h3>
+                            <p class="text-white">
+                                We are on a mission to deliver world - class education to everyone
+                                seeking to learn and striving to enrich their lives.
+                            </p>
+                            <a class="btn bg-theme mt-4 w3_pvt-link-bnr scroll" href="#about" role="button">
+                                View
+                                More
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <!-- //banner -->
+    <!-- header -->
+    <header>
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+                        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                    <ul class="navbar-nav  text-center">
+
+
+                        @if (Session["StudentId"] == null)
+                        {
+
+                            <li class="nav-item active  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link" href="@Url.Action("Index" , "Home")">
+                                    Home
+                                    @*<span class="sr-only">(current)</span>*@
+                                </a>
+                            </li>
+                            <li class="nav-item  mr-lg-3 mt-lg-0 mt-3">
+                                <a class="nav-link " href="@Url.Action("About" , "Home")">about</a>
+                            </li>
+
+                            <li class="nav-item  mt-lg-0 mt-3">
+                                <a class="nav-link " href="@Url.Action("Contact" , "Home")">Contact</a>
+                            </li>
+                        }
+                        else
+                        {
+                            <li class="nav-item  mt-lg-0 mt-3">
+                                <a class="nav-link" href="@Url.Action("ControlPanel", "Admin")">Admin Panel</a>
+                            </li>
+                        }
+
+                        <li class="nav-item dropdown mr-lg-3 mt-lg-0 mt-3">
+                            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown"
+                               aria-haspopup="true" aria-expanded="false">
+                                Details
+                            </a>
+                            <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <a href="~/PPT/alphabet.pdf" style="color:#000000">Alphabet Details</a>
+                                <a href="~/PPT/20201009_090444_0000t.pdf" style="color:#000000" >Teacher Details</a>
+
+                                <a href="~/PPT/20201007_091342_0000e.pdf" style="color:#000000" >Student Details</a>
+                               
+                                <div class="dropdown-divider"></div>
+                                @*<a class="dropdown-item scroll" href="#portfolio">gallery</a>
+                                <a class="dropdown-item scroll" href="#posts">latest posts</a>
+                                <a class="dropdown-item scroll" href="#testimonials">testimonials</a>*@
+                            </div>
+                        </li>
+
+                        @*<li class="nav-item  mt-lg-0 mt-3">
+                            <a class="nav-link" href="@Url.Action("ControlPanel", "Admin")">Admin Panel</a>
+                        </li>*@
+                     
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <!-- //header -->
+
+    <div class=" ">
+        @RenderBody()
+    </div>
+
+    <div>
+        <!-- footer -->
+        <footer class="footer py-md-5 pt-md-3 pb-sm-5">
+            <div class="container-fluid">
+                <div class="row p-sm-4 px-3 py-5">
+                    <div class="col-lg-4 col-md-6 footer-top mt-md-0 mt-sm-5">
+                        <h2>
+                            <a class="navbar-brand" href="index.html">
+                                Ed<span>u</span>al<span>ph</span>a<span>be</span>t
+                            </a>
+                        </h2>
+                        <p class="my-3 text-white">
+                            EduALPHABET is the world's most valuable ed-tech company and the creator of India's most loved school learning app. Launched in 2020, EduALPHABET offers highly personalised and effective learning programs for classes 1 - 12 (K-12).
+                        </p>
+                        <p class="text-white">
+                            I love online EduALPHABET because I am taught by real teachers, who understand exactly where I am my studies.
+                        </p>
+                    </div>
+                    <div class="col-lg-2  col-md-6 mt-md-0 mt-5">
+                        <div class=".footerv2-w3ls">
+                            <h3 class="mb-3 w3f_title">Navigation</h3>
+                            <hr>
+                            <ul class="list-w3pvtits">
+                                <li>
+                                    <a href="@Url.Action("Index" , "Home")">
+                                        Home
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="@Url.Action("About" , "Home")" class="scroll">
+                                        About Us
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#portfolio" class="scroll">
+                                        Gallery
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#services" class="scroll">
+                                        Services
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#contact" class="scroll">
+                                        Contact Us
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footerv2-w3ls">
+                            <h3 class="mb-3 w3f_title">Links</h3>
+                            <hr>
+                            <ul class="list-w3pvtits">
+                                <li>
+                                    <a href="index.html">
+                                        Overview
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#posts" class="scroll">
+                                        Latest posts
+                                    </a>
+                                </li>
+                                <li class="my-2">
+                                    <a href="#stat" class="scroll">
+                                        Facts
+                                    </a>
+                                </li>
+                                <li class="mb-2">
+                                    <a href="#contact" class="scroll">
+                                        Find us
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="index.html">
+                                        Privacy Policy
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-3 col-md-6 mt-lg-0 mt-5">
+                        <div class="footerv2-w3ls">
+                            <h3 class="mb-3 w3f_title">Contact Us</h3>
+                            <hr>
+                            <div class="fv3-contact">
+                                <p>
+                                    <a href="mailto:example@email.com">info@Edualphabet.com</a>
+                                </p>
+                            </div>
+                            <div class="fv3-contact my-2">
+                                <p>+91- 9696940133</p>
+                            </div>
+                            <div class="fv3-contact">
+                                <p>
+                                    +91- 9696940133,
+                                    <br>Dwarka Sector 23 , Pochanpur Gali Number 4 New Delhi.
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <!-- //footer bottom -->
+        </footer>
+        <div class="cpy-right">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="wthree-social">
+                            <ul>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-facebook-f icon_facebook"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-twitter icon_twitter"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-dribbble icon_dribbble"></span>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                        <span class="fa fa-google-plus icon_g_plus"></span>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 text-lg-right mt-lg-0 mt-4">
+                        <p>
+                            © 2020EduAlphabet.com. All rights reserved | Design by
+                            <a href="http://www.edualphabet.com/"> EduAlphabet.com</a>
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- //footer -->
+    </div>
+
+
+
+    @Scripts.Render("~/bundles/bootstrap")
+    @RenderSection("scripts", required: false)
+
+
+    <!-- js -->
+    <script src="~/Content/Temp/js/jquery-2.2.3.min.js"></script>
+    <!-- //js -->
+    <!-- script for password match -->
+    @*<script>
+        window.onload = function () {
+            document.getElementById("password1").onchange = validatePassword;
+            document.getElementById("password2").onchange = validatePassword;
+        }
+
+        function validatePassword() {
+            var pass2 = document.getElementById("password2").value;
+            var pass1 = document.getElementById("password1").value;
+            if (pass1 != pass2)
+                document.getElementById("password2").setCustomValidity("Passwords Don't Match");
+            else
+                document.getElementById("password2").setCustomValidity('');
+            //empty string means no validation error
+        }
+    </script>*@
+    <!-- script for password match -->
+    <!-- Banner  Responsiveslides -->
+    <script src="~/Content/Temp/js/responsiveslides.min.js"></script>
+    <script>
+        // You can also use"$(window).load(function() {"
+        $(function () {
+            // Slideshow 4
+            $("#slider3").responsiveSlides({
+                auto: true,
+                pager: true,
+                nav: false,
+                speed: 500,
+                namespace: "callbacks",
+                before: function () {
+                    $('.events').append("<li>before event fired.</li>");
+                },
+                after: function () {
+                    $('.events').append("<li>after event fired.</li>");
+                }
+            });
+
+        });
+    </script>
+    <!-- //Banner  Responsiveslides -->
+    <!-- gallery -->
+    <script src="~/Content/Temp/js/jquery.picEyes.js"></script>
+    <script>
+        $(function () {
+            //picturesEyes($('.demo li'));
+            $('.demo li').picEyes();
+        });
+    </script>
+    <!-- //gallery -->
+    <!-- stats -->
+    <script src="~/Content/Temp/js/counter.js"></script>
+    <!-- //stats -->
+    <!-- start-smooth-scrolling -->
+    <script src="~/Content/Temp/js/move-top.js"></script>
+    <script src="~/Content/Temp/js/easing.js"></script>
+    <script>
+        jQuery(document).ready(function ($) {
+            $(".scroll").click(function (event) {
+                event.preventDefault();
+
+                $('html,body').animate({
+                    scrollTop: $(this.hash).offset().top
+                }, 1000);
+            });
+        });
+    </script>
+    <!-- //end-smooth-scrolling -->
+    <!-- smooth-scrolling-of-move-up -->
+    <script>
+        $(document).ready(function () {
+            /*
+            var defaults = {
+                containerID: 'toTop', // fading element id
+                containerHoverID: 'toTopHover', // fading element hover id
+                scrollSpeed: 1200,
+                easingType: 'linear'
+            };
+            */
+            $().UItoTop({
+                easingType: 'easeOutQuart'
+            });
+
+        });
+    </script>
+    <script src="~/Content/Temp/js/SmoothScroll.min.js"></script>
+    <!-- //smooth-scrolling-of-move-up -->
+    <!-- Bootstrap core JavaScript
+    ================================================== -->
+    <!-- Placed at the end of the document so the pages load faster -->
+    <script src="~/Content/Temp/js/bootstrap.js"></script>
+
+
+
+</body>
+</html>

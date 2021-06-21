@@ -1,0 +1,48 @@
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csprojAssemblyReference.cache
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CoreCompileInputs.cache
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.dll
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CopyComplete
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.dll
+D:\Talvez Training\ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\Digiphoto.iMix.ClaimPortal.ViewModel\obj\Debug\ExamStudent.ViewModel.pdb

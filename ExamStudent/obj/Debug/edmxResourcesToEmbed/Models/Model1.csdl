@@ -1,0 +1,1606 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="ExamStudentModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Admin">
+    <Key>
+      <PropertyRef Name="AdminID" />
+    </Key>
+    <Property Name="AdminID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_Category_Admin" FromRole="Admin" ToRole="Category" />
+  </EntityType>
+  <EntityType Name="AdminEmployeeReferSetting">
+    <Key>
+      <PropertyRef Name="AdminEmpReferSettingID" />
+    </Key>
+    <Property Name="AdminEmpReferSettingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReferComision" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="AdminRefer">
+    <Key>
+      <PropertyRef Name="AdminSettingID" />
+    </Key>
+    <Property Name="AdminSettingID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReferComision" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Answer">
+    <Key>
+      <PropertyRef Name="AnswerID" />
+    </Key>
+    <Property Name="AnswerID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AnswerText" Type="String" MaxLength="200" FixedLength="false" Unicode="false" />
+    <Property Name="Question_Id" Type="Int32" />
+    <NavigationProperty Name="Question" Relationship="Self.FK_Answer_Question" FromRole="Answer" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="BoardType">
+    <Key>
+      <PropertyRef Name="BoardTypeID" />
+    </Key>
+    <Property Name="BoardTypeID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BoardTypeName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_Category_BoardType" FromRole="BoardType" ToRole="Category" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Question_BoardType" FromRole="BoardType" ToRole="Question" />
+    <NavigationProperty Name="ScheduleExams" Relationship="Self.FK_ScheduleExam_BoardType" FromRole="BoardType" ToRole="ScheduleExam" />
+    <NavigationProperty Name="Subjects" Relationship="Self.FK_Subjects_BoardType" FromRole="BoardType" ToRole="Subjects" />
+    <NavigationProperty Name="Tab_User_Info_Temp" Relationship="Self.FK_Tab_User_Info_Temp_BoardType" FromRole="BoardType" ToRole="Tab_User_Info_Temp" />
+    <NavigationProperty Name="Teachers" Relationship="Self.FK_Teacher_BoardType" FromRole="BoardType" ToRole="Teacher" />
+    <NavigationProperty Name="Videos" Relationship="Self.FK_Video_BoardType" FromRole="BoardType" ToRole="Video" />
+  </EntityType>
+  <EntityType Name="Category">
+    <Key>
+      <PropertyRef Name="Category_ID" />
+    </Key>
+    <Property Name="Category_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Category_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AdminID" Type="Int32" />
+    <Property Name="BoardTypeID" Type="Int32" />
+    <Property Name="MediumID" Type="Int32" />
+    <Property Name="StandardID" Type="Int32" />
+    <NavigationProperty Name="Admin" Relationship="Self.FK_Category_Admin" FromRole="Category" ToRole="Admin" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_Category_BoardType" FromRole="Category" ToRole="BoardType" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_Category_Mediums" FromRole="Category" ToRole="Mediums" />
+    <NavigationProperty Name="Standard" Relationship="Self.FK_Category_Standards" FromRole="Category" ToRole="Standards" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Question_Category" FromRole="Category" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="Choice">
+    <Key>
+      <PropertyRef Name="ChoiceID" />
+    </Key>
+    <Property Name="ChoiceID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ChoiceText" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Question_Id" Type="Int32" />
+    <NavigationProperty Name="Question" Relationship="Self.FK_Choices_Question" FromRole="Choices" ToRole="Question" />
+  </EntityType>
+  <EntityType Name="City">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="StateID" Type="Int32" />
+    <NavigationProperty Name="Tab_User_Info_Temp" Relationship="Self.FK_Tab_User_Info_Temp_City" FromRole="City" ToRole="Tab_User_Info_Temp" />
+  </EntityType>
+  <EntityType Name="City_Old">
+    <Key>
+      <PropertyRef Name="CityID" />
+    </Key>
+    <Property Name="CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StateID" Type="Int32" />
+    <NavigationProperty Name="State_Old" Relationship="Self.FK_City_State" FromRole="City_Old" ToRole="State_Old" />
+    <NavigationProperty Name="Tab_User_Info" Relationship="Self.FK_Tab_User_Info_City" FromRole="City_Old" ToRole="Tab_User_Info" />
+  </EntityType>
+  <EntityType Name="Country">
+    <Key>
+      <PropertyRef Name="CountryCode" />
+    </Key>
+    <Property Name="CountryCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="CommonName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="FormalName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CountryType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CountrySubType" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Sovereignty" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Capital" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CurrencyCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CurrencyName" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="TelephoneCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CountryCode3" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="CountryNumber" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="InternetCountryCode" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="SortOrder" Type="Int32" />
+    <Property Name="Enabled" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="Coupon">
+    <Key>
+      <PropertyRef Name="CouponID" />
+    </Key>
+    <Property Name="CouponID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CouponName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CouponCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CouponDiscount" Type="Int32" />
+    <Property Name="CreatedOn" Type="DateTimeOffset" Precision="7" />
+  </EntityType>
+  <EntityType Name="Currency">
+    <Key>
+      <PropertyRef Name="CurrencyId" />
+    </Key>
+    <Property Name="CurrencyId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="Code" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Rate" Type="Double" Nullable="false" />
+    <Property Name="Symbol" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsDefault" Type="Boolean" Nullable="false" />
+    <Property Name="CurrencyIcon" Type="String" MaxLength="Max" FixedLength="false" Unicode="false" />
+    <Property Name="ModifiedDateTime" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedBy" Type="Int64" />
+    <Property Name="SyncCode" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="IsSynced" Type="Boolean" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Emp_City">
+    <Key>
+      <PropertyRef Name="Emp_CityID" />
+    </Key>
+    <Property Name="Emp_CityID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_CityName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmpStateID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="EmpState" Relationship="Self.FK_Emp_City_EmpState" FromRole="Emp_City" ToRole="EmpState" />
+    <NavigationProperty Name="Employee_Form" Relationship="Self.FK_Employee_Form_Emp_City" FromRole="Emp_City" ToRole="Employee_Form" />
+    <NavigationProperty Name="Employee_Form_Temp" Relationship="Self.FK_Employee_Form_Temp_Emp_City" FromRole="Emp_City" ToRole="Employee_Form_Temp" />
+  </EntityType>
+  <EntityType Name="EmpBankDetail">
+    <Key>
+      <PropertyRef Name="EmpBankDetailsID" />
+    </Key>
+    <Property Name="EmpBankDetailsID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IFSCCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BankName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AccountHolderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Employee_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="EmpCourse">
+    <Key>
+      <PropertyRef Name="EmpID" />
+    </Key>
+    <Property Name="EmpID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Course" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Tab_User_Info" Relationship="Self.FK_Tab_User_Info_EmpCourse" FromRole="EmpCourse" ToRole="Tab_User_Info" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="Employee_Form">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Employee_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_DOB" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Emp_MobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_Block" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_ConfirmPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmpStateID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_CityID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_AppID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RefferalID" Type="Int32" />
+    <NavigationProperty Name="Emp_City" Relationship="Self.FK_Employee_Form_Emp_City" FromRole="Employee_Form" ToRole="Emp_City" />
+    <NavigationProperty Name="EmpState" Relationship="Self.FK_Employee_Form_EmpState" FromRole="Employee_Form" ToRole="EmpState" />
+    <NavigationProperty Name="PostForm" Relationship="Self.FK_Employee_Form_PostForm" FromRole="Employee_Form" ToRole="PostForm" />
+    <NavigationProperty Name="ReferalForm" Relationship="Self.FK_Employee_Form_ReferalForm" FromRole="Employee_Form" ToRole="ReferalForm" />
+  </EntityType>
+  <EntityType Name="Employee_Form_Temp">
+    <Key>
+      <PropertyRef Name="Employee_ID" />
+    </Key>
+    <Property Name="Employee_ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Employee_Name" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_DOB" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="Emp_MobileNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_Block" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="PostID" Type="Int32" />
+    <Property Name="Emp_Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_ConfirmPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmpStateID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_CityID" Type="Int32" Nullable="false" />
+    <Property Name="Emp_EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Emp_AppID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RefferalID" Type="Int32" />
+    <Property Name="ReferlName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ResetPasswordCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="7" />
+    <Property Name="SubjectID" Type="Int32" />
+    <NavigationProperty Name="Emp_City" Relationship="Self.FK_Employee_Form_Temp_Emp_City" FromRole="Employee_Form_Temp" ToRole="Emp_City" />
+    <NavigationProperty Name="EmpState" Relationship="Self.FK_Employee_Form_Temp_EmpState" FromRole="Employee_Form_Temp" ToRole="EmpState" />
+    <NavigationProperty Name="PostForm" Relationship="Self.FK_Employee_Form_Temp_PostForm" FromRole="Employee_Form_Temp" ToRole="PostForm" />
+    <NavigationProperty Name="ReferalForm" Relationship="Self.FK_Employee_Form_Temp_ReferalForm" FromRole="Employee_Form_Temp" ToRole="ReferalForm" />
+    <Property Name="isFeatured" Type="Boolean" />
+    <Property Name="FranchiesCode" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsPaid" Type="Boolean" />
+    <Property Name="IsApproved" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="EmpState">
+    <Key>
+      <PropertyRef Name="EmpStateID" />
+    </Key>
+    <Property Name="EmpStateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Emp_State" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="Emp_City" Relationship="Self.FK_Emp_City_EmpState" FromRole="EmpState" ToRole="Emp_City" />
+    <NavigationProperty Name="Employee_Form" Relationship="Self.FK_Employee_Form_EmpState" FromRole="EmpState" ToRole="Employee_Form" />
+    <NavigationProperty Name="Employee_Form_Temp" Relationship="Self.FK_Employee_Form_Temp_EmpState" FromRole="EmpState" ToRole="Employee_Form_Temp" />
+  </EntityType>
+  <EntityType Name="ExamResult">
+    <Key>
+      <PropertyRef Name="ExamResultID" />
+    </Key>
+    <Property Name="ExamResultID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserId" Type="Int32" Nullable="false" />
+    <Property Name="ExamDateTime" Type="DateTime" Precision="3" />
+    <Property Name="Percentange" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="AnswerCount" Type="Int64" />
+    <Property Name="AnswerIDs" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="User" Relationship="Self.FK_ExamResult_User" FromRole="ExamResult" ToRole="User" />
+  </EntityType>
+  <EntityType Name="MasterSalary">
+    <Key>
+      <PropertyRef Name="SalaryMasterID" />
+    </Key>
+    <Property Name="SalaryMasterID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PostID" Type="Int32" />
+    <Property Name="Salary" Type="Double" />
+    <Property Name="MinRefer" Type="Int32" />
+    <Property Name="Comssion" Type="Double" />
+  </EntityType>
+  <EntityType Name="Medium">
+    <Key>
+      <PropertyRef Name="MediumID" />
+    </Key>
+    <Property Name="MediumID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BoardTypeID" Type="Int32" Nullable="false" />
+    <Property Name="MediumName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_Category_Mediums" FromRole="Mediums" ToRole="Category" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Question_Mediums" FromRole="Mediums" ToRole="Question" />
+    <NavigationProperty Name="ScheduleExams" Relationship="Self.FK_ScheduleExam_Mediums" FromRole="Mediums" ToRole="ScheduleExam" />
+    <NavigationProperty Name="Subjects" Relationship="Self.FK_Subjects_Mediums" FromRole="Mediums" ToRole="Subjects" />
+    <NavigationProperty Name="Tab_User_Info_Temp" Relationship="Self.FK_Tab_User_Info_Temp_Mediums" FromRole="Mediums" ToRole="Tab_User_Info_Temp" />
+    <NavigationProperty Name="Teachers" Relationship="Self.FK_Teacher_Mediums" FromRole="Mediums" ToRole="Teacher" />
+    <NavigationProperty Name="Videos" Relationship="Self.FK_Video_Mediums" FromRole="Mediums" ToRole="Video" />
+  </EntityType>
+  <EntityType Name="MockQuestionBank">
+    <Key>
+      <PropertyRef Name="MockQuestionID" />
+    </Key>
+    <Property Name="MockQuestionID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="QuestionID" Type="Int32" Nullable="false" />
+    <Property Name="OptionIDA" Type="Int32" Nullable="false" />
+    <Property Name="OptionIDB" Type="Int32" Nullable="false" />
+    <Property Name="OptionIDC" Type="Int32" Nullable="false" />
+    <Property Name="OptionIDD" Type="Int32" Nullable="false" />
+  </EntityType>
+  <EntityType Name="PartnerCart">
+    <Key>
+      <PropertyRef Name="CartID" />
+    </Key>
+    <Property Name="CartID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PartnerUserID" Type="Int64" Nullable="false" />
+    <Property Name="CreatedOn" Type="DateTime" Precision="3" />
+    <Property Name="ModifiedOn" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="PartnerCartItems" Relationship="Self.FK_PartnerCartItem_PartnerCartItem" FromRole="PartnerCart" ToRole="PartnerCartItem" />
+  </EntityType>
+  <EntityType Name="PartnerCartItem">
+    <Key>
+      <PropertyRef Name="CartItemID" />
+    </Key>
+    <Property Name="CartItemID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="CartID" Type="Int32" Nullable="false" />
+    <Property Name="ProductID" Type="Int32" Nullable="false" />
+    <Property Name="Quantity" Type="Int32" Nullable="false" />
+    <Property Name="ProductPrice" Type="Decimal" Precision="18" Scale="0" Nullable="false" />
+    <NavigationProperty Name="PartnerCart" Relationship="Self.FK_PartnerCartItem_PartnerCartItem" FromRole="PartnerCartItem" ToRole="PartnerCart" />
+  </EntityType>
+  <EntityType Name="PostForm">
+    <Key>
+      <PropertyRef Name="PostID" />
+    </Key>
+    <Property Name="PostID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="PostName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Comssion" Type="Double" />
+    <NavigationProperty Name="Employee_Form" Relationship="Self.FK_Employee_Form_PostForm" FromRole="PostForm" ToRole="Employee_Form" />
+    <NavigationProperty Name="Employee_Form_Temp" Relationship="Self.FK_Employee_Form_Temp_PostForm" FromRole="PostForm" ToRole="Employee_Form_Temp" />
+  </EntityType>
+  <EntityType Name="Question">
+    <Key>
+      <PropertyRef Name="Question_Id" />
+    </Key>
+    <Property Name="Question_Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Question1" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="CorrectOptionId" Type="String" MaxLength="100" FixedLength="false" Unicode="true" />
+    <Property Name="Category_ID" Type="Int32" />
+    <Property Name="BoardTypeID" Type="Int32" />
+    <Property Name="MediumID" Type="Int32" />
+    <Property Name="StandardID" Type="Int32" />
+    <NavigationProperty Name="Answers" Relationship="Self.FK_Answer_Question" FromRole="Question" ToRole="Answer" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_Question_BoardType" FromRole="Question" ToRole="BoardType" />
+    <NavigationProperty Name="Category" Relationship="Self.FK_Question_Category" FromRole="Question" ToRole="Category" />
+    <NavigationProperty Name="Choices" Relationship="Self.FK_Choices_Question" FromRole="Question" ToRole="Choices" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_Question_Mediums" FromRole="Question" ToRole="Mediums" />
+    <NavigationProperty Name="Standard" Relationship="Self.FK_Question_Standards" FromRole="Question" ToRole="Standards" />
+  </EntityType>
+  <EntityType Name="Refer">
+    <Key>
+      <PropertyRef Name="ReferID" />
+    </Key>
+    <Property Name="ReferID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RefferLid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReferalName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="ReferalForm">
+    <Key>
+      <PropertyRef Name="RefferalID" />
+    </Key>
+    <Property Name="RefferalID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ReferalName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="RefferLid" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Employee_ID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Employee_Form" Relationship="Self.FK_Employee_Form_ReferalForm" FromRole="ReferalForm" ToRole="Employee_Form" />
+    <NavigationProperty Name="Employee_Form_Temp" Relationship="Self.FK_Employee_Form_Temp_ReferalForm" FromRole="ReferalForm" ToRole="Employee_Form_Temp" />
+    <Property Name="ReferEmpID" Type="Int32" />
+    <Property Name="ReferEmpCity" Type="Int32" />
+    <Property Name="RefereEmpState" Type="Int32" />
+  </EntityType>
+  <EntityType Name="ScheduleExam">
+    <Key>
+      <PropertyRef Name="ExamScheduleID" />
+    </Key>
+    <Property Name="ExamScheduleID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ScheduleDateTime" Type="DateTime" Precision="3" />
+    <Property Name="BoardTypeID" Type="Int32" />
+    <Property Name="MediumID" Type="Int32" />
+    <Property Name="StandardID" Type="Int32" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_ScheduleExam_BoardType" FromRole="ScheduleExam" ToRole="BoardType" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_ScheduleExam_Mediums" FromRole="ScheduleExam" ToRole="Mediums" />
+    <NavigationProperty Name="Standard" Relationship="Self.FK_ScheduleExam_Standards" FromRole="ScheduleExam" ToRole="Standards" />
+  </EntityType>
+  <EntityType Name="Standard">
+    <Key>
+      <PropertyRef Name="StandardID" />
+    </Key>
+    <Property Name="StandardID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MediumID" Type="Int32" Nullable="false" />
+    <Property Name="StandardName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <NavigationProperty Name="Categories" Relationship="Self.FK_Category_Standards" FromRole="Standards" ToRole="Category" />
+    <NavigationProperty Name="Questions" Relationship="Self.FK_Question_Standards" FromRole="Standards" ToRole="Question" />
+    <NavigationProperty Name="ScheduleExams" Relationship="Self.FK_ScheduleExam_Standards" FromRole="Standards" ToRole="ScheduleExam" />
+    <NavigationProperty Name="Subjects" Relationship="Self.FK_Subjects_Standards1" FromRole="Standards" ToRole="Subjects" />
+    <NavigationProperty Name="Tab_User_Info_Temp" Relationship="Self.FK_Tab_User_Info_Temp_Standards" FromRole="Standards" ToRole="Tab_User_Info_Temp" />
+    <NavigationProperty Name="Videos" Relationship="Self.FK_Video_Standards" FromRole="Standards" ToRole="Video" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+  </EntityType>
+  <EntityType Name="State">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CountryId" Type="Int32" />
+    <NavigationProperty Name="Tab_User_Info_Temp" Relationship="Self.FK_Tab_User_Info_Temp_State" FromRole="State" ToRole="Tab_User_Info_Temp" />
+  </EntityType>
+  <EntityType Name="State_Old">
+    <Key>
+      <PropertyRef Name="StateID" />
+    </Key>
+    <Property Name="StateID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="StateName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="City_Old" Relationship="Self.FK_City_State" FromRole="State_Old" ToRole="City_Old" />
+    <NavigationProperty Name="Tab_User_Info" Relationship="Self.FK_Tab_User_Info_State" FromRole="State_Old" ToRole="Tab_User_Info" />
+  </EntityType>
+  <EntityType Name="StudentBankDetail">
+    <Key>
+      <PropertyRef Name="StudentBankID" />
+    </Key>
+    <Property Name="StudentBankID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="AccountNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IFSCCode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BankName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="AccountHolderName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Address" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Id" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Subject">
+    <Key>
+      <PropertyRef Name="SubjectID" />
+    </Key>
+    <Property Name="SubjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubjectName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="StandardID" Type="Int32" Nullable="false" />
+    <Property Name="BoardTypeID" Type="Int32" Nullable="false" />
+    <Property Name="MediumID" Type="Int32" Nullable="false" />
+    <Property Name="subjectDescription" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="subjectPrice" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="subjectDiscount" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="subjectTotalHour" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ImageURL" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="PDFFile" Type="String" MaxLength="500" FixedLength="false" Unicode="true" />
+    <Property Name="VideoURL" Type="String" MaxLength="2000" FixedLength="false" Unicode="true" />
+    <Property Name="Comment" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_Subjects_BoardType" FromRole="Subjects" ToRole="BoardType" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_Subjects_Mediums" FromRole="Subjects" ToRole="Mediums" />
+    <NavigationProperty Name="Standard" Relationship="Self.FK_Subjects_Standards1" FromRole="Subjects" ToRole="Standards" />
+    <NavigationProperty Name="Teachers" Relationship="Self.FK_Teacher_Subjects" FromRole="Subjects" ToRole="Teacher" />
+    <Property Name="CoverFilename" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="CoverFilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FileName" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="FilePath" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+  </EntityType>
+  <EntityType Name="sysdiagram">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="String" MaxLength="128" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="principal_id" Type="Int32" Nullable="false" />
+    <Property Name="diagram_id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="Int32" />
+    <Property Name="definition" Type="Binary" MaxLength="Max" FixedLength="false" />
+  </EntityType>
+  <EntityType Name="Tab_User_Info">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApplicationID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="7" />
+    <Property Name="ReferID" Type="Int32" />
+    <Property Name="BoardType" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Medium" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Standard" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="7" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StateID" Type="Int32" />
+    <Property Name="CityID" Type="Int32" />
+    <Property Name="Block" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="usercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="City_Old" Relationship="Self.FK_Tab_User_Info_City" FromRole="Tab_User_Info" ToRole="City_Old" />
+    <NavigationProperty Name="EmpCourse" Relationship="Self.FK_Tab_User_Info_EmpCourse" FromRole="Tab_User_Info" ToRole="EmpCourse" />
+    <NavigationProperty Name="State_Old" Relationship="Self.FK_Tab_User_Info_State" FromRole="Tab_User_Info" ToRole="State_Old" />
+  </EntityType>
+  <EntityType Name="Tab_User_Info_Temp">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ApplicationID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Name" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="7" />
+    <Property Name="ReferID" Type="Int32" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" />
+    <Property Name="CreatedDate" Type="DateTime" Precision="7" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="7" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="StateID" Type="Int32" />
+    <Property Name="CityID" Type="Int32" />
+    <Property Name="Block" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="usercode" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ReferlName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="EmpID" Type="Int32" />
+    <Property Name="BoardTypeID" Type="Int32" />
+    <Property Name="MediumID" Type="Int32" />
+    <Property Name="StandardID" Type="Int32" />
+    <Property Name="ResetPasswordCode" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Date" Type="DateTime" Precision="3" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_Tab_User_Info_Temp_BoardType" FromRole="Tab_User_Info_Temp" ToRole="BoardType" />
+    <NavigationProperty Name="City" Relationship="Self.FK_Tab_User_Info_Temp_City" FromRole="Tab_User_Info_Temp" ToRole="City" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_Tab_User_Info_Temp_Mediums" FromRole="Tab_User_Info_Temp" ToRole="Mediums" />
+    <NavigationProperty Name="Standard" Relationship="Self.FK_Tab_User_Info_Temp_Standards" FromRole="Tab_User_Info_Temp" ToRole="Standards" />
+    <NavigationProperty Name="State" Relationship="Self.FK_Tab_User_Info_Temp_State" FromRole="Tab_User_Info_Temp" ToRole="State" />
+    <Property Name="BoardSecondID" Type="Int32" />
+    <Property Name="MediumSecondID" Type="Int32" />
+    <Property Name="StandardSecondID" Type="Int32" />
+    <Property Name="UserSubjectID" Type="Int32" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="IsPaid" Type="Boolean" />
+    <Property Name="IsApproved" Type="Boolean" />
+  </EntityType>
+  <EntityType Name="TabPayumoneyTransectionLog">
+    <Key>
+      <PropertyRef Name="ID" />
+    </Key>
+    <Property Name="ID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Date" Type="DateTime" Nullable="false" Precision="0" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" Nullable="false" />
+    <Property Name="productInfo" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="TransectionID" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="IsPaid" Type="Boolean" />
+    <Property Name="ApplicationID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Teacher">
+    <Key>
+      <PropertyRef Name="TeacherId" />
+    </Key>
+    <Property Name="TeacherId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TeacherName" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="BoardTypeID" Type="Int32" Nullable="false" />
+    <Property Name="MediumID" Type="Int32" Nullable="false" />
+    <Property Name="SubjectID" Type="Int32" Nullable="false" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_Teacher_BoardType" FromRole="Teacher" ToRole="BoardType" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_Teacher_Mediums" FromRole="Teacher" ToRole="Mediums" />
+    <NavigationProperty Name="Subject" Relationship="Self.FK_Teacher_Subjects" FromRole="Teacher" ToRole="Subjects" />
+  </EntityType>
+  <EntityType Name="User">
+    <Key>
+      <PropertyRef Name="UserId" />
+    </Key>
+    <Property Name="UserId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserDetailId" Type="Int64" Nullable="false" />
+    <Property Name="BoardType" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Medium" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Standard" Type="String" MaxLength="150" FixedLength="false" Unicode="true" Nullable="false" />
+    <Property Name="Password" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="IsActive" Type="Boolean" Nullable="false" />
+    <Property Name="CreatedDate" Type="DateTime" Nullable="false" Precision="7" />
+    <Property Name="ModifiedDate" Type="DateTime" Precision="7" />
+    <Property Name="ConfirmPassword" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="ApplicationID" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="ExamResults" Relationship="Self.FK_ExamResult_User" FromRole="User" ToRole="ExamResult" />
+    <NavigationProperty Name="UserDetail" Relationship="Self.FK_User_UserDetail" FromRole="User" ToRole="UserDetail" />
+  </EntityType>
+  <EntityType Name="UserDetail">
+    <Key>
+      <PropertyRef Name="UserDetailId" />
+    </Key>
+    <Property Name="UserDetailId" Type="Int64" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="FirstName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="LastName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="MiddleName" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="EmailAddress" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <Property Name="PhoneNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="MobileNumber" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="DOB" Type="DateTime" Precision="7" />
+    <Property Name="ReferID" Type="Int32" />
+    <NavigationProperty Name="Users" Relationship="Self.FK_User_UserDetail" FromRole="UserDetail" ToRole="User" />
+  </EntityType>
+  <EntityType Name="Video">
+    <Key>
+      <PropertyRef Name="VideoID" />
+    </Key>
+    <Property Name="VideoID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Title" Type="String" MaxLength="50" FixedLength="false" Unicode="true" />
+    <Property Name="UploadVideo" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="BoardTypeID" Type="Int32" />
+    <Property Name="MediumID" Type="Int32" />
+    <Property Name="StandardID" Type="Int32" />
+    <NavigationProperty Name="BoardType" Relationship="Self.FK_Video_BoardType" FromRole="Video" ToRole="BoardType" />
+    <NavigationProperty Name="Medium" Relationship="Self.FK_Video_Mediums" FromRole="Video" ToRole="Mediums" />
+    <NavigationProperty Name="Standard" Relationship="Self.FK_Video_Standards" FromRole="Video" ToRole="Standards" />
+  </EntityType>
+  <Association Name="FK_Category_Admin">
+    <End Role="Admin" Type="Self.Admin" Multiplicity="0..1" />
+    <End Role="Category" Type="Self.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Admin">
+        <PropertyRef Name="AdminID" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="AdminID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Answer_Question">
+    <End Role="Question" Type="Self.Question" Multiplicity="0..1" />
+    <End Role="Answer" Type="Self.Answer" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="Question_Id" />
+      </Principal>
+      <Dependent Role="Answer">
+        <PropertyRef Name="Question_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Category_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="0..1" />
+    <End Role="Category" Type="Self.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Question_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="0..1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScheduleExam_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="0..1" />
+    <End Role="ScheduleExam" Type="Self.ScheduleExam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="ScheduleExam">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subjects_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="1" />
+    <End Role="Subjects" Type="Self.Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="Subjects">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_Temp_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="0..1" />
+    <End Role="Tab_User_Info_Temp" Type="Self.Tab_User_Info_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info_Temp">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Teacher_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Video_BoardType">
+    <End Role="BoardType" Type="Self.BoardType" Multiplicity="0..1" />
+    <End Role="Video" Type="Self.Video" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardType">
+        <PropertyRef Name="BoardTypeID" />
+      </Principal>
+      <Dependent Role="Video">
+        <PropertyRef Name="BoardTypeID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Category_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="0..1" />
+    <End Role="Category" Type="Self.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Category_Standards">
+    <End Role="Standards" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="Category" Type="Self.Category" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standards">
+        <PropertyRef Name="StandardID" />
+      </Principal>
+      <Dependent Role="Category">
+        <PropertyRef Name="StandardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Question_Category">
+    <End Role="Category" Type="Self.Category" Multiplicity="0..1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Category">
+        <PropertyRef Name="Category_ID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="Category_ID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Choices_Question">
+    <End Role="Question" Type="Self.Question" Multiplicity="0..1" />
+    <End Role="Choices" Type="Self.Choice" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Question">
+        <PropertyRef Name="Question_Id" />
+      </Principal>
+      <Dependent Role="Choices">
+        <PropertyRef Name="Question_Id" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_Temp_City">
+    <End Role="City" Type="Self.City" Multiplicity="0..1" />
+    <End Role="Tab_User_Info_Temp" Type="Self.Tab_User_Info_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info_Temp">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_City_State">
+    <End Role="State_Old" Type="Self.State_Old" Multiplicity="0..1" />
+    <End Role="City_Old" Type="Self.City_Old" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State_Old">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="City_Old">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_City">
+    <End Role="City_Old" Type="Self.City_Old" Multiplicity="0..1" />
+    <End Role="Tab_User_Info" Type="Self.Tab_User_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="City_Old">
+        <PropertyRef Name="CityID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info">
+        <PropertyRef Name="CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Emp_City_EmpState">
+    <End Role="EmpState" Type="Self.EmpState" Multiplicity="1" />
+    <End Role="Emp_City" Type="Self.Emp_City" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpState">
+        <PropertyRef Name="EmpStateID" />
+      </Principal>
+      <Dependent Role="Emp_City">
+        <PropertyRef Name="EmpStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_Emp_City">
+    <End Role="Emp_City" Type="Self.Emp_City" Multiplicity="1" />
+    <End Role="Employee_Form" Type="Self.Employee_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp_City">
+        <PropertyRef Name="Emp_CityID" />
+      </Principal>
+      <Dependent Role="Employee_Form">
+        <PropertyRef Name="Emp_CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_Temp_Emp_City">
+    <End Role="Emp_City" Type="Self.Emp_City" Multiplicity="1" />
+    <End Role="Employee_Form_Temp" Type="Self.Employee_Form_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Emp_City">
+        <PropertyRef Name="Emp_CityID" />
+      </Principal>
+      <Dependent Role="Employee_Form_Temp">
+        <PropertyRef Name="Emp_CityID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_EmpCourse">
+    <End Role="EmpCourse" Type="Self.EmpCourse" Multiplicity="0..1" />
+    <End Role="Tab_User_Info" Type="Self.Tab_User_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpCourse">
+        <PropertyRef Name="EmpID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info">
+        <PropertyRef Name="EmpID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_EmpState">
+    <End Role="EmpState" Type="Self.EmpState" Multiplicity="1" />
+    <End Role="Employee_Form" Type="Self.Employee_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpState">
+        <PropertyRef Name="EmpStateID" />
+      </Principal>
+      <Dependent Role="Employee_Form">
+        <PropertyRef Name="EmpStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_PostForm">
+    <End Role="PostForm" Type="Self.PostForm" Multiplicity="1" />
+    <End Role="Employee_Form" Type="Self.Employee_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostForm">
+        <PropertyRef Name="PostID" />
+      </Principal>
+      <Dependent Role="Employee_Form">
+        <PropertyRef Name="PostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_ReferalForm">
+    <End Role="ReferalForm" Type="Self.ReferalForm" Multiplicity="0..1" />
+    <End Role="Employee_Form" Type="Self.Employee_Form" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferalForm">
+        <PropertyRef Name="RefferalID" />
+      </Principal>
+      <Dependent Role="Employee_Form">
+        <PropertyRef Name="RefferalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_Temp_EmpState">
+    <End Role="EmpState" Type="Self.EmpState" Multiplicity="1" />
+    <End Role="Employee_Form_Temp" Type="Self.Employee_Form_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="EmpState">
+        <PropertyRef Name="EmpStateID" />
+      </Principal>
+      <Dependent Role="Employee_Form_Temp">
+        <PropertyRef Name="EmpStateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_Temp_PostForm">
+    <End Role="PostForm" Type="Self.PostForm" Multiplicity="0..1" />
+    <End Role="Employee_Form_Temp" Type="Self.Employee_Form_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PostForm">
+        <PropertyRef Name="PostID" />
+      </Principal>
+      <Dependent Role="Employee_Form_Temp">
+        <PropertyRef Name="PostID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Employee_Form_Temp_ReferalForm">
+    <End Role="ReferalForm" Type="Self.ReferalForm" Multiplicity="0..1" />
+    <End Role="Employee_Form_Temp" Type="Self.Employee_Form_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="ReferalForm">
+        <PropertyRef Name="RefferalID" />
+      </Principal>
+      <Dependent Role="Employee_Form_Temp">
+        <PropertyRef Name="RefferalID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ExamResult_User">
+    <End Role="User" Type="Self.User" Multiplicity="1" />
+    <End Role="ExamResult" Type="Self.ExamResult" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="User">
+        <PropertyRef Name="UserId" />
+      </Principal>
+      <Dependent Role="ExamResult">
+        <PropertyRef Name="UserId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Question_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="0..1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScheduleExam_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="0..1" />
+    <End Role="ScheduleExam" Type="Self.ScheduleExam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="ScheduleExam">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subjects_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="1" />
+    <End Role="Subjects" Type="Self.Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="Subjects">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_Temp_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="0..1" />
+    <End Role="Tab_User_Info_Temp" Type="Self.Tab_User_Info_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info_Temp">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Teacher_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Video_Mediums">
+    <End Role="Mediums" Type="Self.Medium" Multiplicity="0..1" />
+    <End Role="Video" Type="Self.Video" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Mediums">
+        <PropertyRef Name="MediumID" />
+      </Principal>
+      <Dependent Role="Video">
+        <PropertyRef Name="MediumID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_PartnerCartItem_PartnerCartItem">
+    <End Role="PartnerCart" Type="Self.PartnerCart" Multiplicity="1" />
+    <End Role="PartnerCartItem" Type="Self.PartnerCartItem" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="PartnerCart">
+        <PropertyRef Name="CartID" />
+      </Principal>
+      <Dependent Role="PartnerCartItem">
+        <PropertyRef Name="CartID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Question_Standards">
+    <End Role="Standards" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="Question" Type="Self.Question" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standards">
+        <PropertyRef Name="StandardID" />
+      </Principal>
+      <Dependent Role="Question">
+        <PropertyRef Name="StandardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_ScheduleExam_Standards">
+    <End Role="Standards" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="ScheduleExam" Type="Self.ScheduleExam" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standards">
+        <PropertyRef Name="StandardID" />
+      </Principal>
+      <Dependent Role="ScheduleExam">
+        <PropertyRef Name="StandardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Subjects_Standards1">
+    <End Role="Standards" Type="Self.Standard" Multiplicity="1" />
+    <End Role="Subjects" Type="Self.Subject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standards">
+        <PropertyRef Name="StandardID" />
+      </Principal>
+      <Dependent Role="Subjects">
+        <PropertyRef Name="StandardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_Temp_Standards">
+    <End Role="Standards" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="Tab_User_Info_Temp" Type="Self.Tab_User_Info_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standards">
+        <PropertyRef Name="StandardID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info_Temp">
+        <PropertyRef Name="StandardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Video_Standards">
+    <End Role="Standards" Type="Self.Standard" Multiplicity="0..1" />
+    <End Role="Video" Type="Self.Video" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Standards">
+        <PropertyRef Name="StandardID" />
+      </Principal>
+      <Dependent Role="Video">
+        <PropertyRef Name="StandardID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_Temp_State">
+    <End Role="State" Type="Self.State" Multiplicity="0..1" />
+    <End Role="Tab_User_Info_Temp" Type="Self.Tab_User_Info_Temp" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info_Temp">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Tab_User_Info_State">
+    <End Role="State_Old" Type="Self.State_Old" Multiplicity="0..1" />
+    <End Role="Tab_User_Info" Type="Self.Tab_User_Info" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="State_Old">
+        <PropertyRef Name="StateID" />
+      </Principal>
+      <Dependent Role="Tab_User_Info">
+        <PropertyRef Name="StateID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Teacher_Subjects">
+    <End Role="Subjects" Type="Self.Subject" Multiplicity="1" />
+    <End Role="Teacher" Type="Self.Teacher" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Subjects">
+        <PropertyRef Name="SubjectID" />
+      </Principal>
+      <Dependent Role="Teacher">
+        <PropertyRef Name="SubjectID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_User_UserDetail">
+    <End Role="UserDetail" Type="Self.UserDetail" Multiplicity="1" />
+    <End Role="User" Type="Self.User" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="UserDetail">
+        <PropertyRef Name="UserDetailId" />
+      </Principal>
+      <Dependent Role="User">
+        <PropertyRef Name="UserDetailId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="ExamStudentContext" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Admins" EntityType="Self.Admin" />
+    <EntitySet Name="AdminEmployeeReferSettings" EntityType="Self.AdminEmployeeReferSetting" />
+    <EntitySet Name="AdminRefers" EntityType="Self.AdminRefer" />
+    <EntitySet Name="Answers" EntityType="Self.Answer" />
+    <EntitySet Name="BoardTypes" EntityType="Self.BoardType" />
+    <EntitySet Name="Categories" EntityType="Self.Category" />
+    <EntitySet Name="Choices" EntityType="Self.Choice" />
+    <EntitySet Name="Cities" EntityType="Self.City" />
+    <EntitySet Name="City_Old" EntityType="Self.City_Old" />
+    <EntitySet Name="Countries" EntityType="Self.Country" />
+    <EntitySet Name="Coupons" EntityType="Self.Coupon" />
+    <EntitySet Name="Currencies" EntityType="Self.Currency" />
+    <EntitySet Name="Emp_City" EntityType="Self.Emp_City" />
+    <EntitySet Name="EmpBankDetails" EntityType="Self.EmpBankDetail" />
+    <EntitySet Name="EmpCourses" EntityType="Self.EmpCourse" />
+    <EntitySet Name="Employee_Form" EntityType="Self.Employee_Form" />
+    <EntitySet Name="Employee_Form_Temp" EntityType="Self.Employee_Form_Temp" />
+    <EntitySet Name="EmpStates" EntityType="Self.EmpState" />
+    <EntitySet Name="ExamResults" EntityType="Self.ExamResult" />
+    <EntitySet Name="MasterSalaries" EntityType="Self.MasterSalary" />
+    <EntitySet Name="Mediums" EntityType="Self.Medium" />
+    <EntitySet Name="MockQuestionBanks" EntityType="Self.MockQuestionBank" />
+    <EntitySet Name="PartnerCarts" EntityType="Self.PartnerCart" />
+    <EntitySet Name="PartnerCartItems" EntityType="Self.PartnerCartItem" />
+    <EntitySet Name="PostForms" EntityType="Self.PostForm" />
+    <EntitySet Name="Questions" EntityType="Self.Question" />
+    <EntitySet Name="Refers" EntityType="Self.Refer" />
+    <EntitySet Name="ReferalForms" EntityType="Self.ReferalForm" />
+    <EntitySet Name="ScheduleExams" EntityType="Self.ScheduleExam" />
+    <EntitySet Name="Standards" EntityType="Self.Standard" />
+    <EntitySet Name="States" EntityType="Self.State" />
+    <EntitySet Name="State_Old" EntityType="Self.State_Old" />
+    <EntitySet Name="StudentBankDetails" EntityType="Self.StudentBankDetail" />
+    <EntitySet Name="Subjects" EntityType="Self.Subject" />
+    <EntitySet Name="sysdiagrams" EntityType="Self.sysdiagram" />
+    <EntitySet Name="Tab_User_Info" EntityType="Self.Tab_User_Info" />
+    <EntitySet Name="Tab_User_Info_Temp" EntityType="Self.Tab_User_Info_Temp" />
+    <EntitySet Name="TabPayumoneyTransectionLogs" EntityType="Self.TabPayumoneyTransectionLog" />
+    <EntitySet Name="Teachers" EntityType="Self.Teacher" />
+    <EntitySet Name="Users" EntityType="Self.User" />
+    <EntitySet Name="UserDetails" EntityType="Self.UserDetail" />
+    <EntitySet Name="Videos" EntityType="Self.Video" />
+    <AssociationSet Name="FK_Category_Admin" Association="Self.FK_Category_Admin">
+      <End Role="Admin" EntitySet="Admins" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Answer_Question" Association="Self.FK_Answer_Question">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Answer" EntitySet="Answers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Category_BoardType" Association="Self.FK_Category_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Question_BoardType" Association="Self.FK_Question_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScheduleExam_BoardType" Association="Self.FK_ScheduleExam_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="ScheduleExam" EntitySet="ScheduleExams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subjects_BoardType" Association="Self.FK_Subjects_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="Subjects" EntitySet="Subjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_Temp_BoardType" Association="Self.FK_Tab_User_Info_Temp_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="Tab_User_Info_Temp" EntitySet="Tab_User_Info_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Teacher_BoardType" Association="Self.FK_Teacher_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="Teacher" EntitySet="Teachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Video_BoardType" Association="Self.FK_Video_BoardType">
+      <End Role="BoardType" EntitySet="BoardTypes" />
+      <End Role="Video" EntitySet="Videos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Category_Mediums" Association="Self.FK_Category_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Category_Standards" Association="Self.FK_Category_Standards">
+      <End Role="Standards" EntitySet="Standards" />
+      <End Role="Category" EntitySet="Categories" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Question_Category" Association="Self.FK_Question_Category">
+      <End Role="Category" EntitySet="Categories" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Choices_Question" Association="Self.FK_Choices_Question">
+      <End Role="Question" EntitySet="Questions" />
+      <End Role="Choices" EntitySet="Choices" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_Temp_City" Association="Self.FK_Tab_User_Info_Temp_City">
+      <End Role="City" EntitySet="Cities" />
+      <End Role="Tab_User_Info_Temp" EntitySet="Tab_User_Info_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_City_State" Association="Self.FK_City_State">
+      <End Role="State_Old" EntitySet="State_Old" />
+      <End Role="City_Old" EntitySet="City_Old" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_City" Association="Self.FK_Tab_User_Info_City">
+      <End Role="City_Old" EntitySet="City_Old" />
+      <End Role="Tab_User_Info" EntitySet="Tab_User_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Emp_City_EmpState" Association="Self.FK_Emp_City_EmpState">
+      <End Role="EmpState" EntitySet="EmpStates" />
+      <End Role="Emp_City" EntitySet="Emp_City" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_Emp_City" Association="Self.FK_Employee_Form_Emp_City">
+      <End Role="Emp_City" EntitySet="Emp_City" />
+      <End Role="Employee_Form" EntitySet="Employee_Form" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_Temp_Emp_City" Association="Self.FK_Employee_Form_Temp_Emp_City">
+      <End Role="Emp_City" EntitySet="Emp_City" />
+      <End Role="Employee_Form_Temp" EntitySet="Employee_Form_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_EmpCourse" Association="Self.FK_Tab_User_Info_EmpCourse">
+      <End Role="EmpCourse" EntitySet="EmpCourses" />
+      <End Role="Tab_User_Info" EntitySet="Tab_User_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_EmpState" Association="Self.FK_Employee_Form_EmpState">
+      <End Role="EmpState" EntitySet="EmpStates" />
+      <End Role="Employee_Form" EntitySet="Employee_Form" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_PostForm" Association="Self.FK_Employee_Form_PostForm">
+      <End Role="PostForm" EntitySet="PostForms" />
+      <End Role="Employee_Form" EntitySet="Employee_Form" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_ReferalForm" Association="Self.FK_Employee_Form_ReferalForm">
+      <End Role="ReferalForm" EntitySet="ReferalForms" />
+      <End Role="Employee_Form" EntitySet="Employee_Form" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_Temp_EmpState" Association="Self.FK_Employee_Form_Temp_EmpState">
+      <End Role="EmpState" EntitySet="EmpStates" />
+      <End Role="Employee_Form_Temp" EntitySet="Employee_Form_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_Temp_PostForm" Association="Self.FK_Employee_Form_Temp_PostForm">
+      <End Role="PostForm" EntitySet="PostForms" />
+      <End Role="Employee_Form_Temp" EntitySet="Employee_Form_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Employee_Form_Temp_ReferalForm" Association="Self.FK_Employee_Form_Temp_ReferalForm">
+      <End Role="ReferalForm" EntitySet="ReferalForms" />
+      <End Role="Employee_Form_Temp" EntitySet="Employee_Form_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ExamResult_User" Association="Self.FK_ExamResult_User">
+      <End Role="User" EntitySet="Users" />
+      <End Role="ExamResult" EntitySet="ExamResults" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Question_Mediums" Association="Self.FK_Question_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScheduleExam_Mediums" Association="Self.FK_ScheduleExam_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="ScheduleExam" EntitySet="ScheduleExams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subjects_Mediums" Association="Self.FK_Subjects_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="Subjects" EntitySet="Subjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_Temp_Mediums" Association="Self.FK_Tab_User_Info_Temp_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="Tab_User_Info_Temp" EntitySet="Tab_User_Info_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Teacher_Mediums" Association="Self.FK_Teacher_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="Teacher" EntitySet="Teachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Video_Mediums" Association="Self.FK_Video_Mediums">
+      <End Role="Mediums" EntitySet="Mediums" />
+      <End Role="Video" EntitySet="Videos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_PartnerCartItem_PartnerCartItem" Association="Self.FK_PartnerCartItem_PartnerCartItem">
+      <End Role="PartnerCart" EntitySet="PartnerCarts" />
+      <End Role="PartnerCartItem" EntitySet="PartnerCartItems" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Question_Standards" Association="Self.FK_Question_Standards">
+      <End Role="Standards" EntitySet="Standards" />
+      <End Role="Question" EntitySet="Questions" />
+    </AssociationSet>
+    <AssociationSet Name="FK_ScheduleExam_Standards" Association="Self.FK_ScheduleExam_Standards">
+      <End Role="Standards" EntitySet="Standards" />
+      <End Role="ScheduleExam" EntitySet="ScheduleExams" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Subjects_Standards1" Association="Self.FK_Subjects_Standards1">
+      <End Role="Standards" EntitySet="Standards" />
+      <End Role="Subjects" EntitySet="Subjects" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_Temp_Standards" Association="Self.FK_Tab_User_Info_Temp_Standards">
+      <End Role="Standards" EntitySet="Standards" />
+      <End Role="Tab_User_Info_Temp" EntitySet="Tab_User_Info_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Video_Standards" Association="Self.FK_Video_Standards">
+      <End Role="Standards" EntitySet="Standards" />
+      <End Role="Video" EntitySet="Videos" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_Temp_State" Association="Self.FK_Tab_User_Info_Temp_State">
+      <End Role="State" EntitySet="States" />
+      <End Role="Tab_User_Info_Temp" EntitySet="Tab_User_Info_Temp" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Tab_User_Info_State" Association="Self.FK_Tab_User_Info_State">
+      <End Role="State_Old" EntitySet="State_Old" />
+      <End Role="Tab_User_Info" EntitySet="Tab_User_Info" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Teacher_Subjects" Association="Self.FK_Teacher_Subjects">
+      <End Role="Subjects" EntitySet="Subjects" />
+      <End Role="Teacher" EntitySet="Teachers" />
+    </AssociationSet>
+    <AssociationSet Name="FK_User_UserDetail" Association="Self.FK_User_UserDetail">
+      <End Role="UserDetail" EntitySet="UserDetails" />
+      <End Role="User" EntitySet="Users" />
+    </AssociationSet>
+    <FunctionImport Name="PartnerGetCart" ReturnType="Collection(ExamStudentModel.PartnerGetCart_Result)">
+      <Parameter Name="UserID" Mode="In" Type="Int64" />
+    </FunctionImport>
+    <FunctionImport Name="PartnerGetCartItems" ReturnType="Collection(ExamStudentModel.PartnerGetCartItems_Result)">
+      <Parameter Name="CartID" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_alterdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_CheckUserOrAdmin">
+      <Parameter Name="LoginId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_creatediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="version" Mode="In" Type="Int32" />
+      <Parameter Name="definition" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="sp_dropdiagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagramdefinition" ReturnType="Collection(ExamStudentModel.sp_helpdiagramdefinition_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_helpdiagrams" ReturnType="Collection(ExamStudentModel.sp_helpdiagrams_Result)">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="sp_renamediagram">
+      <Parameter Name="diagramname" Mode="In" Type="String" />
+      <Parameter Name="owner_id" Mode="In" Type="Int32" />
+      <Parameter Name="new_diagramname" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="sp_upgraddiagrams" />
+    <FunctionImport Name="spAddSubjectCourse">
+      <Parameter Name="SubjectName" Mode="In" Type="String" />
+      <Parameter Name="SubjectDescription" Mode="In" Type="String" />
+      <Parameter Name="Medium" Mode="In" Type="String" />
+      <Parameter Name="BoardType" Mode="In" Type="String" />
+      <Parameter Name="Class" Mode="In" Type="String" />
+      <Parameter Name="Notes" Mode="In" Type="Binary" />
+    </FunctionImport>
+    <FunctionImport Name="spUserAccount">
+      <Parameter Name="UserId" Mode="In" Type="Int32" />
+    </FunctionImport>
+    <FunctionImport Name="spUserDetails">
+      <Parameter Name="FullName" Mode="In" Type="String" />
+      <Parameter Name="Eamil" Mode="In" Type="String" />
+      <Parameter Name="DOB" Mode="In" Type="DateTime" />
+      <Parameter Name="Gender" Mode="In" Type="String" />
+      <Parameter Name="Password" Mode="In" Type="String" />
+      <Parameter Name="ConfirmPassword" Mode="In" Type="String" />
+      <Parameter Name="ZipCode" Mode="In" Type="String" />
+      <Parameter Name="State" Mode="In" Type="String" />
+      <Parameter Name="City" Mode="In" Type="String" />
+      <Parameter Name="Block" Mode="In" Type="String" />
+      <Parameter Name="MobileNumber" Mode="In" Type="String" />
+      <Parameter Name="BoardType" Mode="In" Type="String" />
+      <Parameter Name="Class" Mode="In" Type="String" />
+      <Parameter Name="Medium" Mode="In" Type="String" />
+      <Parameter Name="Reffral" Mode="In" Type="String" />
+      <Parameter Name="Address" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="spUserLogin">
+      <Parameter Name="LoginName" Mode="In" Type="String" />
+      <Parameter Name="LoginPassword" Mode="In" Type="String" />
+    </FunctionImport>
+    <FunctionImport Name="usp_StudentPayment" ReturnType="Collection(ExamStudentModel.usp_StudentPayment_Result)" />
+    <FunctionImport Name="usp_UserList" ReturnType="Collection(ExamStudentModel.usp_UserList_Result)" />
+    <FunctionImport Name="usp_UserList_Bkp" ReturnType="Collection(ExamStudentModel.usp_UserList_Bkp_Result)" />
+    <FunctionImport Name="usp_UserListRecord" />
+    <FunctionImport Name="uspAddProductToCart">
+      <Parameter Name="PartnerUserID" Mode="In" Type="Int64" />
+      <Parameter Name="ProductID" Mode="In" Type="Int32" />
+      <Parameter Name="Quantity" Mode="In" Type="Int32" />
+      <Parameter Name="ProductPrice" Mode="In" Type="Decimal" />
+    </FunctionImport>
+    <FunctionImport Name="uspGetCountry" ReturnType="Collection(ExamStudentModel.uspGetCountry_Result)" />
+    <EntitySet Name="BoardTypeSeconds" EntityType="ExamStudentModel.BoardTypeSecond" />
+    <EntitySet Name="MediumSeconds" EntityType="ExamStudentModel.MediumSecond" />
+    <EntitySet Name="StandardSeconds" EntityType="ExamStudentModel.StandardSecond" />
+    <EntitySet Name="UserSubjects" EntityType="ExamStudentModel.UserSubject" />
+    <AssociationSet Name="FK_MediumSecond_BoardTypeSecond" Association="ExamStudentModel.FK_MediumSecond_BoardTypeSecond">
+      <End Role="BoardTypeSecond" EntitySet="BoardTypeSeconds" />
+      <End Role="MediumSecond" EntitySet="MediumSeconds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_StandardSecond_MediumSecond" Association="ExamStudentModel.FK_StandardSecond_MediumSecond">
+      <End Role="MediumSecond" EntitySet="MediumSeconds" />
+      <End Role="StandardSecond" EntitySet="StandardSeconds" />
+    </AssociationSet>
+    <AssociationSet Name="FK_UserSubject_StandardSecond" Association="ExamStudentModel.FK_UserSubject_StandardSecond">
+      <End Role="StandardSecond" EntitySet="StandardSeconds" />
+      <End Role="UserSubject" EntitySet="UserSubjects" />
+    </AssociationSet>
+    <EntitySet Name="UserSubjectSelections" EntityType="ExamStudentModel.UserSubjectSelection" />
+    <EntitySet Name="Images" EntityType="ExamStudentModel.Image" />
+    <EntitySet Name="Franchies" EntityType="ExamStudentModel.Franchy" />
+  </EntityContainer>
+  <ComplexType Name="PartnerGetCart_Result">
+    <Property Type="Int32" Name="CartID" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedOn" Nullable="true" Precision="23" />
+  </ComplexType>
+  <ComplexType Name="PartnerGetCartItems_Result">
+    <Property Type="String" Name="ProductName" Nullable="false" MaxLength="50" />
+    <Property Type="Int32" Name="CartItemID" Nullable="false" />
+    <Property Type="Int32" Name="CartID" Nullable="false" />
+    <Property Type="Int32" Name="ProductID" Nullable="false" />
+    <Property Type="Decimal" Name="ProductPrice" Nullable="false" Precision="18" Scale="0" />
+    <Property Type="Int32" Name="Quantity" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagramdefinition_Result">
+    <Property Type="Int32" Name="version" Nullable="true" />
+    <Property Type="Binary" Name="definition" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="sp_helpdiagrams_Result">
+    <Property Type="String" Name="Database" Nullable="true" MaxLength="128" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="128" />
+    <Property Type="Int32" Name="ID" Nullable="false" />
+    <Property Type="String" Name="Owner" Nullable="true" MaxLength="128" />
+    <Property Type="Int32" Name="OwnerID" Nullable="false" />
+  </ComplexType>
+  <ComplexType Name="usp_StudentPayment_Result">
+    <Property Type="Int32" Name="Id" Nullable="false" />
+    <Property Type="String" Name="BoardType" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Medium" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" />
+    <Property Type="String" Name="Name" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="EmailAddress" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DOB" Nullable="true" />
+    <Property Type="Int32" Name="ReferID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_UserList_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int64" Name="UserDetailId" Nullable="false" />
+    <Property Type="String" Name="BoardType" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Medium" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" />
+    <Property Type="String" Name="FirstName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="LastName" Nullable="false" MaxLength="50" />
+    <Property Type="String" Name="MiddleName" Nullable="true" MaxLength="50" />
+    <Property Type="String" Name="EmailAddress" Nullable="false" MaxLength="100" />
+    <Property Type="String" Name="PhoneNumber" Nullable="true" MaxLength="20" />
+    <Property Type="String" Name="MobileNumber" Nullable="true" MaxLength="20" />
+    <Property Type="DateTime" Name="DOB" Nullable="true" />
+    <Property Type="Int32" Name="ReferID" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="usp_UserList_Bkp_Result">
+    <Property Type="Int32" Name="UserId" Nullable="false" />
+    <Property Type="Int64" Name="UserDetailId" Nullable="false" />
+    <Property Type="String" Name="BoardType" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Medium" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Standard" Nullable="false" MaxLength="150" />
+    <Property Type="String" Name="Password" Nullable="true" MaxLength="50" />
+    <Property Type="Boolean" Name="IsActive" Nullable="false" />
+    <Property Type="DateTime" Name="CreatedDate" Nullable="false" />
+    <Property Type="DateTime" Name="ModifiedDate" Nullable="true" />
+  </ComplexType>
+  <ComplexType Name="uspGetCountry_Result">
+    <Property Type="String" Name="CommonName" Nullable="true" MaxLength="100" />
+    <Property Type="String" Name="CountryCode" Nullable="true" MaxLength="100" />
+  </ComplexType>
+  <EntityType Name="BoardTypeSecond">
+    <Key>
+      <PropertyRef Name="BoardSecondID" />
+    </Key>
+    <Property Name="BoardSecondID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="BoardName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MediumSeconds" Relationship="ExamStudentModel.FK_MediumSecond_BoardTypeSecond" FromRole="BoardTypeSecond" ToRole="MediumSecond" />
+  </EntityType>
+  <EntityType Name="MediumSecond">
+    <Key>
+      <PropertyRef Name="MediumSecondID" />
+    </Key>
+    <Property Name="MediumSecondID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MediumName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <Property Name="BoardSecondID" Type="Int32" />
+    <NavigationProperty Name="BoardTypeSecond" Relationship="ExamStudentModel.FK_MediumSecond_BoardTypeSecond" FromRole="MediumSecond" ToRole="BoardTypeSecond" />
+    <NavigationProperty Name="StandardSeconds" Relationship="ExamStudentModel.FK_StandardSecond_MediumSecond" FromRole="MediumSecond" ToRole="StandardSecond" />
+  </EntityType>
+  <EntityType Name="StandardSecond">
+    <Key>
+      <PropertyRef Name="StandardSecondID" />
+    </Key>
+    <Property Name="StandardSecondID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="MediumSecondID" Type="Int32" />
+    <Property Name="StandardName" Type="String" MaxLength="150" FixedLength="false" Unicode="true" />
+    <NavigationProperty Name="MediumSecond" Relationship="ExamStudentModel.FK_StandardSecond_MediumSecond" FromRole="StandardSecond" ToRole="MediumSecond" />
+    <NavigationProperty Name="UserSubjects" Relationship="ExamStudentModel.FK_UserSubject_StandardSecond" FromRole="StandardSecond" ToRole="UserSubject" />
+  </EntityType>
+  <EntityType Name="UserSubject">
+    <Key>
+      <PropertyRef Name="UserSubjectID" />
+    </Key>
+    <Property Name="UserSubjectID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="SubjectName" Type="String" MaxLength="250" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="StandardSecondID" Type="Int32" />
+    <NavigationProperty Name="StandardSecond" Relationship="ExamStudentModel.FK_UserSubject_StandardSecond" FromRole="UserSubject" ToRole="StandardSecond" />
+    <Property Name="UserTempId" Type="Int32" />
+  </EntityType>
+  <Association Name="FK_MediumSecond_BoardTypeSecond">
+    <End Type="ExamStudentModel.BoardTypeSecond" Role="BoardTypeSecond" Multiplicity="0..1" />
+    <End Type="ExamStudentModel.MediumSecond" Role="MediumSecond" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="BoardTypeSecond">
+        <PropertyRef Name="BoardSecondID" />
+      </Principal>
+      <Dependent Role="MediumSecond">
+        <PropertyRef Name="BoardSecondID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_StandardSecond_MediumSecond">
+    <End Type="ExamStudentModel.MediumSecond" Role="MediumSecond" Multiplicity="0..1" />
+    <End Type="ExamStudentModel.StandardSecond" Role="StandardSecond" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="MediumSecond">
+        <PropertyRef Name="MediumSecondID" />
+      </Principal>
+      <Dependent Role="StandardSecond">
+        <PropertyRef Name="MediumSecondID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_UserSubject_StandardSecond">
+    <End Type="ExamStudentModel.StandardSecond" Role="StandardSecond" Multiplicity="0..1" />
+    <End Type="ExamStudentModel.UserSubject" Role="UserSubject" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="StandardSecond">
+        <PropertyRef Name="StandardSecondID" />
+      </Principal>
+      <Dependent Role="UserSubject">
+        <PropertyRef Name="StandardSecondID" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityType Name="UserSubjectSelection">
+    <Key>
+      <PropertyRef Name="UserSubjectSelectionId" />
+    </Key>
+    <Property Name="UserSubjectSelectionId" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="UserSubjectID" Type="Int32" />
+    <Property Name="UserTempId" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Image">
+    <Key>
+      <PropertyRef Name="ImageID" />
+    </Key>
+    <Property Name="ImageID" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="ImageUpload" Type="String" MaxLength="Max" FixedLength="false" Unicode="true" />
+    <Property Name="Employee_ID" Type="Int32" />
+  </EntityType>
+  <EntityType Name="Franchy">
+    <Key>
+      <PropertyRef Name="Id" />
+    </Key>
+    <Property Name="Id" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Code" Type="String" MaxLength="200" FixedLength="false" Unicode="true" />
+    <Property Name="Amount" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="gstPercentage" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="Transpercentage" Type="Decimal" Precision="18" Scale="2" />
+    <Property Name="FranchiesName" Type="String" MaxLength="300" FixedLength="false" Unicode="true" />
+  </EntityType>
+</Schema>

@@ -1,0 +1,104 @@
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csprojAssemblyReference.cache
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Mvc.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Razor.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Razor.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CopyComplete
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.pdb
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.dll
+E:\ASP.NET MVC CODE HERE\New Project 2019\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csprojAssemblyReference.cache
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CoreCompileInputs.cache
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Mvc.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Razor.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Razor.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+D:\Talvez Training\ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\Back-Up File 25-09-2020\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.Business.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Mvc.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Razor.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\Microsoft.Web.Infrastructure.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\System.Web.WebPages.Deployment.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\Digiphoto.iMix.ClaimPortal.Common.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudent.ViewModel.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\ExamStudents.DataAccess.pdb
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\id-ID\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\bin\Debug\zh-CHS\Digiphoto.iMix.ClaimPortal.Common.resources.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csprojAssemblyReference.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CoreCompileInputs.cache
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.csproj.CopyComplete
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.dll
+E:\Online Exam Protal ASP.NET MVC 5 Project\My Project ExamStudent\ExamStudent\ExamStudents.Business\obj\Debug\ExamStudents.Business.pdb
